@@ -10,7 +10,9 @@
       "@favicons/*": ["public/assets/favicons/*"],
       "@svgs/*": ["src/assets/svgs/*"],
       "@data/*": ["src/data/*"],
-      "@static/*": ["public/assets/*"]
+      "@static/*": ["public/assets/*"],
+      "@styles/*": ["src/scss/*"],
+      "@content/*": ["src/content/*"]
     }
   }
 }

@@ -1,40 +1,65 @@
 ---
-import ROKMA from '@components/ROKMA.astro';
-interface Props {
-	title: string;
+import ROKMA from '@components/ROKMA.astro'
+import * as siteData from '@data/site.json'
+import * as repoData from 'package.json'
+import AppendToCopyAction from '@scripts/AppendToCopyAction.astro'
+import GoogleAnalytics from '@scripts/GoogleAnalytics.astro'
+import Stylo from '@components/Stylo.astro'
+
+export interface Props {
+  pageTitle: string
+  ogImage?: string
+  bodyClass: string
+  mainClass: string
+  pageTLDR: string
 }
 
-const { title } = Astro.props;
+const { bodyClass, mainClass, pageTitle, ogImage, pageTLDR } = Astro.props
+
+const makeTitle = siteData.title + ' ' + pageTitle
+const makeDescription = pageTLDR
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<ROKMA />
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <ROKMA />
+
+  <meta name="version" content={repoData.version} />
+  <meta charset="UTF-8" />
+  <meta name="description" content="Astro description" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>{makeTitle}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="apple-mobile-web-app-title" content={siteData.title} />
+  <meta name="application-name" content={siteData.title} />
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- ROKS REPO -->
+  <meta name="version" content={repoData.version} />
+
+  <!-- ROKS OG -->
+  <meta property="og:url" content={Astro.site} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={makeTitle} />
+  <meta property="og:description" content={makeDescription} />
+  <meta property="og:image" content={ogImage} />
+
+  <!-- ROKS TWITTER -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={Astro.site} />
+  <meta name="twitter:title" content={makeTitle} />
+  <meta name="twitter:description" content={makeDescription} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <slot name="head" />
+
+  <body>
+    <slot />
+
+    <AppendToCopyAction />
+    <GoogleAnalytics />
+    <Stylo />
+  </body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151A;
-		background-size: 224px;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>

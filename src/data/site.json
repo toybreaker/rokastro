@@ -1,0 +1,41 @@
+{
+  "title": "Rokma",
+  "tldr": "Rokma empowers small enterprises",
+  "tagline": "empowers small enterprises",
+  "tagline_short": "empowers",
+  "tagline_plus": "building reputation",
+  "description": "Communication Design and Production.",
+  "shout_description": "Flexible Communication Design Service for small companies. Imagine > Plan > Produce > Launch. Also just consulting!",
+  "logo": "01.jpg",
+  "keywords": "",
+  "lang": "en",
+  "license": {
+    "name": "CC BY",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "author": {
+    "name": "Rokma",
+    "email": "me@rokma.com",
+    "twitter": "https://twitter.com/rokmatwit",
+    "facebook": "https://www.facebook.com/rokmaphotography",
+    "github": "https://github.com/toybreaker",
+    "instagram": "https://www.instagram.com/rokmaphotography",
+    "threads": "https://www.threads.net/@rokmaphotography",
+    "linkedin": "https://www.linkedin.com/in/rokma/",
+    "soundcloud": "https://soundcloud.com/rokma/sets",
+    "google": {
+      "analytics": "G-BMWDP7VL43",
+      "verification": "google32e66f1a5601ec40"
+    }
+  },
+  "producer": {
+    "url": "https://junglestar.org",
+    "name": "Junglestar"
+  },
+  "breakpoints": {
+    "s": "640",
+    "m": "880",
+    "l": "1024",
+    "xl": "1920"
+  }
+}

@@ -23,7 +23,7 @@ export default defineConfig({
     inlineStylesheets: 'always'
   },
   markdown: {
-    drafts: true,
+    drafts: true
   },
   integrations: [
     mdx({
