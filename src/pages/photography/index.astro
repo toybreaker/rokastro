@@ -1,0 +1,58 @@
+---
+import Layout from '@layouts/Layout.astro'
+import Card from '@components/Card.astro'
+import { getCollection } from 'astro:content'
+
+const jobs = (
+  await getCollection('photography', ({ data }) => {
+    return data.draft !== true
+  })
+).sort((a, b) => b.data.year - a.data.year)
+
+interface Props {
+  bodyClass: string
+  mainClass: string
+  pageTitle: string
+  pageTLDR: string
+}
+
+const bodyClass = 'photography'
+const mainClass = 'no_padding'
+const pageTitle = 'works worth mentioning'
+const pageTLDR =
+  'In this phone selfies times, HIGH QUALITY PHOTOGRAPHY and the capacity to MAKE A SPEECH WITH IMAGES is more important than ever.'
+---
+
+<Layout
+  bodyClass={bodyClass}
+  pageTitle={pageTitle}
+  mainClass={mainClass}
+  pageTLDR={pageTLDR}
+  ogImage="../og_photography.jpg">
+  <div class="wide flex">
+    {
+      jobs.map((job) => (
+        <a href={`/photography/${job.slug}`}>
+          <Card title={job.data.title} image={job.data.images[0]} />
+        </a>
+      ))
+    }
+  </div>
+</Layout>
+
+<style lang="scss">
+  a {
+    user-select: none !important;
+    display: block;
+    padding-bottom: var(--spacing);
+    width: 100%;
+    @media (min-width: 576px) {
+      width: 48%;
+      padding: 1% 1% var(--spacing) 1%;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+</style>

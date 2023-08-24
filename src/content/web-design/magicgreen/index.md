@@ -1,17 +1,17 @@
 ---
-layout: web
-title:  magicgreen
-headline: Magic Green
-categories: web-design
+slag: magicgreen
+title: Magic Green
+category: web-design
 year: 2018
+year2: 2023
 where: bali, indonesia
-index_image: 00.jpg
-image:
-- 01.jpg
-- 02.png
-- 03.png
-- 04.png
+images:
+  - 01.jpg
+  - 02.png
+  - 03.png
+  - 04.png
 ---
+
 Non profit magazine.
 Check out [magicgreen](https://magicgreen.junglestar.org?source=rokma.com) live website.
 [2020>today].

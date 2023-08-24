@@ -1,13 +1,12 @@
 ---
-layout: web
-title:  pinksummer
-headline: Pinksummer
-categories: web-design
+slag: pinksummer
+title: Pinksummer
+category: web-design
 year: 2015
 where: Genova, Italy
-image:
-- 01.jpg
-onlyoneimage: true # true or empty
+images:
+  - 01.jpg
 ---
-Website for &lt;Pinksummer&gt; contemporary art gallery. Online presence.    
+
+Website for &lt;Pinksummer&gt; contemporary art gallery. Online presence.
 [2015>2016].

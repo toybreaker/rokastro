@@ -1,12 +1,11 @@
 ---
-layout: adv
-title: freezer-magazine
-headline: Freezer Adv
-categories: advertising
+slag: freezer-magazine
+title: Freezer Adv
+category: advertising
 year: 2000
 where: italy
 backgroundColor: gray1
-image:
+images:
   - 01.jpg
   - 02.jpg
   - 03.jpg

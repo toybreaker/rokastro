@@ -1,22 +1,21 @@
 ---
-layout: pho
-title: before-the-silence
-headline: Before the silence
-categories: photography
+slag: before-the-silence
+title: Before the silence
+category: photography
 year: 2019
 where: bali, indonesia
 catch: personal work by
-image:
-- 01.jpg
-- 03.jpg
-- 04.jpg
-- 06.jpg
-- 07.jpg
-- 09.jpg
-- 10.jpg
-- 12.jpg
-- 14.jpg
-- 16.jpg
+images:
+  - 01.jpg
+  - 03.jpg
+  - 04.jpg
+  - 06.jpg
+  - 07.jpg
+  - 09.jpg
+  - 10.jpg
+  - 12.jpg
+  - 14.jpg
+  - 16.jpg
 ---
 
 Shot during the Ogoh-ogoh parade,

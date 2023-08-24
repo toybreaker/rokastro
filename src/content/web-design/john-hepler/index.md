@@ -1,13 +1,12 @@
 ---
-layout: web
-title:  john-hepler
-headline: John Hepler
-categories: web-design
+slag: john-hepler
+title: John Hepler
+category: web-design
 year: 2012
 where: bali, indonesia
-image:
-- 01.jpg
-onlyoneimage: true # true or empty
+images:
+  - 01.jpg
 ---
-Portfolio website for industrial photographer &lt;John Hepler&gt;.    
+
+Portfolio website for industrial photographer &lt;John Hepler&gt;.
 [2012>2015].

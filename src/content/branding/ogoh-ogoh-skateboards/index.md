@@ -1,19 +1,16 @@
 ---
-layout: bra_new
-title: ogoh-ogoh-skateboards
-headline: Ogoh-ogoh skateboards
-categories: branding
+slag: ogoh-ogoh-skateboards
+title: Ogoh-ogoh skateboards
+category: branding
 grid_small_images: #true or empty
 year: 2021
 where: Genova, Italy
 catch: personal work by
 offwhite: true # true or empty
-image:
-  - 03.jpg
 images: #this can have captions (see valeria branding)
-  - filename: 01.jpg
-  - filename: 02.jpg
-  - filename: 03.jpg
+  - 01.jpg
+  - 02.jpg
+  - 03.jpg
 ---
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.

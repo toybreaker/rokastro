@@ -1,14 +1,13 @@
 ---
-layout: web
-title:  eleonora-parodi
-headline: Eleonora Parodi
-categories: web-design
+slag: eleonora-parodi
+title: Eleonora Parodi
+category: web-design
 year: 2012
 where: italy
-image:
-- 01.jpg
-onlyoneimage: true # true or empty
+images:
+  - 01.jpg
 ---
+
 Presentational website for &lt;Eleonora Parodi&gt; Art Clinic.
-.  
+.
 [2013>2014].

@@ -1,12 +1,12 @@
 ---
-layout: adv
-title: assorted
-headline: Assorted
-categories: advertising
-year: 1996 > 2023
+slag: assorted
+title: Assorted
+category: advertising
+year: 1996
+year2: 2023
 where:
 backgroundColor: gray1
-image:
+images:
   - 01.jpg
   - 02.jpg
   - 03.jpg

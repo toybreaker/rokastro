@@ -1,13 +1,12 @@
 ---
-layout: web
-title: disfrutalo
-headline: Disfrutalo
-categories: web-design
+slag: disfrutalo
+title: Disfrutalo
+category: web-design
 year: 2008
 where: costarica
-image:
-- 01.jpg
-onlyoneimage: true # true or empty
+images:
+  - 01.jpg
 ---
-Presentational website for &lt;Disfrutalo&gt; firm.  
+
+Presentational website for &lt;Disfrutalo&gt; firm.
 [2008>2011].

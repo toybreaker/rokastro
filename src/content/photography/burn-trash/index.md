@@ -1,17 +1,16 @@
 ---
-layout: pho
-title: burn-trash
-headline: Burn Trash
-categories: photography
+slag: burn-trash
+title: Burn Trash
+category: photography
 year: 2018
 where: bali, indonesia
 catch: personal work by
-image:
-- 01.jpg
-- 02.jpg
-- 03.jpg
-- 04.jpg
-- 05.jpg
+images:
+  - 01.jpg
+  - 02.jpg
+  - 03.jpg
+  - 04.jpg
+  - 05.jpg
 ---
 
 The pilot announced “We’re about to land in the beautiful island of Bali…”. My mind runs to the priming paradigm that this resort island has managed to spread internationally.
@@ -37,6 +36,5 @@ I was asking why they don’t simply pay for the trash collecting service that i
 Maybe is just a “Bule” lack of understanding, a Westerner fixation on critical thinking, oin any case when the beautiful sun light is gone, ignorance settle in. Failing to care about basic health principles will kill us all. It’s an other "tragedy of the commons" going on un-reported.
 
 Btw, "tragedy of the commons" is a term used in social science to describe a situation in a shared-resource system where individual users acting independently, according only to their own self-interest, behave contrary to the common good, depleting, spoiling or damaging that resource through their collective action.
-
 
 Published on non-profit magazine [Fumes](https://fumes.junglestar.org/photo-journalism/burn-trash/).

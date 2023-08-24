@@ -1,17 +1,18 @@
 ---
-layout: spe
-title: concrete-public-skatepark
-headline: Concrete Skatepark
-categories: specials
-year: 1989 > 1991
+slag: concrete-public-skatepark
+title: Concrete Skatepark
+category: specials
+year: 1989
+year2: 1991
 where: italy
 imagehowmany: 2
 backgroundColor: gray2
-image:
-- 01.jpg
-- 02.jpg
+images:
+  - 01.jpg
+  - 02.jpg
 ---
-Back in 1989 Rok designs, consults and supervises the creation of a public skatepark. 
+
+Back in 1989 Rok designs, consults and supervises the creation of a public skatepark.
 
 It's Italy's first free public skatepark project.
 Made to last using concrete and payed by the city council.

@@ -1,0 +1,56 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+import * as siteData from '@data/site.json'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('photography', ({ data }) => {
+    return data.draft !== true
+  })
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }))
+}
+
+interface Props {
+  post: CollectionEntry<'photography'>
+}
+
+const { post } = Astro.props
+const { Content } = await post.render()
+
+const collection = 'photography'
+const bodyClass = collection
+const mainClass = post.data.title.toLowerCase()
+const pageTLDR = siteData.title
+
+const str = post.slug
+const modStr = str[0].toUpperCase() + str.slice(1)
+const pageTitle = modStr
+---
+
+<Layout
+  {...post.data}
+  mainClass={mainClass}
+  bodyClass={bodyClass}
+  pageTitle={pageTitle}
+  pageTLDR={pageTLDR}
+  ogImage={post.data.images[0].src}>
+  <div class="wide">
+    <h2>{post.data.title}</h2>
+    <div class="year">{post.data.year}</div>
+    <br />
+
+    <Content />
+  </div>
+
+  <div class="wide flex">
+    <a role="button" class="outline contrast" href={'/' + collection + '/'}>
+      See all {collection.toUpperCase()} works
+    </a>
+  </div>
+</Layout>
+
+<style lang="scss"></style>

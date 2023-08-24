@@ -1,14 +1,13 @@
 ---
-layout: pho
-title: quarzia-ilona
-headline: Quarzia Ilona
-categories: photography
+slag: quarzia-ilona
+title: Quarzia Ilona
+category: photography
 year: 2021
 where: Bali, Indonesia
 catch: personal work by
 offwhite: true # true or empty
-publish:  # notyet will not publish
-image:
+publish: # notyet will not publish
+images:
   - 01.jpg
   - 02.jpg
   - 03.jpg
@@ -26,7 +25,7 @@ image:
   - 15.jpg
   - 16.jpg
   - 17.jpg
-fineartprints_link:  ## true or false
-
+fineartprints_link: ## true or false
 ---
+
 Fashion shoot for [Quarzia](https://quarzia.it/). Images for catalog, social media, online-shop blog.
