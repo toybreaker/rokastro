@@ -2,16 +2,17 @@
 slag: icons
 title: Icons
 category: specials
+year: 2019
 images:
-  - 01.jpg
-  - 02.svg
-  - 03.svg
-  - 04.svg
-  - 05.svg
-  - 06.svg
-  - 07.svg
-  - 08.svg
-  - 09.svg
+  - ./01.jpg
+  - ./02.svg
+  - ./03.svg
+  - ./04.svg
+  - ./05.svg
+  - ./06.svg
+  - ./07.svg
+  - ./08.svg
+  - ./09.svg
 ---
 
 Rokma has release some Open Source icons.

@@ -6,11 +6,11 @@ year: 2010
 where: bali, indonesia
 catch: powered by
 images:
-  - 01.jpg
-  - 02.jpg
-  - 03.jpg
-  - 04.jpg
-  - 05.jpg
+  - ./01.jpg
+  - ./02.jpg
+  - ./03.jpg
+  - ./04.jpg
+  - ./05.jpg
 ---
 
 Surfing Indonesia, The Balinese Art of Ogoh Ogoh.

@@ -6,7 +6,7 @@ year: 2001
 year2: 2003
 where: italy
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Catalog website for &lt;Cifra Clothing&gt; brand.

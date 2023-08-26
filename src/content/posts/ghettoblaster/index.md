@@ -8,7 +8,7 @@ where: Genova, Italy
 catch: personal work by
 offwhite: true # true or empty
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.

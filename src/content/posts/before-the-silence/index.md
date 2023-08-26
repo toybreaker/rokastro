@@ -6,16 +6,16 @@ year: 2019
 where: bali, indonesia
 catch: personal work by
 images:
-  - 01.jpg
-  - 03.jpg
-  - 04.jpg
-  - 06.jpg
-  - 07.jpg
-  - 09.jpg
-  - 10.jpg
-  - 12.jpg
-  - 14.jpg
-  - 16.jpg
+  - ./01.jpg
+  - ./03.jpg
+  - ./04.jpg
+  - ./06.jpg
+  - ./07.jpg
+  - ./09.jpg
+  - ./10.jpg
+  - ./12.jpg
+  - ./14.jpg
+  - ./16.jpg
 ---
 
 Shot during the Ogoh-ogoh parade,

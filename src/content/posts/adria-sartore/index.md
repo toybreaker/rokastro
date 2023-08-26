@@ -7,10 +7,10 @@ year2: 2023
 where: genova, italy
 index_image: 00.jpg
 images:
-  - 01.jpg
-  - 02.png
-  - 03.png
-  - 04.png
+  - ./01.jpg
+  - ./02.png
+  - ./03.png
+  - ./04.png
 ---
 
 Artist portfolio.

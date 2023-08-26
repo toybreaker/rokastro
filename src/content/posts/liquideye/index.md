@@ -9,10 +9,10 @@ quotecite: Liquideye CSO, John
 quote_02: "&rdquo;It's really a noticeable difference... the average time our users spend on our site has doubled, and bounce rate is at the lowest it has ever been... &rdquo;"
 quotecite_02: Liquideye Founder, Philippe
 images:
-  - 01.jpg
-  - 02.png
-  - 03.png
-  - 04.png
+  - ./01.jpg
+  - ./02.png
+  - ./03.png
+  - ./04.png
 ---
 
 Water housing manufacture website.

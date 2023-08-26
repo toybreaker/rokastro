@@ -7,10 +7,10 @@ year2: 2023
 where: EU
 index_image: 00.jpg #all devices together for index
 images:
-  - 01.jpg #fullwidth 1680x800 w/desktop image
-  - 02.png #ipad
-  - 03.png #nexus6
-  - 04.png #android
+  - ./01.jpg #fullwidth 1680x800 w/desktop image
+  - ./02.png #ipad
+  - ./03.png #nexus6
+  - ./04.png #android
 ---
 
 Website for &lt;Binocle&gt; architecture studio.

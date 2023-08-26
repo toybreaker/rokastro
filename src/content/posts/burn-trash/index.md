@@ -6,11 +6,11 @@ year: 2018
 where: bali, indonesia
 catch: personal work by
 images:
-  - 01.jpg
-  - 02.jpg
-  - 03.jpg
-  - 04.jpg
-  - 05.jpg
+  - ./01.jpg
+  - ./02.jpg
+  - ./03.jpg
+  - ./04.jpg
+  - ./05.jpg
 ---
 
 The pilot announced “We’re about to land in the beautiful island of Bali…”. My mind runs to the priming paradigm that this resort island has managed to spread internationally.

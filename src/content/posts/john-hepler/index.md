@@ -5,7 +5,7 @@ category: web-design
 year: 2012
 where: bali, indonesia
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Portfolio website for industrial photographer &lt;John Hepler&gt;.

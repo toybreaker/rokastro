@@ -5,7 +5,7 @@ category: web-design
 year: 2015
 where: bali, indonesia
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Portfolio website for &lt;Landi Designs&gt; architecture firm.

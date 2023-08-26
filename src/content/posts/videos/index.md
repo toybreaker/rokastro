@@ -5,7 +5,7 @@ category: specials
 year: 1992
 backgroundColor: black
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Probably the first video on the Italian skate/snowboarding scene.

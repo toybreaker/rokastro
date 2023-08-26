@@ -9,12 +9,12 @@ where: Bali, Indonesia
 catch: personal work by
 offwhite: true # true or empty
 images:
-  - 01.jpg
-  - 02.jpg
-  - 03.jpg
-  - 04.jpg
-  - 05.jpg
-  - 06.jpg
+  - ./01.jpg
+  - ./02.jpg
+  - ./03.jpg
+  - ./04.jpg
+  - ./05.jpg
+  - ./06.jpg
 ---
 
 Online store with blog and search. Products studio shoot. Social media Production and Management.

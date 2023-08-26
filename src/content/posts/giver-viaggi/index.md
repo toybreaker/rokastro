@@ -6,7 +6,7 @@ year: 2009
 year2: 2014
 where: Italy
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Catalog website for &lt;Giver Viaggi&gt; firm.

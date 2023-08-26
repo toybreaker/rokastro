@@ -5,7 +5,7 @@ category: web-design
 year: 2008
 where: costarica
 images:
-  - 01.jpg
+  - ./01.jpg
 ---
 
 Presentational website for &lt;Disfrutalo&gt; firm.

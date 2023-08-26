@@ -8,9 +8,9 @@ where: Genova, Italy
 catch: personal work by
 offwhite: true # true or empty
 images: #this can have captions (see valeria branding)
-  - 01.jpg
-  - 02.jpg
-  - 03.jpg
+  - ./01.jpg
+  - ./02.jpg
+  - ./03.jpg
 ---
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.

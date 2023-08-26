@@ -6,10 +6,10 @@ year: 2017
 year2: 2023
 where: bali, indonesia
 images:
-  - 01.jpg
-  - 02.png
-  - 03.png
-  - 04.png
+  - ./01.jpg
+  - ./02.png
+  - ./03.png
+  - ./04.png
 ---
 
 Photography based online magazine.
