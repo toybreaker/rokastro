@@ -1,5 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro'
+import { getCollection } from 'astro:content'
+
+const featuredPosts = await getCollection('posts', ({ data }) => {
+  return data.draft !== true && data.featured
+})
 
 const bodyClass = 'home'
 const mainClass = 'no_padding'

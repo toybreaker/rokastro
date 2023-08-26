@@ -9,6 +9,7 @@ const works = defineCollection({
       year: z.number(),
       year2: z.number().optional().nullable(),
       where: z.string().optional().nullable(),
+      index_image: z.string(image()).optional().nullable(),
       images: z.array(image()),
       quality: z.string().optional().nullable().default('low'),
       catch: z.string().optional().nullable(),
@@ -16,10 +17,11 @@ const works = defineCollection({
       fumes_category: z.string().optional().nullable(),
       grid_small_images: z.boolean().optional().nullable().default(false),
       offwhite: z.boolean().optional().nullable().default(false),
+      featured: z.boolean().optional().nullable(),
       draft: z.boolean().optional().nullable()
     })
 })
 
 export const collections = {
-  works: works
+  posts: works
 }
