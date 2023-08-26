@@ -27,7 +27,9 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
       </div>
     </div>
 
-    <div class="wrap all_works index">latest works</div>
+    <div class="wrap all_works index">
+      <div class="container content">latest works</div>
+    </div>
 
     <div class="wrap phrase2">
       <div class="container content">
@@ -67,3 +69,14 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
     </div>
   </main>
 </Layout>
+<style lang="scss">
+  .wrap {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    background: linear-gradient(var(--primary-inverse2) 15%, var(--primary));
+    background-blend-mode: normal;
+  }
+</style>

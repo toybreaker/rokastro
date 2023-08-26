@@ -21,9 +21,5 @@ const works = defineCollection({
 })
 
 export const collections = {
-  photography: works,
-  branding: works,
-  advertising: works,
-  specials: works,
-  'web-design': works
+  works: works
 }

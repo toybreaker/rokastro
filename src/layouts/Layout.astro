@@ -4,6 +4,8 @@ import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
 import AppendToCopyAction from '@scripts/AppendToCopyAction.astro'
 import GoogleAnalytics from '@scripts/GoogleAnalytics.astro'
+import SidebarToggle from '@scripts/SidebarToggle.astro'
+import Font from '@scripts/Font.astro'
 import Stylo from '@components/Stylo.astro'
 
 export interface Props {
@@ -24,6 +26,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 <!DOCTYPE html>
 <html lang="en">
   <ROKMA />
+  <Font />
 
   <meta name="version" content={repoData.version} />
   <meta charset="UTF-8" />
@@ -57,9 +60,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
   <body>
     <slot />
-
+    <Stylo />
+    <SidebarToggle />
     <AppendToCopyAction />
     <GoogleAnalytics />
-    <Stylo />
   </body>
 </html>

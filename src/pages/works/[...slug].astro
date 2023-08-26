@@ -4,7 +4,7 @@ import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 
 export async function getStaticPaths() {
-  const posts = await getCollection('photography', ({ data }) => {
+  const posts = await getCollection('works', ({ data }) => {
     return data.draft !== true
   })
 
@@ -15,13 +15,13 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  post: CollectionEntry<'photography'>
+  post: CollectionEntry<'works'>
 }
 
 const { post } = Astro.props
 const { Content } = await post.render()
 
-const collection = 'photography'
+const collection = 'works'
 const bodyClass = collection
 const mainClass = post.data.title.toLowerCase()
 const pageTLDR = siteData.title

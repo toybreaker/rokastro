@@ -4,7 +4,7 @@ import Card from '@components/Card.astro'
 import { getCollection } from 'astro:content'
 
 const jobs = (
-  await getCollection('photography', ({ data }) => {
+  await getCollection('works', ({ data }) => {
     return data.draft !== true
   })
 ).sort((a, b) => b.data.year - a.data.year)
@@ -32,7 +32,7 @@ const pageTLDR =
   <div class="wide flex">
     {
       jobs.map((job) => (
-        <a href={`/photography/${job.slug}`}>
+        <a href={`/works/${job.slug}`}>
           <Card title={job.data.title} image={job.data.images[0]} />
         </a>
       ))
