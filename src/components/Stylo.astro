@@ -1,6 +1,5 @@
 ---
 import '@fontsource/dosis'
-import '@styles/rokma.scss'
 ---
 
 <style is:global lang="scss">
@@ -8,7 +7,11 @@ import '@styles/rokma.scss'
   /* Can be forced with data-theme="light" */
   [data-theme='light'],
   :root:not([data-theme='dark']) {
-    --primary-inverse2: #fff;
+    --primary: hsl(51, 100%, 50%);
+    --primary-hover: hsl(51, 100%, 46%);
+    --primary-focus: rgba(253, 216, 53, 0.125);
+    --primary_back: hsl(0, 0%, 93%);
+    --primary_front: hsl(0, 0%, 8%);
     --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
   }
 
@@ -16,16 +19,24 @@ import '@styles/rokma.scss'
   /* Automatically enabled if user has Dark mode enabled */
   @media only screen and (prefers-color-scheme: dark) {
     :root:not([data-theme]) {
-      --primary-inverse2: #000;
-      --soft_overlay_color: hsla(0, 0%, 0%, 0.25);
+      --primary: hsl(51, 100%, 50%);
+      --primary-hover: hsl(51, 100%, 46%);
+      --primary-focus: rgba(253, 216, 53, 0.125);
+      --primary_back: hsl(0, 0%, 93%);
+      --primary_front: hsl(0, 0%, 8%);
+      --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
     }
   }
 
   /* Light-blue Dark scheme (Forced) */
   /* Enabled if forced with data-theme="dark" */
   [data-theme='dark'] {
-    --primary-inverse2: #000;
-    --soft_overlay_color: hsla(0, 0%, 0%, 0.25);
+    --primary: hsl(51, 100%, 50%);
+    --primary-hover: hsl(51, 100%, 46%);
+    --primary-focus: rgba(253, 216, 53, 0.125);
+    --primary_back: hsl(0, 0%, 93%);
+    --primary_front: hsl(0, 0%, 8%);
+    --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
   }
 
   /* Light-blue (Common styles) */
@@ -35,6 +46,8 @@ import '@styles/rokma.scss'
     --form-element-focus-color: var(--primary-focus);
     --switch-color: var(--primary-inverse);
     --switch-checked-background-color: var(--primary);
+
+    //rok
     --blockquote-border-color: var(--primary) !important;
     --bodyfontweight: 300;
     --space: 2rem;
@@ -44,7 +57,6 @@ import '@styles/rokma.scss'
     --icon_size: 40px; //all svg icons are square
     --nav-element-spacing-vertical: 0.25rem;
     --nav-element-spacing-horizontal: 0.25rem;
-    //rok
     --font-family: 'Dosis' !important;
     --paragraph_width: 60ch;
     --form-element-spacing-vertical: 0.5rem;
@@ -169,8 +181,7 @@ import '@styles/rokma.scss'
   .botpad,
   .bottompad,
   .pad_bot,
-  .padbot,
-  img {
+  .padbot {
     padding-bottom: var(--space);
   }
   .uppercased,
@@ -427,44 +438,15 @@ import '@styles/rokma.scss'
     color: var(--primary);
   }
 
-  #yoga,
-  #live-music,
-  #social-activities,
-  #snorkeling-and-diving,
-  #relax-and-comfort,
-  #volcano-trekking-tour,
-  #camping,
-  #bar,
-  #bars,
-  #top-bar,
-  #pool-bar,
-  #events-area,
-  #restaurant,
-  #restaurants,
-  #training,
-  #co-working-area,
-  #board-storage,
-  #massage-service,
-  #surfskate,
-  #book-with-half-board {
-    position: relative;
-
-    &:after {
-      content: 'COMING SOON';
-      color: var(--primary);
-      transform: rotateZ(-10deg);
-      font-size: 18px;
-      position: absolute;
-      left: calc(50% - 60px);
-      top: -1.25rem;
-    }
-  }
-
   body > footer,
   body > header,
   body > main {
     margin-left: auto;
     margin-right: auto;
     padding: calc(var(--block-spacing-vertical) / 2) 0;
+  }
+
+  strong {
+    font-weight: 800 !important;
   }
 </style>

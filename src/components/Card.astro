@@ -10,27 +10,54 @@ export interface Props {
 const { title, image, category } = Astro.props
 ---
 
-<div class="card_astro">
+<div class="card">
   <h2 class="title">
-    <span class="postshout">
-      {title.toLocaleUpperCase()}
-      <span class="post_type">{category}</span>
-    </span>
+    {title.toLocaleUpperCase()}
+    <small class="category">{category}</small>
   </h2>
 
   <Image height={550} src={image} alt={title} format="avif" quality="low" />
 </div>
 
 <style lang="scss">
-  .title {
-    padding: 1rem 0;
-    margin: 0;
+  .card {
     position: relative;
-    top: 5rem;
-    font-size: 1.25rem !important;
+    overflow: hidden;
+    background-color: white;
   }
 
-  .card_astro {
-    padding-bottom: calc(var(--spacing) * 3);
+  .title {
+    margin: 0;
+    position: absolute;
+    top: 5rem;
+    font-size: 1.25rem !important;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+  }
+  small {
+    display: block;
+  }
+  img {
+    filter: grayscale(100%);
+    transition: filter;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+
+  .card img {
+    will-change: transform, filter;
+    transform: scale(2.1);
+  }
+
+  .card:hover img {
+    opacity: 1;
+    filter: grayscale(0%);
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transform: scale(0.9) translateY(-30px);
   }
 </style>

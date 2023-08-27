@@ -33,89 +33,89 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
   pageTitle={pageTitle}
   pageTLDR={pageTLDR}
   ogImage="../og_home.jpg">
-  <main class={mainClass}>
-    <div class="wrap phrase1">
-      <div class="masthead">
-        <div class="container content">
-          <h1 class="masthead-title" data-sr="enter right move 4500px">
-            Rokma
-            <span class="tagline"
-              >Believes your customers should understand you.</span
-            >
-          </h1>
-        </div>
-      </div>
+  <div class="wrap section">
+    <div class="container">
+      <h1>
+        <strong>Rokma</strong> Believes your customers should understand you.
+      </h1>
     </div>
+  </div>
 
-    <div class="wrap all_works index">
-      <div class="container content">
-        <h1 class="masthead-title" data-sr="enter right move 2000px">
-          Rokma
-          <span class="tagline">Empowers Your Work.</span>
-        </h1>
-        {
-          sortedFP.map((post) => (
-            <a class="card_link" href={`/${post.data.category}/${post.slug}`}>
-              <Card
-                title={post.data.title}
-                image={post.data.images[0]}
-                category={post.data.category}
-              />
-            </a>
-          ))
-        }
-      </div>
+  <div class="wrap all_works section">
+    <div class="container">
+      <h1>
+        <strong>Rokma</strong> Empowers Your Work.
+      </h1>
     </div>
+    {
+      sortedFP.map((post) => (
+        <a class="card_link" href={`/${post.data.category}/${post.slug}`}>
+          <Card
+            title={post.data.title}
+            image={post.data.images[0]}
+            category={post.data.category}
+          />
+        </a>
+      ))
+    }
+  </div>
 
-    <div class="wrap phrase2">
-      <div class="container content">
-        <h1 class="masthead-title" data-sr="enter right move 2000px">
-          Rokma
-          <span class="tagline">Helps You Deliver Your Message.</span>
-        </h1>
-      </div>
+  <div class="wrap section">
+    <div class="container">
+      <h1>
+        <strong>Rokma</strong> Helps You Deliver Your Message.
+      </h1>
     </div>
+  </div>
 
-    <div class="wrap phrase3">
-      <div class="container content">
-        <h1 class="masthead-title" data-sr="enter left move 2000px">
-          Rokma
-          <span class="tagline">Makes Your Offer Recognizable.</span>
-        </h1>
-      </div>
+  <div class="wrap section">
+    <div class="container">
+      <h1>
+        <strong>Rokma</strong> Makes Your Offer Recognizable.
+      </h1>
     </div>
+  </div>
 
-    <div class="wrap last">
-      <div class="container content">
-        <h1 class="masthead-title" data-sr="enter right move 2000px">
-          <span class="tagline">
-            <a class="homepage_bottom_link" href="/photography/"
-              ><strong>Now...</strong><br />Let the light shine.</a
-            >
-          </span>
-        </h1>
-        <div
-          class="masthead-title small underline_on_hover"
-          data-sr="wait 2s, enter left move 2000px">
-          <a class="homepage_last_link" href="/about/"
-            >Know more about Rokma ></a
-          >
-        </div>
+  <div class="wrap section last">
+    <div class="container">
+      <h1>
+        <a class="bottom_link" href="/photography/">
+          <strong>Now...</strong><br />
+          Let the light shine.
+        </a>
+      </h1>
+
+      <div>
+        <a class="homepage_last_link" href="/about/">Know more about Rokma ></a>
       </div>
     </div>
-  </main>
+  </div>
 </Layout>
+
 <style lang="scss">
   .wrap {
     min-height: 100dvh;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: var(--primary);
-    background: linear-gradient(var(--primary-inverse2) 15%, var(--primary));
+    background: var(--primary_back); // fallback
+    background: linear-gradient(var(--primary_back) 5%, var(--primary));
     background-blend-mode: normal;
+    a {
+      color: var(--primary_front);
+    }
   }
   .all_works {
     padding-top: 5rem;
+    padding-bottom: 0 !important;
+  }
+  .card_link,
+  .card {
+    padding-bottom: 0 !important;
+  }
+
+  a {
+    text-decoration: none;
   }
 </style>
