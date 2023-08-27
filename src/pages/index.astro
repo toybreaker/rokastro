@@ -13,70 +13,73 @@ const sortedFP = featuredPosts.sort(
 )
 
 export interface Props {
-  title: string
-  year: number
+  pageTitle: string
   category: string
+  year: number
   ogImage?: string
   bodyClass: string
   mainClass: string
+  pageDesc: string
 }
 
 const bodyClass = 'home'
 const mainClass = 'no_padding'
 const pageTitle = 'empowers'
-const pageTLDR = 'Flexible Communication Design Service for small companies.'
+const pageDesc = 'Flexible Communication Design Service for small companies.'
 ---
 
 <Layout
+  pageTitle={pageTitle}
   bodyClass={bodyClass}
   mainClass={mainClass}
-  pageTitle={pageTitle}
-  pageTLDR={pageTLDR}
+  pageDesc={pageDesc}
   ogImage="../og_home.jpg">
-  <div class="wrap section">
+  <section class="intro">
     <div class="container">
       <h1>
         <strong>Rokma</strong> Believes your customers should understand you.
       </h1>
     </div>
-  </div>
+  </section>
 
-  <div class="wrap all_works section">
+  <section class="all_works">
     <div class="container">
       <h1>
         <strong>Rokma</strong> Empowers Your Work.
       </h1>
     </div>
-    {
-      sortedFP.map((post) => (
-        <a class="card_link" href={`/${post.data.category}/${post.slug}`}>
-          <Card
-            title={post.data.title}
-            image={post.data.images[0]}
-            category={post.data.category}
-          />
-        </a>
-      ))
-    }
-  </div>
+    <div class="posts">
+      {
+        sortedFP.map((post) => (
+          <a class="post" href={`/${post.data.category}/${post.slug}`}>
+            <Card
+              title={post.data.title}
+              category={post.data.category}
+              image={post.data.images[0]}
+            />
+          </a>
+        ))
+      }
+    </div>
+  </section>
 
-  <div class="wrap section">
+  <section>
     <div class="container">
       <h1>
         <strong>Rokma</strong> Helps You Deliver Your Message.
       </h1>
     </div>
-  </div>
+  </section>
 
-  <div class="wrap section">
+  <section>
     <div class="container">
       <h1>
         <strong>Rokma</strong> Makes Your Offer Recognizable.
       </h1>
     </div>
-  </div>
+  </section>
 
-  <div class="wrap section last">
+  <section class="last">
     <div class="container">
       <h1>
         <a class="bottom_link" href="/photography/">
@@ -85,15 +88,14 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
         </a>
       </h1>
 
-      <div>
-        <a class="homepage_last_link" href="/about/">Know more about Rokma ></a>
-      </div>
+      <a class="homepage_last_link" href="/about/">Know more about Rokma ></a>
     </div>
-  </div>
+  </section>
 </Layout>
 
 <style lang="scss">
-  .wrap {
+  section {
+    margin-bottom: 0 !important;
     min-height: 100dvh;
     display: flex;
     flex-wrap: wrap;
@@ -104,18 +106,22 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
     background-blend-mode: normal;
     a {
       color: var(--primary_front);
+      text-decoration: none;
     }
   }
   .all_works {
     padding-top: 5rem;
     padding-bottom: 0 !important;
   }
-  .card_link,
-  .card {
-    padding-bottom: 0 !important;
+  .posts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
-
-  a {
+  .post {
+    //a
     text-decoration: none;
+    position: relative;
+    z-index: 1;
   }
 </style>

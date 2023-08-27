@@ -11,29 +11,21 @@ const { title, image, category } = Astro.props
 ---
 
 <div class="card">
-  <h2 class="title">
-    {title.toLocaleUpperCase()}
-    <small class="category">{category}</small>
+  <h2>
+    <div class="post_title">
+      {title.toLocaleUpperCase()}
+      <small class="category">{category}</small>
+    </div>
   </h2>
 
-  <Image height={550} src={image} alt={title} format="avif" quality="low" />
+  <Image width={640} src={image} alt={title} format="avif" quality="low" />
 </div>
 
 <style lang="scss">
   .card {
-    position: relative;
-    overflow: hidden;
-    background-color: white;
   }
 
-  .title {
-    margin: 0;
-    position: absolute;
-    top: 5rem;
-    font-size: 1.25rem !important;
-    text-align: center;
-    width: 100%;
-    z-index: 100;
+  h2 {
   }
   small {
     display: block;
@@ -45,19 +37,5 @@ const { title, image, category } = Astro.props
     &:hover {
       filter: grayscale(0%);
     }
-  }
-
-  .card img {
-    will-change: transform, filter;
-    transform: scale(2.1);
-  }
-
-  .card:hover img {
-    opacity: 1;
-    filter: grayscale(0%);
-    transition-property: transform;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transform: scale(0.9) translateY(-30px);
   }
 </style>

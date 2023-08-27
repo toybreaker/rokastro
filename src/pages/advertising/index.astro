@@ -16,35 +16,37 @@ const posts = unsortedPosts.sort(
 )
 
 export interface Props {
-  title: string
+  pageTitle: string
   year: number
   category: string
   ogImage?: string
   bodyClass: string
   mainClass: string
+  pageDesc: string
 }
 
 import siteData from '@data/site.json'
 const bodyClass = category
 const ogImage = '../assets/p/og_large_image.jpg'
 const mainClass = 'container'
+const pageDesc = ''
 ---
 
 <Layout
-  title={category.toUpperCase()}
-  description={siteData.description}
+  pageTitle={category.toUpperCase()}
+  pageDesc={pageDesc}
   bodyClass={bodyClass}
   mainClass={mainClass}
   ogImage={ogImage}>
-  <!-- <h2 class="h3 uppercased centered green">{category}</h2> -->
-  <div class="container grida">
+  <h2 class="h3 uppercased centered green">{category}</h2>
+  <div class="container posts">
     {
       posts.map((post) => (
-        <a class="card_link" href={`/${category}/${post.slug}`}>
+        <a class="post" href={`/${category}/${post.slug}`}>
           <Card
             title={post.data.title}
-            image={post.data.images[0]}
             category={post.data.category}
+            image={post.data.images[0]}
           />
         </a>
       ))
@@ -52,12 +54,12 @@ const mainClass = 'container'
   </div>
 </Layout>
 <style lang="scss">
-  .grida {
+  .posts {
     display: grid;
     grid-gap: 0.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  .card_link {
+  .post {
     text-decoration: none;
   }
 </style>

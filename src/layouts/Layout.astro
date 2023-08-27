@@ -14,13 +14,13 @@ export interface Props {
   ogImage?: string
   bodyClass: string
   mainClass: string
-  pageTLDR: string
+  pageDesc: string
 }
 
-const { bodyClass, mainClass, pageTitle, ogImage, pageTLDR } = Astro.props
+const { bodyClass, mainClass, pageTitle, ogImage, pageDesc } = Astro.props
 
 const makeTitle = siteData.title + ' ' + pageTitle
-const makeDescription = pageTLDR
+const makeDescription = siteData.title + ' ' + pageDesc
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 

@@ -23,11 +23,13 @@ const { post } = Astro.props
 const { Content } = await post.render()
 const bodyClass = category
 const cssClass = ''
+const pageDesc = ''
 ---
 
 <Layout
   {...post.data}
   pageTitle={post.data.title}
+  pageDesc={pageDesc}
   bodyClass={bodyClass}
   mainClass="container"
   ogImage={post.data.images[0].src}>
