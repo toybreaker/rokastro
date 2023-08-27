@@ -1,7 +1,7 @@
 ---
 slag: rocco
 title: Rocco Marosi
-category: web-design
+category: website
 year: 2015
 year2: 2023
 where: Singapore
@@ -10,6 +10,9 @@ images:
   - ./02.png
   - ./03.png
   - ./04.png
+tags:
+  - architecture
+  - website
 ---
 
 Architecture Photography portfolio for &lt;Rocco Marosi&gt; firm.

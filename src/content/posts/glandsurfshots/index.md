@@ -1,7 +1,7 @@
 ---
 slag: glandsurfshots
 title: G-land Surf Shots
-category: web-design
+category: website
 year: 2015
 where: Indonesia
 images:
@@ -9,6 +9,9 @@ images:
   - ./02.png #ipad
   - ./03.png #nexus6
   - ./04.png #android
+tags:
+  - website
+  - online-store
 ---
 
 E-commerce website for &lt;glandsurfshots&gt; photo archive.

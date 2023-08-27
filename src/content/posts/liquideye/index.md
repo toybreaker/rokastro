@@ -1,7 +1,7 @@
 ---
 slag: liquideye
 title: Liquid Eye housings
-category: web-design
+category: website
 year: 2017
 where: bali, indonesia
 quote: "&rdquo;We'd launched our new website with Junglestar, in early May 2017. In less than eight months we have doubled sales comparing to year 2016! Fantastic... &rdquo;"
@@ -13,6 +13,8 @@ images:
   - ./02.png
   - ./03.png
   - ./04.png
+tags:
+  - everything
 ---
 
 Water housing manufacture website.

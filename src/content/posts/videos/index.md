@@ -6,6 +6,12 @@ year: 1992
 backgroundColor: black
 images:
   - ./01.jpg
+tags:
+  - video
+  - filming
+  - promotion
+  - concept
+  - post-production
 ---
 
 Probably the first video on the Italian skate/snowboarding scene.

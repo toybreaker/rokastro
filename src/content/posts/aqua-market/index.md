@@ -13,6 +13,10 @@ images:
   - ./06.jpg
 fineartprints_link: true ## true or false
 fumes_category: art
+tags:
+  - personal-work
+  - black-and-white
+  - street-photography
 ---
 
 Part four of Aqua Serie. Unpublished.

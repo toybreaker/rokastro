@@ -1,0 +1,64 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content'
+import Layout from '@layouts/Layout.astro'
+
+const category = 'advertising'
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => {
+    return data.draft !== true && data.category == category
+  })
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post }
+  }))
+}
+
+interface Props {
+  post: CollectionEntry<'posts'>
+}
+
+const { post } = Astro.props
+const { Content } = await post.render()
+const bodyClass = category
+const cssClass = ''
+---
+
+<Layout
+  {...post.data}
+  pageTitle={post.data.title}
+  bodyClass={bodyClass}
+  mainClass="container"
+  ogImage={post.data.images[0].src}>
+  <ul class="tags">
+    {
+      post.data.tags.map((tag) => {
+        return (
+          <li>
+            <a class="" href={`/${tag}/`}>
+              {tag}
+            </a>
+          </li>
+        )
+      })
+    }
+  </ul>
+
+  <Content />
+</Layout>
+
+<style lang="scss">
+  .tags {
+    max-width: none !important;
+    li {
+      display: inline-block;
+      padding-right: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .post_content ul li {
+    list-style-type: none !important;
+  }
+</style>

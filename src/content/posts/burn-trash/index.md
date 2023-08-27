@@ -11,6 +11,12 @@ images:
   - ./03.jpg
   - ./04.jpg
   - ./05.jpg
+tags:
+  - black-and-white
+  - reportage
+  - sociology
+  - online
+  - magazine
 ---
 
 The pilot announced “We’re about to land in the beautiful island of Bali…”. My mind runs to the priming paradigm that this resort island has managed to spread internationally.

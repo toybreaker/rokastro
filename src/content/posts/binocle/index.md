@@ -1,7 +1,7 @@
 ---
 slag: binocle
 title: Binocle
-category: web-design
+category: website
 year: 2016
 year2: 2023
 where: EU
@@ -11,6 +11,9 @@ images:
   - ./02.png #ipad
   - ./03.png #nexus6
   - ./04.png #android
+tags:
+  - website
+  - architecture
 ---
 
 Website for &lt;Binocle&gt; architecture studio.

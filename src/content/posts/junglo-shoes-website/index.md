@@ -1,7 +1,7 @@
 ---
 slag: junglo-store
 title: Junglo Store
-category: web-design
+category: website
 grid_small_images: #true or empty
 year: 2020
 year2: 2021
@@ -17,6 +17,13 @@ images:
   - ./06.jpg
   - ./07.jpg
   - ./08.jpg
+tags:
+  - online-store
+  - website
+  - design
+  - shopify-theme-creation
+  - streetwear
+  - copywriting
 ---
 
 Online store creation.

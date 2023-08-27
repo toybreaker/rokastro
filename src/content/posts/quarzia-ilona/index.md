@@ -6,7 +6,7 @@ year: 2021
 where: Bali, Indonesia
 catch: personal work by
 offwhite: true # true or empty
-publish: # notyet will not publish
+featured: true
 images:
   - ./01.jpg
   - ./02.jpg
@@ -26,6 +26,11 @@ images:
   - ./16.jpg
   - ./17.jpg
 fineartprints_link: ## true or false
+tags:
+  - fashion
+  - studio-shooting
+  - catalog-shooting
+  - social-media-shooting
 ---
 
 Fashion shoot for [Quarzia](https://quarzia.it/). Images for catalog, social media, online-shop blog.

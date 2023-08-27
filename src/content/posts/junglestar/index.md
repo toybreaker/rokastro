@@ -1,7 +1,7 @@
 ---
 slag: junglestar
 title: Junglestar
-category: web-design
+category: website
 year: 2016
 year2: 2023
 where: eurasia
@@ -10,6 +10,9 @@ images:
   - ./02.png #ipad
   - ./03.png #nexus6
   - ./04.png #android
+tags:
+  - website
+  - agency
 ---
 
 Hub website for &lt;Junglestar&gt; design agency.

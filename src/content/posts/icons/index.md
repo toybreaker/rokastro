@@ -13,6 +13,8 @@ images:
   - ./07.svg
   - ./08.svg
   - ./09.svg
+tags:
+  - everything
 ---
 
 Rokma has release some Open Source icons.

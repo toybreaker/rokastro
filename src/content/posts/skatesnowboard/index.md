@@ -14,6 +14,11 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - magazine
+  - concept
+  - publishing
+  - art-direction
 ---
 
 Rokma invents and directs &lt;skatesnowboard&gt; for media publisher in Milano.

@@ -1,11 +1,14 @@
 ---
 slag: freezer
 title: Freezer Magazine
-category: web-design
+category: website
 year: 2015
 where: Italy
 images:
   - ./01.jpg
+tags:
+  - website
+  - magazine
 ---
 
 Online archive for free-press &lt;Freezer Magazine&gt;.

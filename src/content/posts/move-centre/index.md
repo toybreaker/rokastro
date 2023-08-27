@@ -1,5 +1,4 @@
 ---
-slag: move-centre
 title: Move Centre
 category: advertising
 grid_small_images: #true or empty
@@ -15,6 +14,12 @@ images:
   - ./07.jpg
   - ./08.jpg
   - ./09.jpg
+tags:
+  - brochure
+  - layout
+  - copywriting
+  - concept
+  - service-branding
 ---
 
 Booklet and website to present the &lt;Move Centre&gt; Project. Complete production. Concept, creation, art-direction and copyrighting.

@@ -1,7 +1,7 @@
 ---
 slag: wherenodoctor
 title: Where No doctor
-category: web-design
+category: website
 year: 2016
 where: global
 images:
@@ -9,6 +9,12 @@ images:
   - ./02.png #ipad
   - ./03.png #nexus6
   - ./04.png #android
+tags:
+  - open-source
+  - self-help
+  - online-book
+  - offline-ready
+  - non-profit
 ---
 
 Digital book that works in the browser. A web application that works also offline. Open source project based on open sourced bestseller &lt;Where There Is No Doctor&gt; by David Werner.

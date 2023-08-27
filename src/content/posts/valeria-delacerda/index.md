@@ -17,6 +17,11 @@ images: #for post page(responsive)
   - ./07.jpg
   - ./08.jpg
   - ./09.jpg
+tags:
+  - product-photography
+  - advertising
+  - fashion
+  - concept
 ---
 
 Advertising images for Valeria Delacerda brand.

@@ -23,6 +23,13 @@ images:
   - ./13.jpg
   - ./14.jpg
   - ./15.jpg
+tags:
+  - design
+  - art-direction
+  - concept
+  - printed
+  - magazine
+  - content
 ---
 
 Editorial strategy and branding for &lt;Freezer Magazine&gt; free press.

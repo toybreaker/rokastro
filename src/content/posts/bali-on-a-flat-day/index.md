@@ -19,6 +19,11 @@ images:
   - ./11.jpg
 fineartprints_link: true ## true or false
 fumes_category: art
+tags:
+  - printed
+  - magazine
+  - reportage
+  - black-and-white
 ---
 
 Published on Surfers magazine

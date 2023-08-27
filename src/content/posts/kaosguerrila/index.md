@@ -48,6 +48,8 @@ images:
   - ./35.jpg
   - ./36.jpg
   - ./50.jpg
+tags:
+  - everything
 ---
 
 Social marketing campaign for &lt;Kaos Guerrilla&gt; brand.

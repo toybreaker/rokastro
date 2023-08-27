@@ -3,9 +3,8 @@ import { z, defineCollection } from 'astro:content'
 const works = defineCollection({
   schema: ({ image }) =>
     z.object({
-      slag: z.string(),
       title: z.string(),
-      category: z.string().optional().nullable(),
+      category: z.string(),
       year: z.number(),
       year2: z.number().optional().nullable(),
       where: z.string().optional().nullable(),
@@ -18,6 +17,7 @@ const works = defineCollection({
       grid_small_images: z.boolean().optional().nullable().default(false),
       offwhite: z.boolean().optional().nullable().default(false),
       featured: z.boolean().optional().nullable(),
+      tags: z.array(z.string()),
       draft: z.boolean().optional().nullable()
     })
 })

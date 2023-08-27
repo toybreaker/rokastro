@@ -12,6 +12,10 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - resort
+  - service-branding
+  - location-photography
 ---
 
 Advertising images for &lt;Monsoon Resort&gt;

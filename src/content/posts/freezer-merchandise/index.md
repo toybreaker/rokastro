@@ -17,6 +17,12 @@ images:
   - ./07.jpg
   - ./08.jpg
   - ./09.jpg
+tags:
+  - merchandise
+  - art-direction
+  - concept
+  - fashion
+  - streetwear
 ---
 
 Merchandise items for &lt;Freezer Magazine&gt;.

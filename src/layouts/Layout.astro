@@ -58,8 +58,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
   <slot name="head" />
 
-  <body>
-    <slot />
+  <body class={bodyClass}>
+    <main class={mainClass}>
+      <slot />
+    </main>
     <Stylo />
     <SidebarToggle />
     <AppendToCopyAction />

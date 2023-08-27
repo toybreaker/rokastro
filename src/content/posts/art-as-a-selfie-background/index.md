@@ -16,6 +16,12 @@ images:
   - ./08.jpg
   - ./09.jpg
   - ./10.jpg
+tags:
+  - magazine
+  - online
+  - reportage
+  - street-photography
+  - sociology
 ---
 
 A reflection on the meaning and practical significance of art pieces in Bali, Indonesia. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/photo-journalism/art-is-a-selfie-background/).

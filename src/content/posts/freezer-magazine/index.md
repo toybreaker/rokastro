@@ -17,6 +17,13 @@ images:
   - ./09.jpg
   - ./10.jpg
   - ./11.jpg
+tags:
+  - design
+  - art-direction
+  - concept
+  - printed
+  - magazine
+  - content
 ---
 
 Advertising campaign for &lt;Freezer Magazine&gt; firm.

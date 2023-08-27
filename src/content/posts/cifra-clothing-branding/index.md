@@ -22,6 +22,13 @@ images:
   - ./13.jpg
   - ./14.jpg
   - ./15.jpg
+tags:
+  - art-direction
+  - photography
+  - post-production
+  - concept
+  - printed
+  - catalog
 ---
 
 Complete brand image for &lt;Cifra Clothing&gt; firm.

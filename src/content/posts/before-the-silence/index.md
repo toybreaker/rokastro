@@ -16,6 +16,11 @@ images:
   - ./12.jpg
   - ./14.jpg
   - ./16.jpg
+tags:
+  - online
+  - magazine
+  - reportage
+  - street-photography
 ---
 
 Shot during the Ogoh-ogoh parade,

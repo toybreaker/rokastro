@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -26,7 +26,7 @@
     "astro-robots-txt": "^0.4.1",
     "autoprefixer": "^10.4.15",
     "cssnano": "^6.0.1",
-    "eslint": "^8.47.0",
+    "eslint": "^8.48.0",
     "eslint-plugin-astro": "^0.27.2",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "mdast-util-to-string": "^3.2.0",

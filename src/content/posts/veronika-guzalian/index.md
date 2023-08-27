@@ -13,6 +13,11 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - fashion
+  - location-shooting
+  - catalog-shooting
+  - social-media-shooting
 ---
 
 Fashion catalog shoot.

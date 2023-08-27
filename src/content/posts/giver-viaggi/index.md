@@ -1,12 +1,14 @@
 ---
 slag: giver-viaggi
 title: Giver Viaggi
-category: web-design
+category: website
 year: 2009
 year2: 2014
 where: Italy
 images:
   - ./01.jpg
+tags:
+  - website
 ---
 
 Catalog website for &lt;Giver Viaggi&gt; firm.

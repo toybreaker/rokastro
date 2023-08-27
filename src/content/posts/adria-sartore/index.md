@@ -1,7 +1,7 @@
 ---
 slag: adria-sartore
 title: Adria Sartore
-category: web-design
+category: website
 year: 2019
 year2: 2023
 where: genova, italy
@@ -11,6 +11,10 @@ images:
   - ./02.png
   - ./03.png
   - ./04.png
+tags:
+  - portfolio
+  - website
+  - artist
 ---
 
 Artist portfolio.

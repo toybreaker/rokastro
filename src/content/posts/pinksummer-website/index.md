@@ -1,11 +1,14 @@
 ---
 slag: pinksummer
 title: Pinksummer
-category: web-design
+category: website
 year: 2015
 where: Genova, Italy
 images:
   - ./01.jpg
+tags:
+  - website
+  - art-gallery
 ---
 
 Website for &lt;Pinksummer&gt; contemporary art gallery. Online presence.

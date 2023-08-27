@@ -17,6 +17,11 @@ images:
   - ./09.jpg
 fineartprints_link: true ## true or false
 fumes_category: art
+tags:
+  - personal-work
+  - fashion
+  - beauty
+  - concept
 ---
 
 Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/skin-works/).

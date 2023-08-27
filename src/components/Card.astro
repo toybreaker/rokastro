@@ -3,39 +3,31 @@ import { Image } from 'astro:assets'
 
 export interface Props {
   title: string
-  category?: string | undefined
+  category: string
   image: any
 }
 
-const { title, image } = Astro.props
+const { title, image, category } = Astro.props
 ---
 
 <div class="card_astro">
-  <Image height={550} src={image[0]} alt={title} format="avif" quality="low" />
-
-  <div class="text">
-    <h2>
+  <h2 class="title">
+    <span class="postshout">
       {title.toLocaleUpperCase()}
-    </h2>
-  </div>
+      <span class="post_type">{category}</span>
+    </span>
+  </h2>
+
+  <Image height={550} src={image} alt={title} format="avif" quality="low" />
 </div>
 
 <style lang="scss">
-  .metas,
-  .desc,
-  .subtitle {
-    padding-top: 0.5rem;
-    color: var(--contrast);
-  }
-
   .title {
-    font-size: calc(3vw + 3vh) !important;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 0;
-  }
-  span {
-    display: block;
+    padding: 1rem 0;
+    margin: 0;
+    position: relative;
+    top: 5rem;
+    font-size: 1.25rem !important;
   }
 
   .card_astro {

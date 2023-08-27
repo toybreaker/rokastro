@@ -7,6 +7,7 @@ year: 2020
 where: Genova, Italy
 catch: personal work by
 offwhite: true # true or empty
+featured: true
 images: # this can have captions (see valeria branding)
   - ./01.jpg
   - ./02.jpg
@@ -25,6 +26,12 @@ images: # this can have captions (see valeria branding)
   - ./16.jpg
   - ./17.jpg
   - ./09.jpg
+tags:
+  - branding
+  - product-branding
+  - copywriting
+  - packaging
+  - product
 ---
 
 Brand creation.

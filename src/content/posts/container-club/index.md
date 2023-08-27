@@ -13,6 +13,11 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - concept
+  - logo
+  - service-branding
+  - design
 ---
 
 Laser-cut Logo, sign, stickers campaign for &lt;Container Club&gt;

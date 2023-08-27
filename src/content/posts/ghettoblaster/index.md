@@ -9,6 +9,10 @@ catch: personal work by
 offwhite: true # true or empty
 images:
   - ./01.jpg
+tags:
+  - skateboards
+  - art-direction
+  - design
 ---
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.

@@ -13,6 +13,11 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - art-direction
+  - concept
+  - fashion-branding
+  - photography
 ---
 
 Catalog for Diesel's &lt;55DSL&gt;.

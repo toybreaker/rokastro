@@ -1,11 +1,13 @@
 ---
 slag: landi-designs
 title: Landi Designs
-category: web-design
+category: website
 year: 2015
 where: bali, indonesia
 images:
   - ./01.jpg
+tags:
+  - everything
 ---
 
 Portfolio website for &lt;Landi Designs&gt; architecture firm.

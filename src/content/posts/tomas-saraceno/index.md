@@ -13,6 +13,11 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - contemporary-art
+  - gallery-commissioned
+  - artist
+  - installation
 ---
 
 Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.

@@ -12,6 +12,9 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - exhibit
+  - photography
 ---
 
 Rok exhibited at &lt;Florblanca&gt; resort.<br>Costa Rica.

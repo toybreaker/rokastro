@@ -22,6 +22,14 @@ images:
   - ./13.jpg
   - ./14.jpg
   - ./15.jpg
+tags:
+  - campaign
+  - printed
+  - magazine
+  - art-direction
+  - photography
+  - post-production
+  - concept
 ---
 
 Advertising campaign for &lt;Cifra Clothing&gt; firm.

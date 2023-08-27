@@ -20,6 +20,12 @@ images:
   - ./11.jpg
   - ./12.jpg
   - ./13.jpg
+tags:
+  - personal-work
+  - street-photography
+  - ethnic
+  - event
+  - black-and-white
 ---
 
 An head full of flowers carefully prepared in the shape of an headdress. Once a year the young girls of the village carry it for a whole afternoon performing a slow dance.

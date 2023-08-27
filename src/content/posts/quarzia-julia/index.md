@@ -16,6 +16,11 @@ images:
   - ./07.jpg
   - ./08.jpg
 fineartprints_link: ## true or false
+tags:
+  - fashion
+  - studio-shooting
+  - catalog-shooting
+  - social-media-shooting
 ---
 
 Fashion shoot for [Quarzia](https://quarzia.it/).

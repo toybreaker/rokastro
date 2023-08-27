@@ -12,6 +12,12 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - personal-work
+  - concept
+  - post-production
+  - art-direction
+  - street-photography
 ---
 
 Full color impact, speed, city, night-life, gathering, people, drama, togetherness. **The kind of slick images you want to have printed** full wall in your studio entrance or lounge bar. Personal work.

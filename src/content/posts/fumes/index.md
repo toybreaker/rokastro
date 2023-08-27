@@ -1,7 +1,7 @@
 ---
 slag: fumes
 title: Fumes Magazine
-category: web-design
+category: website
 year: 2017
 year2: 2023
 where: bali, indonesia
@@ -10,6 +10,14 @@ images:
   - ./02.png
   - ./03.png
   - ./04.png
+tags:
+  - online
+  - magazine
+  - concept
+  - website
+  - reportage
+  - photography
+  - non-profit
 ---
 
 Photography based online magazine.

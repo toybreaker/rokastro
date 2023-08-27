@@ -12,6 +12,8 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - everything
 ---
 
 Advertising images for &lt;Mario Silver&gt;

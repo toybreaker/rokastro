@@ -10,6 +10,10 @@ backgroundColor: gray2
 images:
   - ./01.jpg
   - ./02.jpg
+tags:
+  - design
+  - concept
+  - architecture
 ---
 
 Back in 1989 Rok designs, consults and supervises the creation of a public skatepark.

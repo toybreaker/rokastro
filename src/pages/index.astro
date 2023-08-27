@@ -1,10 +1,25 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import { getCollection } from 'astro:content'
+import Card from '@components/Card.astro'
 
 const featuredPosts = await getCollection('posts', ({ data }) => {
   return data.draft !== true && data.featured
 })
+
+const sortedFP = featuredPosts.sort(
+  (a, b) =>
+    Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
+)
+
+export interface Props {
+  title: string
+  year: number
+  category: string
+  ogImage?: string
+  bodyClass: string
+  mainClass: string
+}
 
 const bodyClass = 'home'
 const mainClass = 'no_padding'
@@ -21,7 +36,7 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
   <main class={mainClass}>
     <div class="wrap phrase1">
       <div class="masthead">
-        <div class="container">
+        <div class="container content">
           <h1 class="masthead-title" data-sr="enter right move 4500px">
             Rokma
             <span class="tagline"
@@ -33,7 +48,23 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
     </div>
 
     <div class="wrap all_works index">
-      <div class="container content">latest works</div>
+      <div class="container content">
+        <h1 class="masthead-title" data-sr="enter right move 2000px">
+          Rokma
+          <span class="tagline">Empowers Your Work.</span>
+        </h1>
+        {
+          sortedFP.map((post) => (
+            <a class="card_link" href={`/${post.data.category}/${post.slug}`}>
+              <Card
+                title={post.data.title}
+                image={post.data.images[0]}
+                category={post.data.category}
+              />
+            </a>
+          ))
+        }
+      </div>
     </div>
 
     <div class="wrap phrase2">
@@ -76,12 +107,15 @@ const pageTLDR = 'Flexible Communication Design Service for small companies.'
 </Layout>
 <style lang="scss">
   .wrap {
-    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
     background: var(--primary);
     background: linear-gradient(var(--primary-inverse2) 15%, var(--primary));
     background-blend-mode: normal;
+  }
+  .all_works {
+    padding-top: 5rem;
   }
 </style>

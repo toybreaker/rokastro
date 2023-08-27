@@ -1,7 +1,7 @@
 ---
 slag: magicgreen
 title: Magic Green
-category: web-design
+category: website
 year: 2018
 year2: 2023
 where: bali, indonesia
@@ -10,6 +10,8 @@ images:
   - ./02.png
   - ./03.png
   - ./04.png
+tags:
+  - everything
 ---
 
 Non profit magazine.

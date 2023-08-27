@@ -18,6 +18,11 @@ images:
   - ./09.jpg
   - ./10.jpg
   - ./11.jpg
+tags:
+  - product-branding
+  - advertising
+  - printed
+  - magazine
 ---
 
 Advertising images and campaigns for &lt;..Assorted.. &gt; clients.

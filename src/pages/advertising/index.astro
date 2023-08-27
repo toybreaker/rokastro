@@ -1,0 +1,63 @@
+---
+import Layout from '@layouts/Layout.astro'
+import { getCollection } from 'astro:content'
+import Card from '@components/Card.astro'
+
+const category = 'advertising'
+
+const unsortedPosts = await getCollection('posts', ({ data }) => {
+  return data.draft !== true && data.category == category
+})
+
+const posts = unsortedPosts.sort(
+  (a, b) =>
+    Date.parse(b.data.year.toLocaleString()) -
+    Date.parse(a.data.year.toLocaleString())
+)
+
+export interface Props {
+  title: string
+  year: number
+  category: string
+  ogImage?: string
+  bodyClass: string
+  mainClass: string
+}
+
+import siteData from '@data/site.json'
+const bodyClass = category
+const ogImage = '../assets/p/og_large_image.jpg'
+const mainClass = 'container'
+---
+
+<Layout
+  title={category.toUpperCase()}
+  description={siteData.description}
+  bodyClass={bodyClass}
+  mainClass={mainClass}
+  ogImage={ogImage}>
+  <!-- <h2 class="h3 uppercased centered green">{category}</h2> -->
+  <div class="container grida">
+    {
+      posts.map((post) => (
+        <a class="card_link" href={`/${category}/${post.slug}`}>
+          <Card
+            title={post.data.title}
+            image={post.data.images[0]}
+            category={post.data.category}
+          />
+        </a>
+      ))
+    }
+  </div>
+</Layout>
+<style lang="scss">
+  .grida {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card_link {
+    text-decoration: none;
+  }
+</style>

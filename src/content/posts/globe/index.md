@@ -1,7 +1,7 @@
 ---
 slag: globe
 title: Globe Store
-category: web-design
+category: website
 year: 2020
 year2: 2021
 where: bali, indonesia
@@ -10,6 +10,13 @@ images:
   - ./02.png
   - ./03.png
   - ./04.png
+tags:
+  - online-store
+  - website
+  - design
+  - shopify-theme-creation
+  - street-wear
+  - copywriting
 ---
 
 Online store with blog, search and WhatsApp direct message feature.

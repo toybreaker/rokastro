@@ -13,6 +13,10 @@ images:
   - ./04.jpg
   - ./05.jpg
   - ./06.jpg
+tags:
+  - art-gallery
+  - art-photography
+  - artist
 ---
 
 Artist exhibition photos for &lt;Pinksummer&gt; contemporary art gallery.

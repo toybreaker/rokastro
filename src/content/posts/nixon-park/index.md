@@ -23,6 +23,10 @@ images:
   - ./13.jpg
 fineartprints_link: true ## true or false
 fumes_category: photo-journalism
+tags:
+  - street-photography
+  - skateboarding
+  - black-and-white
 ---
 
 Nixon park is a free, public skatepark in the capital Auckland. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).
