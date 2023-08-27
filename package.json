@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -15,6 +15,7 @@
     "@astrojs/mdx": "^0.15.2",
     "@astrojs/partytown": "^1.2.3",
     "@astrojs/rss": "^2.4.4",
+    "@fontsource/dosis": "^5.0.8",
     "@rollup/plugin-yaml": "^4.1.1",
     "@sindresorhus/slugify": "^2.2.1",
     "@types/node": "^20.5.6",
