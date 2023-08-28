@@ -24,8 +24,8 @@ dependencies:
     specifier: ^2.2.1
     version: 2.2.1
   '@types/node':
-    specifier: ^20.5.6
-    version: 20.5.6
+    specifier: ^20.5.7
+    version: 20.5.7
   '@types/scrollreveal':
     specifier: ^0.0.8
     version: 0.0.8
@@ -34,7 +34,7 @@ dependencies:
     version: 5.62.0(eslint@8.48.0)(typescript@5.2.2)
   astro:
     specifier: ^2.10.14
-    version: 2.10.14(@types/node@20.5.6)(sass@1.66.1)(sharp@0.32.5)
+    version: 2.10.14(@types/node@20.5.7)(sass@1.66.1)(sharp@0.32.5)
   astro-auto-import:
     specifier: ^0.3.1
     version: 0.3.1(astro@2.10.14)
@@ -132,7 +132,7 @@ packages:
       astro: ^2.5.0
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.10.14(@types/node@20.5.6)(sass@1.66.1)(sharp@0.32.5)
+      astro: 2.10.14(@types/node@20.5.7)(sass@1.66.1)(sharp@0.32.5)
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -1201,12 +1201,12 @@ packages:
       '@types/unist': 2.0.7
     dev: false
 
-  /@types/node@18.17.11:
-    resolution: {integrity: sha512-r3hjHPBu+3LzbGBa8DHnr/KAeTEEOrahkcL+cZc4MaBMTM+mk8LtXR+zw+nqfjuDZZzYTYgTcpHuP+BEQk069g==}
+  /@types/node@18.17.12:
+    resolution: {integrity: sha512-d6xjC9fJ/nSnfDeU0AMDsaJyb1iHsqCSOdi84w4u+SlN/UgQdY5tRhpMzaFYsI4mnpvgTivEaQd0yOUhAtOnEQ==}
     dev: false
 
-  /@types/node@20.5.6:
-    resolution: {integrity: sha512-Gi5wRGPbbyOTX+4Y2iULQ27oUPrefaB0PxGQJnfyWN3kvEDGM3mIB5M/gQLmitZf7A9FmLeaqxD3L1CXpm3VKQ==}
+  /@types/node@20.5.7:
+    resolution: {integrity: sha512-dP7f3LdZIysZnmvP3ANJYTSwg+wLLl8p7RqniVlV7j+oXSXAbt9h0WIBFmJy5inWZoX9wZN6eXx+YXd9Rh3RBA==}
     dev: false
 
   /@types/parse5@6.0.3:
@@ -1465,9 +1465,9 @@ packages:
     peerDependencies:
       astro: ^2.0.0 || ^3.0.0-beta
     dependencies:
-      '@types/node': 18.17.11
+      '@types/node': 18.17.12
       acorn: 8.10.0
-      astro: 2.10.14(@types/node@20.5.6)(sass@1.66.1)(sharp@0.32.5)
+      astro: 2.10.14(@types/node@20.5.7)(sass@1.66.1)(sharp@0.32.5)
     dev: false
 
   /astro-eslint-parser@0.14.0:
@@ -1504,7 +1504,7 @@ packages:
       zod: 3.22.2
     dev: false
 
-  /astro@2.10.14(@types/node@20.5.6)(sass@1.66.1)(sharp@0.32.5):
+  /astro@2.10.14(@types/node@20.5.7)(sass@1.66.1)(sharp@0.32.5):
     resolution: {integrity: sha512-02k2DjnI8yGtLCvdCSggvfCTkTWPm9UDgc/XHKdd1K34TSTl3X0A8TTYbASEXvgynk1zInCyOEe3IUDt3Lke+A==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
@@ -1568,7 +1568,7 @@ packages:
       typescript: 5.2.2
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.9(@types/node@20.5.6)(sass@1.66.1)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.66.1)
       vitefu: 0.2.4(vite@4.4.9)
       which-pm: 2.0.0
       yargs-parser: 21.1.1
@@ -6172,7 +6172,7 @@ packages:
       vfile-message: 3.1.4
     dev: false
 
-  /vite@4.4.9(@types/node@20.5.6)(sass@1.66.1):
+  /vite@4.4.9(@types/node@20.5.7)(sass@1.66.1):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6200,7 +6200,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.5.6
+      '@types/node': 20.5.7
       esbuild: 0.18.20
       postcss: 8.4.28
       rollup: 3.28.1
@@ -6217,7 +6217,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.4.9(@types/node@20.5.6)(sass@1.66.1)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.66.1)
     dev: false
 
   /vscode-css-languageservice@6.2.6:

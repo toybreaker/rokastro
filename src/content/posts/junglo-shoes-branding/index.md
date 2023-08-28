@@ -1,6 +1,5 @@
 ---
-slag: Junglo
-title: Junglo
+title: Junglo shoes
 category: branding
 grid_small_images: #true or empty
 year: 2020
@@ -9,8 +8,8 @@ catch: personal work by
 offwhite: true # true or empty
 featured: true
 images: # this can have captions (see valeria branding)
+  - ./14.jpg
   - ./01.jpg
-  - ./02.jpg
   - ./07.jpg
   - ./03.jpg
   - ./14.jpg

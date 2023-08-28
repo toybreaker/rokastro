@@ -111,12 +111,15 @@ const pageDesc = 'Flexible Communication Design Service for small companies.'
   }
   .all_works {
     padding-top: 5rem;
-    padding-bottom: 0 !important;
+    padding-bottom: var(--spacing);
   }
   .posts {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+    @media (min-width: 701px) {
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
   }
   .post {
     //a

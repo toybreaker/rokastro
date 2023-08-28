@@ -1,6 +1,5 @@
 ---
-slag: casa-asia
-title: Casa Asia Restaurants
+title: Casa Asia
 category: website
 grid_small_images: #true or empty
 year: 2021
