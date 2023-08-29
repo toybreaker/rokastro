@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
 import * as siteData from '@data/site.json'
 
-const category = 'web-design'
+const category = 'advertising'
 
 const unsortedPosts = await getCollection('posts', ({ data }) => {
   return data.draft !== true && data.category == category
@@ -27,7 +27,7 @@ export interface Props {
 
 const mainClass = 'container'
 const bodyClass = category
-const pageDesc = siteData.description_web
+const pageDesc = siteData.description_advertising
 ---
 
 <Layout
@@ -37,7 +37,7 @@ const pageDesc = siteData.description_web
   category={category}
   pageDesc={pageDesc}
   ogImage="../og_webdesign.jpg">
-  <p slot="header" class="center">Recent Digital Product Design works</p>
+  <p slot="header" class="center">Significative Advertising works</p>
   <div class="posts">
     {
       posts.map((post) => (

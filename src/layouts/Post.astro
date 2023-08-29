@@ -1,10 +1,9 @@
 ---
 import Layout from '@layouts/Layout.astro'
-
 import * as siteData from '@data/site.json'
-// import * as repoData from 'package.json'
+import Slide from '@components/Slide.astro'
 
-const { title, category, images } = Astro.props.frontmatter || Astro.props
+const { title, category, images, tags } = Astro.props.frontmatter || Astro.props
 
 const pageDesc = siteData.description_web
 ---
@@ -14,8 +13,60 @@ const pageDesc = siteData.description_web
   pageDesc={pageDesc}
   mainClass="container"
   bodyClass={category}
-  ogImage={images[0].src}>
+  ogImage={images[0]}>
   <!-- <slot name="header" /> -->
-  <slot />
-  <!-- <slot name="images" /> -->
+
+  <span slot="header" class="section_name uppercase">
+    <a class="post" href="/">{siteData.title}</a>
+    <a class="post" href={`/${category}/`}>{category}</a>
+  </span>
+
+  <h1 slot="header">{title}</h1>
+
+  <div slot="images" class="images">
+    {
+      images.map((i) => {
+        return <Slide p={i} alt="g" quality="mid" cssClass="slide" />
+      })
+    }
+  </div>
+
+  <div class="content">
+    <ul class="tags">
+      {
+        tags.map((tag) => {
+          return (
+            <li>
+              <a class="" href={`/${tag}/`}>
+                {tag}
+              </a>
+            </li>
+          )
+        })
+      }
+    </ul>
+    <slot />
+  </div>
+
+  <p slot="footer">SEE MORE</p>
 </Layout>
+<style lang="scss">
+  .tags {
+    max-width: none !important;
+    li {
+      display: inline-block;
+      padding-right: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .post_content ul li {
+    list-style-type: none !important;
+  }
+
+  :global(.slide) {
+    //global otherwise doesnt work!
+    margin: 1rem 0;
+    border-radius: var(--radius);
+  }
+</style>

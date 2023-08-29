@@ -5,9 +5,17 @@ export interface Props {
   p: any
   alt: any
   quality: string | 'low' //low, mid, high, max
+  cssClass: string
 }
 
-const { p, alt, quality } = Astro.props
+const { p, alt, quality, cssClass } = Astro.props
 ---
 
-<Image src={p} width={1920} alt={alt} quality={quality} format="avif" />
+<Image
+  class={cssClass}
+  src={p}
+  width={1920}
+  alt={alt}
+  quality={quality}
+  format="avif"
+/>

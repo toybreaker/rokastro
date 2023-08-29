@@ -1,0 +1,37 @@
+---
+import Layout from '@layouts/Layout.astro'
+import * as siteData from '@data/site.json'
+import Card from '@components/Card.astro'
+
+export interface Props {
+  pageTitle: string
+  category: string
+  ogImage?: string
+  bodyClass: string
+  mainClass: string
+  pageDesc: string
+}
+
+const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
+  Astro.props
+---
+
+<Layout
+  pageTitle={pageTitle}
+  pageDesc={pageDesc}
+  bodyClass={bodyClass}
+  mainClass={mainClass}
+  ogImage={ogImage}>
+  <h1 slot="header">
+    <a class="post" href="/">{siteData.title}</a>
+    <span>{category}</span>
+  </h1>
+  <slot name="header" slot="header" />
+
+  <div class="content">
+    <slot />
+  </div>
+
+  <blockquote slot="footer">{pageDesc}</blockquote>
+</Layout>
+<style lang="scss"></style>
