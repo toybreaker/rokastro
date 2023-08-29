@@ -8,7 +8,7 @@ images:
   - ./01.jpg
 tags:
   - service-branding
-  - website
+  - custom-websites
 ---
 
 Presentational website for &lt;Disfrutalo&gt; firm.

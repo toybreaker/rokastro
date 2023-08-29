@@ -21,6 +21,7 @@ tags:
   - magazine
   - reportage
   - street-photography
+  - event
 ---
 
 Shot during the Ogoh-ogoh parade,

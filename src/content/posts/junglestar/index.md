@@ -12,8 +12,12 @@ images:
   - ./03.png #nexus6
   - ./04.png #android
 tags:
-  - website
+  - custom-websites
   - agency
+  - logo
+  - design
+  - concept
+  - copyrighting
 ---
 
 Hub website for &lt;Junglestar&gt; design agency.

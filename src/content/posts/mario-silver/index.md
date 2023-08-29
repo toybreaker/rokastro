@@ -13,7 +13,9 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - everything
+  - advertising-photography
+  - beauty
+  - black-and-white
 ---
 
 Advertising images for &lt;Mario Silver&gt;

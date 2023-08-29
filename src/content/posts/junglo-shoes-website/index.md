@@ -19,7 +19,7 @@ images:
   - ./08.jpg
 tags:
   - online-store
-  - website
+  - custom-websites
   - design
   - shopify-theme-creation
   - streetwear

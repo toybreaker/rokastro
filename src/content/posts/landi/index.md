@@ -7,7 +7,9 @@ where: bali, indonesia
 images:
   - ./01.jpg
 tags:
-  - everything
+  - custom-websites
+  - portfolio
+  - architecture
 ---
 
 Portfolio website for &lt;Landi Designs&gt; architecture firm.

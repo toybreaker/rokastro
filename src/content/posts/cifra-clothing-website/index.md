@@ -8,7 +8,8 @@ where: italy
 images:
   - ./01.jpg
 tags:
-  - everything
+  - custom-websites
+  - design
 ---
 
 Catalog website for &lt;Cifra Clothing&gt; brand.

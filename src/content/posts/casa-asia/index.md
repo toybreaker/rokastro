@@ -16,7 +16,7 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - website
+  - custom-websites
   - photo-menu
   - editing-system
   - internet-presence-management

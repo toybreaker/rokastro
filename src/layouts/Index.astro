@@ -5,7 +5,7 @@ import Card from '@components/Card.astro'
 
 export interface Props {
   pageTitle: string
-  category: string
+  category?: string | undefined
   ogImage?: string
   bodyClass: string
   mainClass: string
@@ -24,7 +24,7 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   ogImage={ogImage}>
   <h1 slot="header">
     <a class="post" href="/">{siteData.title}</a>
-    <span>{category}</span>
+    <div>{category}</div>
   </h1>
   <slot name="header" slot="header" />
 
@@ -34,4 +34,11 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
 
   <blockquote slot="footer">{pageDesc}</blockquote>
 </Layout>
-<style lang="scss"></style>
+<style lang="scss">
+  h1 {
+    text-align: center;
+    @media (min-width: 576px) {
+      text-align: left;
+    }
+  }
+</style>

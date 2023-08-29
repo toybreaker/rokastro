@@ -10,7 +10,8 @@ images:
   - ./03.png #nexus6
   - ./04.png #android
 tags:
-  - website
+  - design
+  - custom-websites
   - online-store
 ---
 

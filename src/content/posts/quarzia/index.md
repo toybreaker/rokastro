@@ -18,11 +18,12 @@ images:
   - ./06.jpg
 tags:
   - online-store
-  - website
+  - custom-websites
   - design
   - shopify-theme-creation
   - fashion
   - copywriting
+  - content-creation
 ---
 
 Online store with blog and search. Products studio shoot. Social media Production and Management.

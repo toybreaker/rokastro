@@ -18,7 +18,8 @@ images:
   - ./09.jpg
   - ./10.jpg
 tags:
-  - everything
+  - artist
+  - art-photography
 ---
 
 Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.

@@ -11,7 +11,7 @@ images:
 tags:
   - advertising-shooting
   - magazine-advertising
-  - action-shooting
+  - action-photography
   - streetwear
 ---
 

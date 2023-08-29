@@ -13,7 +13,7 @@ images:
   - ./04.png
 tags:
   - architecture
-  - website
+  - custom-websites
 ---
 
 Architecture Photography portfolio for &lt;Rocco Marosi&gt; firm.

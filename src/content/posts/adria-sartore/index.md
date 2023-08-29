@@ -11,9 +11,8 @@ images:
   - ./03.png
   - ./04.png
 tags:
-  - portfolio
-  - website
   - artist
+  - portfolio
 ---
 
 Artist portfolio.

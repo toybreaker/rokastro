@@ -14,7 +14,7 @@ images:
   - ./08.svg
   - ./09.svg
 tags:
-  - everything
+  - design
 ---
 
 Rokma has release some Open Source icons.
@@ -24,9 +24,6 @@ Free for non-commercial use they can be downloaded at [thenounproject](https://t
 They are grouped by style:
 
 - [Solid Circle Icons](https://thenounproject.com/rokma/collection/board-sports-solid-circle-icons-collection/)
--
 - [Board Sports](https://thenounproject.com/rokma/collection/board-sports/)
--
 - [Board Sports Line](https://thenounproject.com/rokma/collection/board-sports-line-collection/)
--
 - [Blackdot Icons](https://thenounproject.com/rokma/collection/board-rider-blackdot-icons-collection).

@@ -8,7 +8,8 @@ where: Italy
 images:
   - ./01.jpg
 tags:
-  - website
+  - custom-websites
+  - design
 ---
 
 Catalog website for &lt;Giver Viaggi&gt; firm.

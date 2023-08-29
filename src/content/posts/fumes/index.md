@@ -15,7 +15,7 @@ tags:
   - online
   - magazine
   - concept
-  - website
+  - custom-websites
   - reportage
   - photography
   - non-profit

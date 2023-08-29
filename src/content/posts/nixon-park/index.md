@@ -27,6 +27,7 @@ tags:
   - street-photography
   - skateboarding
   - black-and-white
+  - action-photography
 ---
 
 Nixon park is a free, public skatepark in the capital Auckland. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).

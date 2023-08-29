@@ -18,7 +18,8 @@ images:
   - ./08.jpg
   - ./18.jpg
 tags:
-  - everything
+  - design
+  - logo
 ---
 
 Rokma occasionally produces logos and graphic works.

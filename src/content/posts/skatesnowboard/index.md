@@ -17,7 +17,7 @@ images:
 tags:
   - magazine
   - concept
-  - publishing
+  - printed-press
   - art-direction
 ---
 

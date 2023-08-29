@@ -15,10 +15,10 @@ images:
 tags:
   - reportage
   - black-and-white
+  - printed-press
   - magazine
   - surfing
   - action-photography
-  - sociology
 ---
 
 Reportage on surfer's life of the Bukit peninsula for &lt;Surfnews&gt; magazine.

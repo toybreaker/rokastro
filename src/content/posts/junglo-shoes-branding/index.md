@@ -31,6 +31,8 @@ tags:
   - copywriting
   - packaging
   - product
+  - filming
+  - content-creation
 ---
 
 Brand creation.

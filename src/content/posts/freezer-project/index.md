@@ -15,7 +15,7 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - printed
+  - printed-press
   - magazine
   - concept
 ---

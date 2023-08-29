@@ -12,7 +12,7 @@ images:
   - ./03.png
   - ./04.png
 tags:
-  - everything
+  - custom-websites
 ---
 
 Fast and streamlined website with WhatsApp direct order feature.<br>

@@ -11,7 +11,9 @@ images:
   - ./03.png
   - ./04.png
 tags:
-  - everything
+  - web-store
+  - shopify-theme-creation
+  - custom-websites
 ---
 
 Shopify store with blog.

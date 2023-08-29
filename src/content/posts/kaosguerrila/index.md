@@ -49,11 +49,17 @@ images:
   - ./36.jpg
   - ./50.jpg
 tags:
-  - everything
+  - social-marketing
+  - concept
+  - art-direction
+  - realisation
+  - content-creation
 ---
 
 Social marketing campaign for &lt;Kaos Guerrilla&gt; brand.
 
-Distributed trough Instagram, Facebook, Twitter, and Shopify blog.
+All encompassing: brand startegy advising, market placement, concept proposals and development, content production, art-direction, post-production and posting scheduling.
 
-Instagram profile, for example, was brought from 169 followers to 1433 in just few months.
+Broadcasted trough Instagram, Facebook, Twitter, and Shopify store own blog media channels.
+
+Instagram profile, for example, was brought from 169 followers to 1433 in just few months, organically, without buying any advertisings.

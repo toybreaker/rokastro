@@ -12,7 +12,11 @@ images:
   - ./03.png
   - ./04.png
 tags:
-  - everything
+  - concept
+  - custom-websites
+  - design
+  - logo
+  - content-creation
 ---
 
 Non profit magazine.

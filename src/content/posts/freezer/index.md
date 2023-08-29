@@ -7,7 +7,7 @@ where: Italy
 images:
   - ./01.jpg
 tags:
-  - website
+  - custom-websites
   - magazine
 ---
 

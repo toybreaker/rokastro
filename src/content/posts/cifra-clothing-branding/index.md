@@ -29,6 +29,7 @@ tags:
   - concept
   - printed
   - catalog
+  - logo
 ---
 
 Complete brand image for &lt;Cifra Clothing&gt; firm.

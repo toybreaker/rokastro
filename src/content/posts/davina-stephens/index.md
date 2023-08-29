@@ -14,7 +14,7 @@ images:
 tags:
   - artist
   - portfolio
-  - website
+  - custom-websites
 ---
 
 Artist portfolio.

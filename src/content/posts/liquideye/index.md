@@ -15,7 +15,8 @@ images:
   - ./03.png
   - ./04.png
 tags:
-  - everything
+  - custom-websites
+  - design
 ---
 
 Water housing manufacture website.

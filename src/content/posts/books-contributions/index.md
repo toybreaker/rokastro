@@ -14,7 +14,7 @@ images:
 tags:
   - book-contributions
   - reportage
-  - printed
+  - printed-press
 ---
 
 Surfing Indonesia, The Balinese Art of Ogoh Ogoh.

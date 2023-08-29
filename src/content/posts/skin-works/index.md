@@ -22,6 +22,7 @@ tags:
   - fashion
   - beauty
   - concept
+  - black-and-white
 ---
 
 Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/skin-works/).

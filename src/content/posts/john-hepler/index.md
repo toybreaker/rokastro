@@ -8,8 +8,8 @@ images:
   - ./01.jpg
 tags:
   - photographer
-  - website
   - portfolio
+  - custom-websites
 ---
 
 Portfolio website for industrial photographer &lt;John Hepler&gt;.

@@ -18,6 +18,7 @@ tags:
   - gallery-commissioned
   - artist
   - installation
+  - event
 ---
 
 Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.

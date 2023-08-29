@@ -23,7 +23,6 @@ images:
 tags:
   - personal-work
   - street-photography
-  - ethnic
   - event
   - black-and-white
 ---

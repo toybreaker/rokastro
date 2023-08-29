@@ -7,7 +7,7 @@ where: Genova, Italy
 images:
   - ./01.jpg
 tags:
-  - website
+  - custom-websites
   - art-gallery
 ---
 

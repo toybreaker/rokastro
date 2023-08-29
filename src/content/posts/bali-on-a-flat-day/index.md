@@ -20,7 +20,7 @@ images:
 fineartprints_link: true ## true or false
 fumes_category: art
 tags:
-  - printed
+  - printed-press
   - magazine
   - reportage
   - black-and-white

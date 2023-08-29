@@ -13,11 +13,11 @@ images:
   - ./04.png
 tags:
   - online-store
-  - website
+  - custom-websites
+  - copywriting
   - design
   - shopify-theme-creation
   - street-wear
-  - copywriting
 ---
 
 Online store with blog, search and WhatsApp direct message feature.

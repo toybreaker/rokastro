@@ -12,7 +12,7 @@ images:
   - ./03.png #nexus6
   - ./04.png #android
 tags:
-  - website
+  - architecture
 ---
 
 Contest website for &lt;Politecnico di Milano&gt; Architecture university.
