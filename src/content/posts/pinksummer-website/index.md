@@ -1,7 +1,7 @@
 ---
 slag: pinksummer
 title: Pinksummer
-category: website
+category: web-design
 year: 2015
 where: Genova, Italy
 images:

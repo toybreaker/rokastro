@@ -1,7 +1,7 @@
 ---
 slag: glandsurfshots
 title: G-land Surf Shots
-category: website
+category: web-design
 year: 2015
 where: Indonesia
 images:

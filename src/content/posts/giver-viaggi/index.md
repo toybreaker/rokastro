@@ -1,7 +1,7 @@
 ---
 slag: giver-viaggi
 title: Giver Viaggi
-category: website
+category: web-design
 year: 2009
 year2: 2014
 where: Italy

@@ -1,10 +1,11 @@
 ---
 slag: wherenodoctor
 title: Where No doctor
-category: website
+category: web-design
 year: 2016
 where: global
 images:
+  - ./00.jpg
   - ./01.jpg #fullwidth 1680x800 w/desktop image
   - ./02.png #ipad
   - ./03.png #nexus6

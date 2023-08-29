@@ -1,7 +1,7 @@
 ---
 slag: cifra-clothing
 title: Cifra Web Catalog
-category: website
+category: web-design
 year: 2001
 year2: 2003
 where: italy

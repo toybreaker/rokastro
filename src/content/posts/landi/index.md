@@ -1,7 +1,7 @@
 ---
 slag: landi-designs
 title: Landi Designs
-category: website
+category: web-design
 year: 2015
 where: bali, indonesia
 images:

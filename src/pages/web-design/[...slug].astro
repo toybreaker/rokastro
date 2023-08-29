@@ -1,12 +1,14 @@
 ---
 import { CollectionEntry, getCollection } from 'astro:content'
-import Layout from '@layouts/Layout.astro'
+import Layout from '@layouts/Post.astro'
+import Slide from '@components/Slide.astro'
+import * as siteData from '@data/site.json'
 
-const category = 'advertising'
+const category = 'web-design'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => {
-    return data.draft !== true && data.category == category
+    return data.draft !== true && data.category == 'web-design'
   })
 
   return posts.map((post) => ({
@@ -22,18 +24,12 @@ interface Props {
 const { post } = Astro.props
 const { Content } = await post.render()
 const bodyClass = category
-const cssClass = ''
-const pageDesc = ''
 ---
 
-<Layout
-  {...post.data}
-  pageTitle={post.data.title}
-  pageDesc={pageDesc}
-  bodyClass={bodyClass}
-  mainClass="container"
-  ogImage={post.data.images[0].src}>
-  <ul class="tags">
+<Layout {...post.data}>
+  <span slot="header" class="section_name">web-design</span>
+  <h1 slot="header">{post.data.title}</h1>
+  <ul slot="header" class="tags">
     {
       post.data.tags.map((tag) => {
         return (
@@ -46,8 +42,14 @@ const pageDesc = ''
       })
     }
   </ul>
+  <div slot="images">
+    <!-- <Slide p={frontmatter.images[0].scr} /> -->
+  </div>
 
-  <Content />
+  <div class="content">
+    <Content />
+  </div>
+  <p slot="footer">SEE MORE</p>
 </Layout>
 
 <style lang="scss">

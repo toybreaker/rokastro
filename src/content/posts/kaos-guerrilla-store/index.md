@@ -1,10 +1,11 @@
 ---
 slag: kaos-guerrilla-store
 title: Kaos Guerrilla Store
-category: website
+category: web-design
 year: 2018
 where: bali, indonesia
 images:
+  - ./00.jpg
   - ./01.jpg
   - ./02.png
   - ./03.png

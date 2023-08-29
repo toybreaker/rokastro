@@ -1,7 +1,7 @@
 ---
 slag: freezer
 title: Freezer Magazine
-category: website
+category: web-design
 year: 2015
 where: Italy
 images:

@@ -1,0 +1,13 @@
+---
+import { Image } from 'astro:assets'
+
+export interface Props {
+  p: any
+  alt: any
+  quality: string | 'low' //low, mid, high, max
+}
+
+const { p, alt, quality } = Astro.props
+---
+
+<Image src={p} width={1920} alt={alt} quality={quality} format="avif" />

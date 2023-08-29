@@ -1,7 +1,7 @@
 ---
 slag: disfrutalo
 title: Disfrutalo
-category: website
+category: web-design
 year: 2008
 where: costarica
 images:

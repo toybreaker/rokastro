@@ -5,50 +5,60 @@ import '@fontsource/dosis'
 <style is:global lang="scss">
   /* Light-blue Light scheme (Default) */
   /* Can be forced with data-theme="light" */
-  [data-theme='light'],
-  :root:not([data-theme='dark']) {
-    --primary: hsl(51, 100%, 50%);
-    --primary-hover: hsl(51, 100%, 46%);
-    --primary-focus: rgba(253, 216, 53, 0.125);
-    --primary_back: hsl(0, 0%, 100%);
-    --primary_front: hsl(0, 0%, 8%);
-    --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
-  }
+  // [data-theme='light'],
+  // :root:not([data-theme='dark']) {
+  //   --primary: hsl(51, 100%, 50%);
+  //   --primary-hover: hsl(51, 100%, 46%);
+  //   --primary-focus: rgba(253, 216, 53, 0.125);
+  //   --primary_back: hsl(0, 0%, 100%);
+  //   --primary_front: hsl(0, 0%, 8%);
+  //   --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
+  // }
 
   /* Light-blue Dark scheme (Auto) */
   /* Automatically enabled if user has Dark mode enabled */
-  @media only screen and (prefers-color-scheme: dark) {
-    :root:not([data-theme]) {
-      --primary: hsl(51, 100%, 50%);
-      --primary-hover: hsl(51, 100%, 46%);
-      --primary-focus: rgba(253, 216, 53, 0.125);
-      --primary_back: hsl(0, 0%, 100%);
-      --primary_front: hsl(0, 0%, 8%);
-      --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
-    }
-  }
+  // @media only screen and (prefers-color-scheme: dark) {
+  //   :root:not([data-theme]) {
+  //     --primary: hsl(51, 100%, 50%);
+  //     --primary-hover: hsl(51, 100%, 46%);
+  //     --primary-focus: rgba(253, 216, 53, 0.125);
+  //     --primary_back: hsl(0, 0%, 100%);
+  //     --primary_front: hsl(0, 0%, 8%);
+  //     --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
+  //   }
+  // }
 
   /* Light-blue Dark scheme (Forced) */
   /* Enabled if forced with data-theme="dark" */
-  [data-theme='dark'] {
-    --primary: hsl(51, 100%, 50%);
-    --primary-hover: hsl(51, 100%, 46%);
-    --primary-focus: rgba(253, 216, 53, 0.125);
-    --primary_back: hsl(0, 0%, 100%);
-    --primary_front: hsl(0, 0%, 8%);
-    --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
-  }
+  // [data-theme='dark'] {
+  //   --primary: hsl(51, 100%, 50%);
+  //   --primary-hover: hsl(51, 100%, 46%);
+  //   --primary-focus: rgba(253, 216, 53, 0.125);
+  //   --primary_back: hsl(0, 0%, 100%);
+  //   --primary_front: hsl(0, 0%, 8%);
+  //   --soft_overlay_color: hsla(0, 0%, 0%, 0.05);
+  // }
 
-  /* Light-blue (Common styles) */
+  /* Common styles */
   :root {
-    --font-size: 20px; //fallback?!
-    --form-element-active-border-color: var(--primary);
-    --form-element-focus-color: var(--primary-focus);
-    --switch-color: var(--primary-inverse);
-    --switch-checked-background-color: var(--primary);
+    //rok same light and dark mode stupid hack
+    --primary: hsl(51, 100%, 50%) !important;
+    --primary-hover: hsl(51, 100%, 46%) !important;
+    --primary-focus: rgba(253, 216, 53, 0.125) !important;
+    --primary_back: hsl(0, 0%, 100%) !important;
+    --primary_front: hsl(0, 0%, 8%) !important;
+    --soft_overlay_color: hsla(0, 0%, 0%, 0.05) !important;
+    --color: var(--primary_front) !important;
+    --background-color: var(--primary_back) !important;
+    --blockquote-border-color: var(--primary) !important;
+    --form-element-active-border-color: var(--primary) !important;
+    --form-element-focus-color: var(--primary-focus) !important;
+    --switch-color: var(--primary-inverse) !important;
+    --switch-checked-background-color: var(--primary) !important;
 
     //rok
-    --blockquote-border-color: var(--primary) !important;
+    --font-family: 'Dosis' !important;
+    --font-size: 20px; //fallback?!
     --bodyfontweight: 300;
     --space: 2rem;
     --space_small: 1rem;
@@ -57,7 +67,6 @@ import '@fontsource/dosis'
     --icon_size: 40px; //all svg icons are square
     --nav-element-spacing-vertical: 0.25rem;
     --nav-element-spacing-horizontal: 0.25rem;
-    --font-family: 'Dosis' !important;
     --paragraph_width: 60ch;
     --form-element-spacing-vertical: 0.5rem;
     --form-element-spacing-horizontal: 0.7rem;
@@ -119,6 +128,7 @@ import '@fontsource/dosis'
     //content-visibility: auto; // disable cos it break position fixed
     font-weight: var(--bodyfontweight);
     font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
+    min-height: 100dvh;
 
     > *,
     article {

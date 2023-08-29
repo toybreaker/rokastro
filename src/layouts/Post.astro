@@ -1,0 +1,21 @@
+---
+import Layout from '@layouts/Layout.astro'
+
+import * as siteData from '@data/site.json'
+// import * as repoData from 'package.json'
+
+const { title, category, images } = Astro.props.frontmatter || Astro.props
+
+const pageDesc = siteData.description_web
+---
+
+<Layout
+  pageTitle={title}
+  pageDesc={pageDesc}
+  mainClass="container"
+  bodyClass={category}
+  ogImage={images[0].src}>
+  <!-- <slot name="header" /> -->
+  <slot />
+  <!-- <slot name="images" /> -->
+</Layout>

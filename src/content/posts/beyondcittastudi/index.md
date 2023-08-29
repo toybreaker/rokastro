@@ -1,11 +1,12 @@
 ---
 slag: beyondcittastudi
 title: Beyond Citta Studi
-category: website
+category: web-design
 year: 2016
 where: Italy
 index_image: 00.jpg #all devices together for index
 images:
+  - ./00.jpg
   - ./01.jpg #fullwidth 1680x800 w/desktop image
   - ./02.png #ipad
   - ./03.png #nexus6

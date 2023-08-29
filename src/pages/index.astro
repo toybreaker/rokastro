@@ -2,6 +2,7 @@
 import Layout from '@layouts/Layout.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
+import * as siteData from '@data/site.json'
 
 const featuredPosts = await getCollection('posts', ({ data }) => {
   return data.draft !== true && data.featured
@@ -25,7 +26,7 @@ export interface Props {
 const bodyClass = 'home'
 const mainClass = 'no_padding'
 const pageTitle = 'empowers'
-const pageDesc = 'Flexible Communication Design Service for small companies.'
+const pageDesc = siteData.description
 ---
 
 <Layout

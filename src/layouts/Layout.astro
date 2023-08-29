@@ -20,7 +20,6 @@ export interface Props {
 const { bodyClass, mainClass, pageTitle, ogImage, pageDesc } = Astro.props
 
 const makeTitle = siteData.title + ' ' + pageTitle
-const makeDescription = siteData.title + ' ' + pageDesc
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
@@ -30,7 +29,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
   <meta name="version" content={repoData.version} />
   <meta charset="UTF-8" />
-  <meta name="description" content="Astro description" />
+  <meta name="description" content={pageDesc} />
   <meta name="viewport" content="width=device-width" />
 
   <title>{makeTitle}</title>
@@ -46,22 +45,29 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
   <meta property="og:url" content={Astro.site} />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={makeTitle} />
-  <meta property="og:description" content={makeDescription} />
+  <meta property="og:description" content={pageDesc} />
   <meta property="og:image" content={ogImage} />
 
   <!-- ROKS TWITTER -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content={Astro.site} />
   <meta name="twitter:title" content={makeTitle} />
-  <meta name="twitter:description" content={makeDescription} />
+  <meta name="twitter:description" content={pageDesc} />
   <meta name="twitter:image" content={ogImage} />
 
   <slot name="head" />
 
   <body class={bodyClass}>
+    <header class="container">
+      <slot name="header" />
+    </header>
     <main class={mainClass}>
+      <slot name="images" />
       <slot />
     </main>
+    <footer class="container">
+      <slot name="footer" />
+    </footer>
     <Stylo />
     <SidebarToggle />
     <AppendToCopyAction />

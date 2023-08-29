@@ -1,7 +1,7 @@
 ---
 slag: john-hepler
 title: John Hepler
-category: website
+category: web-design
 year: 2012
 where: bali, indonesia
 images:

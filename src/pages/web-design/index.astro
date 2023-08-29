@@ -2,8 +2,9 @@
 import Layout from '@layouts/Layout.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
+import * as siteData from '@data/site.json'
 
-const category = 'advertising'
+const category = 'web-design'
 
 const unsortedPosts = await getCollection('posts', ({ data }) => {
   return data.draft !== true && data.category == category
@@ -25,11 +26,10 @@ export interface Props {
   pageDesc: string
 }
 
-import siteData from '@data/site.json'
 const bodyClass = category
 const ogImage = '../assets/p/og_large_image.jpg'
 const mainClass = 'container'
-const pageDesc = ''
+const pageDesc = siteData.description_web
 ---
 
 <Layout
@@ -38,7 +38,8 @@ const pageDesc = ''
   bodyClass={bodyClass}
   mainClass={mainClass}
   ogImage={ogImage}>
-  <h2 class="h3 uppercased centered green">{category}</h2>
+  <h1>{siteData.title} <span>{category}</span></h1>
+  <p class="center">Recent digital product design works</p>
   <div class="container posts">
     {
       posts.map((post) => (
@@ -61,5 +62,8 @@ const pageDesc = ''
   }
   .post {
     text-decoration: none;
+  }
+  h1 span {
+    opacity: 0.5;
   }
 </style>

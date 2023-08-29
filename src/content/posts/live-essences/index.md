@@ -1,11 +1,12 @@
 ---
 slag: live-essences
 title: Live Essences
-category: website
+category: web-design
 year: 2020
 year2: 2022
 where: bali, indonesia
 images:
+  - ./00.jpg
   - ./01.jpg
   - ./02.png
   - ./03.png

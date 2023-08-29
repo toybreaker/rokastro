@@ -1,11 +1,12 @@
 ---
 slag: globe
 title: Globe Store
-category: website
+category: web-design
 year: 2020
 year2: 2021
 where: bali, indonesia
 images:
+  - ./00.jpg
   - ./01.jpg
   - ./02.png
   - ./03.png

@@ -1,12 +1,11 @@
 ---
-slag: adria-sartore
 title: Adria Sartore
-category: website
+category: web-design
 year: 2019
 year2: 2023
 where: genova, italy
-index_image: 00.jpg
 images:
+  - ./00.jpg
   - ./01.jpg
   - ./02.png
   - ./03.png
