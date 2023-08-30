@@ -58,7 +58,7 @@ import '@fontsource/dosis'
 
     //rok
     --font-family: 'Dosis' !important;
-    --font-size: 20px; //fallback?!
+    --font-size: 21px; //fallback?!
     --bodyfontweight: 300;
     --space: 2rem;
     --space_small: 1rem;
@@ -105,6 +105,29 @@ import '@fontsource/dosis'
     }
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100dvh;
+    overflow-x: hidden;
+    margin: 0;
+    font-weight: var(--bodyfontweight);
+    font-size: var(--font-size);
+    //font-size: clamp(var(--font-size), 1rem + 0.169vw, 2rem);
+    //font-size: clamp(var(--font-size), 9.7vw - 2.7rem, 5rem) !important;
+    //content-visibility: auto; // disable cos it break position fixed
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  footer {
+    padding: 0 !important;
+  }
+
   em {
     font-weight: 100;
     display: block;
@@ -116,51 +139,6 @@ import '@fontsource/dosis'
     @media (max-width: 576px) {
       display: block !important;
     }
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  body {
-    overflow-x: hidden;
-    margin: 0;
-    //content-visibility: auto; // disable cos it break position fixed
-    font-weight: var(--bodyfontweight);
-    font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
-    min-height: 100dvh;
-
-    footer {
-      padding: 0 !important;
-    }
-
-    > *,
-    article {
-      box-shadow: none !important;
-    }
-
-    @media (min-width: 576px) {
-      font-size: clamp(
-        var(--font-size),
-        1.1rem + 0.169vw,
-        calc((--font-size) * 1.2)
-      );
-    }
-    // @media (min-width: 768px) {
-    //   font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
-    // }
-    // @media (min-width: 992px) {
-    //   font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
-    // }
-    // @media (min-width: 1200px) {
-    //   font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
-    // }
-    // @media (min-width: 1440px) {
-    //   font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
-    // }
-    // @media (min-width: 1920px) {
-    //   font-size: clamp(var(--font-size), 1rem + 0.169vw, 22px);
-    // }
   }
 
   .hide {
@@ -231,7 +209,7 @@ import '@fontsource/dosis'
 
   h1,
   .h1 {
-    --typography-spacing-vertical: 3rem;
+    --font-size: 2rem;
     text-transform: uppercase;
     border-bottom: 0 none !important;
   }
@@ -239,26 +217,22 @@ import '@fontsource/dosis'
   h2,
   .h2 {
     --font-size: 1.75rem;
-    --typography-spacing-vertical: 2.625rem;
     text-transform: uppercase;
   }
 
   h3,
   .h3 {
     --font-size: 1.5rem;
-    --typography-spacing-vertical: 2.25rem;
   }
 
   h4,
   .h4 {
     --font-size: 1.25rem;
-    --typography-spacing-vertical: 1.874rem;
   }
 
   h5,
   .h5 {
     --font-size: 1.125rem;
-    --typography-spacing-vertical: 1.6875rem;
   }
 
   button {
@@ -463,5 +437,9 @@ import '@fontsource/dosis'
 
   strong {
     font-weight: 800 !important;
+  }
+
+  .web-design img {
+    border: 1px solid rgb(182, 182, 182);
   }
 </style>

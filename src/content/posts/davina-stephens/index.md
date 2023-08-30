@@ -1,7 +1,7 @@
 ---
 slag: davina-stephens
 title: Davina Stephens
-category: web-design
+category: website
 year: 2019
 year2: 2023
 where: bali, indonesia

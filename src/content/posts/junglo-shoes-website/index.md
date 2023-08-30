@@ -1,7 +1,7 @@
 ---
 slag: junglo-store
 title: Junglo Store
-category: web-design
+category: website
 grid_small_images: #true or empty
 year: 2020
 year2: 2021

@@ -1,11 +1,10 @@
 ---
-title: Casa Asia
+title: Kala surfcamp
 category: website
 grid_small_images: #true or empty
-year: 2021
-year2: 2023
+year: 2023
 where: Bali, Indonesia
-catch: personal work by
+catch:
 offwhite: true # true or empty
 featured: true
 images:
@@ -17,9 +16,9 @@ images:
   - ./06.jpg
 tags:
   - custom-websites
-  - photo-menu
-  - editing-system
-  - internet-presence-management
+  - photography
+  - marketing-strategy
+  - copyrighting
 ---
 
 Complete online presence for Casa Asia Group.

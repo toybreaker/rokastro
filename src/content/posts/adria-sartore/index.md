@@ -1,6 +1,6 @@
 ---
 title: Adria Sartore
-category: web-design
+category: website
 year: 2019
 year2: 2023
 where: genova, italy

@@ -1,6 +1,5 @@
 ---
-slag: bali-on-a-flat-day
-title: bali-on-a-flat-day
+title: bali on a flat day
 category: photography
 year: 2008
 where: bali, indonesia
@@ -24,6 +23,7 @@ tags:
   - magazine
   - reportage
   - black-and-white
+  - surfing
 ---
 
 Published on Surfers magazine

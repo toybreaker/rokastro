@@ -1,7 +1,7 @@
 ---
 slag: rocco
 title: Rocco Marosi
-category: web-design
+category: website
 year: 2015
 year2: 2023
 where: Singapore

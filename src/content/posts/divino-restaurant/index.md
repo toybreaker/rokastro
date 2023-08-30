@@ -1,11 +1,11 @@
 ---
-title: Casa Asia
+title: Divino
 category: website
 grid_small_images: #true or empty
 year: 2021
 year2: 2023
 where: Bali, Indonesia
-catch: personal work by
+catch:
 offwhite: true # true or empty
 featured: true
 images:

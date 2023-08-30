@@ -1,7 +1,7 @@
 ---
 slag: fumes
 title: Fumes Magazine
-category: web-design
+category: website
 year: 2017
 year2: 2023
 where: bali, indonesia

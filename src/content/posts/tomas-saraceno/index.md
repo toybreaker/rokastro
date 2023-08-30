@@ -19,6 +19,7 @@ tags:
   - artist
   - installation
   - event
+featured: true
 ---
 
 Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.

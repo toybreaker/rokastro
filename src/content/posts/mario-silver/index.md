@@ -16,6 +16,7 @@ tags:
   - advertising-photography
   - beauty
   - black-and-white
+featured: true
 ---
 
 Advertising images for &lt;Mario Silver&gt;

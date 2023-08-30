@@ -1,7 +1,7 @@
 ---
 slag: magicgreen
 title: Magic Green
-category: web-design
+category: website
 year: 2018
 year2: 2023
 where: bali, indonesia

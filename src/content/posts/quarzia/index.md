@@ -1,7 +1,7 @@
 ---
 slag: quarzia
 title: Quarzia Store
-category: web-design
+category: website
 grid_small_images: #true or empty
 year: 2021
 year2: 2023
@@ -26,8 +26,11 @@ tags:
   - content-creation
 ---
 
-Online store with blog and search. Products studio shoot. Social media Production and Management.
-Marketing strategy consultancy.
+Online store with blog and search.
+Catalog studio-shootings with models.
+Marketing strategy.
+Custom Shopify theme creation.
+Blog and Social media Production and Management.
 
 Check out the [Quarzia](https://quarzia.it?source=rokma.com) online store website.
 [2020>today].
