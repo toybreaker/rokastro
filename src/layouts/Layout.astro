@@ -1,13 +1,12 @@
 ---
+import '@styles/pico.scss'
+import Stylo from '@components/Stylo.astro'
 import ROKMA from '@components/ROKMA.astro'
+import SidebarToggle from '@components/SidebarToggle.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
 import AppendToCopyAction from '@scripts/AppendToCopyAction.astro'
 import GoogleAnalytics from '@scripts/GoogleAnalytics.astro'
-import SidebarToggle from '@scripts/SidebarToggle.astro'
-
-import '@styles/pico.scss'
-import Stylo from '@components/Stylo.astro'
 
 export interface Props {
   pageTitle: string
@@ -68,6 +67,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <footer class="container">
       <slot name="footer" />
     </footer>
+
     <Stylo />
     <SidebarToggle />
     <AppendToCopyAction />

@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon'
+import * as siteData from '@data/site.json'
+---
+
+<div class="social-icons">
+  <a
+    href={siteData.twitter}
+    title={siteData.twitter + ' on Twitter'}
+    target="_blank">
+    <Icon name="twitter" />
+  </a>
+
+  <a
+    href={siteData.instagram}
+    title={siteData.instagram + ' on Instagram'}
+    target="_blank">
+    <Icon name="instagram" />
+  </a>
+
+  <a
+    href={siteData.github}
+    title={siteData.github + ' on Github'}
+    target="_blank">
+    <Icon name="github" />
+  </a>
+
+  <a
+    href={siteData.facebook}
+    title={siteData.github + ' on Facebook'}
+    target="_blank">
+    <Icon name="facebook" />
+  </a>
+
+  <asoundcloud
+    href={siteData.soundcloud + '/sets/'}
+    title={siteData.github + ' on Soundcloud'}
+    target="_blank">
+    <Icon name="soundcloud" />
+  </asoundcloud>
+
+  <a
+    href={'mailto:' + siteData.email}
+    title={'Best way to contact ' + siteData.title + ' ! Quick old e-mail'}
+    target="_blank">
+    <Icon name="email" />
+  </a>
+</div>

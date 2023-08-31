@@ -73,33 +73,52 @@ import '@fontsource/dosis'
     --nav-link-spacing-vertical: 0.35rem;
     --nav-link-spacing-horizontal: 0.35rem;
     --border-width: 0.125rem;
+
+    //sidebar
+    --sidebarwidth-base: 98vw;
+    --sidebarwidth-min: 45vw;
+    --sidebarwidth: 30vw;
+    --sidebarwidth-max: 22vw;
+    // this for the menu when open go vertically middle off the sidebar edge
+    // aproximated here...
+    --sidebarwidthplus: 13.75rem;
+    //calc( 16 rem - (55px : 2) )
+
+    // fuck pico breakpoints (make it simple dude!)
+    --xs: 0;
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+    --xxl: 1440px;
+    --xxxl: 1920px;
   }
-  @media (min-width: 576px) {
+  @media (min-width: var(--sm)) {
     :root {
       --font-size: 22px;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: var(--md)) {
     :root {
       --font-size: 23px;
     }
   }
-  @media (min-width: 992px) {
+  @media (min-width: var(--lg)) {
     :root {
       --font-size: 24px;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: var(--xl)) {
     :root {
       --font-size: 26px;
     }
   }
-  @media (min-width: 1440px) {
+  @media (min-width: var(--xxl)) {
     :root {
       --font-size: 28px;
     }
   }
-  @media (min-width: 1920px) {
+  @media (min-width: var(--xxxl)) {
     :root {
       --font-size: 32px;
     }
@@ -116,7 +135,6 @@ import '@fontsource/dosis'
     font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
     //font-size: clamp(var(--font-size), 1rem + 0.169vw, 2rem);
-    //font-size: clamp(var(--font-size), 9.7vw - 2.7rem, 5rem) !important;
     //content-visibility: auto; // disable cos it break position fixed
   }
 

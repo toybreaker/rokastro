@@ -10,35 +10,22 @@
   "description_branding": "Your products must be recognisable, that's why you need branding, to build your product identity.",
   "description_specials": "Consulting with an OUT-OF-THE-BOX thinker is paramount for your ONE-SHOT PROJECT success. I will make sure your investment is worth or don't take the job.",
   "logo": "01.jpg",
-  "keywords": "",
+  "keywords": "flexible, communication, Ddesign, small companies, plan, produce, launch, consulting, photography, creativity, content, experience, digital-marketing, copywriting, strategy, mentoring, advisor",
   "lang": "en",
-  "license": {
-    "name": "CC BY",
-    "url": "https://creativecommons.org/licenses/by/4.0/"
-  },
-  "author": {
-    "name": "Rokma",
-    "email": "me@rokma.com",
-    "twitter": "https://twitter.com/rokmatwit",
-    "facebook": "https://www.facebook.com/rokmaphotography",
-    "github": "https://github.com/toybreaker",
-    "instagram": "https://www.instagram.com/rokmaphotography",
-    "threads": "https://www.threads.net/@rokmaphotography",
-    "linkedin": "https://www.linkedin.com/in/rokma/",
-    "soundcloud": "https://soundcloud.com/rokma/sets",
-    "google": {
-      "analytics": "G-BMWDP7VL43",
-      "verification": "google32e66f1a5601ec40"
-    }
+  "email": "me@rokma.com",
+  "twitter": "https://twitter.com/rokmatwit",
+  "facebook": "https://www.facebook.com/rokmaphotography",
+  "github": "https://github.com/toybreaker",
+  "instagram": "https://www.instagram.com/rokmaphotography",
+  "threads": "https://www.threads.net/@rokmaphotography",
+  "linkedin": "https://www.linkedin.com/in/rokma/",
+  "soundcloud": "https://soundcloud.com/rokma/sets",
+  "google": {
+    "analytics": "G-BMWDP7VL43",
+    "verification": "google32e66f1a5601ec40"
   },
   "producer": {
     "url": "https://junglestar.org",
     "name": "Junglestar"
-  },
-  "breakpoints": {
-    "s": "640",
-    "m": "880",
-    "l": "1024",
-    "xl": "1920"
   }
 }

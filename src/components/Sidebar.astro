@@ -1,0 +1,53 @@
+---
+import * as siteData from '@data/site.json'
+import { Icon } from 'astro-icon'
+import SidebarContects from '@components/SidebarContacts.astro'
+import SidebarNav from '@components/SidebarNav.astro'
+import SidebarStylo from '@components/SidebarStylo.astro'
+
+const today = new Date()
+---
+
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" />
+
+<div class="sidebar" id="sidebar">
+  <div class="middle">
+    <div class="tog sidebar-toggle-button">
+      <label for="sidebar-checkbox" class="sidebar-toggle">
+        <Icon name="x" />
+      </label>
+    </div>
+
+    <a
+      class="to-home"
+      href="{% if page.url == site.baseurl %}{{ site.baseurl }}{% else %}{{ site.baseurl }}/{% endif %}"
+      title="back to home page">
+      <span class="descri title">{siteData.title}</span>
+    </a>
+
+    <a class="to-home catindex" href="/" title="back to home page">
+      <span class="avatar">Round avatar</span>
+    </a>
+
+    <span class="descri">{siteData.description}</span>
+
+    <SidebarNav />
+
+    <div class="sidebar-item">
+      <SidebarContects />
+
+      <p class="fontsizefixed centertext">
+        <span>Copyright © 2012-{today.getFullYear()}</span>
+        <br />Powered by
+        <a
+          class="underline-on-hover"
+          title="producer"
+          target="_blank"
+          href="https://junglestar.org">Junglestar</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
+
+<SidebarStylo />
