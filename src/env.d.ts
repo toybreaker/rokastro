@@ -1,5 +1,5 @@
 /// <reference path="../.astro/types.d.ts" />
-/// <reference types="astro/client-image" />
+/// <reference types="astro/client" />
 
 declare module '*.yml' {
   const value: any // Add type definitions here if desired

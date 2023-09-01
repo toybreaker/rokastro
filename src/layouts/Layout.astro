@@ -2,6 +2,7 @@
 import '@styles/pico.scss'
 import Stylo from '@components/Stylo.astro'
 import ROKMA from '@components/ROKMA.astro'
+import Sidebar from '@components/Sidebar.astro'
 import SidebarToggle from '@components/SidebarToggle.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
@@ -69,6 +70,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     </footer>
 
     <Stylo />
+    <Sidebar />
     <SidebarToggle />
     <AppendToCopyAction />
     <GoogleAnalytics />

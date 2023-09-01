@@ -5,9 +5,6 @@ import yaml from '@rollup/plugin-yaml' //maybe needed, currently using .json
 import partytown from '@astrojs/partytown'
 
 export default defineConfig({
-  experimental: {
-    assets: true
-  },
   image: {
     service: sharpImageService()
   },
