@@ -1,0 +1,19 @@
+---
+import * as navigation from '@data/navigation.json'
+const allSections = navigation.sections
+// const sections = allSections.filter(function (item) {
+//   return item.position == 'bottom'
+// })
+
+const sections = allSections
+
+export interface allSections {
+  label: string
+  url: string
+  description: string
+  position: string
+  cssclass: string
+}
+---
+
+<nav class=''></nav>

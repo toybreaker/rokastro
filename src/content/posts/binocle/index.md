@@ -1,7 +1,7 @@
 ---
 slag: binocle
 title: Binocle
-category: website
+category: websites
 year: 2016
 year2: 2023
 where: EU

@@ -1,0 +1,34 @@
+{
+  "sections": [
+    {
+      "label": "adverstising",
+      "slug": "adverstising",
+      "cssclass": "",
+      "description": "adverstising"
+    },
+    {
+      "label": "branding",
+      "slug": "branding",
+      "cssclass": "",
+      "description": "branding"
+    },
+    {
+      "label": "photography",
+      "slug": "photography",
+      "cssclass": "",
+      "description": "photography"
+    },
+    {
+      "label": "specials",
+      "slug": "specials",
+      "cssclass": "",
+      "description": "specials"
+    },
+    {
+      "label": "websites",
+      "slug": "websites",
+      "cssclass": "",
+      "description": "websites"
+    }
+  ]
+}

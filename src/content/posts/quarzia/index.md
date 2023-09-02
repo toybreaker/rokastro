@@ -1,7 +1,7 @@
 ---
 slag: quarzia
 title: Quarzia Store
-category: website
+category: websites
 grid_small_images: #true or empty
 year: 2021
 year2: 2023

@@ -21,20 +21,23 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   pageDesc={pageDesc}
   bodyClass={bodyClass}
   mainClass={mainClass}
-  ogImage={ogImage}>
-  <h1 slot="header">
-    <a class="post" href="/">{siteData.title}</a>
+  ogImage={ogImage}
+>
+  <h1 slot='header' class='container'>
+    <a class='post' href='/'>{siteData.title}</a>
     <div>{category}</div>
   </h1>
-  <slot name="header" slot="header" />
+  <hr slot='header' />
 
-  <div class="content">
+  <slot name='header' slot='header' />
+
+  <div class='content'>
     <slot />
   </div>
 
-  <blockquote slot="footer">{pageDesc}</blockquote>
+  <blockquote slot='footer'>{pageDesc}</blockquote>
 </Layout>
-<style lang="scss">
+<style lang='scss'>
   h1 {
     text-align: center;
     @media (min-width: 576px) {

@@ -1,7 +1,7 @@
 ---
 slag: junglestar
 title: Junglestar
-category: website
+category: websites
 year: 2016
 year2: 2023
 where: eurasia

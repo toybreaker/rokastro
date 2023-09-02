@@ -4,7 +4,7 @@ import { type CollectionEntry, getCollection } from 'astro:content'
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts', ({ data }) => {
-    return data.draft !== true && data.category == 'website'
+    return data.draft !== true && data.category == 'websites'
   })
 
   return posts.map((post) => ({

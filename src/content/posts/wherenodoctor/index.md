@@ -1,7 +1,7 @@
 ---
 slag: wherenodoctor
 title: Where No doctor
-category: website
+category: websites
 year: 2016
 where: global
 images:

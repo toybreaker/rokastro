@@ -1,0 +1,134 @@
+---
+import * as siteData from '@data/site.json'
+import { Icon } from 'astro-icon'
+import NavContacts from '@components/NavContacts.astro'
+import NavLinks from '@components/NavLinks.astro'
+
+const today = new Date()
+---
+
+<label for='nav' class='toggle'>
+  <Icon name='nav' />
+</label>
+
+<input type='checkbox' id='nav' />
+
+<div class='sidebar'>
+  <div class='top'>
+    <label for='nav' class='toggle'>
+      <Icon name='x' />
+    </label>
+
+    <a
+      class='go_home'
+      href='/'
+      title='close navigation and go back to home page'>{siteData.title}</a
+    >
+
+    <div class='tagline'>{siteData.tagline}</div>
+  </div>
+
+  <div class='bottom'>
+    <NavLinks />
+    <NavContacts />
+
+    <p class='fontsizefixed centertext'>
+      <span>Copyright © 2012-{today.getFullYear()}</span>
+      <br />Powered by
+      <a
+        class='underline-on-hover'
+        title='producer'
+        target='_blank'
+        href='https://junglestar.org'>Junglestar</a
+      >
+    </p>
+  </div>
+</div>
+
+<style lang='scss'>
+  :root {
+    --sidebar_width: 100vw;
+    @media (min-width: var(--sm)) {
+      --sidebar_width: 50dvw;
+    }
+  }
+
+  .sidebar {
+    padding: 3rem 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow-y: scroll; // fixed scrollbar
+    color: white;
+    background-color: #888;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+
+    width: var(--sidebar_width);
+    left: calc(100vw - var(--sidebar_width));
+    a {
+      font-weight: 400;
+      color: var(--primary);
+    }
+
+    .avatar img {
+      border-radius: 50%; //opera mini issue here
+      margin: 1rem auto;
+      width: 50%;
+    }
+  }
+
+  #nav {
+    display: none;
+  }
+
+  label.toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    display: block !important;
+
+    width: 48px;
+    height: 48px;
+    display: block;
+    cursor: pointer;
+    // /display: table;
+    text-align: center;
+  }
+
+  .sidebar,
+  .wrap {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  label,
+  .wrap {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  // kill some deafults
+  .toggle:active,
+  .toggle:focus,
+  .toggle:hover,
+  label:active label:hover,
+  label:focus {
+    outline: 0 !important;
+    border: 0;
+  }
+
+  .toggle {
+    user-select: none;
+  }
+
+  #nav:checked + .sidebar {
+    z-index: 101;
+    visibility: visible;
+  }
+</style>

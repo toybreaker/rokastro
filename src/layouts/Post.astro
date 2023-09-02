@@ -11,33 +11,35 @@ const pageDesc = siteData.description_web
 <Layout
   pageTitle={title}
   pageDesc={pageDesc}
-  mainClass="container"
+  mainClass='container'
   bodyClass={category}
-  ogImage={images[0]}>
-  <!-- <slot name="header" /> -->
+  ogImage={images[0]}
+>
+  <div slot='header' class='uppercase'>
+    <div class='container'>
+      <a class='post' href='/'>{siteData.title}</a>&nbsp;
+      <a class='post' href={`/${category}/`}>{category}</a>
 
-  <span slot="header" class="section_name uppercase">
-    <a class="post" href="/">{siteData.title}</a>
-    <a class="post" href={`/${category}/`}>{category}</a>
-  </span>
+      <h1>{title}</h1>
+    </div>
+    <hr />
+  </div>
 
-  <h1 slot="header">{title}</h1>
-
-  <div slot="images" class="images">
+  <div slot='images' class='images'>
     {
       images.map((i: string) => {
-        return <Slide p={i} alt="g" quality="high" cssClass="slide" />
+        return <Slide p={i} alt='g' quality='high' cssClass='slide' />
       })
     }
   </div>
 
-  <div class="content">
-    <ul class="tags">
+  <div class='content'>
+    <ul class='tags'>
       {
         tags.map((tag: string) => {
           return (
             <li>
-              <a class="" href={`/${tag}/`}>
+              <a class='' href={`/${tag}/`}>
                 {tag}
               </a>
             </li>
@@ -48,9 +50,9 @@ const pageDesc = siteData.description_web
     <slot />
   </div>
 
-  <p slot="footer">SEE MORE</p>
+  <p slot='footer'>SEE MORE</p>
 </Layout>
-<style lang="scss">
+<style lang='scss'>
   .tags {
     max-width: none !important;
     li {
