@@ -21,6 +21,7 @@ tags:
   - studio-shooting
   - catalog-shooting
   - social-media-shooting
+  - fashion-branding
 ---
 
 Fashion shoot for [Quarzia](https://quarzia.it/).

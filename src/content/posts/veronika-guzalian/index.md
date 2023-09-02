@@ -18,6 +18,7 @@ tags:
   - location-shooting
   - catalog-shooting
   - social-media-shooting
+  - fashion-branding
 ---
 
 Fashion catalog shoot.

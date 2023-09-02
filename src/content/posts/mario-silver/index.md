@@ -16,6 +16,7 @@ tags:
   - advertising-photography
   - beauty
   - black-and-white
+  - catalog-shooting
 featured: true
 ---
 

@@ -5,6 +5,15 @@ import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
 
 const today = new Date()
+
+import { getImage } from 'astro:assets'
+import rokmAvatar from '@p/00.jpg'
+
+const optimizedBackground = await getImage({
+  src: rokmAvatar,
+  format: 'avif',
+  quality: 'high'
+})
 ---
 
 <label for='nav' class='toggle'>
@@ -13,8 +22,11 @@ const today = new Date()
 
 <input type='checkbox' id='nav' />
 
-<div class='sidebar'>
-  <div class='top'>
+<div
+  class='sidebar'
+  style={`background-image: url(${optimizedBackground.src}); background-position: center center; background-size: cover;`}
+>
+  <div class='top centre'>
     <label for='nav' class='toggle'>
       <Icon name='x' />
     </label>
@@ -22,26 +34,28 @@ const today = new Date()
     <a
       class='go_home'
       href='/'
-      title='close navigation and go back to home page'>{siteData.title}</a
+      title='close navigation and go back to home page'
+      ><h1>{siteData.title}</h1></a
     >
 
-    <div class='tagline'>{siteData.tagline}</div>
+    <h2 class='h4'>{siteData.tagline}</h2>
   </div>
 
-  <div class='bottom'>
-    <NavLinks />
+  <NavLinks />
+
+  <div class='bottom centre'>
     <NavContacts />
 
-    <p class='fontsizefixed centertext'>
-      <span>Copyright © 2012-{today.getFullYear()}</span>
-      <br />Powered by
+    <small>
+      Copyright © 2012-{today.getFullYear()} Rokma. All rights reserved.
+      Powered by
       <a
         class='underline-on-hover'
         title='producer'
         target='_blank'
         href='https://junglestar.org'>Junglestar</a
       >
-    </p>
+    </small>
   </div>
 </div>
 
@@ -54,7 +68,7 @@ const today = new Date()
   }
 
   .sidebar {
-    padding: 3rem 10px;
+    padding: 3rem 8px 1.5rem 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,7 +76,7 @@ const today = new Date()
 
     overflow-y: scroll; // fixed scrollbar
     color: white;
-    background-color: #888;
+    background-color: #000;
 
     position: fixed;
     top: 0;
@@ -71,9 +85,13 @@ const today = new Date()
 
     width: var(--sidebar_width);
     left: calc(100vw - var(--sidebar_width));
-    a {
+
+    a,
+    h1,
+    h2 {
       font-weight: 400;
-      color: var(--primary);
+      color: white !important;
+      margin-bottom: 0;
     }
 
     .avatar img {

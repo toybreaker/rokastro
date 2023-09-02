@@ -5,7 +5,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@p/*": ["src/assets/p/*"],
+      "@p/*": ["src/assets/*"],
       "@scripts/*": ["src/scripts/*"],
       "@favicons/*": ["public/assets/favicons/*"],
       "@svgs/*": ["src/assets/svgs/*"],

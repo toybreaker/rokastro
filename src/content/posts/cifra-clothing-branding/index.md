@@ -26,6 +26,7 @@ tags:
   - art-direction
   - photography
   - post-production
+  - fashion-branding
   - concept
   - printed
   - catalog

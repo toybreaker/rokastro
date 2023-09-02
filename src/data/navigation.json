@@ -1,34 +1,19 @@
 {
   "sections": [
     {
-      "label": "adverstising",
-      "slug": "adverstising",
-      "cssclass": "",
-      "description": "adverstising"
+      "label": "advertising"
     },
     {
-      "label": "branding",
-      "slug": "branding",
-      "cssclass": "",
-      "description": "branding"
+      "label": "branding"
     },
     {
-      "label": "photography",
-      "slug": "photography",
-      "cssclass": "",
-      "description": "photography"
+      "label": "photography"
     },
     {
-      "label": "specials",
-      "slug": "specials",
-      "cssclass": "",
-      "description": "specials"
+      "label": "specials"
     },
     {
-      "label": "websites",
-      "slug": "websites",
-      "cssclass": "",
-      "description": "websites"
+      "label": "websites"
     }
   ]
 }

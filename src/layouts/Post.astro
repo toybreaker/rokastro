@@ -15,15 +15,13 @@ const pageDesc = siteData.description_web
   bodyClass={category}
   ogImage={images[0]}
 >
-  <div slot='header' class='uppercase'>
-    <div class='container'>
-      <a class='post' href='/'>{siteData.title}</a>&nbsp;
-      <a class='post' href={`/${category}/`}>{category}</a>
+  <div class='container uppercase' slot='header'>
+    <a class='post' href='/'>{siteData.title}</a>&nbsp;
+    <a class='post' href={`/${category}/`}>{category}</a>
 
-      <h1>{title}</h1>
-    </div>
-    <hr />
+    <h1>{title}</h1>
   </div>
+  <hr slot='header' />
 
   <div slot='images' class='images'>
     {
@@ -53,6 +51,12 @@ const pageDesc = siteData.description_web
   <p slot='footer'>SEE MORE</p>
 </Layout>
 <style lang='scss'>
+  h1 {
+    margin-bottom: 1rem !important;
+  }
+  hr {
+    margin-top: 0 !important;
+  }
   .tags {
     max-width: none !important;
     li {

@@ -19,6 +19,7 @@ images: #for post page(responsive)
   - ./09.jpg
 tags:
   - product-photography
+  - fashion-branding
   - advertising
   - fashion
   - concept

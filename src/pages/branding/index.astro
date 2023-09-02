@@ -36,19 +36,20 @@ const pageDesc = siteData.description_branding
   mainClass={mainClass}
   category={category}
   pageDesc={pageDesc}
-  ogImage="../og_webdesign.jpg">
-  <p slot="header" class="center">Branding works</p>
-  <div class="posts">
+  ogImage='../og_webdesign.jpg'
+>
+  <p slot='header' class='center'>Noteworthy Branding projects</p>
+  <div class='posts'>
     {
       posts.map((post) => (
-        <a class="post" href={`/${category}/${post.slug}`}>
+        <a class='post' href={`/${category}/${post.slug}`}>
           <Card title={post.data.title} image={post.data.images[0]} />
         </a>
       ))
     }
   </div>
 </Layout>
-<style lang="scss">
+<style lang='scss'>
   .posts {
     display: grid;
     grid-gap: 0.5rem;

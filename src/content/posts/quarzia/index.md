@@ -24,6 +24,7 @@ tags:
   - fashion
   - copywriting
   - content-creation
+  - fashion-branding
 ---
 
 Online store with blog and search.

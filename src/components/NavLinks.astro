@@ -1,5 +1,6 @@
 ---
 import * as navigation from '@data/navigation.json'
+import * as siteData from '@data/site.json'
 const allSections = navigation.sections
 // const sections = allSections.filter(function (item) {
 //   return item.position == 'bottom'
@@ -16,4 +17,35 @@ export interface allSections {
 }
 ---
 
-<nav class=''></nav>
+<nav class=''>
+  {
+    sections.map((section) => (
+      <a
+        rel='prefetch'
+        class={section.label}
+        href={'/' + section.label + '/'}
+        title={siteData.description}
+      >
+        <button class='outline'>{section.label.toUpperCase()}</button>
+      </a>
+    ))
+  }
+</nav>
+
+<style lang='scss'>
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  a {
+    color: white !important;
+    display: block;
+  }
+  button {
+    color: white !important;
+    border-color: white;
+    margin-bottom: calc(var(--spacing) / 2);
+    display: block;
+  }
+</style>
