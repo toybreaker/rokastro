@@ -1,0 +1,21 @@
+---
+//EditorialClients
+import * as clients from '@data/editorial_clients.json'
+const names = clients.clients
+
+export interface names {
+  name: string
+}
+---
+
+<div class='container'>
+  <h2>Editorial Clients</h2>
+  {names.map((n) => n.name + ', ')}
+</div>
+
+<style>
+  h2 {
+    color: white;
+    margin-bottom: 8px;
+  }
+</style>

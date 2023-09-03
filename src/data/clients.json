@@ -1,116 +1,121 @@
-[
-  {
-    "name": "Tomas Saraceno"
-  },
-  {
-    "name": "Volcom"
-  },
-  {
-    "name": "Diesel"
-  },
-  {
-    "name": "Renault"
-  },
-  {
-    "name": "Converse"
-  },
-  {
-    "name": "Etnies"
-  },
-  {
-    "name": "Billabong"
-  },
-  {
-    "name": "Bastard"
-  },
-  {
-    "name": "Titus Dittmann"
-  },
-  {
-    "name": "Koo Jeong A"
-  },
-  {
-    "name": "Giver Viaggi"
-  },
-  {
-    "name": "Landi Designs"
-  },
-  {
-    "name": "Cifra Clothing"
-  },
-  {
-    "name": "Motel Clothing"
-  },
-  {
-    "name": "Queen of the Sea"
-  },
-  {
-    "name": "Jungle Surf Indonesia"
-  },
-  {
-    "name": "Matteo Ferrari Photography"
-  },
-  {
-    "name": "John Hepler Photography"
-  },
-  {
-    "name": "Varazze Surf Shop"
-  },
-  {
-    "name": "Eleonora Parodi Restauri"
-  },
-  {
-    "name": "Journey Costarica"
-  },
-  {
-    "name": "Guanacaste Apart Hotel"
-  },
-  {
-    "name": "Disfrutalo Resort"
-  },
-  {
-    "name": "Woo Lee"
-  },
-  {
-    "name": "Mario Silver"
-  },
-  {
-    "name": "Liquid Eye Water Housings"
-  },
-  {
-    "name": "Pinksummer Art Gallery"
-  },
-  {
-    "name": "Davina Stephens"
-  },
-  {
-    "name": "Adria Sartore"
-  },
-  {
-    "name": "Live Essences"
-  },
-  {
-    "name": "Ghettoblaster"
-  },
-  {
-    "name": "Glad Store"
-  },
-  {
-    "name": "Globe Indonesia"
-  },
-  {
-    "name": "Junglo Shoes"
-  },
-  {
-    "name": "Casa Asia"
-  },
-  {
-    "name": "Divino"
-  },
-  {
-    "name": "Junglo"
-  },
-  {
-    "name": "Quarzia"
-  }
-]
+{
+  "clients": [
+    {
+      "name": "Volcom"
+    },
+    {
+      "name": "Tomas Saraceno"
+    },
+    {
+      "name": "Diesel"
+    },
+    {
+      "name": "Renault"
+    },
+    {
+      "name": "Converse"
+    },
+    {
+      "name": "Etnies"
+    },
+    {
+      "name": "Billabong"
+    },
+    {
+      "name": "Bastard"
+    },
+    {
+      "name": "Titus Dittmann"
+    },
+    {
+      "name": "Koo Jeong A"
+    },
+    {
+      "name": "Giver Viaggi"
+    },
+    {
+      "name": "Landi Designs"
+    },
+    {
+      "name": "Cifra Clothing"
+    },
+    {
+      "name": "Motel Clothing"
+    },
+    {
+      "name": "Queen of the Sea"
+    },
+    {
+      "name": "Jungle Surf Indonesia"
+    },
+    {
+      "name": "Matteo Ferrari Photography"
+    },
+    {
+      "name": "John Hepler Photography"
+    },
+    {
+      "name": "Varazze Surf Shop"
+    },
+    {
+      "name": "Eleonora Parodi Restauri"
+    },
+    {
+      "name": "Journey Costarica"
+    },
+    {
+      "name": "Guanacaste Apart Hotel"
+    },
+    {
+      "name": "Disfrutalo Resort"
+    },
+    {
+      "name": "Woo Lee"
+    },
+    {
+      "name": "Mario Silver"
+    },
+    {
+      "name": "Liquid Eye Water Housings"
+    },
+    {
+      "name": "Pinksummer Art Gallery"
+    },
+    {
+      "name": "Davina Stephens"
+    },
+    {
+      "name": "Adria Sartore"
+    },
+    {
+      "name": "Ghettoblaster"
+    },
+    {
+      "name": "Glad Store"
+    },
+    {
+      "name": "Globe Indonesia"
+    },
+    {
+      "name": "Junglo Shoes"
+    },
+    {
+      "name": "Casa Asia"
+    },
+    {
+      "name": "Divino"
+    },
+    {
+      "name": "Junglo"
+    },
+    {
+      "name": "Binocle"
+    },
+    {
+      "name": "Quarzia"
+    },
+    {
+      "name": "Kala Surfcamp"
+    }
+  ]
+}

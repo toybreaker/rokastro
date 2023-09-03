@@ -3,6 +3,9 @@ import * as siteData from '@data/site.json'
 import { Icon } from 'astro-icon'
 import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
+import Testimonials from '@components/Testimonials.astro'
+import Clients from '@components/Clients.astro'
+import EditorialClients from '@components/EditorialClients.astro'
 
 const today = new Date()
 
@@ -41,7 +44,19 @@ const optimizedBackground = await getImage({
     <h2 class='h4'>{siteData.tagline}</h2>
   </div>
 
-  <NavLinks />
+  <div class='middle'>
+    <div class='middle_scroller'>
+      <NavLinks />
+
+      <br />
+
+      <Testimonials />
+      <br />
+      <Clients />
+      <br />
+      <EditorialClients />
+    </div>
+  </div>
 
   <div class='bottom centre'>
     <NavContacts />
@@ -74,7 +89,7 @@ const optimizedBackground = await getImage({
     align-items: center;
     justify-content: space-between;
 
-    overflow-y: scroll; // fixed scrollbar
+    overflow-y: scroll;
     color: white;
     background-color: #000;
 
@@ -99,6 +114,31 @@ const optimizedBackground = await getImage({
       margin: 1rem auto;
       width: 50%;
     }
+  }
+
+  .top {
+    position: fixed;
+    top: 1.75rem;
+  }
+
+  .middle {
+    max-width: 100vw;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    top: 8rem;
+    bottom: 7rem;
+    height: calc(100dvh - 8rem - 7rem);
+    .middle_scroller {
+      width: 100dvw;
+      margin: 0 auto;
+    }
+  }
+
+  .bottom {
+    position: fixed;
+    bottom: 1rem;
+    padding: 0 10px;
   }
 
   #nav {

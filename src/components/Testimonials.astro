@@ -1,0 +1,31 @@
+---
+//Testimonials
+import * as testimonials from '@data/testimonials.json'
+const quotes = testimonials.quotes
+
+export interface quotes {
+  quote: string
+}
+---
+
+{
+  quotes.map((quote) => (
+    <blockquote class='concepts'>
+      "{quote.quote}"{' '}
+      <>
+        <br />
+        <br />
+      </>
+      <cite>
+        {quote.name}
+        {', Founder of ' + quote.brand}
+      </cite>
+    </blockquote>
+  ))
+}
+<style>
+  blockquote {
+    --blockquote-border-color: white;
+    color: white;
+  }
+</style>

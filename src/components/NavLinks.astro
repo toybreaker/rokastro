@@ -1,19 +1,10 @@
 ---
 import * as navigation from '@data/navigation.json'
 import * as siteData from '@data/site.json'
-const allSections = navigation.sections
-// const sections = allSections.filter(function (item) {
-//   return item.position == 'bottom'
-// })
+const sections = navigation.sections
 
-const sections = allSections
-
-export interface allSections {
+export interface sections {
   label: string
-  url: string
-  description: string
-  position: string
-  cssclass: string
 }
 ---
 
@@ -37,6 +28,9 @@ export interface allSections {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 80dvw;
+    max-width: 400px;
+    margin: 0 auto;
   }
   a {
     color: white !important;
