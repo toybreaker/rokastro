@@ -1,31 +1,95 @@
 ---
-//Testimonials
 import * as testimonials from '@data/testimonials.json'
 const quotes = testimonials.quotes
 
 export interface quotes {
   quote: string
+  url: string
+  name: string
 }
 ---
 
-{
-  quotes.map((quote) => (
-    <blockquote class='concepts'>
-      "{quote.quote}"{' '}
-      <>
-        <br />
-        <br />
-      </>
-      <cite>
-        {quote.name}
-        {', Founder of ' + quote.brand}
-      </cite>
-    </blockquote>
-  ))
-}
-<style>
+<div class='scroll'></div>
+<div class='phrases'>
+  {
+    quotes.map((quote) => (
+      <blockquote>
+        "{quote.quote}"{' '}
+        <>
+          <br />
+          <br />
+        </>
+        <cite>
+          {quote.name}
+          Founder of <a href={quote.url}>{quote.brand}</a>
+        </cite>
+      </blockquote>
+    ))
+  }
+</div>
+<style lang='scss'>
   blockquote {
     --blockquote-border-color: white;
     color: white;
+  }
+  cite a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .phrases {
+    max-width: 60ch;
+    margin: 0 auto;
+  }
+  .scroll {
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  .scroll {
+    width: 60px;
+    height: 60px;
+    /* border: 2px solid #fff;
+    border-radius: 50%; */
+    position: relative;
+    animation: down 1.5s infinite;
+    -webkit-animation: down 1.5s infinite;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 15px;
+      left: 18px;
+      width: 18px;
+      height: 18px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+
+  @-webkit-keyframes down {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
   }
 </style>

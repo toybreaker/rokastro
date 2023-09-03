@@ -7,6 +7,7 @@ import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
 import AppendToCopyAction from '@scripts/AppendToCopyAction.astro'
 import GoogleAnalytics from '@scripts/GoogleAnalytics.astro'
+import ExternalLink from '@scripts/ExternalLink.astro'
 
 export interface Props {
   pageTitle: string
@@ -72,5 +73,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <Nav />
     <AppendToCopyAction />
     <GoogleAnalytics />
+    <ExternalLink />
   </body>
 </html>

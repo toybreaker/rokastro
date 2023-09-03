@@ -34,25 +34,26 @@ const pageDesc = siteData.description
   bodyClass={bodyClass}
   mainClass={mainClass}
   pageDesc={pageDesc}
-  ogImage="../og_home.jpg">
-  <section class="intro">
-    <div class="container">
+  ogImage='../og_home.jpg'
+>
+  <section class='intro'>
+    <div class='container'>
       <h1>
         <strong>Rokma</strong> Believes your customers should understand you.
       </h1>
     </div>
   </section>
 
-  <section class="all_works">
-    <div class="container">
+  <section class='all_works'>
+    <div class='container'>
       <h1>
         <strong>Rokma</strong> Empowers Your Work.
       </h1>
     </div>
-    <div class="posts">
+    <div class='posts'>
       {
         sortedFP.map((post) => (
-          <a class="post" href={`/${post.data.category}/${post.slug}`}>
+          <a class='post' href={`/${post.data.category}/${post.slug}`}>
             <Card
               title={post.data.title}
               category={post.data.category}
@@ -65,7 +66,7 @@ const pageDesc = siteData.description
   </section>
 
   <section>
-    <div class="container">
+    <div class='container'>
       <h1>
         <strong>Rokma</strong> Helps You Deliver Your Message.
       </h1>
@@ -73,28 +74,28 @@ const pageDesc = siteData.description
   </section>
 
   <section>
-    <div class="container">
+    <div class='container'>
       <h1>
         <strong>Rokma</strong> Makes Your Offer Recognizable.
       </h1>
     </div>
   </section>
 
-  <section class="last">
-    <div class="container">
+  <section class='last'>
+    <div class='container'>
       <h1>
-        <a class="bottom_link" href="/photography/"
+        <a class='bottom_link' href='/photography/'
           >Are you ready to
           <strong> Make your light shine?</strong>
         </a>
       </h1>
 
-      <a class="homepage_last_link" href="/about/">Know more about Rokma ></a>
+      <label for='nav'>Know more about Rokma ></label>
     </div>
   </section>
 </Layout>
 
-<style lang="scss">
+<style lang='scss'>
   section {
     margin-bottom: 0 !important;
     min-height: 100dvh;

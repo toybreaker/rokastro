@@ -25,10 +25,18 @@ const optimizedBackground = await getImage({
 
 <input type='checkbox' id='nav' />
 
-<div
-  class='sidebar'
-  style={`background-image: url(${optimizedBackground.src}); background-position: center center; background-size: cover;`}
->
+<div class='sidebar'>
+  <div
+    style={`
+    background-image: url(${optimizedBackground.src});
+    background-position: center center;
+    background-size: cover; width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(60%);`}
+  >
+  </div>
   <div class='top centre'>
     <label for='nav' class='toggle'>
       <Icon name='x' />
@@ -83,7 +91,7 @@ const optimizedBackground = await getImage({
   }
 
   .sidebar {
-    padding: 3rem 8px 1.5rem 8px;
+    //padding: 3rem 8px 1.5rem 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +164,6 @@ const optimizedBackground = await getImage({
     height: 48px;
     display: block;
     cursor: pointer;
-    // /display: table;
     text-align: center;
   }
 
@@ -166,10 +173,10 @@ const optimizedBackground = await getImage({
     backface-visibility: hidden;
   }
 
-  label,
-  .wrap {
-    transition: transform 0.3s ease-in-out;
-  }
+  // label,
+  // .wrap {
+  //   transition: all 0.8s ease-in-out;
+  // }
 
   // kill some deafults
   .toggle:active,
@@ -188,5 +195,9 @@ const optimizedBackground = await getImage({
   #nav:checked + .sidebar {
     z-index: 101;
     visibility: visible;
+  }
+
+  body:has(#nav:checked) {
+    overflow: hidden;
   }
 </style>
