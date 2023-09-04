@@ -3,6 +3,7 @@ slag: valeria-delacerda
 title: Valeria Delacerda
 category: branding
 grid_small_images: #true or empty
+backgroundColor: gray
 year: 2020
 where: Ipanema, Brazil
 catch: personal work by

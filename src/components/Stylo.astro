@@ -42,8 +42,10 @@ import '@fontsource/dosis'
   /* Common styles */
   :root {
     //rok same light and dark mode stupid hack
-    --primary: hsl(51, 100%, 50%) !important;
-    --primary-hover: hsl(51, 100%, 46%) !important;
+    --gold: hsl(51, 100%, 50%) !important;
+
+    --primary: hsl(0, 0%, 40%) !important;
+    --primary-hover: hsl(0, 0%, 10%) !important;
     --primary-focus: rgba(253, 216, 53, 0.125) !important;
     --primary_back: hsl(0, 0%, 100%) !important;
     --primary_front: hsl(0, 0%, 8%) !important;
@@ -55,7 +57,9 @@ import '@fontsource/dosis'
     --form-element-focus-color: var(--primary-focus) !important;
     --switch-color: var(--primary-inverse) !important;
     --switch-checked-background-color: var(--primary) !important;
-    --grey1: #e5e4e2;
+    --gray: #e5e4e2;
+    --lightgray: rgb(238, 238, 238);
+    --offwhite: rgb(230, 230, 230);
 
     //rok
     --font-family: 'Dosis' !important;
@@ -125,9 +129,24 @@ import '@fontsource/dosis'
     margin: 0;
     font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
-  }
-  body.grey1 {
-    background-color: var(--grey1) !important;
+    // PAGE VARIANTS
+    &.offwhite {
+      background-color: var(--offwhite);
+    }
+    &.lightgray {
+      background-color: var(--lightgray);
+    }
+    &.gray {
+      background-color: var(--gray);
+    }
+    &.black {
+      background-color: black;
+      --primary_front: hsl(0, 0%, 75%);
+      --color: hsl(0, 0%, 85%);
+      .toggle {
+        color: var(--color);
+      }
+    }
   }
 
   * {

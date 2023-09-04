@@ -17,7 +17,7 @@ const pageDesc = siteData.description_web
   ogImage={images[0]}
 >
   <div class='container uppercase' slot='header'>
-    <a class='post' href='/'>{siteData.title}</a>&nbsp;
+    <a class='post' href='/'>{siteData.title}</a><span class='shift'>></span>
     <a class='post' href={`/${category}/`}>{category}</a>
 
     <h1>{title}</h1>
@@ -73,5 +73,12 @@ const pageDesc = siteData.description_web
     //global otherwise doesnt work!
     margin: 1rem 0;
     border-radius: var(--radius);
+  }
+  .shift {
+    position: relative;
+    bottom: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: var(--primary);
   }
 </style>
