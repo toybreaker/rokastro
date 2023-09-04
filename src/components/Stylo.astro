@@ -55,6 +55,7 @@ import '@fontsource/dosis'
     --form-element-focus-color: var(--primary-focus) !important;
     --switch-color: var(--primary-inverse) !important;
     --switch-checked-background-color: var(--primary) !important;
+    --grey1: #e5e4e2;
 
     //rok
     --font-family: 'Dosis' !important;
@@ -124,8 +125,9 @@ import '@fontsource/dosis'
     margin: 0;
     font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
-    //font-size: clamp(var(--font-size), 1rem + 0.169vw, 2rem);
-    //content-visibility: auto; // disable cos it break position fixed
+  }
+  body.grey1 {
+    background-color: var(--grey1) !important;
   }
 
   * {

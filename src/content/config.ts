@@ -18,6 +18,7 @@ const works = defineCollection({
       offwhite: z.boolean().optional().nullable().default(false),
       featured: z.boolean().optional().nullable(),
       tags: z.array(z.string()),
+      backgroundColor: z.string().optional().nullable(),
       draft: z.boolean().optional().nullable()
     })
 })

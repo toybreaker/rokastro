@@ -10,6 +10,7 @@ export interface quotes {
 ---
 
 <div class='scroll'></div>
+<h3 class='h4 centre phrases_title uppercase'>What clients are saying</h3>
 <div class='phrases'>
   {
     quotes.map((quote) => (
@@ -38,6 +39,11 @@ export interface quotes {
     &:hover {
       text-decoration: none;
     }
+  }
+  .phrases_title {
+    color: white;
+    max-width: 90dvw;
+    margin: 0 auto;
   }
   .phrases {
     max-width: 60ch;

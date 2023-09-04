@@ -3,7 +3,8 @@ import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
 
-const { title, category, images, tags } = Astro.props.frontmatter || Astro.props
+const { title, category, images, tags, backgroundColor } =
+  Astro.props.frontmatter || Astro.props
 
 const pageDesc = siteData.description_web
 ---
@@ -12,7 +13,7 @@ const pageDesc = siteData.description_web
   pageTitle={title}
   pageDesc={pageDesc}
   mainClass='container'
-  bodyClass={category}
+  bodyClass={category + ' ' + backgroundColor}
   ogImage={images[0]}
 >
   <div class='container uppercase' slot='header'>
