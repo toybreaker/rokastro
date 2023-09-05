@@ -1,11 +1,10 @@
 ---
-slag: nixon-park
 title: Nixon Park
 category: photography
 year: 2019
 where: Auckland, New Zealand
 catch: personal work by
-offwhite: true # true or empty
+bodyClass: offwhite
 published_on: 'https://fumes.junglestar.org/photo-journalism/nixon-park/'
 images:
   - ./01.jpg

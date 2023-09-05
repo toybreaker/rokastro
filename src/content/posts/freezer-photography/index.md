@@ -6,7 +6,7 @@ bg: black
 year: 1995
 year2: 2000
 where: italy
-backgroundColor: black
+bodyClass: black
 catch: powered by
 images:
   - ./01.jpg

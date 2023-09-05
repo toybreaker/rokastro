@@ -1,12 +1,11 @@
 ---
-slag: freezer-art-direction
 title: Freezer art direction
 category: branding
 grid_small_images: true #true or empty
 year: 1995
 year2: 2000
 where: italy
-backgroundColor: gray1
+bodyClass: gray
 images:
   - ./01.jpg
   - ./02.jpg

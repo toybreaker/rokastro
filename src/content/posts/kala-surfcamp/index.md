@@ -5,7 +5,7 @@ grid_small_images: #true or empty
 year: 2023
 where: Bali, Indonesia
 catch:
-offwhite: true # true or empty
+bodyClass: offwhite
 featured: true
 images:
   - ./01.jpg

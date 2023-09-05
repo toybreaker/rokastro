@@ -3,7 +3,7 @@ slag: videos
 title: Videos
 category: specials
 year: 1992
-backgroundColor: black
+bodyClass: black
 images:
   - ./01.jpg
 tags:

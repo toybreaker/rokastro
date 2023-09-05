@@ -6,7 +6,7 @@ year: 1995
 year2: 2000
 where: milano, italy
 imagehowmany: 6
-backgroundColor: gray2
+bodyClass: gray2
 images:
   - ./01.jpg
   - ./02.jpg

@@ -5,7 +5,7 @@ category: photography
 year: 1988
 year2: 1991
 where: italy
-backgroundColor: black
+bodyClass: black
 catch: powered by
 images:
   - ./01.jpg

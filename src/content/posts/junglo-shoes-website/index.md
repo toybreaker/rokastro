@@ -1,5 +1,4 @@
 ---
-slag: junglo-store
 title: Junglo Store
 category: websites
 grid_small_images: #true or empty
@@ -7,7 +6,7 @@ year: 2020
 year2: 2021
 where: Genova, Italy
 catch: personal work by
-offwhite: true # true or empty
+bodyClass: offwhite
 images:
   - ./01.jpg
   - ./02.jpg

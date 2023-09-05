@@ -1,14 +1,11 @@
 ---
-slag: valeria-delacerda
 title: Valeria Delacerda
 category: branding
 grid_small_images: #true or empty
-backgroundColor: gray
 year: 2020
 where: Ipanema, Brazil
 catch: personal work by
-offwhite: true # true or empty
-images: #for post page(responsive)
+images:
   - ./01.jpg
   - ./02.jpg
   - ./03.jpg

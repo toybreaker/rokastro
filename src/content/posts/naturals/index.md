@@ -1,11 +1,10 @@
 ---
-slag: naturals
 title: Naturals
 category: photography
 year: 2019
 where: Bangkok, Thailand
 catch: personal work by
-offwhite: true # true or empty
+bodyClass: offwhite
 images:
   - ./01.jpg
   - ./02.jpg

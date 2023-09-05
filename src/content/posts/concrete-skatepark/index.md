@@ -6,7 +6,7 @@ year: 1989
 year2: 1991
 where: italy
 imagehowmany: 2
-backgroundColor: gray2
+bodyClass: gray2
 images:
   - ./01.jpg
   - ./02.jpg

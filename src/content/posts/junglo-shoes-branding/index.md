@@ -5,7 +5,7 @@ grid_small_images: #true or empty
 year: 2020
 where: Genova, Italy
 catch: personal work by
-offwhite: true # true or empty
+bodyClass: offwhite
 featured: true
 images: # this can have captions (see valeria branding)
   - ./14.jpg

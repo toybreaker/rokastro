@@ -1,11 +1,10 @@
 ---
-slag: quarzia
 title: Quarzia Julia
 category: photography
 year: 2021
 where: Bangkok, Thailand
 catch: personal work by
-offwhite: true # true or empty
+bodyClass: offwhite
 images:
   - ./01.jpg
   - ./02.jpg

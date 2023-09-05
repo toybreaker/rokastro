@@ -1,11 +1,10 @@
 ---
-slag: quarzia-ilona
 title: Quarzia Ilona
 category: photography
 year: 2021
 where: Bali, Indonesia
 catch: personal work by
-offwhite: true # true or empty
+bodyClass: offwhite
 featured: true
 images:
   - ./01.jpg

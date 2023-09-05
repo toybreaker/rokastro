@@ -1,11 +1,10 @@
 ---
-slag: container-club
 title: Container Club
 category: branding
 grid_small_images: true #true or empty
 year: 1999
 where: milano, italy
-backgroundColor: black
+bodyClass: black
 images:
   - ./01.jpg
   - ./02.jpg

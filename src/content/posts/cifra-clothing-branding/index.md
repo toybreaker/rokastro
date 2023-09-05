@@ -3,7 +3,7 @@ slag: cifra-clothing
 title: Cifra Branding
 category: branding
 grid_small_images: true #true or empty
-backgroundColor: lightgray
+bodyClass: lightgray
 year: 2001
 year2: 2004
 where: italy

@@ -1,12 +1,10 @@
 ---
-slag: Ghettoblaster
 title: Ghettoblaster skateboards
 category: branding
 grid_small_images: #true or empty
 year: 2022
 where: Genova, Italy
 catch: personal work by
-offwhite: true # true or empty
 images:
   - ./01.jpg
 tags:

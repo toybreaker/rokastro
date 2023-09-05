@@ -4,7 +4,7 @@ title: 55DSL
 category: photography
 year: 1998
 where: italy
-backgroundColor: black
+bodyClass: black
 catch: powered by
 images:
   - ./01.jpg

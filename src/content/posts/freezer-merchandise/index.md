@@ -6,7 +6,7 @@ grid_small_images: true #true or empty
 year: 1995
 year2: 2000
 where: milano, italy
-backgroundColor: black
+bodyClass: black
 images:
   - ./01.jpg
   - ./02.jpg

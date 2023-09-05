@@ -4,7 +4,7 @@ title: Freezer Adv
 category: advertising
 year: 2000
 where: italy
-backgroundColor: gray
+bodyClass: gray
 images:
   - ./01.jpg
   - ./02.jpg

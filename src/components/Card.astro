@@ -43,14 +43,17 @@ const { title, image, category } = Astro.props
       filter 500ms ease-out,
       transform 250ms ease-out;
     transition-delay: 200ms; // anti-flickering trick
-    transform: scale(1.15);
+    transform: scale(0.95);
+    transform-origin: center center;
     overflow: hidden;
     will-change: filter, transform;
     padding-bottom: var(--spacing);
+    overflow: hidden;
 
     &:hover {
       filter: grayscale(0%);
-      transform: scale(0.95);
+      transform-origin: center center;
+      transform: scale(1);
     }
   }
 </style>
