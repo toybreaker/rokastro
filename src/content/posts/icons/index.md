@@ -4,7 +4,7 @@ title: Icons
 category: specials
 year: 2019
 images:
-  - ./01.jpg
+  - ./01.png
   - ./02.svg
   - ./03.svg
   - ./04.svg

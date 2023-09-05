@@ -14,10 +14,9 @@ const works = defineCollection({
       catch: z.string().optional().nullable(),
       fineartprints_link: z.boolean().optional().nullable(),
       fumes_category: z.string().optional().nullable(),
-      grid_small_images: z.boolean().optional().nullable().default(false),
       featured: z.boolean().optional().nullable(),
       tags: z.array(z.string()),
-      bodyClass: z.string().optional().nullable(),
+      bodyClass: z.string().optional().nullable().default(''),
       draft: z.boolean().optional().nullable()
     })
 })

@@ -1,11 +1,10 @@
 ---
 title: Skateboard Pusher
 category: branding
-grid_small_images: #true or empty
 year: 2021
 where: Genova, Italy
 catch: personal work by
-bodyClass: offwhite
+bodyClass: offwhite grid2
 images: #this can have captions (see valeria branding)
   - ./01.jpg
   - ./02.jpg

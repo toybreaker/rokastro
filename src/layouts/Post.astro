@@ -17,8 +17,10 @@ const pageDesc = siteData.description_web
   ogImage={images[0]}
 >
   <div class='container uppercase' slot='header'>
-    <a class='post' href='/'>{siteData.title}</a><span class='shift'>></span>
-    <a class='post' href={`/${category}/`}>{category}</a>
+    <a class='breadcrumb' href='/'>{siteData.title}</a><span class='shift'
+      >></span
+    >
+    <a class='breadcrumb' href={`/${category}/`}>{category}</a>
 
     <h1>{title}</h1>
   </div>
@@ -52,11 +54,13 @@ const pageDesc = siteData.description_web
 <style lang='scss'>
   h1 {
     margin-bottom: 1rem !important;
+    max-width: calc(100vw - 100px);
   }
   hr {
     margin-top: 0 !important;
   }
   .tags {
+    padding-top: var(--typography-spacing-vertical);
     max-width: none !important;
     li {
       display: inline-block;
@@ -69,11 +73,6 @@ const pageDesc = siteData.description_web
     list-style-type: none !important;
   }
 
-  :global(.slide) {
-    //global otherwise doesnt work!
-    margin: 1rem 0;
-    border-radius: var(--radius);
-  }
   .shift {
     position: relative;
     bottom: 2px;

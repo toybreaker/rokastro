@@ -1,7 +1,6 @@
 ---
 title: Ghettoblaster skateboards
 category: branding
-grid_small_images: #true or empty
 year: 2022
 where: Genova, Italy
 catch: personal work by

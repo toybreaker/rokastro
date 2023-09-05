@@ -1,12 +1,10 @@
 ---
-slag: freezer-project
 title: Freezer Project
 category: specials
 year: 1995
 year2: 2000
 where: milano, italy
-imagehowmany: 6
-bodyClass: gray2
+bodyClass: lightgray grid4
 images:
   - ./01.jpg
   - ./02.jpg
@@ -24,7 +22,7 @@ tags:
 5 years.
 27 free issues.
 
-Freezer Magazine came as a striking lightning over a stagnant industry.
+Freezer Magazine, Rokma's brainchild, came as a striking lightning over a stagnant industry.
 
 It created its own distribution.
 

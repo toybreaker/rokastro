@@ -1,10 +1,9 @@
 ---
 title: Container Club
 category: branding
-grid_small_images: true #true or empty
 year: 1999
 where: milano, italy
-bodyClass: black
+bodyClass: black grid3
 images:
   - ./01.jpg
   - ./02.jpg

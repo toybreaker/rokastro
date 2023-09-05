@@ -59,6 +59,7 @@ import '@fontsource/dosis'
     --switch-checked-background-color: var(--primary) !important;
     --gray: #e5e4e2;
     --lightgray: rgb(238, 238, 238);
+    --darkgray: rgb(212, 212, 212);
     --offwhite: rgb(230, 230, 230);
 
     //rok
@@ -139,10 +140,14 @@ import '@fontsource/dosis'
     &.gray {
       background-color: var(--gray);
     }
+    &.darkgray {
+      background-color: var(--darkgray);
+    }
     &.black {
       background-color: black;
       --primary_front: hsl(0, 0%, 75%);
       --color: hsl(0, 0%, 85%);
+      --primary-hover: var(--color);
       .toggle {
         color: var(--color);
       }
@@ -151,6 +156,14 @@ import '@fontsource/dosis'
 
   * {
     box-shadow: none !important;
+  }
+
+  .content {
+    p {
+      max-width: var(--paragraph_width);
+    }
+
+    margin: 0 auto;
   }
 
   footer {
@@ -402,5 +415,56 @@ import '@fontsource/dosis'
 
   .web-design img {
     border: 1px solid rgb(182, 182, 182);
+  }
+
+  .slide {
+    margin: 1rem 0;
+    border-radius: var(--radius);
+  }
+
+  .posts {
+    //at full width 3 columns
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 15px;
+    .slide {
+      margin: 0 !important;
+    }
+  }
+
+  .grid2 .images {
+    //small sceens 3 columns
+    display: grid;
+    grid-gap: 15px;
+    @media (max-width: 575px) {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    //bigger 2 columns
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)) !important;
+    }
+    .slide {
+      margin: 0 !important;
+    }
+  }
+
+  .grid3 .images {
+    //at full width 3 columns
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 15px;
+    .slide {
+      margin: 0 !important;
+    }
+  }
+
+  .grid4 .images {
+    //at full width 4 columns
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+    .slide {
+      margin: 0 !important;
+    }
   }
 </style>

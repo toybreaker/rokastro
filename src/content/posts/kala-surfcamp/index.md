@@ -1,11 +1,10 @@
 ---
 title: Kala surfcamp
 category: websites
-grid_small_images: #true or empty
 year: 2023
 where: Bali, Indonesia
 catch:
-bodyClass: offwhite
+bodyClass: offwhite grid3
 featured: true
 images:
   - ./01.jpg

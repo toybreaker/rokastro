@@ -5,7 +5,7 @@ category: advertising
 year: 1996
 year2: 2023
 where:
-bodyClass: gray
+bodyClass: gray grid3
 images:
   - ./01.jpg
   - ./02.jpg

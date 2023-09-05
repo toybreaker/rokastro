@@ -1,8 +1,7 @@
 ---
-slag: kaos-guerrilla
 title: Kaos Guerrilla
-category: branding
-grid_small_images: true #true or empty
+category: advertising
+bodyClass: grid4
 year: 2018
 where: bali, indonesia
 images:

@@ -2,10 +2,10 @@
 slag: skatesnowboard
 title: SkateSnowBoard
 category: photography
-year: 1988
+year: 1987
 year2: 1991
 where: italy
-bodyClass: black
+bodyClass: black grid4
 catch: powered by
 images:
   - ./01.jpg
@@ -21,10 +21,10 @@ tags:
   - art-direction
 ---
 
-Rokma invents and directs &lt;skatesnowboard&gt; for media publisher in Milano.
+It's 1987. Rokma invents and directs &lt;skatesnowboard&gt; for a media publisher in Milano.
 
-A pioneer example of today's popular board sports magazines.
+A pioneer example of end-of-century popular board sports magazines.
 
-20.000 copies distributed in news-stands nationwide.
+Printed in 20.000 copies distributed in news-stands nationwide.
 
 All photos in this selection by Rokma.

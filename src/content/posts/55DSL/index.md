@@ -1,5 +1,4 @@
 ---
-slag: 55dsl
 title: 55DSL
 category: photography
 year: 1998
@@ -15,6 +14,7 @@ images:
   - ./06.jpg
 tags:
   - art-direction
+  - catalog
   - concept
   - fashion-branding
   - photography

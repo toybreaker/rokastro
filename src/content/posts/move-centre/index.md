@@ -1,9 +1,9 @@
 ---
 title: Move Centre
 category: advertising
-grid_small_images: #true or empty
 year: 2018
 where: bali, indonesia
+bodyClass: grid2
 images:
   - ./01.jpg
   - ./02.jpg

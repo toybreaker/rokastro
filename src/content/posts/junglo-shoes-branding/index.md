@@ -1,11 +1,10 @@
 ---
 title: Junglo shoes
 category: branding
-grid_small_images: #true or empty
 year: 2020
 where: Genova, Italy
 catch: personal work by
-bodyClass: offwhite
+bodyClass: offwhite grid3
 featured: true
 images: # this can have captions (see valeria branding)
   - ./14.jpg

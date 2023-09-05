@@ -1,9 +1,9 @@
 ---
 title: Ogoh-ogoh skateboards
 category: branding
-grid_small_images: #true or empty
 year: 2021
 where: Genova, Italy
+bodyClass: grid2
 catch: personal work by
 images: #this can have captions (see valeria branding)
   - ./01.jpg

@@ -1,9 +1,9 @@
 ---
 title: Valeria Delacerda
-category: branding
-grid_small_images: #true or empty
+category: photography
 year: 2020
 where: Ipanema, Brazil
+bodyClass: grid2
 catch: personal work by
 images:
   - ./01.jpg

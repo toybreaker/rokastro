@@ -3,6 +3,7 @@ title: bali on a flat day
 category: photography
 year: 2008
 where: bali, indonesia
+bodyClass: black
 catch: Published on Surfers
 images:
   - ./01.jpg

@@ -1,11 +1,10 @@
 ---
 title: Freezer art direction
 category: branding
-grid_small_images: true #true or empty
 year: 1995
 year2: 2000
 where: italy
-bodyClass: gray
+bodyClass: gray grid3
 images:
   - ./01.jpg
   - ./02.jpg
