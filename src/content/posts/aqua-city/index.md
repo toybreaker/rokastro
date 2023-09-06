@@ -1,5 +1,4 @@
 ---
-slag: aqua-city
 title: Aqua City
 category: photography
 year: 2005
@@ -17,13 +16,14 @@ tags:
   - personal-work
   - black-and-white
   - street-photography
+  - fine-art-prints
 ---
 
 Part one of Aqua Serie. Unpublished.
 
-From the Aqua serie:
-[Aqua Sunday]({% post_url /portfolio/photography/2019-01-20-aqua-sunday %})
-[Aqua Island]({% post_url /portfolio/photography/2008-08-08-aqua-island %})
-[Aqua City]({% post_url /portfolio/photography/2005-08-08-aqua-city %}){:.hidden}
-[Aqua Province]({% post_url /portfolio/photography/2006-08-08-aqua-province %})
-[Aqua Market]({% post_url /portfolio/photography/2009-08-08-aqua-market %})
+Have a look at the complete Aqua serie:
+[Aqua Sunday](./aqua-sunday)
+[Aqua Island](./aqua-island)
+[Aqua City](./aqua-city)
+[Aqua Province](./aqua-province)
+[Aqua Market](./aqua-market)

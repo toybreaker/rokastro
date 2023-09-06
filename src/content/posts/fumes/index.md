@@ -19,6 +19,7 @@ tags:
   - reportage
   - photography
   - non-profit
+featured: true
 ---
 
 Photography based online magazine.

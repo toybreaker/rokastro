@@ -2,15 +2,29 @@
 import Layout from '@layouts/Index.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
+import CardSlim from '@components/CardSlim.astro'
 import * as siteData from '@data/site.json'
 
 const category = 'specials'
 
-const unsortedPosts = await getCollection('posts', ({ data }) => {
-  return data.draft !== true && data.category == category
+const unsortedFeaturedPosts = await getCollection('posts', ({ data }) => {
+  return (
+    data.draft !== true && data.featured == true && data.category == category
+  )
 })
 
-const posts = unsortedPosts.sort(
+const featuredPosts = unsortedFeaturedPosts.sort(
+  (a, b) =>
+    Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
+)
+
+const unsortedAllPosts = await getCollection('posts', ({ data }) => {
+  return (
+    data.draft !== true && data.featured !== true && data.category == category
+  )
+})
+
+const allPosts = unsortedAllPosts.sort(
   (a, b) =>
     Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
 )
@@ -40,9 +54,29 @@ const pageDesc = siteData.description_specials
   <p slot='header' class='center'>Special one-shot projects</p>
   <div class='posts'>
     {
-      posts.map((post) => (
-        <a class='post' href={`/${category}/${post.slug}`}>
+      featuredPosts.map((post) => (
+        <a
+          class='post'
+          href={`/${category}/${post.slug}`}
+          title={post.data.year + '-' + post.data.year2}
+        >
           <Card title={post.data.title} image={post.data.images[0]} />
+        </a>
+      ))
+    }
+  </div>
+
+  <hr />
+
+  <div class='all_posts'>
+    {
+      allPosts.map((post) => (
+        <a
+          class='post'
+          href={`/${category}/${post.slug}`}
+          title={post.data.year + '-' + post.data.year2}
+        >
+          <CardSlim title={post.data.title} />
         </a>
       ))
     }
@@ -50,7 +84,15 @@ const pageDesc = siteData.description_specials
 </Layout>
 <style lang='scss'>
   .post {
+    //a
     text-decoration: none;
+  }
+  .all_posts .post {
+    display: block;
+    border-bottom: 1px solid black;
+    .card:has(h2) {
+      margin-top: 0 !important;
+    }
   }
   h1 span {
     opacity: 0.5;

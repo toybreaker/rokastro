@@ -13,6 +13,7 @@ images:
 tags:
   - artist
   - portfolio
+featured: true
 ---
 
 Artist portfolio.

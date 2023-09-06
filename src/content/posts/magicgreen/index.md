@@ -14,9 +14,13 @@ images:
 tags:
   - concept
   - custom-websites
+  - art-direction
+  - magazine
   - design
   - logo
   - content-creation
+  - non-profit
+featured: true
 ---
 
 Non profit magazine.

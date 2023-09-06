@@ -15,6 +15,7 @@ images:
   - ./09.svg
 tags:
   - design
+featured: true
 ---
 
 Rokma has release some Open Source icons.

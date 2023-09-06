@@ -84,7 +84,15 @@ const pageDesc = siteData.description_advertising
 </Layout>
 <style lang='scss'>
   .post {
+    //a
     text-decoration: none;
+  }
+  .all_posts .post {
+    display: block;
+    border-bottom: 1px solid black;
+    .card:has(h2) {
+      margin-top: 0 !important;
+    }
   }
   h1 span {
     opacity: 0.5;
