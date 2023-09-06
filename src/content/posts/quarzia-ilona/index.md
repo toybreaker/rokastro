@@ -5,7 +5,6 @@ year: 2021
 where: Bali, Indonesia
 catch: personal work by
 bodyClass: offwhite
-featured: true
 images:
   - ./01.jpg
   - ./02.jpg
@@ -31,6 +30,8 @@ tags:
   - catalog-shooting
   - social-media-shooting
   - fashion-branding
+featured: true
+showcased: true
 ---
 
 Fashion shoot for [Quarzia](https://quarzia.it/). Images for catalog, social media, online-shop blog.

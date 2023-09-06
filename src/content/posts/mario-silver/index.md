@@ -19,6 +19,7 @@ tags:
   - black-and-white
   - catalog-shooting
 featured: true
+showcased: true
 ---
 
 Advertising images for &lt;Mario Silver&gt;

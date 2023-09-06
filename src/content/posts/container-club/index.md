@@ -16,6 +16,7 @@ tags:
   - logo
   - service-branding
   - design
+featured: true
 ---
 
 Laser-cut Logo, sign, stickers campaign for &lt;Container Club&gt;

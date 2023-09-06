@@ -5,7 +5,6 @@ year: 2023
 where: Bali, Indonesia
 catch:
 bodyClass: offwhite grid3
-featured: true
 images:
   - ./01.jpg
   - ./02.jpg
@@ -18,6 +17,8 @@ tags:
   - photography
   - marketing-strategy
   - copyrighting
+featured: true
+showcased: true
 ---
 
 Complete online presence for Casa Asia Group.

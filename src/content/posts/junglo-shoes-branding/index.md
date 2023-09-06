@@ -5,7 +5,6 @@ year: 2020
 where: Genova, Italy
 catch: personal work by
 bodyClass: offwhite grid3
-featured: true
 images: # this can have captions (see valeria branding)
   - ./14.jpg
   - ./01.jpg
@@ -32,6 +31,8 @@ tags:
   - product
   - filming
   - content-creation
+featured: true
+showcased: true
 ---
 
 Brand creation.

@@ -28,6 +28,8 @@ tags:
   - printed
   - magazine
   - content
+featured: true
+showcased: true
 ---
 
 Editorial strategy and branding for &lt;Freezer Magazine&gt; free press.

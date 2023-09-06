@@ -19,6 +19,7 @@ tags:
   - catalog-shooting
   - social-media-shooting
   - fashion-branding
+featured: true
 ---
 
 Fashion catalog shoot.

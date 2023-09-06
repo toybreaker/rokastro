@@ -53,6 +53,7 @@ tags:
   - art-direction
   - content-creation
   - catalog-shooting
+featured: true
 ---
 
 Social marketing campaign for &lt;Kaos Guerrilla&gt; brand.

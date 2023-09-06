@@ -22,6 +22,7 @@ tags:
   - reportage
   - street-photography
   - event
+featured: true
 ---
 
 Shot during the Ogoh-ogoh parade,

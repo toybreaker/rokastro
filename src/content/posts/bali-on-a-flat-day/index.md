@@ -25,6 +25,8 @@ tags:
   - reportage
   - black-and-white
   - surfing
+featured: true
+showcased: true
 ---
 
 Published on Surfers magazine

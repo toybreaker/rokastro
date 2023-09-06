@@ -22,6 +22,7 @@ tags:
   - fashion
   - concept
 featured: true
+showcased: true
 ---
 
 Advertising images for Valeria Delacerda brand.

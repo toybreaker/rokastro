@@ -14,6 +14,7 @@ tags:
   - fashion-branding
   - action-photography
   - streetwear
+featured: true
 ---
 
 Image for Volcom®.

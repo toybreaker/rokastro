@@ -4,11 +4,11 @@ import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
 import * as siteData from '@data/site.json'
 
-const featuredPosts = await getCollection('posts', ({ data }) => {
-  return data.draft !== true && data.featured
+const showcasePosts = await getCollection('posts', ({ data }) => {
+  return data.draft !== true && data.showcased
 })
 
-const sortedFP = featuredPosts.sort(
+const sortedFP = showcasePosts.sort(
   (a, b) =>
     Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
 )

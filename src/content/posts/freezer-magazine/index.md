@@ -24,6 +24,7 @@ tags:
   - printed
   - magazine
   - content
+featured: true
 ---
 
 Advertising campaign for &lt;Freezer Magazine&gt; firm.

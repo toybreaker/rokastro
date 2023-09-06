@@ -18,6 +18,7 @@ tags:
   - concept
   - fashion-branding
   - photography
+featured: true
 ---
 
 Catalog for Diesel's &lt;55DSL&gt;.

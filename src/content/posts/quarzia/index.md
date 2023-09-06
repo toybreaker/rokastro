@@ -7,6 +7,7 @@ where: Bali, Indonesia
 catch: personal work by
 bodyClass: offwhite grid2
 featured: true
+showcased: true
 images:
   - ./01.jpg
   - ./02.jpg

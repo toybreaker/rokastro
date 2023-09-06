@@ -6,7 +6,6 @@ year2: 2023
 where: Bali, Indonesia
 catch:
 bodyClass: offwhite grid3
-featured: true
 images:
   - ./01.jpg
   - ./02.jpg
@@ -19,6 +18,8 @@ tags:
   - photo-menu
   - editing-system
   - internet-presence-management
+featured: true
+showcased: true
 ---
 
 Complete online presence for Divino Restaurant.

@@ -14,6 +14,8 @@ images:
   - ./04.png #android
 tags:
   - architecture
+featured: true
+showcased: true
 ---
 
 Website for &lt;Binocle&gt; architecture studio.

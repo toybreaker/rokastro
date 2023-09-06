@@ -16,6 +16,7 @@ tags:
   - printed-press
   - magazine
   - concept
+featured: true
 ---
 
 1995>2000.

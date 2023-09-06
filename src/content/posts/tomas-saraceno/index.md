@@ -20,6 +20,7 @@ tags:
   - installation
   - event
 featured: true
+showcased: true
 ---
 
 Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.
