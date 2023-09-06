@@ -1,0 +1,28 @@
+---
+export interface Props {
+  title: string
+  category?: string | undefined
+}
+
+const { title, category } = Astro.props
+---
+
+<div class='card'>
+  <h2 class='h4 post_title'>{title.toLocaleUpperCase()}</h2>
+  <div class='category'><small>{category}</small></div>
+</div>
+
+<style lang='scss'>
+  .card {
+    margin-top: var(--spacing);
+    padding: var(--spacing) 0;
+  }
+
+  .post_title,
+  .category {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+</style>

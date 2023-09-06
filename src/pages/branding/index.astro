@@ -12,8 +12,7 @@ const unsortedPosts = await getCollection('posts', ({ data }) => {
 
 const posts = unsortedPosts.sort(
   (a, b) =>
-    Date.parse(b.data.year.toLocaleString()) -
-    Date.parse(a.data.year.toLocaleString())
+    Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
 )
 
 export interface Props {
