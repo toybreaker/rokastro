@@ -1,8 +1,9 @@
-# ROKMA.COM new astro version
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3df602d2-8b9d-475f-9fe7-1f07ad1081cb/deploy-status)](https://app.netlify.com/sites/rokastro/deploys)
+
+# ROKMA.COM w/ astro
 
 ## TO DO:
 
-- TAG PAGES SORT NEWER FIRST
 - PRINTS AVAILABLE
 - NEW IMG FOR WEBSITES
 - SOUNDCLOUD ICON STROKE

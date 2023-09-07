@@ -20,7 +20,7 @@ tags:
   - concept
   - printed
   - magazine
-  - content
+  - content-creation
 ---
 
 Creating FREEZER magazine I built a creative lab with young motivated enthusiasts and really destroyed boundaries and cliches of contemporary media.

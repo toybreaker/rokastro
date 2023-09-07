@@ -27,7 +27,7 @@ tags:
   - concept
   - printed
   - magazine
-  - content
+  - content-creation
 featured: true
 showcased: true
 ---

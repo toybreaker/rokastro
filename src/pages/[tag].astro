@@ -14,7 +14,13 @@ export async function getStaticPaths() {
     )
     return {
       params: { tag },
-      props: { posts: filteredPosts }
+      props: {
+        posts: filteredPosts.sort(
+          (a, b) =>
+            Date.parse(b.data.year.toString()) -
+            Date.parse(a.data.year.toString())
+        )
+      }
     }
   })
 }

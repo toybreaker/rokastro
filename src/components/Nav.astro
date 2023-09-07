@@ -1,5 +1,6 @@
 ---
 import * as siteData from '@data/site.json'
+import * as repoData from 'package.json'
 import { Icon } from 'astro-icon'
 import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
@@ -70,8 +71,9 @@ const optimizedBackground = await getImage({
     <NavContacts />
 
     <small>
-      Copyright © 2012-{today.getFullYear()} Rokma. All rights reserved.
-      Powered by
+      Copyright © 2012-{today.getFullYear()} Rokma. All rights reserved. v{
+        repoData.version
+      }. Powered by
       <a
         class='underline-on-hover'
         title='producer'
