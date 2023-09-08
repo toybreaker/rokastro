@@ -1,5 +1,4 @@
 ---
-slag: magicgreen
 title: Magic Green
 category: websites
 year: 2018
@@ -20,9 +19,10 @@ tags:
   - logo
   - content-creation
   - non-profit
+  - service-branding
 featured: true
 ---
 
 Non profit magazine.
-Check out [magicgreen](https://magicgreen.junglestar.org?source=rokma.com) live website.
+Check out [MAGICGREEN](https://magicgreen.junglestar.org?source=rokma.com) live website.
 [2020>today].

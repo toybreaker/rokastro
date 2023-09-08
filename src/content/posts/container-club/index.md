@@ -14,8 +14,9 @@ images:
 tags:
   - concept
   - logo
-  - service-branding
+  - fashion-branding
   - design
+  - advertising-photography
 featured: true
 ---
 

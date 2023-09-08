@@ -1,5 +1,4 @@
 ---
-slag: freezer
 title: Freezer Magazine
 category: websites
 year: 2015

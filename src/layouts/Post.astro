@@ -2,6 +2,7 @@
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
+import Icon from 'astro-icon'
 
 const { title, category, images, tags, bodyClass } =
   Astro.props.frontmatter || Astro.props
@@ -35,19 +36,22 @@ const pageDesc = siteData.description_web
   </div>
 
   <div class='content'>
-    <ul class='tags'>
-      {
-        tags.map((tag: string) => {
-          return (
-            <li>
-              <a class='' href={`/${tag}/`}>
-                {tag}
-              </a>
-            </li>
-          )
-        })
-      }
-    </ul>
+    <div class='tag_section'>
+      <Icon name='tag' class='gray' />
+      <ul class='tags'>
+        {
+          tags.map((tag: string) => {
+            return (
+              <li>
+                <a class='' href={`/${tag}/`}>
+                  {tag}
+                </a>
+              </li>
+            )
+          })
+        }
+      </ul>
+    </div>
     <slot />
   </div>
 </Layout>
@@ -79,5 +83,20 @@ const pageDesc = siteData.description_web
     padding-left: 3px;
     padding-right: 3px;
     color: var(--primary);
+  }
+
+  .tag_section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: var(--typography-spacing-vertical);
+  }
+
+  svg.gray {
+    min-width: 55px;
+    width: 55px;
+    color: var(--primary);
+    opacity: 0.5;
+    padding-top: 38px;
   }
 </style>

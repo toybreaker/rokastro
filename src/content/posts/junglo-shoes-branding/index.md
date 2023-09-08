@@ -3,9 +3,8 @@ title: Junglo shoes
 category: branding
 year: 2020
 where: Genova, Italy
-catch: personal work by
 bodyClass: offwhite grid3
-images: # this can have captions (see valeria branding)
+images:
   - ./14.jpg
   - ./01.jpg
   - ./07.jpg
@@ -24,19 +23,19 @@ images: # this can have captions (see valeria branding)
   - ./17.jpg
   - ./09.jpg
 tags:
-  - branding
-  - product-branding
+  - fashion-branding
+  - fashion-photography
+  - advertising-photography
   - copywriting
   - packaging
-  - product
   - filming
   - content-creation
 featured: true
 showcased: true
 ---
 
-Brand creation.
+Brand creation for JUNGLOSHOES sneaker shoes brand.
 
-Branding, logo, packaging, textures, photography, copyrighting, communication strategy and online store for Jungloshoes.
+Branding, logo, packaging, textures, photography, copyrighting, communication strategy and online store.
 
-Check the [Jungloshoes live website](https://junglo.shoes/?source=rokma.com)
+Check the [JUNGLOSHOES](https://junglo.shoes/?source=rokma.com) live website.

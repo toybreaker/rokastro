@@ -20,6 +20,7 @@ tags:
   - street-photography
   - reportage
   - event
+  - beauty
 featured: true
 ---
 

@@ -3,7 +3,7 @@ title: Valeria Delacerda
 category: photography
 year: 2020
 where: Ipanema, Brazil
-bodyClass: grid2
+bodyClass: grid2 black
 catch: personal work by
 images:
   - ./01.jpg
@@ -18,11 +18,10 @@ images:
 tags:
   - product-photography
   - fashion-branding
-  - advertising
   - fashion
   - concept
 featured: true
 showcased: true
 ---
 
-Advertising images for Valeria Delacerda brand.
+Advertising images for VALERIA DELACERDA brand.

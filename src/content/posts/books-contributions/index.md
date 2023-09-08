@@ -1,5 +1,4 @@
 ---
-slag: books-contributions
 title: Books Contributions
 category: photography
 year: 2010

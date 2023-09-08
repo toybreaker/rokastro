@@ -1,5 +1,4 @@
 ---
-slag: binocle
 title: Binocle
 category: websites
 year: 2016

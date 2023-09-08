@@ -21,9 +21,9 @@ tags:
   - design
   - shopify-theme-creation
   - fashion
+  - fashion-branding
   - copywriting
   - content-creation
-  - fashion-branding
 ---
 
 Online store with blog and search.
@@ -32,5 +32,5 @@ Marketing strategy.
 Custom Shopify theme creation.
 Blog and Social media Production and Management.
 
-Check out the [Quarzia](https://quarzia.it?source=rokma.com) online store website.
+Check out the [QUARZIA](https://quarzia.it?source=rokma.com) online store website.
 [2020>today].

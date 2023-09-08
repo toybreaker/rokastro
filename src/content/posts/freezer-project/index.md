@@ -16,6 +16,8 @@ tags:
   - printed-press
   - magazine
   - concept
+  - product-branding
+  - product-design
 featured: true
 ---
 

@@ -1,5 +1,4 @@
 ---
-slag: mario-silver
 title: Mario Silver
 category: photography
 year: 2008
@@ -22,4 +21,4 @@ featured: true
 showcased: true
 ---
 
-Advertising images for &lt;Mario Silver&gt;
+Advertising images for &lt;MARIO SILVER&gt;

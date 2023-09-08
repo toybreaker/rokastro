@@ -1,11 +1,10 @@
 ---
-slag: women-flowers-and-dances
 title: Women, flowers and dances
 category: photography
 year: 2017
 where: bali, indonesia
 catch: powered by
-bodyClass: offwhite
+bodyClass: offwhite grid3
 images:
   - ./01.jpg
   - ./02.jpg

@@ -1,5 +1,4 @@
 ---
-slag: veronika-guzalian
 title: Veronika Guzalian
 category: photography
 year: 2007

@@ -1,5 +1,4 @@
 ---
-slag: fair-ground
 title: Fair Ground
 category: photography
 year: 2008
@@ -14,6 +13,7 @@ images:
 tags:
   - fashion
   - studio-shooting
+  - catalog
 ---
 
 Studio shooting for &lt;Fair Ground®&gt; clothing catalog.

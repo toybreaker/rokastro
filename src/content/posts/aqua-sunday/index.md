@@ -2,6 +2,7 @@
 title: Aqua Sunday
 category: photography
 year: 2019
+bodyClass: black
 where: bali, indonesia
 catch: personal work by
 images:
@@ -25,11 +26,12 @@ tags:
   - fine-art-prints
 ---
 
-Part one of Aqua Serie. Unpublished.
+AQUA SUNDAY is part five of the Aqua Serie Limited Edition Fine-Art-Prints. Shot in Bali, Indonesia. Unpublished.
 
 Have a look at the complete Aqua serie:
-[Aqua Sunday](./aqua-sunday)
-[Aqua Island](./aqua-island)
-[Aqua City](./aqua-city)
-[Aqua Province](./aqua-province)
-[Aqua Market](./aqua-market)
+
+- [AQUA CITY](./aqua-city)
+- [AQUA PROVINCE](./aqua-province)
+- [AQUA MARKET](./aqua-market)
+- [AQUA ISLAND](./aqua-island)
+- [AQUA SUNDAY](./aqua-sunday) <small class='color_light'> < you are here </small>

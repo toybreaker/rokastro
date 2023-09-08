@@ -1,5 +1,4 @@
 ---
-slag: monsoon
 title: Monsoon Resort
 category: photography
 year: 2009
@@ -18,4 +17,4 @@ tags:
   - location-photography
 ---
 
-Advertising images for &lt;Monsoon Resort&gt;
+Advertising images for &lt;MONSOON RESORT&gt;

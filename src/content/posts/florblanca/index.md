@@ -1,7 +1,7 @@
 ---
-slag: florblanca
 title: Florblanca
 category: photography
+bodyClass: black
 year: 2007
 where: Capo Blanco, Costa Rica
 catch: an exibition by
@@ -14,7 +14,6 @@ images:
   - ./06.jpg
 tags:
   - exhibit
-  - photography
 ---
 
 Rok exhibited at &lt;Florblanca&gt; resort.<br>Costa Rica.

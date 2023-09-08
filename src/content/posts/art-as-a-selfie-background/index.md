@@ -1,8 +1,8 @@
 ---
-slag: art-as-a-selfie-background
 title: Art as a selfie background
 category: photography
 year: 2018
+bodyClass: black
 where: bali, indonesia
 catch: personal work by
 images:

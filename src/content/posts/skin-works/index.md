@@ -1,8 +1,8 @@
 ---
-slag: skin-works
 title: Skin works
 category: photography
 year: 2019
+bodyClass: black
 where: Phuket, Thailand
 catch: personal work by
 images:

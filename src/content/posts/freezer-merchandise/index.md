@@ -1,5 +1,4 @@
 ---
-slag: freezer-merchandise
 title: Freezer Merchandise
 category: branding
 year: 1995
@@ -20,8 +19,9 @@ tags:
   - merchandise
   - art-direction
   - concept
-  - fashion
   - streetwear
+  - fashion-branding
+  - product-design
 ---
 
 Merchandise items for &lt;Freezer Magazine&gt;.

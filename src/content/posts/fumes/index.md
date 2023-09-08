@@ -1,5 +1,4 @@
 ---
-slag: fumes
 title: Fumes Magazine
 category: websites
 year: 2017
@@ -16,8 +15,7 @@ tags:
   - magazine
   - concept
   - custom-websites
-  - reportage
-  - photography
+  - product-branding
   - non-profit
 featured: true
 ---

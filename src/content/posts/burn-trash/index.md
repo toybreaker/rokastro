@@ -1,8 +1,8 @@
 ---
-slag: burn-trash
 title: Burn Trash
 category: photography
 year: 2018
+bodyClass: black
 where: bali, indonesia
 catch: personal work by
 images:

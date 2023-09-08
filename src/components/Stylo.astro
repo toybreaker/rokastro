@@ -295,35 +295,10 @@ import '@fontsource/dosis'
     margin: 0 !important;
   }
 
-  .toc {
-    position: relative;
-    width: fit-content;
-    max-width: 900px;
-    padding: var(--space_small) calc(var(--space) / 2) var(--space_small) 0;
-    margin: 3vw auto;
-    border: var(--border_size) solid var(--primary-focus);
-    border-radius: var(--space_small);
-    & > ul {
-      margin: 0 auto;
-    }
-
-    span {
-      display: block;
-      padding: 0 0 var(--space_small) var(--space_small);
-      //vert?
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      position: absolute;
-      left: -2rem;
-      top: 0;
-    }
-    ul {
-      margin-bottom: 0;
-
-      li {
-        list-style: none;
-        text-transform: uppercase;
-      }
+  ul:not(.tags) {
+    padding-left: var(--space);
+    li {
+      list-style: disc;
     }
   }
   a.contrast {
@@ -334,11 +309,7 @@ import '@fontsource/dosis'
     border: var(--border_size) solid transparent;
     //border-radius: 5px; // POSSIBLE!
   }
-  .rate {
-    color: var(--primary);
-    font-size: 120%;
-    white-space: nowrap;
-  }
+
   .align_right {
     text-align: right !important;
   }
@@ -469,5 +440,9 @@ import '@fontsource/dosis'
     .slide {
       margin: 0 !important;
     }
+  }
+
+  .color_light {
+    opacity: 0.5;
   }
 </style>

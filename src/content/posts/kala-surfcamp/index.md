@@ -4,7 +4,7 @@ category: websites
 year: 2023
 where: Bali, Indonesia
 catch:
-bodyClass: offwhite grid3
+bodyClass: offwhite
 images:
   - ./01.jpg
   - ./02.jpg
@@ -14,28 +14,18 @@ images:
   - ./06.jpg
 tags:
   - custom-websites
-  - photography
+  - service-photography
   - marketing-strategy
   - copyrighting
+  - service-branding
+  - design
 featured: true
 showcased: true
 ---
 
-Complete online presence for Casa Asia Group.
+Communication strategy guidance. <br>
+Complete website plan, design, coding, copyrighting, stock photography and management.
 
-Websites & Online Visual Menus creation.<br>
-Super fast website with custom backend.<br>
-Two restaurants, 4 different menus.<br>
-Landing page with quick links for social media.
+Have a look at the live site: [KALA SURFCAMP](https://kala.surf/?source=rokma.com).<br>
 
-Have a look:<br>
-[Casa Asia website](https://casaasiabali.com/?source=rokma.com).<br>
-[Casa Asia landing](https://in.casaasiabali.com/?source=rokma.com).<br>
-[Casa Asia Visual Menu](https://casaasiabali.com/menu?source=rokma.com).<br>
-[Casa Asia Delivery Menu](https://casaasiabali.com/delivery?source=rokma.com).<br>
-[Divino website](https://divinobali.com/?source=rokma.com).<br>
-[Divino landing](https://in.divinobali.com/?source=rokma.com).<br>
-[Divino Photo Menu](https://divinobali.com/menu?source=rokma.com).<br>
-[Divino Delivery Menu](https://divinobali.com/delivery?source=rokma.com).<br>
-
-[2020>today].
+[2023].

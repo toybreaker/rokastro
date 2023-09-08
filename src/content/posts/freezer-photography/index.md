@@ -1,5 +1,4 @@
 ---
-slag: freezer-magazine
 title: Freezer Magazine
 category: photography
 bg: black

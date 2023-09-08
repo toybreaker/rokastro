@@ -24,4 +24,4 @@ tags:
 featured: true
 ---
 
-Fashion shoot for [Quarzia](https://quarzia.it/).
+Fashion shoot for [QUARZIA](https://quarzia.it/).

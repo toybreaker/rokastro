@@ -1,5 +1,4 @@
 ---
-slag: cifra
 title: Cifra Adv
 category: advertising
 year: 2001
@@ -27,8 +26,8 @@ tags:
   - printed
   - magazine
   - art-direction
-  - photography
-  - post-production
+  - fashion-photography
+  - advertising-photography
   - concept
 ---
 

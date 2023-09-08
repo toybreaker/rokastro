@@ -17,7 +17,7 @@ tags:
   - catalog
   - concept
   - fashion-branding
-  - photography
+  - fashion-photography
 featured: true
 ---
 

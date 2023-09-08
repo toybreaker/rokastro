@@ -2,9 +2,8 @@
 title: Junglo Store
 category: websites
 year: 2020
-year2: 2021
+year2: 2022
 where: Genova, Italy
-catch: personal work by
 bodyClass: offwhite grid3
 images:
   - ./01.jpg
@@ -21,12 +20,13 @@ tags:
   - design
   - shopify-theme-creation
   - streetwear
+  - product-branding
   - copywriting
 ---
 
 Online store creation.
 
-Customised Shopify e-commerce store for Jungloshoes brand.
+Customised Shopify e-commerce store for JUNGLOSHOES brand.
 
-Check the [Jungloshoes live website](https://jungloshoes.com/?source=rokma.com).
-[2020>today].
+Check the [JUNGLOSHOES](https://jungloshoes.com/?source=rokma.com) live website.
+[2020>2022].

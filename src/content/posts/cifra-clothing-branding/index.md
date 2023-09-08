@@ -1,5 +1,4 @@
 ---
-slag: cifra-clothing
 title: Cifra Branding
 category: branding
 bodyClass: lightgray grid3
@@ -24,9 +23,9 @@ images:
   - ./15.jpg
 tags:
   - art-direction
-  - photography
-  - post-production
+  - fashion-photography
   - fashion-branding
+  - advertising-photography
   - concept
   - printed
   - catalog

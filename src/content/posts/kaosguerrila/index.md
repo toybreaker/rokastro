@@ -53,10 +53,12 @@ tags:
   - art-direction
   - content-creation
   - catalog-shooting
+  - fashion-branding
+  - advertising-photography
 featured: true
 ---
 
-Social marketing campaign for &lt;Kaos Guerrilla&gt; brand.
+Social marketing campaign for &lt;KAOS GUERRILLA&gt; brand.
 
 All encompassing: brand startegy advising, market placement, concept proposals and development, content production, art-direction, post-production and posting scheduling.
 

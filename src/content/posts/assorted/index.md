@@ -1,5 +1,4 @@
 ---
-slag: assorted
 title: Assorted
 category: advertising
 year: 1996
@@ -19,10 +18,10 @@ images:
   - ./10.jpg
   - ./11.jpg
 tags:
-  - product-branding
-  - advertising
+  - content-creation
   - printed
   - magazine
+  - advertising-photography
 ---
 
 Advertising images and campaigns for &lt;..Assorted.. &gt; clients.

@@ -1,8 +1,8 @@
 ---
-slag: hippi-chic
 title: Hippi Chic
 category: photography
 year: 2009
+bodyClass: black
 where: London
 catch: powered by
 images:
@@ -15,7 +15,9 @@ images:
 tags:
   - fashion
   - location-shooting
+  - fashion-branding
   - social-media
+  - advertising-photography
 ---
 
 Brand Image Photos for Hippi Chic® garment firm.

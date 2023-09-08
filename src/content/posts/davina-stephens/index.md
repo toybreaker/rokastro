@@ -1,5 +1,4 @@
 ---
-slag: davina-stephens
 title: Davina Stephens
 category: websites
 year: 2019

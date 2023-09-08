@@ -24,4 +24,4 @@ tags:
   - design
 ---
 
-Booklet and website to present the &lt;Move Centre&gt; Project. Complete production. Concept, creation, art-direction and copyrighting.
+Booklet and website to present the &lt;MOVE CENTRE&gt; Project. Complete production. Concept, creation, art-direction and copyrighting.

@@ -2,6 +2,8 @@
 title: Aqua Island
 category: photography
 year: 2008
+bodyClass: black
+where: Bali, Indonesia
 catch: personal work by
 images:
   - ./01.jpg
@@ -19,13 +21,12 @@ tags:
   - fine-art-prints
 ---
 
-Part three of Aqua Serie. Unpublished.
-
-Part one of Aqua Serie. Unpublished.
+AQUA ISLAND is part four of Fine-Art-Prints Aqua Serie Limited Edition. Shot in Bali, Indonesia. Unpublished.
 
 Have a look at the complete Aqua serie:
-[Aqua Sunday](./aqua-sunday)
-[Aqua Island](./aqua-island)
-[Aqua City](./aqua-city)
-[Aqua Province](./aqua-province)
-[Aqua Market](./aqua-market)
+
+- [AQUA CITY](./aqua-city)
+- [AQUA PROVINCE](./aqua-province)
+- [AQUA MARKET](./aqua-market)
+- [AQUA ISLAND](./aqua-island) <small class='color_light'> < you are here </small>
+- [AQUA SUNDAY](./aqua-sunday)

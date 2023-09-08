@@ -1,5 +1,4 @@
 ---
-slag: icons
 title: Icons
 category: specials
 year: 2019

@@ -1,5 +1,4 @@
 ---
-slag: rocco
 title: Rocco Marosi
 category: websites
 year: 2015

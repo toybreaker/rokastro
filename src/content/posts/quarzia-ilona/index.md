@@ -30,8 +30,9 @@ tags:
   - catalog-shooting
   - social-media-shooting
   - fashion-branding
+  - catalog
 featured: true
 showcased: true
 ---
 
-Fashion shoot for [Quarzia](https://quarzia.it/). Images for catalog, social media, online-shop blog.
+Fashion shoot for [QUARZIA](https://quarzia.it/). Images for catalog, social media, online-shop blog.

@@ -1,5 +1,4 @@
 ---
-slag: junglestar
 title: Junglestar
 category: websites
 year: 2016
@@ -18,6 +17,7 @@ tags:
   - design
   - concept
   - copyrighting
+  - service-branding
 ---
 
 Hub website for &lt;Junglestar&gt; design agency.

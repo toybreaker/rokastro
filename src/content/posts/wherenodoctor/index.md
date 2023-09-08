@@ -1,5 +1,4 @@
 ---
-slag: wherenodoctor
 title: Where No doctor
 category: websites
 year: 2016

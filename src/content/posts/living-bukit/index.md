@@ -2,6 +2,7 @@
 title: Living the Bukit
 category: photography
 year: 2004
+bodyClass: black
 where: indonesia
 catch: reportage by
 images:

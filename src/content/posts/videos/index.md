@@ -1,5 +1,4 @@
 ---
-slag: videos
 title: Videos
 category: specials
 year: 1992
@@ -11,7 +10,6 @@ tags:
   - filming
   - promotion
   - concept
-  - post-production
 ---
 
 Probably the first video on the Italian skate/snowboarding scene.

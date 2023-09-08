@@ -1,5 +1,4 @@
 ---
-slag: freezer-magazine
 title: Freezer Adv
 category: advertising
 year: 2000
@@ -23,6 +22,7 @@ tags:
   - concept
   - printed
   - magazine
+  - product-branding
   - content-creation
 featured: true
 ---

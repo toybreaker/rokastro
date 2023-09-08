@@ -1,9 +1,9 @@
 ---
-slag: tomas-saraceno
 title: Tomas Saraceno
 category: photography
 year: 2006
 year2: 2012
+bodyClass: black
 where: italy
 catch: powered by
 images:
@@ -23,4 +23,4 @@ featured: true
 showcased: true
 ---
 
-Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.
+Artist exhibition photos for [PINKSUMMER](http://pinksummer.com) contemporary art gallery.

@@ -1,9 +1,8 @@
 ---
-slag: metro-eye-candies
 title: Metro Eye Candies
 category: photography
 year: 2005
-where:
+bodyClass: black
 catch: envisioned by
 images:
   - ./01.jpg
@@ -15,7 +14,6 @@ images:
 tags:
   - personal-work
   - concept
-  - post-production
   - art-direction
   - street-photography
 ---

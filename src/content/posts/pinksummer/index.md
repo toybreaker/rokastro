@@ -1,9 +1,9 @@
 ---
-slag: pinksummer
 title: Pinksummer
 category: photography
 year: 2004
 year2: 2010
+bodyClass: black
 where: italy
 catch: powered by
 images:
@@ -19,6 +19,6 @@ tags:
   - artist
 ---
 
-Artist exhibition photos for &lt;Pinksummer&gt; contemporary art gallery.
+Artist exhibition photos for &lt;PINKSUMMER&gt; contemporary art gallery.
 
 Plamen Dejanoff, Cesare Viel, Sancho Silva, Luca Trevisani, Xavier Veilhan, Georgina Starr, Tomas Saraceno.

@@ -21,4 +21,4 @@ tags:
   - art-photography
 ---
 
-Artist exhibition photos for [Pinksummer](http://pinksummer.com) contemporary art gallery.
+Artist exhibition photos for [PINKSUMMER](http://pinksummer.com) contemporary art gallery.

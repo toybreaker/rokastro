@@ -2,6 +2,8 @@
 title: Aqua Market
 category: photography
 year: 2009
+bodyClass: black
+where: Bangkok, Thailand
 catch: personal work by
 images:
   - ./01.jpg
@@ -19,11 +21,12 @@ tags:
   - fine-art-prints
 ---
 
-Part one of Aqua Serie. Unpublished.
+AQUA MARKET is part three of Fine-Art-Prints Aqua Serie Limited Edition. Shot in Bangkok Thailand. Unpublished.
 
 Have a look at the complete Aqua serie:
-[Aqua Sunday](./aqua-sunday)
-[Aqua Island](./aqua-island)
-[Aqua City](./aqua-city)
-[Aqua Province](./aqua-province)
-[Aqua Market](./aqua-market)
+
+- [AQUA CITY](./aqua-city)
+- [AQUA PROVINCE](./aqua-province)
+- [AQUA MARKET](./aqua-market) <small class='color_light'> < you are here </small>
+- [AQUA ISLAND](./aqua-island)
+- [AQUA SUNDAY](./aqua-sunday)
