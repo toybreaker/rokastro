@@ -14,49 +14,90 @@ const { title, image, category } = Astro.props
   <div class='image_box'>
     <Image width={640} src={image} alt={title} format='avif' quality='low' />
   </div>
-  <h2 class='h4 post_title'>{title.toLocaleUpperCase()}</h2>
-  <div class='category'><small>{category}</small></div>
-</div>
+  <div class='text_box'>
+    <h2 class='h4 post_title'>
+      <span>{title.toLocaleUpperCase()}</span>
+    </h2>
+    <div class='category'>
+      <small>{category}</small>
+    </div>
+  </div>
 
-<style lang='scss'>
-  .card {
-    margin-top: var(--spacing);
-    padding: var(--spacing) 0;
-  }
-  .image_box {
-    overflow: hidden;
-  }
-
-  .post_title,
-  .category {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  img {
-    border-radius: var(--radius);
-    width: 100%;
-    max-width: 100vw;
-    transition:
-      filter 500ms ease-out,
-      transform 250ms ease-out;
-    transition-delay: 200ms; // anti-flickering trick
-    transform: scale(0.95);
-    transform-origin: center center;
-    overflow: hidden;
-    will-change: filter, transform;
-    padding-bottom: var(--spacing);
-    overflow: hidden;
-
-    @media (min-width: 565px) {
-      filter: grayscale(100%);
+  <style lang='scss'>
+    .card {
+      //margin-top: var(--spacing);
+      //padding: var(--spacing) 0;
+      position: relative;
+    }
+    .image_box {
+      overflow: hidden;
     }
 
-    &:hover {
-      filter: grayscale(0%);
-      transform-origin: center center;
+    .text_box {
+      position: absolute;
+      width: 100%;
+      bottom: 0.5rem;
+      pointer-events: none;
+    }
+
+    .post_title,
+    .category {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .post_title {
+      span {
+        background-color: var(--gold);
+        padding: 0 5px;
+        border: 2px solid black;
+        color: black;
+        body.black & {
+          background-color: var(--gray);
+        }
+      }
+    }
+    .category {
+      position: relative;
+      top: -1px;
+      small {
+        background-color: #fff;
+        padding: 0 5px;
+        border: 2px solid black;
+        border-top: 0 none;
+        &:empty {
+          display: none;
+        }
+      }
+    }
+
+    img {
+      border-radius: var(--radius);
+      width: 100%;
+      max-width: 100vw;
+      transition:
+        filter 500ms ease-out,
+        transform 250ms ease-out;
+      transition-delay: 200ms; // anti-flickering trick
       transform: scale(1);
+      transform-origin: center center;
+      overflow: hidden;
+      will-change: filter, transform;
+      //padding-bottom: var(--spacing);
+      overflow: hidden;
+
+      @media (min-width: 565px) {
+        filter: grayscale(100%);
+      }
+
+      &:hover {
+        filter: grayscale(0%);
+        transform-origin: center center;
+        transform: scale(0.95);
+      }
     }
-  }
-</style>
+  </style>
+</div>
