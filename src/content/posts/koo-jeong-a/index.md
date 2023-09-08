@@ -3,7 +3,6 @@ title: Koo Jeong A
 category: photography
 year: 2016
 where: Italy
-catch: powered by
 bodyClass: offwhite
 images:
   - ./01.jpg

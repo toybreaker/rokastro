@@ -22,6 +22,7 @@ tags:
   - printed
   - magazine
   - advertising-photography
+  - design
 ---
 
 Advertising images and campaigns for &lt;..Assorted.. &gt; clients.

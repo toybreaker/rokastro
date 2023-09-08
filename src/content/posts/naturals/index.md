@@ -3,7 +3,6 @@ title: Naturals
 category: photography
 year: 2019
 where: Bangkok, Thailand
-catch: personal work by
 bodyClass: offwhite
 images:
   - ./01.jpg

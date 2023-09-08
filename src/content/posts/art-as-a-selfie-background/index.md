@@ -4,7 +4,6 @@ category: photography
 year: 2018
 bodyClass: black
 where: bali, indonesia
-catch: personal work by
 images:
   - ./01.jpg
   - ./02.jpg

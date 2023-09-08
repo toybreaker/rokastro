@@ -4,7 +4,6 @@ category: photography
 year: 2008
 where: bali, indonesia
 bodyClass: black
-catch: Published on Surfers
 images:
   - ./01.jpg
   - ./02.jpg
@@ -29,4 +28,4 @@ featured: true
 showcased: true
 ---
 
-Published on Surfers magazine
+Reportage published on Surfers magazine.

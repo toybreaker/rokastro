@@ -4,7 +4,6 @@ category: photography
 year: 1998
 where: italy
 bodyClass: black
-catch: powered by
 images:
   - ./01.jpg
   - ./02.jpg
@@ -18,6 +17,7 @@ tags:
   - concept
   - fashion-branding
   - fashion-photography
+  - design
 featured: true
 ---
 

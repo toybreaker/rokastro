@@ -5,7 +5,6 @@ year: 2006
 year2: 2012
 bodyClass: black
 where: italy
-catch: powered by
 images:
   - ./01.jpg
   - ./02.jpg

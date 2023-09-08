@@ -38,7 +38,6 @@ const { title, image, category } = Astro.props
     border-radius: var(--radius);
     width: 100%;
     max-width: 100vw;
-    filter: grayscale(100%);
     transition:
       filter 500ms ease-out,
       transform 250ms ease-out;
@@ -49,6 +48,10 @@ const { title, image, category } = Astro.props
     will-change: filter, transform;
     padding-bottom: var(--spacing);
     overflow: hidden;
+
+    @media (min-width: 565px) {
+      filter: grayscale(100%);
+    }
 
     &:hover {
       filter: grayscale(0%);

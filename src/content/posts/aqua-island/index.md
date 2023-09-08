@@ -4,7 +4,6 @@ category: photography
 year: 2008
 bodyClass: black
 where: Bali, Indonesia
-catch: personal work by
 images:
   - ./01.jpg
   - ./02.jpg

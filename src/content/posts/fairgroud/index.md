@@ -3,7 +3,6 @@ title: Fair Ground
 category: photography
 year: 2008
 where: Indonesia
-catch: powered by
 images:
   - ./01.jpg
   - ./02.jpg
@@ -13,7 +12,7 @@ images:
 tags:
   - fashion
   - studio-shooting
-  - catalog
+  - catalog-shooting
 ---
 
 Studio shooting for &lt;Fair Ground®&gt; clothing catalog.

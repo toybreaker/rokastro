@@ -4,7 +4,6 @@ category: photography
 year: 2006
 bodyClass: black
 where: Genova, Italy
-catch: personal work by
 images:
   - ./01.jpg
   - ./02.jpg

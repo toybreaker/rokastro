@@ -4,7 +4,6 @@ category: photography
 year: 2020
 where: Ipanema, Brazil
 bodyClass: grid2 black
-catch: personal work by
 images:
   - ./01.jpg
   - ./02.jpg

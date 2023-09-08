@@ -4,7 +4,6 @@ category: photography
 year: 2019
 bodyClass: black
 where: Phuket, Thailand
-catch: personal work by
 images:
   - ./01.jpg
   - ./02.jpg

@@ -3,7 +3,6 @@ title: Veronika Guzalian
 category: photography
 year: 2007
 where: italy
-catch: powered by
 bodyClass: offwhite
 images:
   - ./01.jpg

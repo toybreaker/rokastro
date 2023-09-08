@@ -30,6 +30,8 @@ tags:
   - printed
   - catalog
   - logo
+  - design
+featured: true
 ---
 
 Complete brand image for &lt;Cifra Clothing&gt; firm.

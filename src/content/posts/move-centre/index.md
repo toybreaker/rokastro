@@ -15,7 +15,6 @@ images:
   - ./08.jpg
   - ./09.jpg
 tags:
-  - brochure
   - layout
   - copywriting
   - concept
@@ -24,4 +23,4 @@ tags:
   - design
 ---
 
-Booklet and website to present the &lt;MOVE CENTRE&gt; Project. Complete production. Concept, creation, art-direction and copyrighting.
+Brochure booklet and website to present the &lt;MOVE CENTRE&gt; Project. Complete production. Concept, creation, art-direction and copyrighting.

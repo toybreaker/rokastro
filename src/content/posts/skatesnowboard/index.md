@@ -5,7 +5,6 @@ year: 1987
 year2: 1991
 where: italy
 bodyClass: black grid4
-catch: powered by
 images:
   - ./01.jpg
   - ./02.jpg
@@ -18,6 +17,7 @@ tags:
   - concept
   - printed-press
   - art-direction
+  - design
 ---
 
 It's 1987. Rokma invents and directs &lt;SKATESNOWBOARD&gt; for a media publisher in Milano.

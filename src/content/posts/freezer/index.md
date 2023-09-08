@@ -8,6 +8,7 @@ images:
 tags:
   - custom-websites
   - magazine
+  - design
 ---
 
 Online archive for free-press &lt;Freezer Magazine&gt;.

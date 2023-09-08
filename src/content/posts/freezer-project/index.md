@@ -18,6 +18,7 @@ tags:
   - concept
   - product-branding
   - product-design
+  - design
 featured: true
 ---
 

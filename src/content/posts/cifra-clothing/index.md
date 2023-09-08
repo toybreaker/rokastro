@@ -28,6 +28,7 @@ tags:
   - art-direction
   - fashion-photography
   - advertising-photography
+  - design
   - concept
 ---
 

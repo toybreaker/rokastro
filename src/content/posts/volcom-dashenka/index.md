@@ -4,7 +4,6 @@ category: photography
 year: 2009
 bodyClass: black
 where: bali, indonesia
-catch: powered by
 images:
   - ./01.jpg
   - ./02.jpg

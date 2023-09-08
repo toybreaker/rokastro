@@ -4,7 +4,6 @@ category: photography
 bodyClass: black
 year: 2007
 where: Capo Blanco, Costa Rica
-catch: an exibition by
 images:
   - ./01.jpg
   - ./02.jpg

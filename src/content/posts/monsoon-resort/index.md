@@ -3,7 +3,6 @@ title: Monsoon Resort
 category: photography
 year: 2009
 where: Bali, Indonesia
-catch: powered by
 images:
   - ./01.jpg
   - ./02.jpg

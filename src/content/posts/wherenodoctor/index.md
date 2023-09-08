@@ -15,6 +15,7 @@ tags:
   - online-book
   - offline-ready
   - non-profit
+  - design
 featured: true
 ---
 

@@ -11,7 +11,6 @@ const works = defineCollection({
       index_image: z.string(image()).optional().nullable(),
       images: z.array(image()),
       quality: z.string().optional().nullable().default('low'),
-      catch: z.string().optional().nullable(),
       fineartprints_link: z.boolean().optional().nullable(),
       fumes_category: z.string().optional().nullable(),
       featured: z.boolean().optional().nullable(),

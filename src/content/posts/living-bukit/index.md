@@ -4,7 +4,6 @@ category: photography
 year: 2004
 bodyClass: black
 where: indonesia
-catch: reportage by
 images:
   - ./01.jpg
   - ./02.jpg

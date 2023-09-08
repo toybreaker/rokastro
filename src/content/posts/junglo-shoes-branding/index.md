@@ -29,6 +29,7 @@ tags:
   - copywriting
   - packaging
   - filming
+  - design
   - content-creation
 featured: true
 showcased: true

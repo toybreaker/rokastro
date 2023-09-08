@@ -3,7 +3,6 @@ title: Quarzia Julia
 category: photography
 year: 2021
 where: Bangkok, Thailand
-catch: personal work by
 bodyClass: offwhite
 images:
   - ./01.jpg

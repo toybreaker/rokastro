@@ -3,7 +3,6 @@ title: Quarzia Ilona
 category: photography
 year: 2021
 where: Bali, Indonesia
-catch: personal work by
 bodyClass: offwhite
 images:
   - ./01.jpg
@@ -30,7 +29,6 @@ tags:
   - catalog-shooting
   - social-media-shooting
   - fashion-branding
-  - catalog
 featured: true
 showcased: true
 ---

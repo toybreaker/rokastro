@@ -22,6 +22,7 @@ tags:
   - streetwear
   - fashion-branding
   - product-design
+  - design
 ---
 
 Merchandise items for &lt;Freezer Magazine&gt;.
