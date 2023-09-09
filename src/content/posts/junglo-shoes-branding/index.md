@@ -24,7 +24,7 @@ images:
   - ./09.jpg
 tags:
   - fashion-branding
-  - fashion-photography
+  - commercial-photography
   - advertising-photography
   - copywriting
   - packaging

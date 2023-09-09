@@ -13,7 +13,7 @@ images:
   - ./06.jpg
 tags:
   - advertising-photography
-  - beauty
+  - glamour-photography
   - black-and-white
   - catalog-shooting
 featured: true

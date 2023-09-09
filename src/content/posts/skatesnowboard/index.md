@@ -13,11 +13,12 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - magazine
+  - printed-press
   - concept
   - printed-press
   - art-direction
-  - design
+  - photojournalism
+  - action-photography
 ---
 
 It's 1987. Rokma invents and directs &lt;SKATESNOWBOARD&gt; for a media publisher in Milano.

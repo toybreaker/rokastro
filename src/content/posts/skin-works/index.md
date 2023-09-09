@@ -17,10 +17,10 @@ images:
 fineartprints_link: true ## true or false
 fumes_category: art
 tags:
-  - personal-work
-  - fashion
-  - beauty
+  - fine-art-photography
+  - glamour-photography
   - concept
+  - personal-work
   - black-and-white
 ---
 

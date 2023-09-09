@@ -148,9 +148,14 @@ import '@fontsource/dosis'
       --primary_front: hsl(0, 0%, 75%);
       --color: hsl(0, 0%, 85%);
       --primary-hover: var(--color);
-      .toggle {
-        color: var(--color);
+      // .toggle {
+      //   color: var(--color);
+      // }
+      .toggle svg {
+        color: var(--primary_back) !important;
+        background-color: black !important;
       }
+
       .all_posts .post {
         border-color: var(--muted-border-color) !important;
       }

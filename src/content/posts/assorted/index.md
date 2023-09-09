@@ -19,9 +19,8 @@ images:
   - ./11.jpg
 tags:
   - content-creation
-  - printed
-  - magazine
-  - advertising-photography
+  - printed-press
+  - commercial-photography
   - design
 ---
 

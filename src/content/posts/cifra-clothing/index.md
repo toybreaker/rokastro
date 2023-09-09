@@ -22,9 +22,7 @@ images:
   - ./14.jpg
   - ./15.jpg
 tags:
-  - campaign
-  - printed
-  - magazine
+  - printed-press
   - art-direction
   - fashion-photography
   - advertising-photography

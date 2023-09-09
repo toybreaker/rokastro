@@ -12,7 +12,7 @@ images:
   - ./05.jpg
 tags:
   - book-contributions
-  - reportage
+  - photojournalism
   - printed-press
 ---
 

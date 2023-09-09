@@ -10,9 +10,10 @@ images:
   - ./04.jpg
   - ./05.jpg
 tags:
-  - fashion
   - studio-shooting
   - catalog-shooting
+  - fashion-photography
+  - commercial-photography
 ---
 
 Studio shooting for &lt;Fair Ground®&gt; clothing catalog.

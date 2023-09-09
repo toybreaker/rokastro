@@ -19,10 +19,10 @@ images:
 fineartprints_link: true ## true or false
 fumes_category: art
 tags:
+  - fine-art-photography
+  - fine-art-prints
   - personal-work
   - black-and-white
-  - street-photography
-  - fine-art-prints
 ---
 
 AQUA SUNDAY is part five of the Aqua Serie Limited Edition Fine-Art-Prints. Shot in Bali, Indonesia. Unpublished.

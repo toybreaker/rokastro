@@ -17,7 +17,7 @@ tags:
   - custom-websites
   - photo-menu
   - editing-system
-  - internet-presence-management
+  - web-management
 featured: true
 showcased: true
 ---

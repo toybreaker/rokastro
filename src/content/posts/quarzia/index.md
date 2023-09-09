@@ -19,7 +19,6 @@ tags:
   - custom-websites
   - design
   - shopify-theme-creation
-  - fashion
   - fashion-branding
   - copywriting
   - content-creation

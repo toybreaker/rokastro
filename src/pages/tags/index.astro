@@ -12,25 +12,27 @@ const pageDesc = siteData.description
 ---
 
 <Layout
-  bodyClass=""
+  bodyClass=''
   pageTitle={title}
   mainClass={mainClass}
-  pageDesc={pageDesc}>
-  <h2 class="h3 uppercased centered green">All Tags</h2>
-  <div class="centered">
+  pageDesc={pageDesc}
+>
+  <h2 class='h3 uppercased centered green'>All Tags</h2>
+  <div class='centered'>
     {
       tags.map((tag: any) => (
         <a
-          class="taglink"
+          class='taglink'
           href={`/${tag}`}
-          style={'font-size: calc(' + `${tag.length}` + 'rem / 25 + .5rem) ;'}>
+          style={'font-size: calc(' + `${tag.length}` + 'rem / 25 + .25rem) ;'}
+        >
           {tag}
         </a>
       ))
     }
   </div>
 </Layout>
-<style lang="scss">
+<style lang='scss'>
   .taglink {
     padding-right: 1rem;
     text-transform: uppercase;

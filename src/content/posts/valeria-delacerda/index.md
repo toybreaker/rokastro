@@ -15,9 +15,9 @@ images:
   - ./08.jpg
   - ./09.jpg
 tags:
-  - product-photography
-  - fashion-branding
-  - fashion
+  - advertising-photography
+  - commercial-branding
+  - fashion-photography
   - concept
 featured: true
 showcased: true

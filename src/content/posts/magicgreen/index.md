@@ -14,7 +14,7 @@ tags:
   - concept
   - custom-websites
   - art-direction
-  - magazine
+  - printed-press
   - design
   - logo
   - content-creation

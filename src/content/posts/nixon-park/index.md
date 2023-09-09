@@ -22,8 +22,7 @@ images:
 fineartprints_link: true ## true or false
 fumes_category: photo-journalism
 tags:
-  - street-photography
-  - skateboarding
+  - photojournalism
   - black-and-white
   - action-photography
 ---

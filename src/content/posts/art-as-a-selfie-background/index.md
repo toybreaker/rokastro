@@ -16,10 +16,9 @@ images:
   - ./09.jpg
   - ./10.jpg
 tags:
-  - magazine
-  - online
-  - reportage
-  - street-photography
+  - online-magazine
+  - photojournalism
+  - conceptual-photography
   - sociology
 ---
 

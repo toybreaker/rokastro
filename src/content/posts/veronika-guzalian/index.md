@@ -12,11 +12,11 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - fashion
   - location-shooting
-  - catalog-shooting
   - social-media-shooting
-  - fashion-branding
+  - fashion-photography
+  - glamour-photography
+  - commercial-photography
 featured: true
 ---
 

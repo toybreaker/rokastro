@@ -20,7 +20,7 @@ images:
   - ./13.jpg
 tags:
   - personal-work
-  - street-photography
+    - photojournalism
   - event
   - black-and-white
 ---

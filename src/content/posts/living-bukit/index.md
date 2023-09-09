@@ -12,10 +12,9 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - reportage
+  - photojournalism
   - black-and-white
   - printed-press
-  - magazine
   - surfing
   - action-photography
 featured: true

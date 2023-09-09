@@ -11,8 +11,7 @@ images:
   - ./03.png
   - ./04.png
 tags:
-  - online
-  - magazine
+  - online-magazine
   - concept
   - custom-websites
   - product-branding

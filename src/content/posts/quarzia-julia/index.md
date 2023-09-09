@@ -15,11 +15,11 @@ images:
   - ./08.jpg
 fineartprints_link: ## true or false
 tags:
-  - fashion
   - studio-shooting
   - catalog-shooting
   - social-media-shooting
-  - fashion-branding
+  - fashion-photography
+  - commercial-photography
 featured: true
 ---
 

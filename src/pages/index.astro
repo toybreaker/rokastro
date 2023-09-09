@@ -110,9 +110,17 @@ const pageDesc = siteData.description
       color: var(--primary_front);
       text-decoration: none;
     }
+    &.intro {
+      margin-top: 3rem;
+      min-height: calc(100dvh - 3rem);
+    }
   }
   .all_works {
     padding-top: 5rem;
+  }
+
+  .last .container h1 {
+    margin-bottom: 0;
   }
   :global(.posts) {
     width: 100%;
@@ -125,7 +133,5 @@ const pageDesc = siteData.description
   :global(.post) {
     //a
     text-decoration: none;
-    // position: relative;
-    // z-index: 1;
   }
 </style>

@@ -20,8 +20,7 @@ tags:
   - design
   - art-direction
   - concept
-  - printed
-  - magazine
+  - printed-press
   - product-branding
   - content-creation
 featured: true

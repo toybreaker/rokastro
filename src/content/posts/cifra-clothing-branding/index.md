@@ -27,7 +27,7 @@ tags:
   - fashion-branding
   - advertising-photography
   - concept
-  - printed
+  - printed-press
   - catalog
   - logo
   - design

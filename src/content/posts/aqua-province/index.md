@@ -16,7 +16,7 @@ fumes_category: art
 tags:
   - personal-work
   - black-and-white
-  - street-photography
+  - fine-art-photography
   - fine-art-prints
 ---
 

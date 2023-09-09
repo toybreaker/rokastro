@@ -20,8 +20,8 @@ fineartprints_link: true ## true or false
 fumes_category: art
 tags:
   - printed-press
-  - magazine
-  - reportage
+  - photojournalism
+  - action-photography
   - black-and-white
   - surfing
 featured: true

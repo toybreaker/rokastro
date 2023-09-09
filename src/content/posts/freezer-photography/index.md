@@ -16,9 +16,10 @@ images:
 tags:
   - art-direction
   - concept
-  - printed
-  - magazine
+  - printed-magazine
   - content-creation
+  - photojournalism
+  - action-photography
 ---
 
 Creating FREEZER magazine I built a creative lab with young motivated enthusiasts and really destroyed boundaries and cliches of contemporary media.

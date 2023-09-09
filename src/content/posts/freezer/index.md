@@ -7,7 +7,7 @@ images:
   - ./01.jpg
 tags:
   - custom-websites
-  - magazine
+  - printed-press
   - design
 ---
 

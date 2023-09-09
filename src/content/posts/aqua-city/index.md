@@ -14,10 +14,10 @@ images:
 fineartprints_link: true ## true or false
 fumes_category: art
 tags:
+  - fine-art-photography
+  - fine-art-prints
   - personal-work
   - black-and-white
-  - street-photography
-  - fine-art-prints
 ---
 
 AQUA CITY is the first set of Aqua Serie. It's a Limited Fine-Art-Prints Edition. Shot in Milano, Italy. Unpublished.

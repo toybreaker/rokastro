@@ -16,8 +16,7 @@ images:
 fineartprints_link: ## true or false
 fumes_category: art
 tags:
-  - street-photography
-  - reportage
+  - photojournalism
   - event
   - beauty
 featured: true

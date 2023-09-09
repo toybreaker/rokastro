@@ -11,10 +11,11 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - personal-work
   - concept
-  - art-direction
-  - street-photography
+  - action-photography
+  - personal-work
+  - fine-art-photography
+  - fine-art-prints
 ---
 
 Full color impact, speed, city, night-life, gathering, people, drama, togetherness. **The kind of slick images you want to have printed** full wall in your studio entrance or lounge bar. Personal work.

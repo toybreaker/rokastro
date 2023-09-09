@@ -13,12 +13,13 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - printed-press
-  - magazine
   - concept
+  - printed-magazine
   - product-branding
   - product-design
   - design
+  - photojournalism
+  - action-photography
 featured: true
 ---
 

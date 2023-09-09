@@ -16,10 +16,8 @@ images:
   - ./14.jpg
   - ./16.jpg
 tags:
-  - online
-  - magazine
-  - reportage
-  - street-photography
+  - online-magazine
+  - photojournalism
   - event
 featured: true
 ---

@@ -10,9 +10,7 @@ images:
 tags:
   - advertising-photography
   - magazine-advertising
-  - fashion-branding
   - action-photography
-  - streetwear
 featured: true
 ---
 

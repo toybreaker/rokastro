@@ -14,10 +14,10 @@ images:
 fineartprints_link: true ## true or false
 fumes_category: art
 tags:
+  - fine-art-photography
+  - fine-art-prints
   - personal-work
   - black-and-white
-  - street-photography
-  - fine-art-prints
 ---
 
 AQUA MARKET is part three of Fine-Art-Prints Aqua Serie Limited Edition. Shot in Bangkok Thailand. Unpublished.

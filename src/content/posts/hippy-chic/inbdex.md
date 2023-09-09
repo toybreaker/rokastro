@@ -12,11 +12,10 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - fashion
   - location-shooting
-  - fashion-branding
-  - social-media
   - advertising-photography
+  - fashion-photography
+  - commercial-photography
 ---
 
 Brand Image Photos for Hippi Chic® garment firm.
