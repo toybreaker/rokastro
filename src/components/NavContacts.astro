@@ -43,13 +43,13 @@ import * as siteData from '@data/site.json'
     <Icon name='instagram' />
   </a>
 
-  <!-- <a
-    href={siteData.soundcloud + '/sets/'}
-    title={siteData.github + ' on Soundcloud'}
+  <a
+    href={siteData.soundcloud}
+    title={siteData.soundcloud + ' on Soundcloud'}
     target='_blank'
   >
     <Icon name='soundcloud' />
-  </a> -->
+  </a>
 </div>
 
 <style lang='scss'>
@@ -60,5 +60,8 @@ import * as siteData from '@data/site.json'
   }
   .social_icons a:hover svg {
     color: var(--text-decoration-color--nav) !important;
+  }
+  .social_icons a:focus {
+    --background-color: transparent !important;
   }
 </style>

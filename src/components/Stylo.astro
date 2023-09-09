@@ -366,7 +366,7 @@ import '@fontsource/dosis'
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     //grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     @media (min-width: 701px) {
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     }
 
     grid-gap: 10px;
@@ -392,11 +392,14 @@ import '@fontsource/dosis'
     //small sceens 3 columns
     display: grid;
     grid-gap: 15px;
-    @media (max-width: 575px) {
+    @media (max-width: 320px) {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    @media (min-width: 575px) {
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     }
     //bigger 2 columns
-    @media (min-width: 576px) {
+    @media (min-width: 990px) {
       grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)) !important;
     }
     .slide {
@@ -407,15 +410,23 @@ import '@fontsource/dosis'
   .grid3 .images {
     //at full width 3 columns
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    grid-gap: 15px;
+    grid-gap: 5px;
+    @media (max-width: 320px) {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+    @media (min-width: 575px) {
+      grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+    }
+    @media (min-width: 990px) {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
     .slide {
       margin: 0 !important;
     }
   }
 
   .grid4 .images {
-    //at full width 4 columns
+    //IF INSIDE CONTAINER BEHAVES LIKE grid3!
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
