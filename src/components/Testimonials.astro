@@ -36,8 +36,12 @@ export interface quotes {
   cite a {
     color: white;
     text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-skip-ink: auto;
     &:hover {
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-color: var(--text-decoration-color--nav);
     }
   }
   .phrases_title {

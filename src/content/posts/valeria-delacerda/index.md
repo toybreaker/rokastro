@@ -16,7 +16,7 @@ images:
   - ./09.jpg
 tags:
   - advertising-photography
-  - commercial-branding
+  - commercial-photography
   - fashion-photography
   - concept
 featured: true

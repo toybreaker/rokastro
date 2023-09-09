@@ -26,17 +26,17 @@ tags:
   - fashion-branding
   - commercial-photography
   - advertising-photography
+  - marketing-strategy
   - copywriting
-  - packaging
-  - filming
   - design
   - content-creation
+  - video
 featured: true
 showcased: true
 ---
 
 Brand creation for JUNGLOSHOES sneaker shoes brand.
 
-Branding, logo, packaging, textures, photography, copyrighting, communication strategy and online store.
+Branding, logo, packaging, textures, photography, copyrighting, communication strategy, social media campaign, photo and video content production and online store.
 
 Check the [JUNGLOSHOES](https://junglo.shoes/?source=rokma.com) live website.

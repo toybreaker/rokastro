@@ -13,10 +13,10 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - printed-press
   - concept
   - printed-press
   - art-direction
+  - copywriting
   - photojournalism
   - action-photography
 ---

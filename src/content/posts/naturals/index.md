@@ -18,7 +18,6 @@ fumes_category: art
 tags:
   - photojournalism
   - event
-  - beauty
 featured: true
 ---
 

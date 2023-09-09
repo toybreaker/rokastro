@@ -14,6 +14,7 @@ tags:
   - resort
   - service-branding
   - commercial-photography
+  - location-shooting
 ---
 
 Advertising images for &lt;MONSOON RESORT&gt;

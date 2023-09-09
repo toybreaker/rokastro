@@ -7,8 +7,6 @@ images:
   - ./01.jpg
 tags:
   - video
-  - filming
-  - promotion
   - concept
 ---
 

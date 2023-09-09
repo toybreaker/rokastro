@@ -19,7 +19,6 @@ tags:
   - merchandise
   - art-direction
   - concept
-  - streetwear
   - fashion-branding
   - product-design
   - design

@@ -16,6 +16,7 @@ tags:
   - glamour-photography
   - black-and-white
   - catalog-shooting
+  - studio-shooting
 featured: true
 showcased: true
 ---

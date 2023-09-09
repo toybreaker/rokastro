@@ -6,8 +6,9 @@ import * as siteData from '@data/site.json'
 const allPosts = await getCollection('posts')
 
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
+
 const title = 'ALL TAGS'
-const mainClass = 'container_slim'
+const mainClass = ''
 const pageDesc = siteData.description
 ---
 
@@ -17,15 +18,13 @@ const pageDesc = siteData.description
   mainClass={mainClass}
   pageDesc={pageDesc}
 >
-  <h2 class='h3 uppercased centered green'>All Tags</h2>
+  <h2 class='h3 uppercased centered green'>
+    All Tags <small>{tags.length}</small>
+  </h2>
   <div class='centered'>
     {
       tags.map((tag: any) => (
-        <a
-          class='taglink'
-          href={`/${tag}`}
-          style={'font-size: calc(' + `${tag.length}` + 'rem / 25 + .25rem) ;'}
-        >
+        <a title={'see works tagged: ' + tag} href={`/${tag}`}>
           {tag}
         </a>
       ))
@@ -33,7 +32,7 @@ const pageDesc = siteData.description
   </div>
 </Layout>
 <style lang='scss'>
-  .taglink {
+  a {
     padding-right: 1rem;
     text-transform: uppercase;
     display: inline-block !important;
@@ -42,14 +41,10 @@ const pageDesc = siteData.description
     word-break: break-all;
     padding: 10px;
     margin: 10px;
-    // border: 1px solid var(--primary);
-    // border-radius: 10px;
     opacity: 0.75;
     color: black !important;
   }
-  .post_count {
-    //color: var(--primary-inverse);
+  small {
     opacity: 0.5;
-    white-space: nowrap;
   }
 </style>

@@ -21,6 +21,7 @@ tags:
   - shopify-theme-creation
   - fashion-branding
   - copywriting
+  - marketing-strategy
   - content-creation
 ---
 

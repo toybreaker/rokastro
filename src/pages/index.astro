@@ -119,9 +119,31 @@ const pageDesc = siteData.description
     padding-top: 5rem;
   }
 
-  .last .container h1 {
-    margin-bottom: 0;
+  .last {
+    label {
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: -0.75ex;
+        text-decoration-thickness: 0.75ex;
+        text-decoration-skip-ink: none;
+        text-decoration-color: hsla(39, 100%, 50%, 0.35);
+      }
+    }
+    .container h1 {
+      margin-bottom: 0;
+      &:hover {
+        text-decoration: underline;
+        text-underline-position: under;
+        text-underline-offset: -0.75ex;
+        text-decoration-thickness: 0.75ex;
+        text-decoration-skip-ink: none;
+        text-decoration-color: hsla(39, 100%, 50%, 0.35);
+      }
+    }
   }
+
   :global(.posts) {
     width: 100%;
     display: grid;

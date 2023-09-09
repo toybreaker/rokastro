@@ -14,9 +14,10 @@ images:
   - ./06.jpg
 tags:
   - concept
-  - printed-magazine
+  - printed-press
   - product-branding
   - product-design
+  - copywriting
   - design
   - photojournalism
   - action-photography

@@ -16,7 +16,7 @@ images:
 tags:
   - art-direction
   - concept
-  - printed-magazine
+  - printed-press
   - content-creation
   - photojournalism
   - action-photography

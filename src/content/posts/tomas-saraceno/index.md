@@ -16,7 +16,6 @@ tags:
   - contemporary-art
   - gallery-commissioned
   - artist
-  - installation
   - event
 featured: true
 showcased: true

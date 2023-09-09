@@ -17,9 +17,9 @@ images:
 tags:
   - online-store
   - custom-websites
+  - marketing-strategy
   - design
   - shopify-theme-creation
-  - streetwear
   - product-branding
   - copywriting
 ---

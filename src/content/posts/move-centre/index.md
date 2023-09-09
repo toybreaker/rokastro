@@ -15,12 +15,12 @@ images:
   - ./08.jpg
   - ./09.jpg
 tags:
-  - layout
   - copywriting
   - concept
   - service-branding
   - custom-websites
   - design
+  - resort
 ---
 
 Brochure booklet and website to present the &lt;MOVE CENTRE&gt; Project. Complete production. Concept, creation, art-direction and copyrighting.

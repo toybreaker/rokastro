@@ -11,7 +11,6 @@ images:
   - ./04.png #android
 tags:
   - open-source
-  - self-help
   - online-book
   - offline-ready
   - non-profit

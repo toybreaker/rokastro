@@ -13,9 +13,9 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
-  - art-gallery
   - art-photography
   - artist
+  - gallery-commissioned
 ---
 
 Artist exhibition photos for &lt;PINKSUMMER&gt; contemporary art gallery.

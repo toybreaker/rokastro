@@ -75,7 +75,7 @@ const optimizedBackground = await getImage({
         repoData.version
       }. Powered by
       <a
-        class='underline-on-hover'
+        class='producer'
         title='producer'
         target='_blank'
         href='https://junglestar.org'>Junglestar</a
@@ -207,5 +207,17 @@ const optimizedBackground = await getImage({
     background-color: var(--primary_back);
     color: var(--primary);
     border-radius: var(--radius);
+  }
+  .producer {
+    //a
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: white;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--text-decoration-color--nav);
+    }
   }
 </style>

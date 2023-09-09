@@ -12,11 +12,10 @@ images:
   - ./04.png #android
 tags:
   - custom-websites
-  - agency
   - logo
   - design
   - concept
-  - copyrighting
+  - copywriting
   - service-branding
 ---
 

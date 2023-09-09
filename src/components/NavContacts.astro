@@ -3,7 +3,7 @@ import { Icon } from 'astro-icon'
 import * as siteData from '@data/site.json'
 ---
 
-<div class='social-icons'>
+<div class='social_icons'>
   <a
     href={siteData.github}
     title={siteData.github + ' on Github'}
@@ -57,5 +57,8 @@ import * as siteData from '@data/site.json'
     width: 50px;
     padding: 2px;
     color: white;
+  }
+  .social_icons a:hover svg {
+    color: var(--text-decoration-color--nav) !important;
   }
 </style>

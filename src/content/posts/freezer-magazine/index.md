@@ -19,6 +19,7 @@ images:
 tags:
   - design
   - art-direction
+  - copywriting
   - concept
   - printed-press
   - product-branding

@@ -16,9 +16,10 @@ tags:
   - custom-websites
   - service-photography
   - marketing-strategy
-  - copyrighting
   - service-branding
+  - copywriting
   - design
+  - resort
 featured: true
 showcased: true
 ---
@@ -26,6 +27,4 @@ showcased: true
 Communication strategy guidance. <br>
 Complete website plan, design, coding, copyrighting, stock photography and management.
 
-Have a look at the live site: [KALA SURFCAMP](https://kala.surf/?source=rokma.com).<br>
-
-[2023].
+Live site: [KALA SURFCAMP](https://kala.surf/?source=rokma.com).<br>

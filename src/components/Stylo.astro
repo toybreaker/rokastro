@@ -61,6 +61,9 @@ import '@fontsource/dosis'
     --lightgray: rgb(238, 238, 238);
     --darkgray: rgb(212, 212, 212);
     --offwhite: rgb(230, 230, 230);
+    --text-decoration-color: hsla(39, 100%, 50%, 0.35);
+    --text-decoration-color--nav: hsl(213, 97%, 55%);
+    --text-decoration-color--nav-links: hsla(213, 97%, 55%, 0.35);
 
     //rok
     --font-family: 'Dosis' !important;
@@ -449,5 +452,16 @@ import '@fontsource/dosis'
 
   .color_light {
     opacity: 0.5;
+  }
+
+  p a {
+    text-decoration: underline !important;
+    text-underline-offset: 0.2rem;
+    text-decoration-thickness: 0.2rem;
+    text-decoration-skip-ink: auto;
+    --color: var(--primary-hover);
+    &:hover {
+      opacity: 0.75;
+    }
   }
 </style>

@@ -8,8 +8,7 @@ images: #this can have captions (see valeria branding)
   - ./01.jpg
   - ./02.jpg
 tags:
-  - product-image
-  - graphic-concept
+  - concept
   - art-direction
   - product-branding
   - design

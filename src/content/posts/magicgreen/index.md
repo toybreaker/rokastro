@@ -14,10 +14,11 @@ tags:
   - concept
   - custom-websites
   - art-direction
-  - printed-press
+  - online-press
   - design
   - logo
   - content-creation
+  - copywriting
   - non-profit
   - service-branding
 featured: true

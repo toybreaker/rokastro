@@ -25,10 +25,11 @@ tags:
   - design
   - art-direction
   - concept
+  - copywriting
   - printed-press
   - product-branding
   - content-creation
-  - filming
+  - video
 featured: true
 showcased: true
 ---
