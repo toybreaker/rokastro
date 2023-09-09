@@ -4,7 +4,7 @@ category: branding
 year: 2021
 where: Genova, Italy
 bodyClass: grid2
-images: #this can have captions (see valeria branding)
+images:
   - ./01.jpg
   - ./02.jpg
   - ./03.jpg

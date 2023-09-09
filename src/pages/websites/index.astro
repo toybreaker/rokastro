@@ -38,7 +38,7 @@ export interface Props {
   pageDesc: string
 }
 
-const mainClass = ''
+const mainClass = 'container'
 const bodyClass = category
 const pageDesc = siteData.description_web
 ---
@@ -82,19 +82,4 @@ const pageDesc = siteData.description_web
     }
   </div>
 </Layout>
-<style lang='scss'>
-  .post {
-    //a
-    text-decoration: none;
-  }
-  .all_posts .post {
-    display: block;
-    border-bottom: 1px solid black;
-    .card:has(h2) {
-      margin-top: 0 !important;
-    }
-  }
-  h1 span {
-    opacity: 0.5;
-  }
-</style>
+<style lang='scss'></style>
