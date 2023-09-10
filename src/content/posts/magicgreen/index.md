@@ -6,7 +6,12 @@ year2: 2023
 where: bali, indonesia
 images:
   - ./10.jpg
-  - ./10.jpg
+  - ./11.jpg
+  - ./12.jpg
+  - ./13.jpg
+  - ./14.jpg
+  - ./15.jpg
+  - ./16.jpg
 tags:
   - concept
   - custom-websites
@@ -19,6 +24,7 @@ tags:
   - non-profit
   - service-branding
 featured: true
+home: true
 ---
 
 Non profit online magazine.

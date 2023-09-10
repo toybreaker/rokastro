@@ -31,7 +31,6 @@ tags:
   - content-creation
   - video
 featured: true
-home: true
 ---
 
 Editorial strategy and branding for &lt;Freezer Magazine&gt; free press.

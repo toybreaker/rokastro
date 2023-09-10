@@ -6,12 +6,9 @@ year2: 2023
 where: Bali, Indonesia
 bodyClass: offwhite
 images:
-  - ./01.jpg
-  - ./02.jpg
-  - ./03.jpg
-  - ./04.jpg
-  - ./05.jpg
-  - ./06.jpg
+  - ./11.jpg
+  - ./10.jpg
+  - ./12.jpg
 tags:
   - custom-websites
   - photo-menu

@@ -7,12 +7,13 @@ where: Bali, Indonesia
 catch:
 bodyClass: offwhite grid3
 images:
-  - ./01.jpg
-  - ./02.jpg
-  - ./03.jpg
-  - ./04.jpg
-  - ./05.jpg
-  - ./06.jpg
+  - ./16.jpg
+  - ./10.jpg
+  - ./15.jpg
+  - ./12.jpg
+  - ./13.jpg
+  - ./11.jpg
+  - ./14.jpg
 tags:
   - custom-websites
   - photo-menu
