@@ -18,7 +18,7 @@ tags:
   - editing-system
   - web-management
 featured: true
-showcased: true
+home: true
 ---
 
 Complete online presence for Casa Asia Group.

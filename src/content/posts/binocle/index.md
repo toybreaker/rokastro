@@ -15,7 +15,7 @@ tags:
   - architecture
   - custom-websites
 featured: true
-showcased: true
+home: true
 ---
 
 Website for &lt;Binocle&gt; architecture studio.

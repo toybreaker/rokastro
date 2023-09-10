@@ -5,7 +5,7 @@ import Card from '@components/Card.astro'
 import * as siteData from '@data/site.json'
 
 const showcasePosts = await getCollection('posts', ({ data }) => {
-  return data.draft !== true && data.showcased
+  return data.draft !== true && data.home
 })
 
 const sortedFP = showcasePosts.sort(
@@ -36,9 +36,9 @@ const pageDesc = siteData.description
   pageDesc={pageDesc}
   ogImage='../og_home.jpg'
 >
-  <section class='intro container'>
+  <section class='intro'>
     <div class='container'>
-      <h1>
+      <h1 class='container'>
         <strong>Rokma</strong> Believes your customers should understand you.
       </h1>
     </div>

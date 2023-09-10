@@ -25,7 +25,6 @@ tags:
   - black-and-white
   - surfing
 featured: true
-showcased: true
 ---
 
 Reportage published on Surfers magazine.

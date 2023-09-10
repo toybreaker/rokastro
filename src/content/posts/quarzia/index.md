@@ -6,12 +6,17 @@ year2: 2023
 where: Bali, Indonesia
 bodyClass: offwhite grid2
 featured: true
-showcased: true
+home: true
 images:
   - ./01.jpg
+  - ./12.jpg
+  - ./10.jpg
+  - ./11.jpg
+  - ./14.jpg
   - ./02.jpg
   - ./03.jpg
   - ./04.jpg
+  - ./13.jpg
   - ./05.jpg
   - ./06.jpg
 tags:

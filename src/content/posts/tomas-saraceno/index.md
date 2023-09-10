@@ -18,7 +18,7 @@ tags:
   - artist
   - event
 featured: true
-showcased: true
+home: true
 ---
 
 Artist exhibition photos for [PINKSUMMER](http://pinksummer.com) contemporary art gallery.

@@ -21,7 +21,7 @@ tags:
   - design
   - resort
 featured: true
-showcased: true
+home: true
 ---
 
 Communication strategy guidance. <br>

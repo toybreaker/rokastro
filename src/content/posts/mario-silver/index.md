@@ -18,7 +18,7 @@ tags:
   - catalog-shooting
   - studio-shooting
 featured: true
-showcased: true
+home: true
 ---
 
 Advertising images for &lt;MARIO SILVER&gt;

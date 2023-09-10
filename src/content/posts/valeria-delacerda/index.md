@@ -20,7 +20,7 @@ tags:
   - fashion-photography
   - concept
 featured: true
-showcased: true
+home: true
 ---
 
 Advertising images for VALERIA DELACERDA brand.

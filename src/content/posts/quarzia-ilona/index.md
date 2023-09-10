@@ -30,7 +30,7 @@ tags:
   - fashion-photography
   - commercial-photography
 featured: true
-showcased: true
+home: true
 ---
 
 Fashion shoot for [QUARZIA](https://quarzia.it/). Images for catalog, social media, online-shop blog.

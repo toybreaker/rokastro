@@ -11,12 +11,12 @@ const works = defineCollection({
       index_image: z.string(image()).optional().nullable(),
       images: z.array(image()),
       quality: z.string().optional().nullable().default('low'),
-      fineartprints_link: z.boolean().optional().nullable(),
-      fumes_category: z.string().optional().nullable(),
       featured: z.boolean().optional().nullable(),
-      showcased: z.boolean().optional().nullable(),
+      home: z.boolean().optional().nullable(),
       tags: z.array(z.string()),
       bodyClass: z.string().optional().nullable().default(''),
+      fineartprints_link: z.boolean().optional().nullable(),
+      fumes_category: z.string().optional().nullable(),
       draft: z.boolean().optional().nullable()
     })
 })
