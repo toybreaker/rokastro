@@ -8,7 +8,6 @@ const works = defineCollection({
       year: z.number(),
       year2: z.number().optional().nullable(),
       where: z.string().optional().nullable(),
-      index_image: z.string(image()).optional().nullable(),
       images: z.array(image()),
       quality: z.string().optional().nullable().default('low'),
       featured: z.boolean().optional().nullable(),

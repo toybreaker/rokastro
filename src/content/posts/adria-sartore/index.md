@@ -4,11 +4,11 @@ category: websites
 year: 2019
 year2: 2023
 where: genova, italy
-bodyClass: darkgray grid2
+bodyClass: darkgray
 images:
   - ./01.jpg
-  - ./02.jpg
   - ./03.jpg
+  - ./02.jpg
   - ./04.jpg
 tags:
   - artist

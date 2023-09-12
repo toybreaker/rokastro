@@ -4,12 +4,11 @@ category: websites
 year: 2016
 year2: 2023
 where: EU
-index_image: 00.jpg #all devices together for index
+bodyClass: darkgray
 images:
-  - ./10.jpg
   - ./01.jpg
-  - ./01.jpg
-  - ./01.jpg
+  - ./03.jpg
+  - ./02.jpg
 tags:
   - architecture
   - custom-websites
@@ -19,5 +18,7 @@ home: true
 ---
 
 Website for &lt;Binocle&gt; architecture studio.
-Check the [live webapp](https://binocle.it)..
+
+Check the [live webapp](https://binocle.it).
+
 [2016>today].

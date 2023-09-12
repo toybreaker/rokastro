@@ -5,15 +5,11 @@ year: 2021
 year2: 2023
 where: Bali, Indonesia
 catch:
-bodyClass: offwhite grid2
+bodyClass: darkgray
 images:
-  - ./16.jpg
-  - ./10.jpg
-  - ./12.jpg
-  - ./15.jpg
-  - ./13.jpg
-  - ./11.jpg
-  - ./14.jpg
+  - ./01.jpg
+  - ./03.jpg
+  - ./02.jpg
 tags:
   - custom-websites
   - photo-menu
@@ -29,6 +25,7 @@ Websites & Online Visual Menus creation.<br>
 Super fast website with custom backend.<br>
 Two restaurants, 4 different menus.<br>
 Landing page with quick links for social media.
+Light and dark modes.
 
 Have a look:<br>
 [Divino website](https://divinobali.com/?source=rokma.com)<br>
