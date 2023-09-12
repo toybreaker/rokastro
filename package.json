@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "0.6.10",
+  "version": "0.6.11",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
