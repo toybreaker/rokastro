@@ -21,6 +21,7 @@ images:
 tags:
   - personal-work
   - photojournalism
+  - sociology
   - event
   - black-and-white
 ---

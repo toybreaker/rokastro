@@ -6,13 +6,14 @@ year2: 2023
 where: EU
 index_image: 00.jpg #all devices together for index
 images:
-  - ./01.jpg
+  - ./10.jpg
   - ./01.jpg
   - ./01.jpg
   - ./01.jpg
 tags:
   - architecture
   - custom-websites
+  - portfolio
 featured: true
 home: true
 ---

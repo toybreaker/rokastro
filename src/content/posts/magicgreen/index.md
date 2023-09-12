@@ -4,12 +4,12 @@ category: websites
 year: 2018
 year2: 2023
 where: bali, indonesia
+bodyClass: darkgray grid2
 images:
   - ./10.jpg
   - ./11.jpg
-  - ./12.jpg
-  - ./13.jpg
   - ./14.jpg
+  - ./13.jpg
   - ./15.jpg
   - ./16.jpg
 tags:

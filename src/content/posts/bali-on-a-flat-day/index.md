@@ -23,6 +23,7 @@ tags:
   - photojournalism
   - action-photography
   - black-and-white
+  - sociology
   - surfing
 featured: true
 ---

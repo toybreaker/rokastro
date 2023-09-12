@@ -5,12 +5,12 @@ year: 2021
 year2: 2023
 where: Bali, Indonesia
 catch:
-bodyClass: offwhite grid3
+bodyClass: offwhite grid2
 images:
   - ./16.jpg
   - ./10.jpg
-  - ./15.jpg
   - ./12.jpg
+  - ./15.jpg
   - ./13.jpg
   - ./11.jpg
   - ./14.jpg

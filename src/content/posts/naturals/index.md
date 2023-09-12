@@ -18,6 +18,7 @@ fumes_category: art
 tags:
   - photojournalism
   - event
+  - sociology
 featured: true
 ---
 
