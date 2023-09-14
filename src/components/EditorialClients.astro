@@ -8,10 +8,16 @@ export interface names {
 }
 ---
 
-<div class='container'>
-  <h2 class='centre'>Editorial Clients</h2>
-  {names.map((n) => n.name + ', ')}
-</div>
+<details>
+  <summary role='button' class='contrast center uppercase sticky'
+    >Editorial Clients</summary
+  >
+  <div class='container'>
+    <br />
+    {names.map((n) => n.name + ', ')}
+  </div>
+  <br />
+</details>
 
 <style>
   h2 {

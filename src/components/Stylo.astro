@@ -296,6 +296,9 @@ import '@fontsource/dosis'
 
   blockquote {
     margin: var(--typography-spacing-vertical) !important;
+    &:nth-child(odd) {
+      text-align: right !important;
+    }
   }
 
   button {
@@ -449,4 +452,44 @@ import '@fontsource/dosis'
       opacity: 0.75;
     }
   }
+
+  .all_posts {
+    //position: relative !important;
+  }
+
+  details {
+    border-bottom: 0 none !important;
+    color: inherit !important;
+    position: relative !important;
+    display: sticky !important;
+    h2 {
+      margin: 0 !important;
+      color: white;
+    }
+    // position: sticky !important;
+    // top: 0;
+
+    margin: 0 !important;
+  }
+
+  details:has(open) {
+    margin: 0 !important;
+    summary {
+      background-color: white !important;
+      color: red !important;
+      z-index: 1000;
+      top: 0;
+    }
+  }
+
+  .sticky {
+    margin: 0 !important;
+  }
+
+  // .scrollman {
+  //   //bloh!
+  //   position: sticky !important;
+  //   top: 0;
+  //   z-index: 1000;
+  // }
 </style>

@@ -8,18 +8,25 @@ export interface names {
 }
 ---
 
-<div class='container'>
-  <h2 class='centre'>Clients</h2>
-  {names.map((n) => n.name + ', ')}
-</div>
+<details>
+  <summary role='button' class='contrast center uppercase sticky'
+    >Clients</summary
+  >
+  <div class='container'>
+    <br />
+    <p>
+      {names.map((n) => n.name + ', ')}
+    </p>
+    <br />
+  </div>
+</details>
 
 <style>
-  h2 {
-    color: white;
-    margin-bottom: 8px;
-  }
   .container {
     max-width: 60ch;
     margin: 0 auto;
+  }
+  p {
+    color: white;
   }
 </style>

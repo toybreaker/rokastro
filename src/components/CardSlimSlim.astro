@@ -8,9 +8,7 @@ const { title, category } = Astro.props
 ---
 
 <div class='card'>
-  <h2 class='h4 post_title'>
-    <span>{title.toLocaleUpperCase()}</span>
-  </h2>
+  <h2 class='h4 post_title'>{title.toLocaleUpperCase()}</h2>
   <div class='category'><small>{category}</small></div>
 </div>
 
@@ -25,16 +23,5 @@ const { title, category } = Astro.props
     padding: 0;
     text-align: center;
     text-transform: uppercase;
-  }
-  .post_title {
-    span {
-      background-color: var(--gold);
-      padding: 0 5px;
-      border: 2px solid black;
-      color: black;
-      body.black & {
-        background-color: var(--gray);
-      }
-    }
   }
 </style>

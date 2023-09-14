@@ -6,10 +6,10 @@ year2: 2023
 where: bali, indonesia
 images:
   - ./00.jpg
-  - ./01.jpg
-  - ./02.png
-  - ./03.png
-  - ./04.png
+  # - ./01.jpg
+  # - ./02.png
+  # - ./03.png
+  # - ./04.png
 tags:
   - artist
   - portfolio

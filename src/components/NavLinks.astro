@@ -1,6 +1,11 @@
 ---
 import * as navigation from '@data/navigation.json'
 import * as siteData from '@data/site.json'
+
+import Clients from '@components/Clients.astro'
+import EditorialClients from '@components/EditorialClients.astro'
+import Testimonials from './Testimonials.astro'
+
 const sections = navigation.sections
 
 export interface sections {
@@ -21,6 +26,10 @@ export interface sections {
       </a>
     ))
   }
+
+  <Testimonials />
+  <Clients />
+  <EditorialClients />
 </nav>
 
 <style lang='scss'>

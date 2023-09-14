@@ -32,8 +32,13 @@ Freezer Magazine, Rokma's brainchild, came as a striking lightning over a stagna
 
 It created its own distribution.
 
-The player voice showing what's up in the streets and parties.
+> The player voice showing what's up in the streets and parties.
 
 Shortly, low fidelity newsstand media were left with few readers.
 
-In 2016 there is still no magazine in Italy with a significant advertiser list like freezer's one: Nike, Swatch, Sprite, Benetton, Diesel, v2 Records, Polygram, Burton, Quiksilver, Billabong, Freshjive, Carhartt, Arnette, O'Neil, Mambo, Oakley, Luxottica, Cat, Etnies, L'Oreal, Vans, DCshoes, Gravis, Dickies, Meltin Pot, Bastard, Fornarina...
+> We may have peaked the free-press, printed-media, adv-sustained, triangular cashflow, biz model, and retired FREEZER, sipping on fresh coconuts, no straw needed, the 31st December 2000.
+
+In 2023 there is still no magazine in Italy with a significant advertiser list like freezer's one: Nike, Swatch, Sprite, Benetton, Diesel, v2 Records, Polygram, Burton, Quiksilver, Billabong, Freshjive, Carhartt, Arnette, O'Neil, Mambo, Oakley, Luxottica, Cat, Etnies, L'Oreal, Vans, DCshoes, Gravis, Dickies, Meltin Pot, Bastard, Fornarina...
+
+> You've may have peaked independent small media publisher hassle.
+> <cite>\_ said somebody once</cite>

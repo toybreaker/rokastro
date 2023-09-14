@@ -69,17 +69,22 @@ const pageDesc = siteData.description_photography
   <hr />
 
   <div class='all_posts'>
-    {
-      allPosts.map((post) => (
-        <a
-          class='post'
-          href={`/${category}/${post.slug}`}
-          title={post.data.year + '-' + post.data.year2}
-        >
-          <CardSlim title={post.data.title} />
-        </a>
-      ))
-    }
+    <details open>
+      <summary role='button' class='contrast outline'>Show More Results</summary
+      >
+
+      {
+        allPosts.map((post) => (
+          <a
+            class='post'
+            href={`/${category}/${post.slug}`}
+            title={post.data.year + '-' + post.data.year2}
+          >
+            <CardSlim title={post.data.title} />
+          </a>
+        ))
+      }
+    </details>
   </div>
 </Layout>
 <style lang='scss'></style>

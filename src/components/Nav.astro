@@ -4,9 +4,6 @@ import * as repoData from 'package.json'
 import { Icon } from 'astro-icon'
 import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
-import Testimonials from '@components/Testimonials.astro'
-import Clients from '@components/Clients.astro'
-import EditorialClients from '@components/EditorialClients.astro'
 
 const today = new Date()
 
@@ -56,14 +53,6 @@ const optimizedBackground = await getImage({
   <div class='middle'>
     <div class='middle_scroller'>
       <NavLinks />
-
-      <br />
-
-      <Testimonials />
-      <br />
-      <Clients />
-      <br />
-      <EditorialClients />
     </div>
   </div>
 
@@ -220,4 +209,6 @@ const optimizedBackground = await getImage({
       text-decoration-color: var(--text-decoration-color--nav);
     }
   }
+
+  //
 </style>
