@@ -54,4 +54,8 @@ export interface sections {
     margin-bottom: calc(var(--spacing) / 2);
     display: block;
   }
+  details summary[role='button']:not(.outline).contrast:after {
+    //background-image: var(--icon-chevron-button-inverse);
+    background-image: none !important;
+  }
 </style>

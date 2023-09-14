@@ -475,15 +475,20 @@ import '@fontsource/dosis'
   details:has(open) {
     margin: 0 !important;
     summary {
-      background-color: white !important;
-      color: red !important;
+      //background-color: hsla(0, 0%, 100%, 0.5) !important;
       z-index: 1000;
       top: 0;
+      &::after {
+        background-image: none !important;
+      }
     }
   }
 
   .sticky {
     margin: 0 !important;
+    background-color: hsla(0, 0%, 100%, 0.15) !important;
+    color: hsla(0, 0%, 100%, 1) !important;
+    filter: blur(50);
   }
 
   // .scrollman {
