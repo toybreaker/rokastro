@@ -18,7 +18,7 @@ const optimizedBackground = await getImage({
 ---
 
 <label for='nav' class='toggle'>
-  <Icon name='nav' />
+  <Icon name='nav' class='open_nav_button' />
 </label>
 
 <input type='checkbox' id='nav' />
@@ -156,6 +156,7 @@ const optimizedBackground = await getImage({
     display: block;
     cursor: pointer;
     text-align: center;
+    color: white !important;
   }
 
   .sidebar,
@@ -169,15 +170,15 @@ const optimizedBackground = await getImage({
   //   transition: all 0.8s ease-in-out;
   // }
 
-  // kill some deafults
-  .toggle:active,
-  .toggle:focus,
-  .toggle:hover,
-  label:active label:hover,
-  label:focus {
-    outline: 0 !important;
-    border: 0;
-  }
+  // // kill some deafults
+  // .toggle:active,
+  // .toggle:focus,
+  // .toggle:hover,
+  // label:active label:hover,
+  // label:focus {
+  //   outline: 0 !important;
+  //   border: 0;
+  // }
 
   .toggle {
     user-select: none;
@@ -192,11 +193,6 @@ const optimizedBackground = await getImage({
     overflow: hidden;
   }
 
-  .toggle svg {
-    background-color: var(--primary_back);
-    color: var(--primary);
-    border-radius: var(--radius);
-  }
   .producer {
     //a
     text-decoration: underline;
@@ -209,6 +205,4 @@ const optimizedBackground = await getImage({
       text-decoration-color: var(--text-decoration-color--nav);
     }
   }
-
-  //
 </style>

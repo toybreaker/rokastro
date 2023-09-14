@@ -2,6 +2,10 @@
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 //import Card from '@components/Card.astro'
+import { add, subtract } from '@scripts/util.mjs'
+
+console.log(add(5, 5)) // 10
+console.log(subtract(10, 5)) // 5
 
 export interface Props {
   pageTitle: string

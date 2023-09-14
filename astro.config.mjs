@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import yaml from '@rollup/plugin-yaml' //maybe needed, currently using .json
-import partytown from '@astrojs/partytown'
+//import partytown from '@astrojs/partytown'
 
 export default defineConfig({
   output: 'static',
@@ -12,8 +12,8 @@ export default defineConfig({
     mdx({
       extendMarkdownConfig: false,
       gfm: true
-    }),
-    partytown()
+    })
+    //partytown()
   ],
   vite: {
     //maybe needed, not yet used!

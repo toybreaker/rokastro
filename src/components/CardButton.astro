@@ -1,0 +1,55 @@
+---
+export interface Props {
+  title: string
+  category?: string | undefined
+  outline?: any
+}
+
+const { title, category } = Astro.props
+---
+
+<div class:list={['card', { category: true }, ['outline']]}>
+  <h2 class='h4 title'>
+    {title.toLocaleUpperCase()}
+    <small>{category}</small>
+  </h2>
+</div>
+
+<style lang='scss'>
+  .card {
+    display: flex;
+    align-items: baseline;
+    justify-content: baseline;
+    line-height: 1;
+    padding: var(--spacing) 0;
+    object-fit: contain;
+    width: fit-content;
+    &.outline {
+      padding: 1rem;
+      border: 2px solid white;
+      width: auto;
+    }
+  }
+
+  .title,
+  .category {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .title {
+    small {
+      font-size: 65%;
+      font-weight: 900;
+      background-color: var(--gold);
+      padding: 0 5px;
+      margin-left: 0.5rem;
+      border: 2px solid black;
+      color: black;
+      body.black & {
+        background-color: var(--gray);
+      }
+    }
+  }
+</style>

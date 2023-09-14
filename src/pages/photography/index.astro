@@ -3,6 +3,7 @@ import Layout from '@layouts/Index.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
 import CardSlim from '@components/CardSlim.astro'
+import CardButton from '@components/CardButton.astro'
 import * as siteData from '@data/site.json'
 
 const category = 'photography'
@@ -18,13 +19,13 @@ const featuredPosts = unsortedFeaturedPosts.sort(
     Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
 )
 
-const unsortedAllPosts = await getCollection('posts', ({ data }) => {
+const unsortedsortedPosts = await getCollection('posts', ({ data }) => {
   return (
     data.draft !== true && data.featured !== true && data.category == category
   )
 })
 
-const allPosts = unsortedAllPosts.sort(
+const sortedPosts = unsortedsortedPosts.sort(
   (a, b) =>
     Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
 )
@@ -36,11 +37,24 @@ export interface Props {
   bodyClass: string
   mainClass: string
   pageDesc: string
+  pickedTags: string | null | any
 }
 
 const mainClass = 'container'
 const bodyClass = category + ' black'
 const pageDesc = siteData.description_photography
+const pickedTags = 'photography'
+
+console.log(pickedTags)
+
+const relatedPosts = await getCollection('posts', ({ data }) => {
+  return (
+    data.draft !== true && data.category !== category && data.featured == true
+  )
+})
+
+// console.log(relatedPosts)
+console.log(relatedPosts.length)
 ---
 
 <Layout
@@ -52,7 +66,7 @@ const pageDesc = siteData.description_photography
   ogImage='../og_webdesign.jpg'
 >
   <p slot='header' class='center'>Pretty Cool Photography projects.</p>
-  <div class='posts'>
+  <div class='posts featured'>
     {
       featuredPosts.map((post) => (
         <a
@@ -68,22 +82,48 @@ const pageDesc = siteData.description_photography
 
   <hr />
 
-  <div class='all_posts'>
-    <details open>
-      <summary role='button' class='contrast outline'>Show More Results</summary
+  <div class='posts all_posts'>
+    <details>
+      <summary role='button' class='contrast outline centre sticky'
+        >MORE PHOTOGRAPHY WORKS</summary
       >
+      <div class='posts'>
+        {
+          sortedPosts.map((post) => (
+            <a
+              class='post allpost'
+              href={`/${category}/${post.slug}`}
+              title={post.data.year + '-' + post.data.year2}
+            >
+              <CardSlim title={post.data.title} />
+            </a>
+          ))
+        }
+      </div>
+    </details>
+  </div>
 
-      {
-        allPosts.map((post) => (
-          <a
-            class='post'
-            href={`/${category}/${post.slug}`}
-            title={post.data.year + '-' + post.data.year2}
-          >
-            <CardSlim title={post.data.title} />
-          </a>
-        ))
-      }
+  <div class='all_posts related'>
+    <details>
+      <summary role='button' class='contrast outline centre sticky'
+        >RELATED WORKS</summary
+      >
+      <div class='posts'>
+        {
+          relatedPosts.map((post) => (
+            <a
+              class='post '
+              href={`../${category}/${post.slug}`}
+              title={post.data.year + '-' + post.data.year2}
+            >
+              <CardButton
+                title={post.data.title}
+                category={post.data.category}
+              />
+            </a>
+          ))
+        }
+      </div>
     </details>
   </div>
 </Layout>
