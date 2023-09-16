@@ -43,6 +43,7 @@ import '@fontsource/dosis'
   :root {
     //ROK SAME LIGHT AND DARK MODE STUPID HACK
     --gold: hsl(51, 100%, 50%) !important;
+    --gold50: hsla(51, 100%, 50%, 0.5) !important;
 
     --primary: hsl(0, 0%, 40%) !important;
     --primary-hover: hsl(0, 0%, 10%) !important;
@@ -136,43 +137,11 @@ import '@fontsource/dosis'
     margin: 0;
     font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
-
-    // PAGE VARIANTS
-    &.offwhite {
-      background-color: var(--offwhite);
-    }
-    &.lightgray {
-      background-color: var(--lightgray);
-    }
-    &.gray {
-      background-color: var(--gray);
-    }
-    &.darkgray {
-      background-color: var(--darkgray);
-    }
-    &.black {
-      background-color: black;
-      --primary_front: hsl(0, 0%, 75%);
-      --color: hsl(0, 0%, 85%);
-      --primary-hover: var(--color);
-      --primary: var(--primary_back);
-
-      .all_posts .post {
-        border-color: var(--muted-border-color) !important;
-      }
-    }
   }
 
   * {
     box-shadow: none !important;
   }
-
-  // .toggle svg {
-  //   color: inherit !important;
-  //   fill: var(--primary) !important;
-  //   background-color: hsla(0, 100%, 100%, 0.25) !important;
-  //   backdrop-filter: blur(5px);
-  // }
 
   .content {
     p {
@@ -503,5 +472,51 @@ import '@fontsource/dosis'
   }
   details summary[role='button']:not(.outline).contrast:after {
     background-image: var(--icon-chevron-button);
+  }
+
+  .post_title {
+    span {
+      background-color: black;
+      padding: 0 5px;
+      border: 2px solid var(--primary_back);
+      color: var(--primary_back);
+      body.black & {
+        --primary_front: var(--primary_back);
+        border: 2px solid var(--primary_back);
+        padding: 0 5px;
+      }
+    }
+  }
+
+  body {
+    // PAGE VARIANTS
+    &.offwhite {
+      background-color: var(--offwhite);
+    }
+    &.lightgray {
+      background-color: var(--lightgray);
+    }
+    &.gray {
+      background-color: var(--gray);
+    }
+    &.darkgray {
+      background-color: var(--darkgray);
+    }
+    &.black {
+      background-color: black;
+      --primary_front: hsl(0, 0%, 75%);
+      --color: hsl(0, 0%, 85%);
+      --primary-hover: var(--color);
+      --primary: var(--primary_back);
+
+      [role='button'] {
+        border-color: var(--soft_overlay_color) !important;
+      }
+
+      .card.outline {
+        border-color: var(--soft_overlay_color) !important;
+        background-color: var(--soft_overlay_color) !important;
+      }
+    }
   }
 </style>

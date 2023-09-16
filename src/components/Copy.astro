@@ -1,0 +1,18 @@
+---
+import * as repoData from 'package.json'
+import * as siteData from '@data/site.json'
+
+const today = new Date()
+---
+
+<small>
+  Copyright © 2012-{today.getFullYear()} Rokma. All rights reserved. v{
+    repoData.version
+  }. Powered by
+  <a
+    class='producer'
+    title='producer'
+    target='_blank'
+    href={siteData.producer.url}>{siteData.producer.name}</a
+  >
+</small>

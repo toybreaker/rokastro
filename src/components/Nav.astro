@@ -1,12 +1,10 @@
 ---
 import * as siteData from '@data/site.json'
-import * as repoData from 'package.json'
 import { Icon } from 'astro-icon'
 import NavButton from '@components/NavButton.astro'
 import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
-
-const today = new Date()
+import Copy from '@components/Copy.astro'
 
 import { getImage } from 'astro:assets'
 import rokmAvatar from '@p/00.jpg'
@@ -31,9 +29,12 @@ const optimizedBackground = await getImage({
     height: 100%;
     position: absolute;
     z-index: -1;
-    filter: brightness(60%);`}
+    filter: brightness(77%);
+    animation: fadein 8s;
+    `}
   >
   </div>
+
   <div class='top centre'>
     <label for='nav' class='toggle'>
       <Icon name='x' />
@@ -46,7 +47,7 @@ const optimizedBackground = await getImage({
       ><h1>{siteData.title}</h1></a
     >
 
-    <h2 class='h4'>{siteData.tagline}</h2>
+    <h2 class='h4 hide_on_phones'>{siteData.tagline}</h2>
   </div>
 
   <div class='middle'>
@@ -58,25 +59,31 @@ const optimizedBackground = await getImage({
   <div class='bottom centre'>
     <NavContacts />
 
-    <small>
-      Copyright © 2012-{today.getFullYear()} Rokma. All rights reserved. v{
-        repoData.version
-      }. Powered by
-      <a
-        class='producer'
-        title='producer'
-        target='_blank'
-        href='https://junglestar.org'>Junglestar</a
-      >
-    </small>
+    <Copy />
   </div>
 </div>
 
 <style lang='scss'>
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   :root {
     --sidebar_width: 100vw;
     @media (min-width: var(--sm)) {
       --sidebar_width: 50dvw;
+    }
+  }
+
+  .hide_on_phones {
+    display: none;
+    @media (min-width: var(--sm)) {
+      color: var(--gold50);
     }
   }
 
@@ -155,7 +162,7 @@ const optimizedBackground = await getImage({
     display: block;
     cursor: pointer;
     text-align: center;
-    color: white !important;
+    //color: white !important;
   }
 
   .sidebar,
