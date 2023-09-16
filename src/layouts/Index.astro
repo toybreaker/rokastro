@@ -39,7 +39,7 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
     <slot />
   </div>
 
-  <blockquote slot='footer'>{pageDesc}</blockquote>
+  <blockquote slot='footer'><span>"</span> <span>{pageDesc}</span></blockquote>
 </Layout>
 <style lang='scss'>
   h1 {
@@ -48,5 +48,9 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   }
   hr {
     margin-top: 0 !important;
+  }
+  blockquote span {
+    font-size: 150%;
+    line-height: 1;
   }
 </style>

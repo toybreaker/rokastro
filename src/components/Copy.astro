@@ -16,3 +16,18 @@ const today = new Date()
     href={siteData.producer.url}>{siteData.producer.name}</a
   >
 </small>
+
+<style lang='scss'>
+  .producer {
+    //a
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.1rem;
+    text-decoration-skip-ink: auto;
+    text-decoration-color: white;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--text-decoration-color--nav);
+    }
+  }
+</style>
