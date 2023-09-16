@@ -8,18 +8,18 @@ export interface Props {
 const { title, category } = Astro.props
 ---
 
-<div class:list={['card', { category: true }, ['outline']]}>
+<div class:list={['card cardbutton', { category: true }, ['outline']]}>
   <h2 class='h4 title'>
     {title.toLocaleUpperCase()}
-    <small>{category}</small>
   </h2>
+  <small>{category}</small>
 </div>
 
 <style lang='scss'>
   .card {
     display: flex;
     align-items: baseline;
-    justify-content: baseline;
+    justify-content: space-between;
     line-height: 1;
     padding: var(--spacing) 0;
     object-fit: contain;
@@ -29,29 +29,30 @@ const { title, category } = Astro.props
       border: 2px solid white;
       width: auto;
     }
+    .title {
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+    }
   }
 
-  .title,
   .category {
     margin: 0;
     padding: 0;
-    text-align: center;
     text-transform: uppercase;
   }
-  .title {
-    small {
-      font-size: 65%;
-      font-weight: 900;
-      background-color: var(--gold);
-      padding: 0 5px;
-      margin-left: 0.5rem;
-      border: 2px solid black;
-      color: black;
-      body.black & {
-        color: var(--primary_front);
-        background-color: transparent;
-        border-color: var(--primary_front);
-      }
+  small {
+    font-size: 75%;
+    font-weight: 900;
+    background-color: var(--gold);
+    padding: 3px 5px;
+    margin-left: 0.5rem;
+    border: 2px solid black;
+    color: black;
+    body.black & {
+      color: var(--gold); // var(--primary_front);
+      background-color: transparent;
+      border-color: var(--primary_front);
     }
   }
 </style>

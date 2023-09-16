@@ -267,7 +267,11 @@ import '@fontsource/dosis'
   }
 
   blockquote {
-    margin: var(--typography-spacing-vertical) !important;
+    margin: var(--typography-spacing-vertical)
+      var(--typography-spacing-vertical) 0 !important;
+    padding: calc(var(--typography-spacing-vertical) * 0.5) 0
+      calc(var(--typography-spacing-vertical) * 3)
+      var(--typography-spacing-vertical) !important;
     &:nth-child(odd) {
       text-align: right !important;
     }
@@ -339,12 +343,12 @@ import '@fontsource/dosis'
     //at full width 3 columns
     display: grid;
 
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     //grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     @media (min-width: 701px) {
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
 
     grid-gap: 10px;
@@ -450,7 +454,6 @@ import '@fontsource/dosis'
   details:has(open) {
     margin: 0 !important;
     summary {
-      //background-color: hsla(0, 0%, 100%, 0.5) !important;
       z-index: 1000;
       top: 0;
       &::after {
@@ -465,9 +468,6 @@ import '@fontsource/dosis'
     margin: 0 !important;
     background-color: hsla(0, 0%, 100%, 0.15) !important;
     color: hsla(0, 0%, 100%, 1) !important;
-    /* Add the blur effect */
-    // filter: blur(8px);
-    // -webkit-filter: blur(8px);
     backdrop-filter: blur(10px);
   }
   details summary[role='button']:not(.outline).contrast:after {
@@ -518,5 +518,26 @@ import '@fontsource/dosis'
         background-color: var(--soft_overlay_color) !important;
       }
     }
+  }
+
+  .flex_centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hide_on_phones {
+    display: none;
+    @media (min-width: 376px) {
+      display: block;
+      font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
+      line-height: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
+    }
+    // @media (min-width: 640px) {
+    //   display: block;
+    //   font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
+    //   line-height: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
+    // }
   }
 </style>

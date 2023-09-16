@@ -87,7 +87,7 @@ console.log(relatedPosts.length)
       <summary role='button' class='contrast outline centre sticky'
         >MORE PHOTOGRAPHY WORKS</summary
       >
-      <div class='posts'>
+      <div class='container posts ptop'>
         {
           sortedPosts.map((post) => (
             <a
@@ -108,12 +108,12 @@ console.log(relatedPosts.length)
       <summary role='button' class='contrast outline centre sticky'
         >RELATED WORKS</summary
       >
-      <div class='posts'>
+      <div class='container posts ptop'>
         {
           relatedPosts.map((post) => (
             <a
               class='post '
-              href={`../${category}/${post.slug}`}
+              href={`../${post.data.category}/${post.slug}`}
               title={post.data.year + '-' + post.data.year2}
             >
               <CardButton
