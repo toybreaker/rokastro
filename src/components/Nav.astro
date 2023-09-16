@@ -2,6 +2,7 @@
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
 import { Icon } from 'astro-icon'
+import NavButton from '@components/NavButton.astro'
 import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
 
@@ -17,9 +18,7 @@ const optimizedBackground = await getImage({
 })
 ---
 
-<label for='nav' class='toggle'>
-  <Icon name='nav' class='open_nav_button' />
-</label>
+<NavButton />
 
 <input type='checkbox' id='nav' />
 

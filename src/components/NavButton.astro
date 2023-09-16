@@ -1,0 +1,31 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<label for='nav' class='toggle'>
+  <Icon name='nav' class='open_nav_button' />
+</label>
+
+<style lang='scss'>
+  .toggle svg {
+    color: inherit !important;
+    fill: var(--primary) !important;
+    background-color: hsla(0, 100%, 100%, 0.25) !important;
+    backdrop-filter: blur(5px);
+  }
+
+  label.toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    display: block !important;
+
+    width: 48px;
+    height: 48px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    //color: white !important;
+  }
+</style>
