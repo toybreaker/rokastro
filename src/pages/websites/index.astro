@@ -69,23 +69,21 @@ const pageDesc = siteData.description_web
   <hr />
 
   <div class='all_posts'>
-    <details>
-      <summary role='button' class='contrast centre'>SHOW MORE WEBSITES</summary
-      >
-      <div class='posts'>
-        {
-          allPosts.map((post) => (
-            <a
-              class='post'
-              href={`/${category}/${post.slug}`}
-              title={post.data.year + '-' + post.data.year2}
-            >
-              <CardSlim title={post.data.title} />
-            </a>
-          ))
-        }
-      </div>
-    </details>
+    <h2 class='centre uppercase'>MORE {category}!</h2>
+    <div class='posts'>
+      {
+        allPosts.map((post) => (
+          <a
+            class='post'
+            href={`/${category}/${post.slug}`}
+            title={post.data.year + '-' + post.data.year2}
+          >
+            <CardSlim title={post.data.title} />
+          </a>
+        ))
+      }
+    </div>
   </div>
 </Layout>
+
 <style lang='scss'></style>

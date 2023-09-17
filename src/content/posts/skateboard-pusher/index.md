@@ -12,7 +12,7 @@ tags:
   - art-direction
   - product-branding
   - design
-featured: true
+featured:
 ---
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.

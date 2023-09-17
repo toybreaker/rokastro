@@ -12,6 +12,7 @@ images:
 tags:
   - architecture
   - custom-websites
+  - editing-system
   - portfolio
 featured: true
 home: true

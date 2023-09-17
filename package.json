@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -19,7 +19,7 @@
     "@fontsource/dosis": "^5.0.12",
     "@rollup/plugin-yaml": "^4.1.1",
     "@sindresorhus/slugify": "^2.2.1",
-    "@types/node": "^20.6.1",
+    "@types/node": "^20.6.2",
     "@types/scrollreveal": "^0.0.8",
     "@typescript-eslint/parser": "^6.7.0",
     "astro": "^3.1.0",

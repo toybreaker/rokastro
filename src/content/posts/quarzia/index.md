@@ -21,6 +21,7 @@ tags:
   - copywriting
   - marketing-strategy
   - content-creation
+  - editing-system
 ---
 
 Online store with blog and search.

@@ -3,7 +3,7 @@ import Layout from '@layouts/Index.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
 import CardSlim from '@components/CardSlim.astro'
-import CardButton from '@components/CardButton.astro'
+import CardRelated from '@components/CardRelated.astro'
 import * as siteData from '@data/site.json'
 
 const category = 'photography'
@@ -82,11 +82,13 @@ console.log(relatedPosts.length)
 
   <hr />
 
+  <h2 class='centre uppercase'>+ {category}!</h2>
+
   <div class='posts all_posts'>
     <details>
-      <summary role='button' class='contrast outline centre sticky'
-        >MORE PHOTOGRAPHY WORKS</summary
-      >
+      <summary role='button' class='contrast outline centre sticky uppercase'>
+        + {sortedPosts.length} MORE
+      </summary>
       <div class='container posts ptop'>
         {
           sortedPosts.map((post) => (
@@ -106,7 +108,7 @@ console.log(relatedPosts.length)
   <div class='all_posts related'>
     <details>
       <summary role='button' class='contrast outline centre sticky'
-        >RELATED WORKS</summary
+        >+ {relatedPosts.length} RELATED</summary
       >
       <div class='container posts ptop'>
         {
@@ -116,10 +118,7 @@ console.log(relatedPosts.length)
               href={`../${post.data.category}/${post.slug}`}
               title={post.data.year + '-' + post.data.year2}
             >
-              <CardButton
-                title={post.data.title}
-                category={post.data.category}
-              />
+              <CardRelated title={post.data.title} />
             </a>
           ))
         }

@@ -18,7 +18,7 @@ tags:
   - copywriting
   - online-press
   - non-profit
-featured: true
+featured:
 ---
 
 Photography based online magazine.

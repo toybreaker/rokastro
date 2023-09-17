@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title: string
+  category?: string | undefined
+  outline?: any
+}
+
+const { title } = Astro.props
+---
+
+<div class:list={['cardrelated', { category: true }, ['outline']]}>
+  {title.toLocaleUpperCase()}
+</div>
+
+<style lang='scss'>
+  .cardrelated {
+    display: fit-content;
+    // align-items: baseline;
+    // justify-content: space-between;
+    // line-height: 1;
+    // padding: var(--spacing) 0;
+    // object-fit: contain;
+    width: fit-content;
+    &.outline {
+      padding: 0.25rem;
+      border: 2px solid orange;
+      width: auto;
+    }
+  }
+</style>

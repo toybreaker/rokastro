@@ -15,7 +15,7 @@ tags:
   - offline-ready
   - non-profit
   - design
-featured: true
+featured:
 ---
 
 Digital book that works in the browser. A web application that works also offline. Open source project based on open sourced bestseller &lt;Where There Is No Doctor&gt; by David Werner.

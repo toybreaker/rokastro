@@ -13,7 +13,7 @@ images:
 tags:
   - artist
   - portfolio
-featured: true
+featured:
 ---
 
 Artist portfolio. Minimal layout, focus on artist works.

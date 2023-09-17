@@ -27,5 +27,32 @@
   "producer": {
     "url": "https://junglestar.org",
     "name": "Junglestar"
+  },
+  "oldclassic": {
+    "0": "Believes your customers should understand you.",
+    "1": "Empowers Your Work.",
+    "2": "Helps You Deliver Your Message.",
+    "3": "Makes Your Offer Recognizable.",
+    "4": "Ready to Make your light shine?"
+  },
+
+  "welcome": {
+    "shout": {
+      "no": "1",
+      "name": "CUST0MERS EFF0RTS TO ZER0."
+    },
+    "shout": {
+      "no": "2",
+      "name": "ENVISI0N SM00TH W0RKING."
+    }
+  },
+
+  "home": {
+    "2": "",
+    "3": "Done Organizing Message Delivery! Easily.",
+    "4": "Making Your Offer Recognizable.",
+    "5": "Rokma make your customers understand you.",
+    "6": "Showing Small Enteprises the way...",
+    "CTA": "Lets start by observing the data, would you?"
   }
 }

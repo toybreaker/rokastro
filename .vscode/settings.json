@@ -38,7 +38,8 @@
     "**/*.mdx",
     "**/*.md",
     "**/*.svg",
-    "**/*.json"
+    "**/*.json",
+    "**/*.yml"
   ],
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
