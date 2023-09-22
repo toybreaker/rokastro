@@ -38,7 +38,7 @@ const pageDesc = siteData.description
 >
   <section class='intro'>
     <div class='container'>
-      <h1 class='container'>
+      <h1>
         <strong>Rokma</strong> Believes your customers should understand you.
       </h1>
     </div>
@@ -46,10 +46,11 @@ const pageDesc = siteData.description
 
   <section class='all_works'>
     <div class='container'>
-      <h1 class='container'>
+      <h1>
         <strong>Rokma</strong> Empowers Your Work.
       </h1>
     </div>
+
     <div class='posts container'>
       {
         sortedFP.map((post) => (
@@ -64,7 +65,7 @@ const pageDesc = siteData.description
       }
     </div>
 
-    <div class='container centre'>
+    <div class='container'>
       <br />
       <label for='nav'>See more works ></label>
     </div>
@@ -72,7 +73,7 @@ const pageDesc = siteData.description
 
   <section>
     <div class='container'>
-      <h1 class='container'>
+      <h1>
         <strong>Rokma</strong> Helps You Deliver Your Message.
       </h1>
     </div>
@@ -80,21 +81,21 @@ const pageDesc = siteData.description
 
   <section>
     <div class='container'>
-      <h1 class='container'>
-        <strong>Rokma</strong> Makes Your Offer Recognizable.
+      <h1>
+        <strong>Rokma</strong> Makes Your Offer Recognisable.
       </h1>
     </div>
   </section>
 
   <section class='last'>
     <div class='container'>
-      <h1 class='container'>
-        <a class='bottom_link' href='/photography/'
-          >Ready to Make your light shine?
-        </a>
+      <h1>
+        <a class='' href='/photography/'
+          >Ready to Make <strong>your light</strong> shine?</a
+        >
       </h1>
 
-      <div class='container'>
+      <div>
         <label for='nav'>Know more about Rokma ></label>
       </div>
     </div>
@@ -102,52 +103,16 @@ const pageDesc = siteData.description
 </Layout>
 
 <style lang='scss'>
-  section {
-    margin-bottom: 0 !important;
-    min-height: 100dvh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background: white; // fallback
-    background: linear-gradient(white 5%, var(--gold));
-    background-blend-mode: normal;
-    a {
-      color: var(--primary_front);
-      text-decoration: none;
-    }
-    &.intro {
-      margin-top: 3rem;
-      min-height: calc(100dvh - 3rem);
-    }
-  }
-  .all_works {
-    padding-top: 5rem;
-    padding-bottom: var(--block-spacing-vertical);
-  }
+  h1 {
+    font-size: 200% !important;
+    font-weight: 200 !important;
+    line-height: 1 !important;
+    padding: 10dvh 0;
+    color: white !important;
 
-  .last {
-    label {
-      cursor: pointer;
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-        text-underline-offset: -0.75ex;
-        text-decoration-thickness: 0.75ex;
-        text-decoration-skip-ink: none;
-        text-decoration-color: hsla(39, 100%, 50%, 0.35);
-      }
-    }
-    .container h1 {
-      margin-bottom: 0;
-      &:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-        text-underline-offset: -0.75ex;
-        text-decoration-thickness: 0.75ex;
-        text-decoration-skip-ink: none;
-        text-decoration-color: hsla(39, 100%, 50%, 0.35);
-      }
+    [data-theme='light'],
+    :root:not([data-theme='dark']) {
+      color: red !important;
     }
   }
 </style>

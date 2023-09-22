@@ -9,36 +9,31 @@ export interface quotes {
 }
 ---
 
-<details>
-  <summary role='button' class='contrast center uppercase sticky'
-    ><span>Testimonials</span>
-  </summary>
+<div class='phrases'>
+  <h3 class='h4 centre phrases_title uppercase'>What clients are saying</h3>
+  {
+    quotes.map((quote) => (
+      <blockquote>
+        "{quote.quote}"{' '}
+        <>
+          <br />
+          <br />
+        </>
+        <cite>
+          {quote.name}
+          Founder of <a href={quote.url}>{quote.brand}</a>
+        </cite>
+      </blockquote>
+    ))
+  }
+</div>
 
-  <div class='phrases'>
-    <h3 class='h4 centre phrases_title uppercase'>What clients are saying</h3>
-    {
-      quotes.map((quote) => (
-        <blockquote>
-          "{quote.quote}"{' '}
-          <>
-            <br />
-            <br />
-          </>
-          <cite>
-            {quote.name}
-            Founder of <a href={quote.url}>{quote.brand}</a>
-          </cite>
-        </blockquote>
-      ))
-    }
-  </div>
-</details>
 <style lang='scss'>
   blockquote {
-    --blockquote-border-color: white;
-    color: white;
+    --CIKOblockquote-border-color: var(--CIKOprimary);
+    color: var(--CIKOprimary);
     background-color: hsla(0, 0%, 100%, 0.15) !important;
-    color: hsl(0, 0%, 100%) !important;
+    color: var(--CIKOprimary) !important;
     backdrop-filter: blur(10px);
     padding-right: 1rem !important;
     margin-right: 1rem !important;
@@ -52,7 +47,7 @@ export interface quotes {
     margin-bottom: 1rem !important;
   }
   cite a {
-    color: white;
+    color: var(--CIKOprimary);
     text-decoration: underline;
     text-underline-offset: 0.25rem;
     text-decoration-thickness: 0.1rem;
@@ -63,10 +58,10 @@ export interface quotes {
     }
   }
   .phrases_title {
-    color: white;
+    color: var(--CIKOprimary);
     max-width: 90dvw;
     margin: 0 auto;
-    padding-top: var(--space);
+    padding-top: var(--spacing);
   }
   .phrases {
     max-width: 60ch;

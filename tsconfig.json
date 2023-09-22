@@ -7,11 +7,11 @@
       "@layouts/*": ["src/layouts/*"],
       "@p/*": ["src/assets/*"],
       "@scripts/*": ["src/scripts/*"],
-      "@favicons/*": ["public/assets/favicons/*"],
+      "@fav/*": ["public/assets/favicons/*"],
       "@svgs/*": ["src/assets/svgs/*"],
       "@data/*": ["src/data/*"],
       "@static/*": ["public/assets/*"],
-      "@styles/*": ["src/scss/*"],
+      "@style/*": ["src/style/*"],
       "@content/*": ["src/content/*"]
     }
   }

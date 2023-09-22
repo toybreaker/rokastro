@@ -20,6 +20,16 @@ const works = defineCollection({
     })
 })
 
+const about = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      images: z.array(image()),
+      quality: z.string().optional().nullable().default('low')
+    })
+})
+
 export const collections = {
-  posts: works
+  posts: works,
+  about: about
 }

@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from 'astro:transitions'
 import * as siteData from '@data/site.json'
 import { Icon } from 'astro-icon'
 import NavButton from '@components/NavButton.astro'
@@ -16,6 +17,7 @@ const optimizedBackground = await getImage({
 })
 ---
 
+<ViewTransitions />
 <NavButton />
 
 <input type='checkbox' id='nav' />
@@ -30,7 +32,7 @@ const optimizedBackground = await getImage({
     position: absolute;
     z-index: -1;
     filter: brightness(77%);
-    animation: fadein 8s;
+    animation: linear fadeinout 12s infinite;
     `}
   >
   </div>
@@ -44,7 +46,8 @@ const optimizedBackground = await getImage({
       class='go_home'
       href='/'
       title='close navigation and go back to home page'
-      ><h1>{siteData.title}</h1></a
+      transition:name='title'
+      transition:persist><h1>{siteData.title}</h1></a
     >
 
     <h2 class='h4 hide_on_phones'>{siteData.tagline}</h2>
@@ -72,7 +75,15 @@ const optimizedBackground = await getImage({
       opacity: 1;
     }
   }
-
+  @keyframes fadeinout {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.75;
+    }
+  }
   :root {
     --sidebar_width: 100vw;
   }
@@ -150,6 +161,10 @@ const optimizedBackground = await getImage({
     display: block;
     cursor: pointer;
     text-align: center;
+    color: var(--CIKOprimary);
+    .black & {
+      color: var(--CIKOcolor);
+    }
   }
 
   .sidebar,

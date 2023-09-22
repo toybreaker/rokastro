@@ -1,0 +1,23 @@
+/* Light scheme (Default)  */
+/* Can be forced with data-theme="light" */
+[data-theme='light'],
+:root:not([data-theme='dark']) {
+  --CIKOprimary: black;
+  --CIKOcolor: white !important;
+}
+
+/* Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --CIKOprimary: white;
+    --CIKOcolor: black !important;
+  }
+}
+
+/* Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme='dark'] {
+  --CIKOprimary: white;
+  --CIKOcolor: black !important;
+}

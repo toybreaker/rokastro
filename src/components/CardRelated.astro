@@ -5,25 +5,21 @@ export interface Props {
   outline?: any
 }
 
-const { title } = Astro.props
+const { title, category } = Astro.props
 ---
 
-<div class:list={['cardrelated', { category: true }, ['outline']]}>
+<div title={category} transition:name='title' class='cardrelated outline'>
   {title.toLocaleUpperCase()}
 </div>
 
 <style lang='scss'>
   .cardrelated {
     display: fit-content;
-    // align-items: baseline;
-    // justify-content: space-between;
-    // line-height: 1;
-    // padding: var(--spacing) 0;
-    // object-fit: contain;
     width: fit-content;
+    color: var(--CIKOprimary);
     &.outline {
       padding: 0.25rem;
-      border: 2px solid orange;
+      border: 2px solid transparent;
       width: auto;
     }
   }

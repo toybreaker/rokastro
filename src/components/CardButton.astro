@@ -9,7 +9,7 @@ const { title, category } = Astro.props
 ---
 
 <div class:list={['card cardbutton', { category: true }, ['outline']]}>
-  <h2 class='h4 title'>
+  <h2 class='h4 title' transition:name='title'>
     {title.toLocaleUpperCase()}
   </h2>
   <small>{category}</small>
@@ -44,15 +44,15 @@ const { title, category } = Astro.props
   small {
     font-size: 75%;
     font-weight: 900;
-    background-color: var(--gold);
+    background-color: color: var(--CIKOprimary);
     padding: 3px 5px;
     margin-left: 0.5rem;
     border: 2px solid black;
     color: black;
     body.black & {
-      color: var(--gold); // var(--primary_front);
+      color: var(--CIKOprimary); // var(--CIKOcolor);
       background-color: transparent;
-      border-color: var(--primary_front);
+      border-color: var(--CIKOcolor);
     }
   }
 </style>

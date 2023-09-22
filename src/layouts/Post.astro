@@ -1,4 +1,5 @@
 ---
+import { fade } from 'astro:transitions'
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
@@ -13,18 +14,25 @@ const pageDesc = siteData.description_web
 <Layout
   pageTitle={title}
   pageDesc={pageDesc}
-  mainClass='container'
+  mainClass=''
   bodyClass={category + ' ' + bodyClass}
   ogImage={images[0]}
 >
   <div class='container uppercase' slot='header'>
-    <a class='breadcrumb' href='/'>{siteData.title}</a><span class='shift'
-      >></span
+    <a
+      transition:name='title'
+      class='breadcrumb'
+      href='/'
+      transition:animate={fade({ duration: '0.4s' })}
     >
+      {siteData.title}
+    </a>
+    <span>&nbsp;>&nbsp;</span>
     <a class='breadcrumb' href={`/${category}/`}>{category}</a>
 
     <h1>{title}</h1>
   </div>
+
   <hr slot='header' />
 
   <div slot='images' class='images'>
@@ -37,7 +45,7 @@ const pageDesc = siteData.description_web
 
   <div class='container content'>
     <div class='tag_section'>
-      <Icon name='tag' class='gray' />
+      <Icon name='tag' class='tag' />
       <ul class='tags'>
         {
           tags.map((tag: string) => {
@@ -52,51 +60,51 @@ const pageDesc = siteData.description_web
         }
       </ul>
     </div>
+
     <slot />
   </div>
-</Layout>
-<style lang='scss'>
-  h1 {
-    margin-bottom: 1rem !important;
-    max-width: calc(100vw - 100px);
-  }
-  hr {
-    margin-top: 0 !important;
-  }
-  .tags {
-    padding-top: var(--typography-spacing-vertical);
-    max-width: none !important;
-    li {
-      display: inline-block;
-      padding-right: 1rem;
-      text-transform: uppercase;
+
+  <style lang='scss'>
+    h1 {
+      margin-bottom: 1rem !important;
+      max-width: calc(100vw - 100px);
     }
-  }
+    hr {
+      margin-top: 0 !important;
+    }
+    .post_content ul li {
+      list-style-type: none !important;
+    }
 
-  .post_content ul li {
-    list-style-type: none !important;
-  }
+    .tag_section {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding-top: var(--CIKOspacing);
+      margin-bottom: var(--CIKOspacing);
+    }
 
-  .shift {
-    position: relative;
-    bottom: 2px;
-    padding-left: 3px;
-    padding-right: 3px;
-    color: var(--primary);
-  }
+    .tags {
+      padding-top: var(--CIKOspacing);
+      max-width: none !important;
+      li {
+        display: inline-block;
+        padding-right: 1rem;
+        text-transform: uppercase;
+      }
+    }
 
-  .tag_section {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    margin-bottom: var(--typography-spacing-vertical);
-  }
+    svg.tag {
+      //width:48px;
+      min-width: 43px;
+      width: 43px;
+      padding: 5px;
+      color: var(--CIKOcolor);
+      opacity: 0.75;
+    }
 
-  svg.gray {
-    min-width: 33px;
-    width: 33px;
-    color: var(--primary);
-    opacity: 0.75;
-    padding-top: 38px;
-  }
-</style>
+    a.breadcrumb {
+      color: var(--CIKOcolor) !important;
+    }
+  </style>
+</Layout>

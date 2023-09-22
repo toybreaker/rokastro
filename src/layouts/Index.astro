@@ -1,11 +1,10 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
-//import Card from '@components/Card.astro'
-import { add, subtract } from '@scripts/util.mjs'
+//import { add, subtract } from '@scripts/util.mjs'
 
-console.log(add(5, 5)) // 10
-console.log(subtract(10, 5)) // 5
+// console.log(add(8, 3.3)) // ?
+// console.log(subtract(111, 5.5)) // ??
 
 export interface Props {
   pageTitle: string
@@ -28,7 +27,7 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   ogImage={ogImage}
 >
   <h1 slot='header' class='container'>
-    <a class='post' href='/'>{siteData.title}</a>
+    <a transition:name='title' class='post' href='/'>{siteData.title}</a>
     <div>{category}</div>
   </h1>
   <hr slot='header' />

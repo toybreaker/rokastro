@@ -7,20 +7,26 @@ export interface Props {
 const { title, category } = Astro.props
 ---
 
-<div class='card cardslim'>
-  <h2 class='h4 post_title'>
-    <span>{title.toLocaleUpperCase()}</span>
-  </h2>
-  <div class='category'><small>{category}</small></div>
+<div class=''>
+  <h4>
+    <span>{title.toLocaleUpperCase()}</span><small>{category}</small>
+  </h4>
 </div>
 
 <style lang='scss'>
-  .card {
+  div {
     padding: var(--spacing) 0;
   }
 
-  .post_title,
-  .category {
+  h4 {
+    width: fit-content;
+    margin: 0;
+    padding: 0 calc(var(--CIKOspacing) / 2);
+    text-transform: uppercase;
+    border: 2px solid var(--CIKOprimary);
+  }
+
+  small {
     margin: 0;
     padding: 0;
     text-transform: uppercase;

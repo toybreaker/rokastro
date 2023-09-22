@@ -1,6 +1,6 @@
 ---
-import '@styles/pico.scss'
-import Stylo from '@components/Stylo.astro'
+import Stylo from '@style/Style.astro'
+import { ViewTransitions } from 'astro:transitions'
 import ROKMA from '@components/ROKMA.astro'
 import Nav from '@components/Nav.astro'
 import * as siteData from '@data/site.json'
@@ -60,6 +60,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
   <body class={bodyClass}>
     <header>
       <slot name='header' />
+      <ViewTransitions />
     </header>
     <main class={mainClass}>
       <slot name='images' />

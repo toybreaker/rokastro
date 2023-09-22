@@ -2,15 +2,15 @@
 import { Icon } from 'astro-icon'
 ---
 
-<label for='nav' class='toggle'>
+<label for='nav' class='toggle' transition:name='spinOUT'>
   <Icon name='nav' class='open_nav_button' />
 </label>
 
 <style lang='scss'>
   .toggle svg {
     color: inherit !important;
-    fill: var(--primary) !important;
-    background-color: hsla(0, 100%, 100%, 0.25) !important;
+    fill: var(--CIKOprimary) !important;
+    background-color: transparentize(LawnGreen, 0.2) !important;
     backdrop-filter: blur(5px);
   }
 
@@ -26,6 +26,5 @@ import { Icon } from 'astro-icon'
     display: block;
     cursor: pointer;
     text-align: center;
-    //color: white !important;
   }
 </style>

@@ -1,0 +1,67 @@
+---
+import Layout from '@layouts/Layout.astro'
+import * as siteData from '@data/site.json'
+
+import Clients from '@components/Clients.astro'
+import EditorialClients from '@components/EditorialClients.astro'
+import Testimonials from '@components/Testimonials.astro'
+
+export interface Props {
+  pageTitle: string
+  category: string
+  year: number
+  ogImage?: string
+  bodyClass: string
+  mainClass: string
+  pageDesc: string
+}
+
+const bodyClass = 'about black'
+const mainClass = 'no_padding'
+const pageTitle = 'empowers'
+const pageDesc = siteData.description
+---
+
+<Layout
+  pageTitle={pageTitle}
+  bodyClass={bodyClass}
+  mainClass={mainClass}
+  pageDesc={pageDesc}
+  ogImage='../og_home.jpg'
+>
+  <section>
+    <h1 transition:animate='slide'>
+      <strong>DO YOUR CUSTOMERS</strong> understand you?
+    </h1>
+
+    <h1 class='h3 container' transition:animate='slide'>
+      <strong>Rokma Clients</strong> Made Their Offer Recognisable.
+    </h1>
+
+    <Testimonials />
+
+    <h1 transition:animate='slide'>
+      <strong>AUTOMATE</strong> Recurring Tasks Work!
+    </h1>
+
+    <h1 transition:animate='slide'>
+      <strong>Rokma Partners</strong> Helping delivering Brand Message.
+    </h1>
+
+    <Clients />
+
+    <EditorialClients />
+
+    <h1 transition:animate='slide'>
+      <a class='bottom_link' href='/photography/'>Ready to Shine?</a>
+    </h1>
+
+    <div transition:animate='slide'>
+      <label for='nav'>
+        <div class='container'>SEE ALL!</div>
+      </label>
+    </div>
+  </section>
+</Layout>
+
+<style lang='scss'></style>

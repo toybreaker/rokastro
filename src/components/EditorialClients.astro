@@ -8,20 +8,18 @@ export interface names {
 }
 ---
 
-<details>
-  <summary role='button' class='contrast center uppercase sticky'
-    >Editorial Clients</summary
-  >
-  <div class='container'>
-    <br />
-    {names.map((n) => n.name + ', ')}
-  </div>
+<div class='container'>
+  <h3>Editorial Clients</h3>
   <br />
-</details>
+
+  {names.map((n) => n.name + ', ')}
+</div>
+
+<br />
 
 <style>
   h2 {
-    color: white;
+    color: var(--CIKOprimary);
     margin-bottom: 8px;
   }
   .container {

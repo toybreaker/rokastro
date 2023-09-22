@@ -19,3 +19,13 @@ const { p, alt, quality, cssClass } = Astro.props
   quality={quality}
   format='avif'
 />
+
+<style>
+  .slide {
+    display: block;
+    margin: 0 0 var(--spacing);
+    border-radius: var(--radius);
+    width: -webkit-fill-available;
+    height: auto;
+  }
+</style>
