@@ -4,15 +4,15 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
+      "@compo/*": ["src/components/*"],
+      "@content/*": ["src/content/*"],
+      "@data/*": ["src/data/*"],
+      "@fav/*": ["public/assets/favicons/*"],
       "@layouts/*": ["src/layouts/*"],
       "@p/*": ["src/assets/*"],
       "@scripts/*": ["src/scripts/*"],
-      "@fav/*": ["public/assets/favicons/*"],
       "@svgs/*": ["src/assets/svgs/*"],
-      "@data/*": ["src/data/*"],
-      "@static/*": ["public/assets/*"],
-      "@style/*": ["src/style/*"],
-      "@content/*": ["src/content/*"]
+      "@assets/*": ["public/assets/*"]
     }
   }
 }

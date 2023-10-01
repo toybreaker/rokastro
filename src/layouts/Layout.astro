@@ -1,5 +1,5 @@
 ---
-import Stylo from '@style/Style.astro'
+import Stylo from '@components/style/master.astro'
 import { ViewTransitions } from 'astro:transitions'
 import ROKMA from '@components/ROKMA.astro'
 import Nav from '@components/Nav.astro'
@@ -37,9 +37,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
   <meta name='apple-mobile-web-app-title' content={siteData.title} />
   <meta name='application-name' content={siteData.title} />
   <link rel='canonical' href={canonicalURL} />
-
-  <!-- ROKS REPO -->
-  <meta name='version' content={repoData.version} />
 
   <!-- ROKS OG -->
   <meta property='og:url' content={Astro.site} />
