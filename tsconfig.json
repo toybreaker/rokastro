@@ -12,7 +12,8 @@
       "@p/*": ["src/assets/*"],
       "@scripts/*": ["src/scripts/*"],
       "@svgs/*": ["src/assets/svgs/*"],
-      "@assets/*": ["public/assets/*"]
+      "@assets/*": ["public/assets/*"],
+      "@fiko/*": ["node_modules/fiko/dist/web/fiko/package/*"]
     }
   }
 }
