@@ -2,8 +2,29 @@
 
 # [ROKMA.COM](https://n.rokma.com/) w/ astro
 
+## DEV SHORTCUTS
+
+```shell
+# Launch:
+echo 'pup | pnpm upgrade';
+pnpm upgrade
+```
+
+```shell
+# Launch:
+echo 'prc | pnpm run check';
+pnpm run check
+```
+
+```shell
+# Launch:
+echo 'prd | pnpm run dev';
+pnpm run dev
+```
+
 ## TO DO:
 
+- FIKO Setup
 - OG IMAGES
 - ADD SEE MORE LIST AT POST FOOT
 - SEARCH FOR HI-RES OG IMAGES, DONE:
