@@ -2,22 +2,22 @@
 /* Can be forced with data-theme="light" */
 [data-theme='light'],
 :root:not([data-theme='dark']) {
-  --primary: black;
-  --primaryBG: white !important;
+  --primary: black !important;
+  --primaryBG: #fff !important;
 }
 
 /* Dark scheme (Auto) */
 /* Automatically enabled if user has Dark mode enabled */
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
-    --primary: white;
-    --primaryBG: black;
+    --primary: rgb(208, 208, 208) !important;
+    --primaryBG: black !important;
   }
 }
 
 /* Dark scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
 [data-theme='dark'] {
-  --primary: white;
-  --primaryBG: black;
+  --primary: rgb(208, 208, 208) !important;
+  --primaryBG: black !important;
 }
