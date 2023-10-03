@@ -15,6 +15,7 @@ images:
 tags:
   - design
 featured: true
+bodyClass: gray
 ---
 
 Rokma has release some Open Source icons.

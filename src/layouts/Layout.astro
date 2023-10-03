@@ -2,6 +2,7 @@
 import Stylo from '@components/style/master.astro'
 import { ViewTransitions } from 'astro:transitions'
 import ROKMA from '@components/ROKMA.astro'
+import Footer from '@components/Footer.astro'
 import Nav from '@components/Nav.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
@@ -25,50 +26,51 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 <!doctype html>
 <html lang='en'>
-  <ROKMA />
+  <head
+    ><ROKMA />
+    <meta name='version' content={repoData.version} />
+    <meta charset='UTF-8' />
+    <meta name='description' content={pageDesc} />
+    <meta name='viewport' content='width=device-width' />
 
-  <meta name='version' content={repoData.version} />
-  <meta charset='UTF-8' />
-  <meta name='description' content={pageDesc} />
-  <meta name='viewport' content='width=device-width' />
+    <title>{makeTitle}</title>
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='apple-mobile-web-app-title' content={siteData.title} />
+    <meta name='application-name' content={siteData.title} />
+    <link rel='canonical' href={canonicalURL} />
 
-  <title>{makeTitle}</title>
-  <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-  <meta name='apple-mobile-web-app-title' content={siteData.title} />
-  <meta name='application-name' content={siteData.title} />
-  <link rel='canonical' href={canonicalURL} />
+    <!-- ROKS OG -->
+    <meta property='og:url' content={Astro.site} />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content={makeTitle} />
+    <meta property='og:description' content={pageDesc} />
+    <meta property='og:image' content={ogImage} />
 
-  <!-- ROKS OG -->
-  <meta property='og:url' content={Astro.site} />
-  <meta property='og:type' content='website' />
-  <meta property='og:title' content={makeTitle} />
-  <meta property='og:description' content={pageDesc} />
-  <meta property='og:image' content={ogImage} />
+    <!-- ROKS TWITTER -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='twitter:url' content={Astro.site} />
+    <meta name='twitter:title' content={makeTitle} />
+    <meta name='twitter:description' content={pageDesc} />
+    <meta name='twitter:image' content={ogImage} />
 
-  <!-- ROKS TWITTER -->
-  <meta name='twitter:card' content='summary_large_image' />
-  <meta property='twitter:url' content={Astro.site} />
-  <meta name='twitter:title' content={makeTitle} />
-  <meta name='twitter:description' content={pageDesc} />
-  <meta name='twitter:image' content={ogImage} />
-
-  <slot name='head' />
+    <slot name='head' />
+  </head>
 
   <body class={bodyClass}>
     <header>
-      <slot name='header' />
+      <Nav />
       <ViewTransitions />
+      <slot name='header' />
     </header>
     <main class={mainClass}>
       <slot name='images' />
       <slot />
     </main>
     <footer class='container'>
-      <slot name='footer' />
+      <Footer />
     </footer>
 
     <Stylo />
-    <Nav />
     <AppendToCopyAction />
     <GoogleAnalytics />
     <ExternalLink />

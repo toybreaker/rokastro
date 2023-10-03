@@ -2,18 +2,23 @@
 import '@fontsource/dosis'
 import '@fiko/fiko.css'
 //import '@components/style/colors/zinc.css'
-import '@components/style/colors/blackandwhite.css'
+import '@components/style/colors/blackandwhite.scss'
 //import '@components/style/colors/lime.css'
 ---
 
 <style lang='scss' is:global>
   :root {
-    //ROK SAME LIGHT AND DARK MODE STUPID HACK
+    // ROK SAME LIGHT AND DARK MODE STUPID HACK
     // BACKGROUND COLOURS FOR INDEX PAGES
+    // COLORS:
     --gray: rgb(229, 228, 226);
     --lightgray: rgb(238, 238, 238);
     --darkgray: rgb(212, 212, 212);
     --offwhite: rgb(230, 230, 230);
+
+    // SAME FOOTER FOR THE LIGHT/DARK MODE
+    --footer_color: rgb(30, 30, 30);
+    --footer_BG: darkgray;
 
     //rok
     --font-family: 'Dosis' !important;
@@ -45,6 +50,12 @@ import '@components/style/colors/blackandwhite.css'
     --xxl: 1440px;
     --xxxl: 1920px;
   }
+
+  //ROK
+
+  footer {
+  }
+
   .container {
     max-width: 90dvw;
     margin: 0 auto;
