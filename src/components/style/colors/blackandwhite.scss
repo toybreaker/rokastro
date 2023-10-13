@@ -35,5 +35,7 @@
 
   .toggle > svg {
     background-color: red !important;
+    background-color: transparentize(red, 0.7) !important;
+    border-radius: var(--radius);
   }
 }
