@@ -1,29 +1,29 @@
-/* BLACK & WHITE | Light scheme (Default)  */
-/* Can be forced with data-theme="light" */
-[data-theme='light'],
-:root:not([data-theme='dark']) {
-  --primary: black !important;
-  --primaryBG: #eeeeee !important;
-  --color: #eeeeee; //!default;
-}
+// /* BLACK & WHITE | Light scheme (Default)  */
+// /* Can be forced with data-theme="light" */
+// [data-theme='light'],
+// :root:not([data-theme='dark']) {
+//   --currentTXT: black !important;
+//   --currentBG: #eeeeee !important;
+//   --color: #eeeeee; //!default;
+// }
 
-/* BLACK & WHITE | Dark scheme (Auto) */
-/* Automatically enabled if user has Dark mode enabled */
-@media only screen and (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --primary: rgb(208, 208, 208) !important;
-    --primaryBG: black !important;
-    --color: black; //!default;
-  }
-}
+// /* BLACK & WHITE | Dark scheme (Auto) */
+// /* Automatically enabled if user has Dark mode enabled */
+// @media only screen and (prefers-color-scheme: dark) {
+//   :root:not([data-theme]) {
+//     --currentTXT: rgb(208, 208, 208) !important;
+//     --currentBG: black !important;
+//     --color: black; //!default;
+//   }
+// }
 
-/* BLACK & WHITE | Dark scheme (Forced) */
-/* Enabled if forced with data-theme="dark" */
-[data-theme='dark'] {
-  --primary: rgb(208, 208, 208) !important;
-  --primaryBG: black !important;
-  --color: black; //!default;
-}
+// /* BLACK & WHITE | Dark scheme (Forced) */
+// /* Enabled if forced with data-theme="dark" */
+// [data-theme='dark'] {
+//   --currentTXT: rgb(208, 208, 208) !important;
+//   --currentBG: black !important;
+//   --color: black; //!default;
+// }
 
 .gray,
 .darkgray,

@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from 'astro:transitions'
 import * as siteData from '@data/site.json'
 import { Icon } from 'astro-icon'
 import NavButton from '@components/NavButton.astro'
@@ -17,7 +16,6 @@ const optimizedBackground = await getImage({
 })
 ---
 
-<ViewTransitions />
 <NavButton />
 
 <input type='checkbox' id='nav' />
@@ -46,8 +44,7 @@ const optimizedBackground = await getImage({
       class='go_home'
       href='/'
       title='close navigation and go back to home page'
-      transition:name='title'
-      transition:persist><h1>{siteData.title}</h1></a
+      ><h1>{siteData.title}</h1></a
     >
 
     <h2 class='h4 hide_on_phones'>{siteData.tagline}</h2>
@@ -160,9 +157,9 @@ const optimizedBackground = await getImage({
     display: block;
     cursor: pointer;
     text-align: center;
-    color: var(--primary);
+    color: var(--currentTXT);
     .black & {
-      color: var(--primaryBG);
+      color: var(--currentBG);
     }
   }
 

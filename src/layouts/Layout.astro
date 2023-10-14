@@ -1,6 +1,5 @@
 ---
 import Stylo from '@components/style/master.astro'
-import { ViewTransitions } from 'astro:transitions'
 import ROKMA from '@components/ROKMA.astro'
 import Footer from '@components/Footer.astro'
 import Nav from '@components/Nav.astro'
@@ -59,7 +58,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
   <body class={bodyClass}>
     <header>
       <Nav />
-      <ViewTransitions />
       <slot name='header' />
     </header>
     <main class={mainClass}>

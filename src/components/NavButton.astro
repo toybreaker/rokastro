@@ -2,14 +2,14 @@
 import { Icon } from 'astro-icon'
 ---
 
-<label for='nav' class='toggle' transition:name='spinOUT'>
+<label for='nav' class='toggle'>
   <Icon name='nav' class='open_nav_button' />
 </label>
 
 <style lang='scss'>
   .toggle svg {
     color: inherit !important;
-    fill: var(--primary) !important;
+    fill: var(--currentTXT);
     background-color: transparentize(LawnGreen, 0.5) !important;
     backdrop-filter: blur(5px);
     border-radius: var(--radius);

@@ -8,7 +8,7 @@ export interface Props {
 const { title, category } = Astro.props
 ---
 
-<div title={category} transition:name='title' class='card_related outline'>
+<div title={category} class='card_related outline'>
   {title.toLocaleUpperCase()}
 </div>
 
@@ -16,7 +16,7 @@ const { title, category } = Astro.props
   .card_related {
     display: fit-content;
     width: fit-content;
-    color: var(--primary);
+    color: var(--currentTXT);
     &.outline {
       padding: 0.25rem;
       border: 2px solid transparent;

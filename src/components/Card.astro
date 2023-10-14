@@ -15,7 +15,7 @@ const { title, image, category } = Astro.props
     <Image width={640} src={image} alt={title} format='avif' quality='low' />
   </div>
 
-  <h3 class='title h5' transition:name='title'>
+  <h3 class='title h5'>
     <span>{title.toLocaleUpperCase()}</span>
     <small class='category'>{category}</small>
   </h3>
@@ -41,7 +41,7 @@ const { title, image, category } = Astro.props
     margin: 0;
     padding: 0;
     span {
-      //background-color: var(--primary);
+      //background-color: var(--currentTXT);
       padding: 0 5px;
       border: 2px solid black;
       color: black;

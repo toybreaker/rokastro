@@ -1,5 +1,4 @@
 ---
-import { fade } from 'astro:transitions'
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
@@ -19,12 +18,7 @@ const pageDesc = siteData.description_web
   ogImage={images[0]}
 >
   <div class='container uppercase' slot='header'>
-    <a
-      transition:name='title'
-      class='breadcrumb'
-      href='/'
-      transition:animate={fade({ duration: '0.4s' })}
-    >
+    <a class='breadcrumb' href='/'>
       {siteData.title}
     </a>
     <span>&nbsp;>&nbsp;</span>
@@ -103,7 +97,7 @@ const pageDesc = siteData.description_web
     }
 
     a.breadcrumb {
-      color: var(--primaryBG) !important;
+      color: var(--currentBG) !important;
     }
   </style>
 </Layout>

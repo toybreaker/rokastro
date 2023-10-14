@@ -18,15 +18,13 @@ export interface sections {
         href={'/' + section.label + '/'}
         title={siteData.description}
       >
-        <button class='outline' transition:name='title'>
-          {section.label.toUpperCase()}
-        </button>
+        <button class='outline'>{section.label.toUpperCase()}</button>
       </a>
     ))
   }
 
   <a rel='prefetch' class='about_button' href='/about/' title='About Rokma'>
-    <button class='outline' transition:name='title'> ABOUT</button>
+    <button class='outline'> ABOUT</button>
   </a>
 </nav>
 

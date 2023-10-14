@@ -30,10 +30,10 @@ export interface quotes {
 
 <style lang='scss'>
   blockquote {
-    --blockquote-border-color: var(--primary);
-    color: var(--primary);
+    --blockquote-border-color: var(--currentTXT);
+    color: var(--currentTXT);
     background-color: hsla(0, 0%, 100%, 0.15) !important;
-    color: var(--primary) !important;
+    color: var(--currentTXT)
     backdrop-filter: blur(10px);
     padding-right: 1rem !important;
     margin-right: 1rem !important;
@@ -47,7 +47,7 @@ export interface quotes {
     margin-bottom: 1rem !important;
   }
   cite a {
-    color: var(--primary);
+    color: var(--currentTXT);
     text-decoration: underline;
     text-underline-offset: 0.25rem;
     text-decoration-thickness: 0.1rem;
@@ -58,7 +58,7 @@ export interface quotes {
     }
   }
   .phrases_title {
-    color: var(--primary);
+    color: var(--currentTXT);
     max-width: 90dvw;
     margin: 0 auto;
     padding-top: var(--spacing);

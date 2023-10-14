@@ -72,16 +72,16 @@
   .h5,
   .h6 {
     //RESET
-    --h1-color: var(--primaryBG);
-    --h2-color: var(--primaryBG);
-    --h3-color: var(--primaryBG);
-    --h4-color: var(--primaryBG);
-    --h5-color: var(--primaryBG);
-    --h6-color: var(--primaryBG);
+    --h1-color: var(--currentBG);
+    --h2-color: var(--currentBG);
+    --h3-color: var(--currentBG);
+    --h4-color: var(--currentBG);
+    --h5-color: var(--currentBG);
+    --h6-color: var(--currentBG);
     font-weight: initial !important;
     --font-weight: 200;
     text-transform: uppercase !important;
-    color: var(--primary) !important;
+    color: var(--currentTXT) !important;
     line-height: 1.1;
   }
 
@@ -90,7 +90,7 @@
     --font-size: 2rem;
     text-transform: uppercase;
     border-bottom: 0 none !important;
-    color: var(--primary) !important;
+    color: var(--currentTXT) !important;
     span {
       opacity: 0.75;
     }
@@ -100,25 +100,25 @@
   .h2 {
     --font-size: 1.75rem;
     text-transform: uppercase;
-    color: var(--primary) !important;
+    color: var(--currentTXT) !important;
   }
 
   h3,
   .h3 {
     --font-size: 1.5rem;
-    color: var(--primary) !important;
+    color: var(--currentTXT) !important;
   }
 
   h4,
   .h4 {
     --font-size: 1.25rem;
-    color: var(--primary) !important;
+    color: var(--currentTXT) !important;
   }
 
   h5,
   .h5 {
     --font-size: 1.125rem;
-    color: var(--primary) !important;
+    color: var(--currentTXT) !important;
   }
 
   blockquote {
@@ -278,7 +278,7 @@
     text-underline-offset: 0.2rem;
     text-decoration-thickness: 0.2rem;
     text-decoration-skip-ink: auto;
-    color: var(--primary);
+    color: var(--currentTXT);
     &:hover {
       opacity: 0.75;
     }
@@ -367,17 +367,17 @@
       background-color: var(--darkgray);
     }
     &.black {
-      --primary: var(--primary);
-      --primaryFront: var(--primary);
-      color: var(--primary);
-      background-color: black;
+      --currentTXT: var(--currentTXT);
+      --primaryFront: var(--currentTXT);
+      color: var(--color-light);
+      background-color: var(--color-dark);
 
       [role='button'] {
         border-color: var(--soft_overlay_color) !important;
       }
 
       [role='link'] {
-        color: var(--primary) !important;
+        color: var(--currentTXT) !important;
       }
 
       .post_title span {
@@ -391,7 +391,7 @@
         background-color: var(--soft_overlay_color) !important;
       }
       span {
-        color: var(--primary);
+        color: var(--currentTXT);
       }
     }
   }

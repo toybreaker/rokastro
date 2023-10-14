@@ -1,9 +1,7 @@
 ---
 import '@fontsource/dosis'
 import '@fiko/fiko.css'
-//import '@components/style/colors/zinc.css'
 import '@components/style/colors/blackandwhite.scss'
-//import '@components/style/colors/lime.css'
 ---
 
 <style lang='scss' is:global>
@@ -195,16 +193,16 @@ import '@components/style/colors/blackandwhite.scss'
   .h5,
   .h6 {
     //RESET
-    --h1-color: var(--primaryBG);
-    --h2-color: var(--primaryBG);
-    --h3-color: var(--primaryBG);
-    --h4-color: var(--primaryBG);
-    --h5-color: var(--primaryBG);
-    --h6-color: var(--primaryBG);
+    --h1-color: var(--currentBG);
+    --h2-color: var(--currentBG);
+    --h3-color: var(--currentBG);
+    --h4-color: var(--currentBG);
+    --h5-color: var(--currentBG);
+    --h6-color: var(--currentBG);
     font-weight: initial !important;
     --font-weight: 200;
     text-transform: uppercase !important;
-    color: var(--primary) !important;
+    color: var(--currentTXT);
     line-height: 1.1;
   }
 
@@ -213,8 +211,7 @@ import '@components/style/colors/blackandwhite.scss'
     --font-size: 2rem;
     text-transform: uppercase;
     border-bottom: 0 none !important;
-    color: var(--primary) !important;
-    span {
+    color: var(--currentTXT) span {
       opacity: 0.75;
     }
   }
@@ -223,25 +220,25 @@ import '@components/style/colors/blackandwhite.scss'
   .h2 {
     --font-size: 1.75rem;
     text-transform: uppercase;
-    color: var(--primary) !important;
+    color: var(--currentTXT);
   }
 
   h3,
   .h3 {
     --font-size: 1.5rem;
-    color: var(--primary) !important;
+    color: var(--currentTXT);
   }
 
   h4,
   .h4 {
     --font-size: 1.25rem;
-    color: var(--primary) !important;
+    color: var(--currentTXT);
   }
 
   h5,
   .h5 {
     --font-size: 1.125rem;
-    color: var(--primary) !important;
+    color: var(--currentTXT);
   }
 
   blockquote {
@@ -401,7 +398,7 @@ import '@components/style/colors/blackandwhite.scss'
     text-underline-offset: 0.2rem;
     text-decoration-thickness: 0.2rem;
     text-decoration-skip-ink: auto;
-    color: var(--primary);
+    color: var(--currentTXT);
     &:hover {
       opacity: 0.75;
     }
@@ -445,7 +442,7 @@ import '@components/style/colors/blackandwhite.scss'
     span {
       background-color: black;
       padding: 0 5px;
-      border: 2px solid var(--primaryB);
+      border: 2px solid var(--currentTXT);
       color: var(--primaryB);
     }
   }
@@ -490,31 +487,31 @@ import '@components/style/colors/blackandwhite.scss'
       background-color: var(--darkgray);
     }
     &.black {
-      --primary: var(--primary);
-      --primaryFront: var(--primary);
-      color: var(--primary);
-      background-color: black;
+      --currentTXT: var(--color-light);
+      --primaryFront: var(--color-light);
+      color: var(--color-light);
+      background-color: var(--color-dark);
 
       [role='button'] {
-        border-color: var(--soft_overlay_color) !important;
+        border-color: var(--color-light) !important;
       }
 
       [role='link'] {
-        color: var(--primary) !important;
+        color: var(--color-light);
       }
 
       .post_title span {
-        --primaryFront: var(--primaryB);
-        border: 2px solid var(--primaryB);
+        --primaryFront: var(--color-light);
+        border: 2px solid var(--color-light);
         padding: 0 5px;
       }
 
       .card.outline {
-        border-color: var(--soft_overlay_color) !important;
-        background-color: var(--soft_overlay_color) !important;
+        border-color: var(var(--color-light)) !important;
+        background-color: var(var(--color-light)) !important;
       }
       span {
-        color: var(--primary);
+        color: var(--color-light);
       }
     }
   }
