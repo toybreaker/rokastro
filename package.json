@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "0.11.3",
+  "version": "0.11.5",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -31,7 +31,7 @@
     "eslint": "^8.51.0",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "fiko": "^0.5.11",
+    "fiko": "^0.5.13",
     "mdast-util-to-string": "^4.0.0",
     "prettier": "^3.0.3",
     "prettier-config-standard": "^7.0.0",
