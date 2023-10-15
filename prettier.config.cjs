@@ -2,6 +2,7 @@
 module.exports = {
   // i'm just using the standard config, change if you need
   ...require('prettier-config-standard'),
+  htmlWhitespaceSensitivity: 'ignore',
   pluginSearchDirs: [__dirname],
   plugins: [require.resolve('prettier-plugin-astro')],
   overrides: [
