@@ -9,62 +9,19 @@ export interface quotes {
 }
 ---
 
-<div class='phrases'>
-  <h3 class='h4 centre phrases_title uppercase'>What clients are saying</h3>
+<article class='phrases'>
+  <h3 class='h4 uppercase'>What clients are saying</h3>
   {
     quotes.map((quote) => (
       <blockquote>
-        "{quote.quote}"{' '}
-        <>
-          <br />
-          <br />
-        </>
-        <cite>
-          {quote.name}
-          Founder of <a href={quote.url}>{quote.brand}</a>
-        </cite>
+        "{quote.quote}"
+        <footer>
+          <cite>
+            — {quote.name} - Founder of
+            <a href={quote.url}>{quote.brand}</a>
+          </cite>
+        </footer>
       </blockquote>
     ))
   }
-</div>
-
-<style lang='scss'>
-  blockquote {
-    --blockquote-border-color: var(--currentTXT);
-    color: var(--currentTXT);
-    background-color: hsla(0, 0%, 100%, 0.15) !important;
-    color: var(--currentTXT)
-    backdrop-filter: blur(10px);
-    padding-right: 1rem !important;
-    margin-right: 1rem !important;
-    //width: calc(100% - 2rem);
-    font-size: 120%;
-    max-width: fit-content;
-    border-radius: var(--radius);
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-  }
-  cite a {
-    color: var(--currentTXT);
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-    text-decoration-thickness: 0.1rem;
-    text-decoration-skip-ink: auto;
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--text-decoration-color--nav);
-    }
-  }
-  .phrases_title {
-    color: var(--currentTXT);
-    max-width: 90dvw;
-    margin: 0 auto;
-    padding-top: var(--spacing);
-  }
-  .phrases {
-    max-width: 60ch;
-    margin: 0 auto;
-  }
-</style>
+</article>
