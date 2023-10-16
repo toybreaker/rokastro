@@ -7,6 +7,7 @@
     "typescriptreact"
   ],
   "editor.fontFamily": "'Jetbrains Mono', 'ProductSans', Monaco, 'Courier New', monospace, jetb",
+  "editor.wordWrapColumn": 70,
   "prettier.bracketSameLine": true,
   "window.zoomLevel": 1,
   "editor.fontSize": 17,

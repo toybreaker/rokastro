@@ -1,7 +1,7 @@
 ---
 import '@fontsource/dosis'
 import '@fiko/fiko.css'
-import '@components/style/colors/blackandwhite.scss'
+//import '@components/style/colors/blackandwhite.scss'
 ---
 
 <style lang='scss' is:global>
@@ -50,9 +50,6 @@ import '@components/style/colors/blackandwhite.scss'
   }
 
   //ROK
-
-  footer {
-  }
 
   .container {
     max-width: 90dvw;
@@ -241,18 +238,18 @@ import '@components/style/colors/blackandwhite.scss'
     color: var(--currentTXT);
   }
 
-  blockquote {
-    margin: var(--spacing) var(--spacing) 0 !important;
-    padding: calc(var(--spacing) * 0.5) 0 calc(var(--spacing) * 3)
-      var(--spacing) !important;
-    &:nth-child(odd) {
-      text-align: right !important;
-    }
-  }
+  // blockquote {
+  //   margin: var(--spacing) var(--spacing) 0 !important;
+  //   padding: calc(var(--spacing) * 0.5) 0 calc(var(--spacing) * 3)
+  //     var(--spacing) !important;
+  //   &:nth-child(odd) {
+  //     text-align: right !important;
+  //   }
+  // }
 
-  button {
-    white-space: nowrap;
-  }
+  // button {
+  //   white-space: nowrap;
+  // }
 
   .no_padding {
     padding: 0 !important;
@@ -280,29 +277,29 @@ import '@components/style/colors/blackandwhite.scss'
     text-align: right !important;
   }
 
-  .sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    height: 50px;
-    top: 10px;
-    z-index: 9999;
-  }
+  // .sticky {
+  //   position: -webkit-sticky;
+  //   position: sticky;
+  //   height: 50px;
+  //   top: 10px;
+  //   z-index: 9999;
+  // }
 
-  body > footer,
-  body > header,
-  body > main {
-    margin-left: auto;
-    margin-right: auto;
-    padding: calc(var(--spacing) / 2) 0;
-  }
+  // body > footer,
+  // body > header,
+  // body > main {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   padding: calc(var(--spacing) / 2) 0;
+  // }
 
-  strong {
-    font-weight: 800 !important;
-  }
+  // strong {
+  //   font-weight: 800 !important;
+  // }
 
-  .web-design img {
-    //border: 1px solid rgb(182, 182, 182);
-  }
+  // .web-design img {
+  //   //border: 1px solid rgb(182, 182, 182);
+  // }
 
   .slide {
     margin: 0 0 var(--spacing);
@@ -327,10 +324,10 @@ import '@components/style/colors/blackandwhite.scss'
     }
   }
 
-  .post {
-    //a
-    text-decoration: none;
-  }
+  // .post {
+  //   //a
+  //   text-decoration: none;
+  // }
 
   .all_posts .post {
     display: block;
@@ -340,59 +337,31 @@ import '@components/style/colors/blackandwhite.scss'
     }
   }
 
-  .grid2 .images {
-    //small sceens 3 columns
+  .grid .images {
     display: block;
+
     @media (min-width: 320px) {
+      display: grid;
       grid-gap: 15px;
       grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     }
-    @media (min-width: 575px) {
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
     }
-    //bigger 2 columns
-    @media (min-width: 990px) {
-      grid-template-columns: repeat(auto-fill, minmax(540px, 1fr)) !important;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
     }
     .slide {
       margin: 0 !important;
     }
   }
 
-  .grid3 .images {
-    //at full width 3 column
-    display: block;
-    @media (min-width: 320px) {
-      display: grid;
-      grid-gap: 5px;
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    }
-    @media (min-width: 575px) {
-      grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
-    }
-    @media (min-width: 990px) {
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    }
-    .slide {
-      margin: 0 !important;
-    }
-  }
-
-  .grid4 .images {
-    //IF INSIDE CONTAINER BEHAVES LIKE grid3!
-    display: block;
-    @media (min-width: 320px) {
-      display: grid;
-      grid-gap: 5px;
-      grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
-    }
-
-    .slide {
-      margin: 0 !important;
-    }
-  }
   p a {
     text-decoration: underline !important;
     text-underline-offset: 0.2rem;
