@@ -7,7 +7,6 @@
     "typescriptreact"
   ],
   "editor.fontFamily": "'Jetbrains Mono', 'ProductSans', Monaco, 'Courier New', monospace, jetb",
-  "editor.wordWrapColumn": 70,
   "prettier.bracketSameLine": true,
   "window.zoomLevel": 1,
   "editor.fontSize": 17,
@@ -58,9 +57,11 @@
     }
   },
   "files.associations": {
-    "*.mdx": "markdown"
+    "*.mdx": "markdown",
+    "*.md": "markdown"
   },
   "colorize.include": [
+    "**/*.html",
     "**/*.astro",
     "**/*.css",
     "**/*.scss",
@@ -69,5 +70,21 @@
   ],
   "typescript.inlayHints.parameterNames.enabled": "all",
   "astro.trace.server": "verbose",
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "colorize.languages": [
+    "md",
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg"
+  ],
+  "editor.inlineSuggest.showToolbar": "always",
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.preview": true,
+  "editor.suggest.shareSuggestSelections": true
 }
