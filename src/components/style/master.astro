@@ -1,11 +1,14 @@
 ---
 import '@fontsource/dosis'
 import '@fiko/fiko.css'
+//// USE [blackandwhite.scss] COMPONENT
+//// TO CUSTOMIZE FIKO LIGHT/DARK MODE LOOK FOR THIS PROJECT.
 //import '@components/style/colors/blackandwhite.scss'
 ---
 
 <style lang='scss' is:global>
   :root {
+    //
     // ROK SAME LIGHT AND DARK MODE STUPID HACK
     // BACKGROUND COLOURS FOR INDEX PAGES
     // COLORS:
@@ -18,7 +21,7 @@ import '@fiko/fiko.css'
     --footer_color: rgb(30, 30, 30);
     --footer_BG: darkgray;
 
-    //rok
+    // ROK
     --font-family: 'Dosis' !important;
     --font-size: 21px; //FALLBACK?!
     --bodyfontweight: 300;
@@ -38,18 +41,18 @@ import '@fiko/fiko.css'
     --nav-link-spacing-vertical: 0.35rem;
     --nav-link-spacing-horizontal: 0.35rem;
     --border-width: 0.125rem;
-
-    // FUCK PICO BREAKPOINTS (MAKE IT SIMPLE DUDE!)
-    --xs: 0;
-    --sm: 576px;
-    --md: 768px;
-    --lg: 992px;
-    --xl: 1200px;
-    --xxl: 1440px;
-    --xxxl: 1920px;
   }
 
   //ROK
+  .gray,
+  .darkgray,
+  .offwhite {
+    .toggle > svg {
+      background-color: red !important;
+      background-color: transparentize(red, 0.7) !important;
+      border-radius: var(--radius);
+    }
+  }
 
   .container {
     max-width: 90dvw;
@@ -208,7 +211,8 @@ import '@fiko/fiko.css'
     --font-size: 2rem;
     text-transform: uppercase;
     border-bottom: 0 none !important;
-    color: var(--currentTXT) span {
+    color: var(--currentTXT);
+    span {
       opacity: 0.75;
     }
   }
@@ -416,10 +420,10 @@ import '@fiko/fiko.css'
     }
   }
 
-  a,
-  [role='link'] {
-    color: hsl(39, 0%, 50%) !important;
-  }
+  // a,
+  // [role='link'] {
+  //   color: hsl(39, 0%, 50%) !important;
+  // }
 
   .flex_centre {
     display: flex;

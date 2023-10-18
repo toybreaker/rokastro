@@ -1,41 +1,20 @@
+// USE THIS FILE [blackandwhite.scss] COMPONENT
+// TO CUSTOMIZE FIKO LOOK FOR THIS PROJECT.
+
 // /* BLACK & WHITE | Light scheme (Default)  */
 // /* Can be forced with data-theme="light" */
 // [data-theme='light'],
 // :root:not([data-theme='dark']) {
-//   --currentTXT: black !important;
-//   --currentBG: #eeeeee !important;
-//   --color: #eeeeee; //!default;
 // }
 
 // /* BLACK & WHITE | Dark scheme (Auto) */
 // /* Automatically enabled if user has Dark mode enabled */
 // @media only screen and (prefers-color-scheme: dark) {
 //   :root:not([data-theme]) {
-//     --currentTXT: rgb(208, 208, 208) !important;
-//     --currentBG: black !important;
-//     --color: black; //!default;
 //   }
 // }
 
 // /* BLACK & WHITE | Dark scheme (Forced) */
 // /* Enabled if forced with data-theme="dark" */
 // [data-theme='dark'] {
-//   --currentTXT: rgb(208, 208, 208) !important;
-//   --currentBG: black !important;
-//   --color: black; //!default;
 // }
-
-.gray,
-.darkgray,
-.offwhite {
-  --color: black !important;
-  h1 {
-    color: black !important;
-  }
-
-  .toggle > svg {
-    background-color: red !important;
-    background-color: transparentize(red, 0.7) !important;
-    border-radius: var(--radius);
-  }
-}

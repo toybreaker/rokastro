@@ -1,7 +1,10 @@
+// USE THIS FILE [blackandwhite.scss] COMPONENT
+// TO CUSTOMIZE FIKO LOOK FOR THIS PROJECT.
+
 /* Zinc color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
-[data-theme=light],
-:root:not([data-theme=dark]) {
+[data-theme='light'],
+:root:not([data-theme='dark']) {
   --text-selection-color: rgba(136, 145, 164, 0.25);
   --currentTXT: hsl(220, 10%, 43%);
   --currentBG: #000;
@@ -29,7 +32,7 @@
 
 /* Zinc color for dark color scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
-[data-theme=dark] {
+[data-theme='dark'] {
   --text-selection-color: rgba(150, 158, 175, 0.1875);
   --current: #969eaf;
   --current-background: #646b79;

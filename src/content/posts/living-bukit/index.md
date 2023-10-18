@@ -21,4 +21,4 @@ featured: true
 home: true
 ---
 
-Reportage on surfer's life of the Bukit peninsula for &lt;Surfnews&gt; magazine.
+Reportage on surfer life of the Bukit peninsula for &lt;Surfnews&gt; magazine.

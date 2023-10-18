@@ -19,7 +19,6 @@ const optimizedBackground = await getImage({
 <NavButton />
 
 <input type='checkbox' id='nav' />
-
 <div class='sidebar'>
   <div
     style={`
@@ -88,23 +87,25 @@ const optimizedBackground = await getImage({
   }
 
   .sidebar {
-    //padding: 3rem 8px 1.5rem 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    position: fixed;
+    min-width: 100svw;
+    min-height: 100svh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
 
     overflow-y: scroll;
     color: white;
     background-color: #000;
 
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    visibility: hidden;
-
-    width: var(--sidebar_width);
-    left: calc(100svw - var(--sidebar_width));
+    // width: var(--sidebar_width);
+    // left: calc(100svw - var(--sidebar_width));
 
     a,
     h1,
@@ -122,25 +123,24 @@ const optimizedBackground = await getImage({
 
   .top {
     padding-top: 1.75rem;
-    padding-bottom: 0.5rem;
+    align-self: top;
   }
 
   .middle {
-    max-width: 100svw;
+    width: 100svw;
     overflow-x: hidden;
     overflow-y: scroll;
     min-height: max-content;
-    max-height: calc(100svh - 100px);
     .middle_scroller {
-      width: 100dvw;
+      width: 100svw;
       margin: 0 auto;
     }
   }
 
   .bottom {
-    height: 100px;
-    bottom: 1rem;
-    padding: 10px 0.5rem;
+    align-self: flex-end;
+    bottom: 0;
+    padding: 1rem;
   }
 
   #nav {

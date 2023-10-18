@@ -1,7 +1,10 @@
+// USE THIS FILE [blackandwhite.scss] COMPONENT
+// TO CUSTOMIZE FIKO LOOK FOR THIS PROJECT.
+
 /* Lime color for light color scheme (Default) */
 /* Can be forced with data-theme="light" */
-[data-theme=light],
-:root:not([data-theme=dark]) {
+[data-theme='light'],
+:root:not([data-theme='dark']) {
   --text-selection-color: rgba(119, 156, 0, 0.25);
   --currentTXT: #577400;
   --currentBG: #a5d601;
@@ -31,7 +34,7 @@
 
 /* Lime color for dark color scheme (Forced) */
 /* Enabled if forced with data-theme="dark" */
-[data-theme=dark] {
+[data-theme='dark'] {
   --text-selection-color: rgba(130, 171, 0, 0.1875);
   --currentTXT: #82ab00;
   --currentBG: #a5d601;
