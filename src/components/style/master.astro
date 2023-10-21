@@ -90,19 +90,18 @@ import '@fiko/fiko.css'
     }
   }
 
-  html {
-    scroll-behavior: smooth;
-    @media (max-width: 576px) {
-      word-break: break-all;
-    }
-  }
-
   body {
     min-height: 100dvh;
     overflow-x: hidden;
     margin: 0;
     font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
+
+    //  0.7.8 fiko has this
+    // @media (max-width: 576px) {
+    //   word-break: keep-all;
+    //   text-wrap: wrap;
+    // }
   }
 
   * {
@@ -196,12 +195,6 @@ import '@fiko/fiko.css'
   .h5,
   .h6 {
     //RESET
-    --h1-color: var(--currentBG);
-    --h2-color: var(--currentBG);
-    --h3-color: var(--currentBG);
-    --h4-color: var(--currentBG);
-    --h5-color: var(--currentBG);
-    --h6-color: var(--currentBG);
     font-weight: initial !important;
     --font-weight: 200;
     text-transform: uppercase !important;
