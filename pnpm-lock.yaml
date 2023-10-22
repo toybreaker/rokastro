@@ -63,8 +63,8 @@ dependencies:
     specifier: ^6.7.1
     version: 6.7.1(eslint@8.52.0)
   fiko:
-    specifier: ^0.7.11
-    version: 0.7.11
+    specifier: ^0.7.12
+    version: 0.7.12
   mdast-util-to-string:
     specifier: ^4.0.0
     version: 4.0.0
@@ -2843,8 +2843,8 @@ packages:
       web-streams-polyfill: 3.2.1
     dev: false
 
-  /fiko@0.7.11:
-    resolution: {integrity: sha512-kVsOOT08/vJuZ+5PX0nopCpAdvX4+1Mhm2sHfgbxBsdo7IXAS+AFX5jQ4x7T7u5ggzpQBuyXHzy20ObXgb2z6w==}
+  /fiko@0.7.12:
+    resolution: {integrity: sha512-T3XrRbVnO4u7GiikTcc2Q6kdLBO9WmHg6+hyPBM1DvS42Tl0C0uy9FWmQNxr3vVGNRjzEncMY+ln7F7RPqTWBQ==}
     dev: false
 
   /file-entry-cache@6.0.1:
