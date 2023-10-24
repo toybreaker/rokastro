@@ -213,6 +213,7 @@ import '@fiko/fiko.css'
     }
     @media screen and (max-width: 400px) {
       word-break: break-all;
+      text-wrap: balance;
     }
   }
 
@@ -360,11 +361,17 @@ import '@fiko/fiko.css'
   }
 
   // NAV STICKY ACCORDION HEADERS
-  .sticky {
-    margin: 0 !important;
-    background-color: hsla(0, 0%, 100%, 0.15) !important;
-    backdrop-filter: blur(10px);
-  }
+
+  // fiko 0.8.1 has this:
+  // .sticky {
+  //   position: -webkit-sticky;
+  //   position: sticky;
+  //   top: 10px;
+  //   z-index: 9999;
+  //   background-color: var(--curCOLa) !important;
+  //   backdrop-filter: blur(10px);
+  // }
+
   details summary[role='button']:not(.outline).contrast:after {
     background-image: var(--icon-chevron-button);
   }

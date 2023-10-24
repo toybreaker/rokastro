@@ -156,7 +156,11 @@
     text-align: right !important;
   }
 
+  // fiko 0.8.1 has this (except height: 50px; !):
   .sticky {
+    background-color: var(--curCOLa) !important;
+    backdrop-filter: blur(10px);
+
     position: -webkit-sticky;
     position: sticky;
     height: 50px;
