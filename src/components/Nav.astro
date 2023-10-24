@@ -39,7 +39,7 @@ const optimizedBackground = await getImage({
     <Icon name='x' />
   </label>
 
-  <div class='top centre'>
+  <article class='top centre'>
     <a
       class='go_home'
       href='/'
@@ -49,7 +49,7 @@ const optimizedBackground = await getImage({
     </a>
 
     <h2 class='h4 hide_on_phones'>{siteData.tagline}</h2>
-  </div>
+  </article>
 
   <div class='middle'>
     <div class='middle_scroller'>
@@ -111,7 +111,7 @@ const optimizedBackground = await getImage({
     h1,
     h2 {
       font-weight: 400;
-      margin-bottom: 0;
+      margin-block-end: 0;
     }
 
     .avatar img {
@@ -122,7 +122,7 @@ const optimizedBackground = await getImage({
   }
 
   .top {
-    padding-top: 1.75rem;
+    padding-block-start: 1.75rem;
     align-self: top;
   }
 

@@ -23,16 +23,13 @@ const { title, image, category } = Astro.props
 
 <style lang='scss'>
   .category {
-    // margin: 0;
-    // padding: 0;
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
-    padding-left: 0.5rem;
+    padding-inline-start: 0.5rem;
   }
   small:not(empty) {
     color: black;
-    //padding: inherit 1rem !important;
     border-radius: 5px;
     font-weight: 200;
     font-size: 55%;
@@ -42,8 +39,8 @@ const { title, image, category } = Astro.props
     margin: var(--spaceTB) 0;
     padding: 0;
     span {
-      //background-color: var(--currentTXT);
-      padding: 0 5px;
+      padding-block: 0;
+      padding-inline: 5px;
       border: 2px solid black;
       color: black;
       body.black & {
@@ -65,7 +62,6 @@ const { title, image, category } = Astro.props
     transform-origin: center center;
     overflow: hidden;
     will-change: filter, transform;
-    //padding-bottom: var(--spacing);
     overflow: hidden;
 
     @media (min-width: 565px) {

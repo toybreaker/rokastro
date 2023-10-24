@@ -21,7 +21,8 @@ const { title, category } = Astro.props
     align-items: baseline;
     justify-content: space-between;
     line-height: 1;
-    padding: var(--spacing) 0;
+    padding-block: var(--spaceTB) 0;
+    padding-inline: var(--spaceLF) 0;
     object-fit: contain;
     width: fit-content;
     &.outline {
@@ -45,8 +46,9 @@ const { title, category } = Astro.props
     font-size: 75%;
     font-weight: 900;
     background-color: color: var(--currentTXT);
-    padding: 3px 5px;
-    margin-left: 0.5rem;
+    padding-block: 3px;
+padding-inline: 5px;;
+    margin-inline-start: 0.5rem;
     border: 2px solid black;
     color: black;
     body.black & {

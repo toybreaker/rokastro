@@ -155,7 +155,7 @@ import '@fiko/fiko.css'
   .toppad,
   .pad_top,
   .padtop {
-    padding-top: var(--spacing);
+    padding-block-start: var(--spaceTB);
   }
 
   .pbot,
@@ -166,7 +166,7 @@ import '@fiko/fiko.css'
   .bottompad,
   .pad_bot,
   .padbot {
-    padding-bottom: var(--spacing);
+    padding-block-end: var(--spaceTB);
   }
   .uppercased,
   .uppercase,
@@ -211,6 +211,9 @@ import '@fiko/fiko.css'
     span {
       opacity: 0.75;
     }
+    @media screen and (max-width: 400px) {
+      word-break: break-all;
+    }
   }
 
   h2,
@@ -238,19 +241,6 @@ import '@fiko/fiko.css'
     color: var(--currentTXT);
   }
 
-  // blockquote {
-  //   margin: var(--spacing) var(--spacing) 0 !important;
-  //   padding: calc(var(--spacing) * 0.5) 0 calc(var(--spacing) * 3)
-  //     var(--spacing) !important;
-  //   &:nth-child(odd) {
-  //     text-align: right !important;
-  //   }
-  // }
-
-  // button {
-  //   white-space: nowrap;
-  // }
-
   .no_padding {
     padding: 0 !important;
   }
@@ -259,7 +249,7 @@ import '@fiko/fiko.css'
   }
 
   ul:not(.tags) {
-    padding-left: var(--spacing);
+    padding-inline-start: var(--spaceLR);
     li {
       list-style: disc;
     }
@@ -269,7 +259,7 @@ import '@fiko/fiko.css'
   }
   hr.spacer {
     height: 3rem;
-    border: var(--border_size) solid transparent;
+    border: var(--borderS) solid transparent;
     //border-radius: 5px; // POSSIBLE!
   }
 
@@ -277,32 +267,10 @@ import '@fiko/fiko.css'
     text-align: right !important;
   }
 
-  // .sticky {
-  //   position: -webkit-sticky;
-  //   position: sticky;
-  //   height: 50px;
-  //   top: 10px;
-  //   z-index: 9999;
-  // }
-
-  // body > footer,
-  // body > header,
-  // body > main {
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   padding: calc(var(--spacing) / 2) 0;
-  // }
-
-  // strong {
-  //   font-weight: 800 !important;
-  // }
-
-  // .web-design img {
-  //   //border: 1px solid rgb(182, 182, 182);
-  // }
-
   .slide {
-    margin: 0 0 var(--spacing);
+    margin-block: 0;
+    margin-inline: 0;
+    margin-block-end: var(--spaceTB);
     border-radius: var(--radius);
   }
 
@@ -314,8 +282,8 @@ import '@fiko/fiko.css'
     //grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     @media (min-width: 701px) {
       grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-block-start: 2rem;
+      padding-block-end: 2rem;
     }
 
     grid-gap: 10px;
@@ -324,16 +292,11 @@ import '@fiko/fiko.css'
     }
   }
 
-  // .post {
-  //   //a
-  //   text-decoration: none;
-  // }
-
   .all_posts .post {
     display: block;
     //border-bottom: 1px solid black;
     .card:has(h2) {
-      margin-top: 0 !important;
+      margin-block-start: 0 !important;
     }
   }
 
@@ -400,7 +363,6 @@ import '@fiko/fiko.css'
   .sticky {
     margin: 0 !important;
     background-color: hsla(0, 0%, 100%, 0.15) !important;
-    color: hsla(0, 0%, 100%, 1) !important;
     backdrop-filter: blur(10px);
   }
   details summary[role='button']:not(.outline).contrast:after {
@@ -410,16 +372,12 @@ import '@fiko/fiko.css'
   .post_title {
     span {
       background-color: black;
-      padding: 0 5px;
+      padding-block: 0;
+      padding-inline: 5px;
       border: 2px solid var(--currentTXT);
       color: var(--primaryB);
     }
   }
-
-  // a,
-  // [role='link'] {
-  //   color: hsl(39, 0%, 50%) !important;
-  // }
 
   .flex_centre {
     display: flex;
@@ -429,15 +387,16 @@ import '@fiko/fiko.css'
   }
 
   .hide_on_phones {
-    display: none;
-    width: 0;
-    height: 0;
-    @media (min-width: 376px) {
-      display: block;
-      width: auto;
-      height: auto;
-      font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
-      line-height: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
+    display: inherit;
+    width: auto;
+    @media (max-width: 376px) {
+      display: none;
+      width: 0;
+      height: 0;
+      //
+      //   height: auto;
+      //   font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
+      //   line-height: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
     }
   }
 
@@ -472,7 +431,8 @@ import '@fiko/fiko.css'
       .post_title span {
         --primaryFront: var(--color-light);
         border: 2px solid var(--color-light);
-        padding: 0 5px;
+        padding-block: 0;
+        padding-inline: 5px;
       }
 
       .card.outline {

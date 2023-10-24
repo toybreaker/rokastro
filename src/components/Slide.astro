@@ -23,7 +23,8 @@ const { p, alt, quality, cssClass } = Astro.props
 <style>
   .slide {
     display: block;
-    margin: 0 0 var(--spacing);
+    margin-block: 0;
+    margin-block-end: var(--spaceTB);
     border-radius: var(--radius);
     width: -webkit-fill-available;
     height: auto;
