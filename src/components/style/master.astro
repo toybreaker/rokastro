@@ -96,12 +96,6 @@ import '@fiko/fiko.css'
     margin: 0;
     font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
-
-    //  0.7.8 fiko has this
-    // @media (max-width: 576px) {
-    //   word-break: keep-all;
-    //   text-wrap: wrap;
-    // }
   }
 
   * {
@@ -265,7 +259,7 @@ import '@fiko/fiko.css'
   }
 
   .align_right {
-    text-align: right !important;
+    text-align: right;
   }
 
   .slide {
@@ -289,7 +283,7 @@ import '@fiko/fiko.css'
 
     grid-gap: 10px;
     .slide {
-      margin: 0 !important;
+      margin: 0;
     }
   }
 
@@ -297,7 +291,7 @@ import '@fiko/fiko.css'
     display: block;
     //border-bottom: 1px solid black;
     .card:has(h2) {
-      margin-block-start: 0 !important;
+      margin-block-start: 0;
     }
   }
 
@@ -327,7 +321,7 @@ import '@fiko/fiko.css'
   }
 
   p a {
-    text-decoration: underline !important;
+    text-decoration: underline;
     text-underline-offset: 0.2rem;
     text-decoration-thickness: 0.2rem;
     text-decoration-skip-ink: auto;
@@ -337,40 +331,28 @@ import '@fiko/fiko.css'
     }
   }
 
-  .all_posts {
-    //position: relative !important;
-  }
-
-  details {
-    border-bottom: 0 none !important;
-    color: inherit !important;
-    position: relative !important;
-    display: sticky !important;
-    margin: 0 !important;
-  }
+  // details {
+  //   border-bottom: 0 none !important;
+  //   color: inherit !important;
+  //   position: relative !important;
+  //   display: sticky !important;
+  //   margin: 0 !important;
+  // }
 
   details:has(open) {
-    margin: 0 !important;
+    // margin: 0 !important;
+    margin: 0;
     summary {
       z-index: 1000;
       top: 0;
       &::after {
-        background-image: none !important;
+        // background-image: none !important;
+        background-image: none;
       }
     }
   }
 
   // NAV STICKY ACCORDION HEADERS
-
-  // fiko 0.8.1 has this:
-  // .sticky {
-  //   position: -webkit-sticky;
-  //   position: sticky;
-  //   top: 10px;
-  //   z-index: 9999;
-  //   background-color: var(--curCOLa) !important;
-  //   backdrop-filter: blur(10px);
-  // }
 
   details summary[role='button']:not(.outline).contrast:after {
     background-image: var(--icon-chevron-button);
