@@ -6,15 +6,17 @@ const today = new Date()
 ---
 
 <small>
-  Copyright © 2012-{today.getFullYear()} Rokma. All rights reserved. v{
+  Copyright &copy; 2012-{today.getFullYear()} Rokma. All rights reserved. v{
     repoData.version
   }. Powered by
   <a
     class='producer'
     title='producer'
     target='_blank'
-    href={siteData.producer.url}>{siteData.producer.name}</a
+    href={siteData.producer.url}
   >
+    {siteData.producer.name}
+  </a>
 </small>
 
 <style lang='scss'>

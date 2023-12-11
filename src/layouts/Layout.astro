@@ -1,7 +1,7 @@
 ---
 import Stylo from '@components/style/master.astro'
 import ROKMA from '@components/ROKMA.astro'
-import Footer from '@components/Footer.astro'
+import Copy from '@components/Copy.astro'
 import Nav from '@components/Nav.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
@@ -54,7 +54,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
   <slot name='head' />
 
-
   <body class={bodyClass}>
     <header>
       <Nav />
@@ -64,8 +63,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
       <slot name='images' />
       <slot />
     </main>
+
     <footer class='container'>
-      <Footer />
+      <slot name='footer' />
+      <Copy />
     </footer>
 
     <Stylo />
@@ -73,4 +74,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <GoogleAnalytics />
     <ExternalLink />
   </body>
+
+
 </html>

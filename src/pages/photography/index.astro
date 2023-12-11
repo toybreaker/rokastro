@@ -82,46 +82,40 @@ console.log(relatedPosts.length)
 
   <h2 class='centre uppercase'>Other {category} projects</h2>
 
-  <div class='posts all_posts'>
-    <details>
-      <summary role='button' class='contrast outline centre sticky uppercase'>
-        + {sortedPosts.length} MORE
-      </summary>
-      <div class='container posts ptop'>
-        {
-          sortedPosts.map((post) => (
-            <a
-              class='post allpost'
-              href={`/${category}/${post.slug}`}
-              title={post.data.year + '-' + post.data.year2}
-            >
-              <CardSlim title={post.data.title} />
-            </a>
-          ))
-        }
-      </div>
-    </details>
-  </div>
+  <details>
+    <summary>
+      {sortedPosts.length} MORE
+    </summary>
+    <div class='container posts ptop'>
+      {
+        sortedPosts.map((post) => (
+          <a
+            class='post allpost'
+            href={`/${category}/${post.slug}`}
+            title={post.data.year + '-' + post.data.year2}
+          >
+            <CardSlim title={post.data.title} />
+          </a>
+        ))
+      }
+    </div>
+  </details>
 
-  <div class='all_posts related'>
-    <details>
-      <summary role='button' class='contrast outline centre sticky'
-        >+ {relatedPosts.length} RELATED</summary
-      >
-      <div class='container posts ptop'>
-        {
-          relatedPosts.map((post) => (
-            <a
-              class='post '
-              href={`../${post.data.category}/${post.slug}`}
-              title={post.data.year + '-' + post.data.year2}
-            >
-              <CardRelated title={post.data.title} />
-            </a>
-          ))
-        }
-      </div>
-    </details>
-  </div>
+  <details>
+    <summary class=''>{relatedPosts.length} RELATED</summary>
+    <div class='container posts ptop'>
+      {
+        relatedPosts.map((post) => (
+          <a
+            class='post '
+            href={`../${post.data.category}/${post.slug}`}
+            title={post.data.year + '-' + post.data.year2}
+          >
+            <CardRelated title={post.data.title} />
+          </a>
+        ))
+      }
+    </div>
+  </details>
 </Layout>
 <style lang='scss'></style>
