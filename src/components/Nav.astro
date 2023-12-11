@@ -2,24 +2,17 @@
 import * as siteData from '@data/site.json'
 import { Icon } from 'astro-icon'
 import NavButton from '@components/NavButton.astro'
+import NavBackgroundImage from '@components/NavBackgroundImage.astro'
 import NavContacts from '@components/NavContacts.astro'
 import NavLinks from '@components/NavLinks.astro'
 import Copy from '@components/Copy.astro'
-
-import { getImage } from 'astro:assets'
-import rokmAvatar from '@p/00.jpg'
-
-const optimizedBackground = await getImage({
-  src: rokmAvatar,
-  format: 'avif',
-  quality: 'high'
-})
 ---
 
 <NavButton />
 
 <input type='checkbox' id='nav' />
 <div class='sidebar'>
+  <NavBackgroundImage />
   <label for='nav' class='toggle'>
     <Icon name='x' />
   </label>
@@ -78,6 +71,8 @@ const optimizedBackground = await getImage({
     margin: 0;
     padding: 0;
     display: grid;
+
+    place-items: center;
 
     top: 0;
     bottom: 0;

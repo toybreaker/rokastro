@@ -5,19 +5,25 @@ import * as siteData from '@data/site.json'
 const today = new Date()
 ---
 
-<small>
-  Copyright &copy; 2012-{today.getFullYear()} Rokma. All rights reserved. v{
-    repoData.version
-  }. Powered by
-  <a
-    class='producer'
-    title='producer'
-    target='_blank'
-    href={siteData.producer.url}
-  >
-    {siteData.producer.name}
-  </a>
-</small>
+<article class='copy_block'>
+  <details>
+    <summary class='center'><span class='status'></span></summary>
+    <small class='center'>
+      Copyright &copy; 2012-{today.getFullYear()} Rokma. All rights reserved. <br
+        class='break_on_phones'
+      />
+       v{repoData.version}. Powered by
+      <a
+        class='producer'
+        title='producer'
+        target='_blank'
+        href={siteData.producer.url}
+      >
+        {siteData.producer.name}
+      </a>
+    </small>
+  </details>
+</article>
 
 <style lang='scss'>
   .producer {
@@ -31,5 +37,34 @@ const today = new Date()
       text-decoration: underline;
       text-decoration-color: var(--text-decoration-color--nav);
     }
+  }
+  .copy_block {
+    padding-block-end: 2rem;
+  }
+  details {
+    padding-block: 0;
+  }
+
+  details > summary {
+    .status::after {
+      display: inline;
+      content: '©';
+    }
+  }
+
+  details[open] > summary {
+    .status::after {
+      display: inline;
+      content: '';
+    }
+  }
+  .break_on_phones {
+    display: none;
+    @media only screen and (min-width: 400px) {
+      display: block;
+    }
+  }
+  .status {
+    width: 100%;
   }
 </style>

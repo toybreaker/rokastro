@@ -1,5 +1,12 @@
 ---
+import { getImage } from 'astro:assets'
+import rokmAvatar from '@p/00.jpg'
 
+const optimizedBackground = await getImage({
+  src: rokmAvatar,
+  format: 'avif',
+  quality: 'high'
+})
 ---
 
 <div

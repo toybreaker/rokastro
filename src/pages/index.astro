@@ -116,14 +116,21 @@ const pageDesc = siteData.description
 
 <style lang='scss'>
   h1 {
-    font-size: 200% !important;
-    font-weight: 200 !important;
-    line-height: 1 !important;
+    font-size: 200%;
+    font-weight: 200;
+    line-height: 1;
     padding: 10dvh 0;
+    word-break: keep-all;
 
-    [data-theme='light'],
-    :root:not([data-theme='dark']) {
-      color: red !important;
+    // [data-theme='light'],
+    // :root:not([data-theme='dark']) {
+    //   color: red !important;
+    // }
+  }
+  label {
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
     }
   }
 </style>
