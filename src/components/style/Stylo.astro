@@ -22,7 +22,7 @@ import '@fiko/fiko.css'
     --footer_BG: darkgray;
 
     // ROK
-    --font-family: 'Dosis' !important;
+    --font-family: 'Dosis';
     --font-size: 21px; //FALLBACK?!
     --bodyfontweight: 300;
 
@@ -48,8 +48,8 @@ import '@fiko/fiko.css'
   .darkgray,
   .offwhite {
     .toggle > svg {
-      background-color: red !important;
-      background-color: transparentize(red, 0.7) !important;
+      background-color: red;
+      background-color: transparentize(red, 0.7);
       border-radius: var(--radius);
     }
   }
@@ -99,7 +99,7 @@ import '@fiko/fiko.css'
   }
 
   * {
-    box-shadow: none !important;
+    box-shadow: none;
   }
 
   .content {
@@ -111,7 +111,7 @@ import '@fiko/fiko.css'
   }
 
   footer {
-    padding: 0 !important;
+    padding: 0;
   }
 
   em {
@@ -121,9 +121,9 @@ import '@fiko/fiko.css'
   }
 
   .break_on_phones {
-    display: none !important;
+    display: none;
     @media (max-width: 576px) {
-      display: block !important;
+      display: block;
     }
   }
 
@@ -136,7 +136,7 @@ import '@fiko/fiko.css'
   .centered,
   .center,
   .centre {
-    text-align: center !important;
+    text-align: center;
   }
   .noselect {
     user-select: none;
@@ -165,82 +165,14 @@ import '@fiko/fiko.css'
   .uppercased,
   .uppercase,
   .upc {
-    text-transform: uppercase !important;
-  }
-
-  //FIX PICO
-  article,
-  main,
-  footer {
-    width: 100%;
-    background-color: unset;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .h1,
-  .h2,
-  .h3,
-  .h4,
-  .h5,
-  .h6 {
-    //RESET
-    font-weight: initial !important;
-    --font-weight: 200;
-    text-transform: uppercase !important;
-    color: var(--currentTXT);
-    line-height: 1.1;
-  }
-
-  h1,
-  .h1 {
-    --font-size: 2rem;
     text-transform: uppercase;
-    border-bottom: 0 none !important;
-    color: var(--currentTXT);
-    span {
-      opacity: 0.75;
-    }
-    @media screen and (max-width: 400px) {
-      word-break: break-all;
-      text-wrap: balance;
-    }
-  }
-
-  h2,
-  .h2 {
-    --font-size: 1.75rem;
-    text-transform: uppercase;
-    color: var(--currentTXT);
-  }
-
-  h3,
-  .h3 {
-    --font-size: 1.5rem;
-    color: var(--currentTXT);
-  }
-
-  h4,
-  .h4 {
-    --font-size: 1.25rem;
-    color: var(--currentTXT);
-  }
-
-  h5,
-  .h5 {
-    --font-size: 1.125rem;
-    color: var(--currentTXT);
   }
 
   .no_padding {
-    padding: 0 !important;
+    padding: 0;
   }
   .no_margin {
-    margin: 0 !important;
+    margin: 0;
   }
 
   ul:not(.tags) {
@@ -255,7 +187,6 @@ import '@fiko/fiko.css'
   hr.spacer {
     height: 3rem;
     border: var(--borderS) solid transparent;
-    //border-radius: 5px; // POSSIBLE!
   }
 
   .align_right {
@@ -289,7 +220,6 @@ import '@fiko/fiko.css'
 
   .all_posts .post {
     display: block;
-    //border-bottom: 1px solid black;
     .card:has(h2) {
       margin-block-start: 0;
     }
@@ -316,7 +246,7 @@ import '@fiko/fiko.css'
       grid-template-columns: repeat(4, 1fr);
     }
     .slide {
-      margin: 0 !important;
+      margin: 0;
     }
   }
 
@@ -331,32 +261,7 @@ import '@fiko/fiko.css'
     }
   }
 
-  // details {
-  //   border-bottom: 0 none !important;
-  //   color: inherit !important;
-  //   position: relative !important;
-  //   display: sticky !important;
-  //   margin: 0 !important;
-  // }
-
-  details:has(open) {
-    // margin: 0 !important;
-    margin: 0;
-    summary {
-      z-index: 1000;
-      top: 0;
-      &::after {
-        // background-image: none !important;
-        background-image: none;
-      }
-    }
-  }
-
   // NAV STICKY ACCORDION HEADERS
-
-  details summary[role='button']:not(.outline).contrast:after {
-    background-image: var(--icon-chevron-button);
-  }
 
   .post_title {
     span {
@@ -410,7 +315,7 @@ import '@fiko/fiko.css'
       background-color: var(--color-dark);
 
       [role='button'] {
-        border-color: var(--color-light) !important;
+        border-color: var(--color-light);
       }
 
       [role='link'] {
@@ -425,8 +330,8 @@ import '@fiko/fiko.css'
       }
 
       .card.outline {
-        border-color: var(var(--color-light)) !important;
-        background-color: var(var(--color-light)) !important;
+        border-color: var(var(--color-light));
+        background-color: var(var(--color-light));
       }
       span {
         color: var(--color-light);

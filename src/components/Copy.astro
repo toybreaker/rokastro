@@ -25,7 +25,7 @@ const today = new Date()
   </details>
 </article>
 
-<style lang='scss'>
+<style >
   .producer {
     //a
     text-decoration: underline;
@@ -41,23 +41,27 @@ const today = new Date()
   .copy_block {
     padding-block-end: 2rem;
   }
-  details {
-    padding-block: 0;
-  }
 
-  details > summary {
-    .status::after {
-      display: inline;
-      content: '©';
+  @layer components {
+    details {
+      padding-block: 0;
+    }
+
+    details > summary {
+      .status::after {
+        display: inline;
+        content: '©';
+      }
+    }
+
+    details[open] > summary {
+      .status::after {
+        display: inline;
+        content: '';
+      }
     }
   }
 
-  details[open] > summary {
-    .status::after {
-      display: inline;
-      content: '';
-    }
-  }
   .break_on_phones {
     display: none;
     @media only screen and (min-width: 400px) {
