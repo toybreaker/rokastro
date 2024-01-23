@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3df602d2-8b9d-475f-9fe7-1f07ad1081cb/deploy-status)](https://app.netlify.com/sites/rokastro/deploys)
 
-# [n.rokma.com v0.12.41](https://n.rokma.com/) w/ Astro & Fiko
+# [n.rokma.com](https://n.rokma.com/) w/ Astro & Fiko
 
 ## DEV SHORTCUTS
 
@@ -55,6 +55,7 @@ import '@fiko/fiko.css'
 
 ## TO DO:
 
+- get rid of KALA
 - OG IMAGES
 - ADD SEE MORE LIST AT POST FOOT
 - SEARCH FOR HI-RES OG IMAGES, DONE:
