@@ -18,11 +18,11 @@ tags:
   - copywriting
   - design
   - resort
-featured: true
-home: true
+featured:
+home:
 ---
 
 Communication strategy guidance. <br>
 Complete website plan, design, coding, copyrighting, stock photography and management.
 
-Live site: [KALA SURFCAMP](https://kala.surf/?source=rokma.com).<br>
+Live site: [KALA SURFCAMP](https://kala.rokma.com/?source=rokma.com).<br>
