@@ -57,36 +57,34 @@ const pageDesc = siteData.description_web
 
     <slot />
   </div>
-
-  <!-- <div class='is_footer_child' slot='footer'>FOO ter</div> -->
-
-  <style lang='scss'>
-    .tag_section {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding-block-start: var(--spaceTB);
-      margin-block-end: var(--spaceTB);
-    }
-
-    .tags {
-      padding-block-start: var(--spaceTB);
-      max-width: none;
-      li {
-        display: inline-block;
-        padding-inline-end: 1rem;
-        text-transform: uppercase;
-      }
-    }
-
-    svg.tag {
-      width: 43px;
-      position: relative;
-      top: 1rem;
-    }
-
-    a.breadcrumb {
-      color: var(--currentBG);
-    }
-  </style>
 </Layout>
+
+<style lang='scss'>
+  .tag_section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-block-start: var(--spaceTB);
+    margin-block-end: var(--spaceTB);
+  }
+
+  .tags {
+    padding-block-start: var(--spaceTB);
+    max-width: none;
+    li {
+      display: inline-block;
+      padding-inline-end: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  svg.tag {
+    width: 43px;
+    position: relative;
+    top: 1rem;
+  }
+
+  a.breadcrumb {
+    color: var(--currentBG);
+  }
+</style>

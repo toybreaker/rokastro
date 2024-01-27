@@ -4,12 +4,13 @@ category: websites
 year: 2023
 where: Bali, Indonesia
 catch:
-bodyClass: darkgray grid2
+bodyClass: darkgray grid3
 images:
   - ./01.jpg
   - ./02.jpg
   - ./03.jpg
   - ./04.jpg
+  - ./05.jpg
 tags:
   - custom-websites
   - service-photography

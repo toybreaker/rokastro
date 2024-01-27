@@ -1,10 +1,6 @@
 ---
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
-//import { add, subtract } from '@scripts/util.mjs'
-
-// console.log(add(8, 3.3)) // ?
-// console.log(subtract(111, 5.5)) // ??
 
 export interface Props {
   pageTitle: string
@@ -44,16 +40,4 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   section {
     min-height: 100svh;
   }
-
-  // h1 {
-  //   padding-block-start: 0;
-  //   margin-block-end: 1rem;
-  // }
-  // hr {
-  //   margin-block-start: 0 ;
-  // }
-  // blockquote span {
-  //   font-size: 150%;
-  //   line-height: 1;
-  // }
 </style>
