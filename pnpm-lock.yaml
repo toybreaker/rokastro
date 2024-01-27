@@ -63,8 +63,8 @@ dependencies:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
   fiko:
-    specifier: ^0.9.8
-    version: 0.9.8
+    specifier: ^0.10.0
+    version: 0.10.0
   mdast-util-to-string:
     specifier: ^4.0.0
     version: 4.0.0
@@ -2694,8 +2694,8 @@ packages:
       reusify: 1.0.4
     dev: false
 
-  /fiko@0.9.8:
-    resolution: {integrity: sha512-XxWYMBZpb3KhT+y+iTuYnX4JQgA2AXonaHWfakF5wE20BCWCT7PQ1g9Yqcsvo1yuFtgM2IRR4wfenWwlJWLuUQ==}
+  /fiko@0.10.0:
+    resolution: {integrity: sha512-B8Go22pZg3iMkEGBiR0t6DqB08HUU0kieoCO2Gbv2ituAcVxMiX3ibpizu2t6zaKq9nZrrTDXNnSODLqcxDuIA==}
     dev: false
 
   /file-entry-cache@6.0.1:
@@ -4961,7 +4961,7 @@ packages:
     dependencies:
       '@astrojs/compiler': 1.8.2
       prettier: 3.2.4
-      sass-formatter: 0.7.8
+      sass-formatter: 0.7.9
     dev: false
 
   /prettier@3.2.4:
@@ -5315,8 +5315,8 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
     dev: false
 
-  /sass-formatter@0.7.8:
-    resolution: {integrity: sha512-7fI2a8THglflhhYis7k06eUf92VQuJoXzEs2KRP0r1bluFxKFvLx0Ns7c478oYGM0fPfrr846ZRWVi2MAgHt9Q==}
+  /sass-formatter@0.7.9:
+    resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
     dependencies:
       suf-log: 2.5.3
     dev: false

@@ -23,7 +23,10 @@ featured:
 home:
 ---
 
-Communication strategy guidance. <br>
-Complete website plan, design, coding, copyrighting, stock photography and management.
+Communication strategy guidance.
 
-Live site: [KALA SURFCAMP](https://kala.rokma.com/?source=rokma.com).<br>
+Complete website plan, design, coding, copyrighting, stock photography. Plus SSL, CDN hosting, CI/CD, source code versioning and management.
+
+Lighthouse Score: 100, 100, 100, 100.
+
+See yourself: [KALA SURFCAMP](https://kala.rokma.com/?source=rokma.com).

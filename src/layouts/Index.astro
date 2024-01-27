@@ -22,13 +22,14 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   mainClass={mainClass}
   ogImage={ogImage}
 >
-  <h1 slot='header' class='container'>
-    <a class='post' href='/'>{siteData.title}</a>
-    <div>{category}</div>
-  </h1>
-  <hr slot='header' />
+  <a slot='header' href='/'>
+    <h1>{siteData.title}</h1>
+  </a>
+  <a slot='header' href={'/' + category + '/'}>
+    <h2>{category}</h2>
+  </a>
 
-  <slot name='header' slot='header' />
+  <hr slot='header' />
 
   <div class='content'>
     <slot />
@@ -36,8 +37,13 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
 
   <blockquote slot='footer'><span>"</span> <span>{pageDesc}</span></blockquote>
 </Layout>
-<style lang='scss'>
-  section {
-    min-height: 100svh;
+<style>
+  h1 {
+    padding-block-end: 0;
+    margin-block-end: 0;
+  }
+
+  h2 {
+    padding-block-start: 0;
   }
 </style>

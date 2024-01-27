@@ -11,6 +11,7 @@ import Copy from '@components/Copy.astro'
 <NavButton />
 
 <input type='checkbox' id='nav' />
+
 <div class='sidebar'>
   <NavBackgroundImage />
   <label for='nav' class='toggle'>
@@ -23,10 +24,10 @@ import Copy from '@components/Copy.astro'
       href='/'
       title='close navigation and go back to home page'
     >
-      <h1>{siteData.title}</h1>
+      <h1 class='h3'>{siteData.title}</h1>
     </a>
 
-    <h2 class='h4 hide_on_phones'>{siteData.tagline}</h2>
+    <p>{siteData.tagline}</p>
   </article>
 
   <div class='middle'>
@@ -37,29 +38,10 @@ import Copy from '@components/Copy.astro'
 
   <div class='bottom centre'>
     <NavContacts />
-
-    <Copy />
   </div>
 </div>
 
 <style lang='scss'>
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes fadeinout {
-    0%,
-    100% {
-      opacity: 0.35;
-    }
-    50% {
-      opacity: 0.75;
-    }
-  }
   :root {
     --sidebar_width: 100svw;
   }
@@ -101,27 +83,27 @@ import Copy from '@components/Copy.astro'
     }
   }
 
-  .top {
-    padding-block-start: 1.75rem;
-    align-self: top;
-  }
+  // .top {
+  //   padding-block-start: 1.75rem;
+  //   align-self: top;
+  // }
 
-  .middle {
-    width: 100svw;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    min-height: max-content;
-    .middle_scroller {
-      width: 100svw;
-      margin: 0 auto;
-    }
-  }
+  // .middle {
+  //   width: 100svw;
+  //   overflow-x: hidden;
+  //   overflow-y: scroll;
+  //   min-height: max-content;
+  //   .middle_scroller {
+  //     width: 100svw;
+  //     margin: 0 auto;
+  //   }
+  // }
 
-  .bottom {
-    align-self: flex-end;
-    bottom: 0;
-    padding: 1rem;
-  }
+  // .bottom {
+  //   align-self: flex-end;
+  //   bottom: 0;
+  //   padding: 1rem;
+  // }
 
   #nav {
     display: none;
