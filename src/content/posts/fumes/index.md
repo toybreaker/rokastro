@@ -3,7 +3,7 @@ title: Fumes Magazine
 category: websites
 year: 2017
 year2: 2023
-where: bali, indonesia
+where: Bali, Indonesia
 images:
   - ./00.jpg
   # - ./01.jpg

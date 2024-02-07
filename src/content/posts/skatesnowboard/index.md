@@ -21,7 +21,7 @@ tags:
   - action-photography
 ---
 
-It's 1987. Rokma invents and directs &lt;SKATESNOWBOARD&gt; for a media publisher in Milano.
+It's 1987. Rokma invents and directs &lt;SKATESNOWBOARD&gt; for a media publisher in Milano, Italy.
 
 A pioneer example of end-of-century popular board sports magazines.
 

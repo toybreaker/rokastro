@@ -3,7 +3,7 @@ title: Volcom Dashenka
 category: photography
 year: 2009
 bodyClass: black
-where: bali, indonesia
+where: Bali, Indonesia
 images:
   - ./01.jpg
   - ./02.jpg
@@ -16,3 +16,4 @@ featured: true
 
 Image for VOLCOM®.
 Used for International Print-press Advertising.
+Shot in Bali, Indonesial.

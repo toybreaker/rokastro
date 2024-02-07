@@ -2,7 +2,7 @@
 title: Veronika Guzalian
 category: photography
 year: 2007
-where: italy
+where: Bali, Indonesia
 bodyClass: offwhite
 images:
   - ./01.jpg

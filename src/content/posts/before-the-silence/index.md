@@ -3,7 +3,7 @@ title: Before the silence
 category: photography
 year: 2019
 bodyClass: black
-where: bali, indonesia
+where: Bali, Indonesia
 images:
   - ./01.jpg
   - ./03.jpg

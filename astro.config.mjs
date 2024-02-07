@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
-import yaml from '@rollup/plugin-yaml' //maybe needed, currently using .json
+import yaml from '@rollup/plugin-yaml' //currently using .json only
 //import partytown from '@astrojs/partytown'
 
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
     //partytown()
   ],
   vite: {
-    //maybe needed, not yet used!
+    //maybe needed, not yet used! currently using .json
     plugins: [yaml()]
   },
   outDir: './dist',

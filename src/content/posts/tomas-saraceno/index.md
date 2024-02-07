@@ -4,7 +4,7 @@ category: photography
 year: 2006
 year2: 2012
 bodyClass: black
-where: italy
+where: Genova, Italy
 images:
   - ./01.jpg
   - ./02.jpg
@@ -21,4 +21,4 @@ featured: true
 home: true
 ---
 
-Artist exhibition photos for [PINKSUMMER](http://pinksummer.com) contemporary art gallery.
+Artist exhibition photos for [PINKSUMMER](http://pinksummer.com) contemporary art gallery. Genova, Italy.

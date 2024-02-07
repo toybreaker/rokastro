@@ -3,7 +3,7 @@ title: Burn Trash
 category: photography
 year: 2018
 bodyClass: black
-where: bali, indonesia
+where: Bali, Indonesia
 images:
   - ./01.jpg
   - ./02.jpg

@@ -20,7 +20,7 @@ tags:
   - black-and-white
 ---
 
-AQUA MARKET is part three of Fine-Art-Prints Aqua Serie Limited Edition. Shot in Bangkok Thailand. Unpublished.
+AQUA MARKET is part three of Fine-Art-Prints Aqua Serie Limited Edition. Shot in Bangkok, Thailand. Unpublished.
 
 Have a look at the complete Aqua serie:
 

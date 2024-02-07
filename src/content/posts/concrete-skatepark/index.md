@@ -18,7 +18,7 @@ tags:
 
 Back in 1989 Rok designs, consults and supervises the creation of a public skatepark.
 
-It's Italy's first free public skatepark project, made to last using concrete and payed by the city council.
+It's Italy's first free public skatepark project, made to last using concrete and payed by Milano city council.
 
 Three parks, out of this design project, were then built in Milano's outskirts.
 The first in Gratosoglio in 1991 and two more in 1992.

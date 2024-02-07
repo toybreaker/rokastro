@@ -24,7 +24,7 @@ export interface Props {
 }
 
 const bodyClass = 'home'
-const mainClass = 'no_padding'
+const mainClass = 'no_padding snap_vertical'
 const pageTitle = 'empowers'
 const pageDesc = siteData.description
 ---
@@ -36,67 +36,41 @@ const pageDesc = siteData.description
   pageDesc={pageDesc}
   ogImage='../og_home.jpg'
 >
-  <section class='intro'>
+  <section class='intro why full_window'>
     <div class='container'>
       <h1 title='Rokma Believes your customers should understand you.'>
-        Imagine the <strong>peace of mind</strong> of a streamlined workflow and
-        more free time.
+        <p>
+          Imagine the advantages of a well thought <strong>
+            brand narrative.
+          </strong>
+        </p>
+        <p>
+          Imagine the <strong>peace of mind</strong> of having expert help and more
+          free time.
+        </p>
+        <p>
+          Picture customers effortlessly <strong>embracing your brand.</strong>
+        </p>
       </h1>
     </div>
   </section>
 
-  <section class='all_works'>
-    <div class='container'>
-      <h1 title='Rokma Empowers Your Work.'>
-        Picture customers effortlessly <strong>
-          embracing your brand dream
-        </strong>
-        .
-      </h1>
-    </div>
-
-    <div class='posts container'>
-      {
-        sortedFP.map((post) => (
-          <a class='post' href={`/${post.data.category}/${post.slug}`}>
-            <Card
-              title={post.data.title}
-              category={post.data.category}
-              image={post.data.images[0]}
-            />
-          </a>
-        ))
-      }
-    </div>
-
-    <div class='container'>
-      <br />
-      <label for='nav'>See more works ></label>
-    </div>
-  </section>
-
-  <section>
+  <section class='how full_window'>
     <div class='container'>
       <h1 title='Rokma helps You Deliver Your Message.'>
-        Narration is ancient... Greek Philosophers discussed symbols. Kings
-        hired Poets. Verbs and figures of speech where instituted. <br /><br />
-        Today... Medias make markets and trends. Science is based on 'Papers'. Memes
-        are shifting electorates. <br /><br />
-        Efficent Brand Communication makes a huge difference.
+        <p><strong>Efficent Communication</strong> makes a huge difference.</p>
+        <p>A clear <strong>brand message</strong> delivers.</p>
+        <p>
+          Visual discourse and Linguistic expertise can make <strong>
+            your offer recognisable
+          </strong>.
+        </p>
+        <p>Budget that.</p>
       </h1>
     </div>
   </section>
 
-  <section>
-    <div class='container'>
-      <h1 title='Rokma Makes Your Offer Recognisable.'>
-        Linguistic expertise can make your offer recognisable. <br />
-        In today market it's paramount to budget that.
-      </h1>
-    </div>
-  </section>
-
-  <section class='last'>
+  <section class='last what full_window'>
     <div class='container'>
       <h1>
         <a
@@ -104,30 +78,58 @@ const pageDesc = siteData.description
           class=''
           href='/photography/'
         >
-          Rokma started publishing in the 80s. Helping business improve
-          storytelling, create brand identity and narratives, ever since.
+          <p>Rokma started publishing in the 80s.</p>
+          <p>
+            Rokma helps business <strong>build narratives</strong> and create <strong
+            >
+              brand identity.
+            </strong>
+          </p>
         </a>
       </h1>
 
-      <div>
+      <div class='center'>
         <label for='nav'>Know more about Rokma</label>
       </div>
     </div>
   </section>
-</Layout>
 
+  <section class='all_works'>
+    <div class='container'>
+      <h1 title='Rokma Empowers Your Work.'>
+        <p>
+          Rokma can <strong>empower</strong> your work.
+          <p>Get the help you deserve!</p>
+        </p>
+      </h1>
+
+      <div class='posts container'>
+        {
+          sortedFP.map((post) => (
+            <a class='post' href={`/${post.data.category}/${post.slug}`}>
+              <Card
+                title={post.data.title}
+                category={post.data.category}
+                image={post.data.images[0]}
+              />
+            </a>
+          ))
+        }
+      </div>
+
+      <div class='container'>
+        <br />
+        <label for='nav'>See more works ></label>
+      </div>
+    </div>
+  </section>
+</Layout>
 <style lang='scss'>
   h1 {
     font-size: 200%;
-    font-weight: 200;
     line-height: 1;
-    padding: 10dvh 0;
+    padding: 10svh 0;
     word-break: keep-all;
-
-    // [data-theme='light'],
-    // :root:not([data-theme='dark']) {
-    //   color: red ;
-    // }
   }
   label {
     cursor: pointer;

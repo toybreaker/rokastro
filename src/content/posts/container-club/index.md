@@ -20,4 +20,4 @@ tags:
 featured: true
 ---
 
-Laser-cut Logo, sign, stickers campaign for &lt;Container Club&gt;
+Laser-cut Logo, sign, stickers campaign for &lt;Container Club&gt;. Milano, Italy.

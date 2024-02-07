@@ -3,7 +3,7 @@ title: Davina Stephens
 category: websites
 year: 2019
 year2: 2023
-where: bali, indonesia
+where: Bali, Indonesia
 images:
   - ./00.jpg
   # - ./01.jpg

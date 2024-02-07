@@ -25,35 +25,40 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 <!doctype html>
 <html lang='en'>
-  <head></head>
-  <ROKMA />
-  <meta name='version' content={repoData.version} />
-  <meta charset='UTF-8' />
-  <meta name='description' content={pageDesc} />
-  <meta name='viewport' content='width=device-width' />
+  <head>
+    <ROKMA />
+    <title>{makeTitle} | {repoData.version}</title>
+    <meta name='version' content={repoData.version} />
+    <meta charset='UTF-8' />
+    <meta name='description' content={pageDesc} />
+    <meta name='viewport' content='width=device-width' />
+    <!-- <meta name='color-scheme' content='light dark' /> -->
+    <link
+      rel='stylesheet'
+      href='https://fonts.googleapis.com/css2?family=Dosis:wght@300;500'
+    />
 
-  <title>{makeTitle} | {repoData.version}</title>
-  <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-  <meta name='apple-mobile-web-app-title' content={siteData.title} />
-  <meta name='application-name' content={siteData.title} />
-  <link rel='canonical' href={canonicalURL} />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='apple-mobile-web-app-title' content={siteData.title} />
+    <meta name='application-name' content={siteData.title} />
+    <link rel='canonical' href={canonicalURL} />
 
-  <!-- ROKS OG -->
-  <meta property='og:url' content={Astro.site} />
-  <meta property='og:type' content='website' />
-  <meta property='og:title' content={makeTitle} />
-  <meta property='og:description' content={pageDesc} />
-  <meta property='og:image' content={ogImage} />
+    <!-- ROKS OG -->
+    <meta property='og:url' content={Astro.site} />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content={makeTitle} />
+    <meta property='og:description' content={pageDesc} />
+    <meta property='og:image' content={ogImage} />
 
-  <!-- ROKS TWITTER -->
-  <meta name='twitter:card' content='summary_large_image' />
-  <meta property='twitter:url' content={Astro.site} />
-  <meta name='twitter:title' content={makeTitle} />
-  <meta name='twitter:description' content={pageDesc} />
-  <meta name='twitter:image' content={ogImage} />
+    <!-- ROKS TWITTER -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='twitter:url' content={Astro.site} />
+    <meta name='twitter:title' content={makeTitle} />
+    <meta name='twitter:description' content={pageDesc} />
+    <meta name='twitter:image' content={ogImage} />
 
-  <slot name='head' />
-
+    <slot name='head' />
+  </head>
   <body class={bodyClass}>
     <Nav />
     <header class='container'>
@@ -74,6 +79,4 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <GoogleAnalytics />
     <ExternalLink />
   </body>
-
-
 </html>

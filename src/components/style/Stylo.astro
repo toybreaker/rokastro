@@ -21,10 +21,10 @@ import '@fiko/fiko.css'
     --footer_color: rgb(30, 30, 30);
     --footer_BG: darkgray;
 
-    // ROK
+    // ROK REDECLARE THE SAME FIKO VAR TO OVERRIDE 'EM
+    // SO MAKE SURE YOU PICK THE RIGHT VAR NAME'
     --font-family: 'Dosis';
     --font-size: 21px; //FALLBACK?!
-    --bodyfontweight: 300;
 
     --space: 2rem;
     --space_small: 1rem;
@@ -91,10 +91,9 @@ import '@fiko/fiko.css'
   }
 
   body {
-    min-height: 100dvh;
+    min-height: 100vh;
     overflow-x: hidden;
     margin: 0;
-    font-weight: var(--bodyfontweight);
     font-size: var(--font-size);
   }
 
@@ -289,10 +288,6 @@ import '@fiko/fiko.css'
       display: none;
       width: 0;
       height: 0;
-      //
-      //   height: auto;
-      //   font-size: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
-      //   line-height: clamp(1rem, 0.8394rem + 0.6761vw, 1.6rem);
     }
   }
 
@@ -340,4 +335,10 @@ import '@fiko/fiko.css'
       }
     }
   }
+
+  // fiko> 0.10.7 has this
+  // .full_window {
+  //   min-height: 100svh;
+  //   width: 100svw;
+  // }
 </style>

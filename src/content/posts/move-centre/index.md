@@ -2,7 +2,7 @@
 title: Move Centre
 category: advertising
 year: 2018
-where: bali, indonesia
+where: Bali, Indonesia
 bodyClass: grid2
 images:
   - ./01.jpg

@@ -15,4 +15,4 @@ tags:
   - exhibit
 ---
 
-Rok exhibited at &lt;Florblanca&gt; resort.<br>Costa Rica.
+Rok exhibited at &lt;Florblanca&gt; resort.<br>Santa Teresa, Costa Rica.

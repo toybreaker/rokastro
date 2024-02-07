@@ -3,7 +3,7 @@ title: Kaos Guerrilla
 category: advertising
 bodyClass: grid4
 year: 2018
-where: bali, indonesia
+where: Bali, Indonesia
 images:
   - ./a1.jpg
   - ./a2.jpg

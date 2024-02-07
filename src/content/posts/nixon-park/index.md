@@ -27,4 +27,4 @@ tags:
   - action-photography
 ---
 
-Nixon park is a free, public skatepark in the capital Auckland. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).
+Nixon park is a free, public skatepark in Auckland, New Zealand. Published on non-profit magazine [Fumes](https://fumes.junglestar.org/art/nixon-park/).

@@ -2,7 +2,7 @@
 title: Books Contributions
 category: photography
 year: 2010
-where: bali, indonesia
+where: Bali, Indonesia
 bodyClass: darkgray grid3
 images:
   - ./01.jpg

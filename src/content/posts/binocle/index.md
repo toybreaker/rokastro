@@ -18,7 +18,7 @@ featured: true
 home: true
 ---
 
-Website for &lt;Binocle&gt; architecture studio.
+Website for &lt;Binocle&gt; architecture studio. Milano, Italy.
 
 Check the [live webapp](https://binocle.it).
 

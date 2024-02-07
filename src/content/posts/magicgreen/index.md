@@ -3,7 +3,7 @@ title: Magic Green
 category: websites
 year: 2018
 year2: 2023
-where: bali, indonesia
+where: Bali, Indonesia
 bodyClass: darkgray grid2
 images:
   - ./10.jpg
