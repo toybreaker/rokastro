@@ -1,9 +1,5 @@
 ---
-import '@fontsource/dosis'
 import '@fiko/fiko.css'
-//// USE [blackandwhite.scss] COMPONENT
-//// TO CUSTOMIZE FIKO LIGHT/DARK MODE LOOK FOR THIS PROJECT.
-//import '@components/style/colors/blackandwhite.scss'
 ---
 
 <style lang='scss' is:global>
@@ -23,7 +19,6 @@ import '@fiko/fiko.css'
 
     // ROK REDECLARE THE SAME FIKO VAR TO OVERRIDE 'EM
     // SO MAKE SURE YOU PICK THE RIGHT VAR NAME'
-    --font-family: 'Dosis';
     --font-size: 21px; //FALLBACK?!
 
     --space: 2rem;
@@ -35,12 +30,14 @@ import '@fiko/fiko.css'
     --icon_size: 40px; //ALL SVG ICONS ARE SQUARE
     --nav-element-spacing-vertical: 0.25rem;
     --nav-element-spacing-horizontal: 0.25rem;
-    --paragraph_width: 60ch;
     --form-element-spacing-vertical: 0.5rem;
     --form-element-spacing-horizontal: 0.7rem;
     --nav-link-spacing-vertical: 0.35rem;
     --nav-link-spacing-horizontal: 0.35rem;
     --border-width: 0.125rem;
+
+    // MAYBE NOT NECESSARY
+    --paragraph_width: 60ch;
   }
 
   //ROK

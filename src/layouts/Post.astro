@@ -38,6 +38,8 @@ const pageDesc = siteData.description_web
   </div>
 
   <div class='container content'>
+    <slot />
+
     <div class='tag_section'>
       <Icon name='tag' class='tag' />
       <ul class='tags'>
@@ -54,18 +56,17 @@ const pageDesc = siteData.description_web
         }
       </ul>
     </div>
-
-    <slot />
   </div>
 </Layout>
 
 <style lang='scss'>
   .tag_section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding-block-start: var(--spaceTB);
     margin-block-end: var(--spaceTB);
+    gap: 2rem;
   }
 
   .tags {

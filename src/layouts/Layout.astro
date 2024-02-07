@@ -1,7 +1,7 @@
 ---
 import Stylo from '@components/style/Stylo.astro'
 import ROKMA from '@components/ROKMA.astro'
-import Copy from '@components/Copy.astro'
+import Footer from '@components/Footer.astro'
 import Nav from '@components/Nav.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
@@ -33,10 +33,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name='description' content={pageDesc} />
     <meta name='viewport' content='width=device-width' />
     <!-- <meta name='color-scheme' content='light dark' /> -->
-    <link
+    <!-- <link
       rel='stylesheet'
       href='https://fonts.googleapis.com/css2?family=Dosis:wght@300;500'
-    />
+    /> -->
 
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='apple-mobile-web-app-title' content={siteData.title} />
@@ -69,14 +69,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
       <slot />
     </main>
 
-    <footer class='container'>
-      <slot name='footer' />
-      <Copy />
-    </footer>
-
-    <Stylo />
+    <Footer />
     <AppendToCopyAction />
     <GoogleAnalytics />
     <ExternalLink />
+    <Stylo />
   </body>
 </html>

@@ -5,12 +5,15 @@ import * as siteData from '@data/site.json'
 const today = new Date()
 ---
 
-<article class='copy_block'>
+<footer class='container'>
+  <hr />
+  <slot name='footer' />
+  <article class='copy_block'>
     <small>
       Copyright &copy; 2000-{today.getFullYear()} Rokma. All rights reserved. <br
         class='break_on_phones'
       />
-       v{repoData.version}. Powered by
+      v{repoData.version}. Powered by
       <a
         class='producer'
         title='producer'
@@ -20,9 +23,10 @@ const today = new Date()
         {siteData.producer.name}
       </a>
     </small>
-</article>
+  </article>
+</footer>
 
-<style >
+<style lang='scss'>
   .producer {
     //a
     text-decoration: underline;
