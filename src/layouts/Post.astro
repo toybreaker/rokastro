@@ -8,16 +8,17 @@ const { title, category, images, tags, bodyClass } =
   Astro.props.frontmatter || Astro.props
 
 const pageDesc = siteData.description_web
+const mainClass = 'container'
 ---
 
 <Layout
   pageTitle={title}
   pageDesc={pageDesc}
-  mainClass=''
+  mainClass={mainClass}
   bodyClass={category + ' ' + bodyClass}
   ogImage={images[0]}
 >
-  <div class='container uppercase' slot='header'>
+  <div class='uppercase' slot='header'>
     <a class='breadcrumb' href='/'>
       {siteData.title}
     </a>
@@ -26,8 +27,6 @@ const pageDesc = siteData.description_web
 
     <h1>{title}</h1>
   </div>
-
-  <hr slot='header' />
 
   <div slot='images' class='images'>
     {
@@ -85,7 +84,34 @@ const pageDesc = siteData.description_web
     top: 1rem;
   }
 
-  a.breadcrumb {
-    color: var(--currentBG);
+  .breadcrumb {
+    //a
+    display: inline-block;
+    padding-block-start: 0.75ch;
+  }
+
+  body.grid2 .images {
+    display: block;
+
+    @media (min-width: 320px) {
+      display: grid;
+      grid-gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+
+    @media (min-width: 576px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .slide {
+      margin: 0;
+    }
   }
 </style>
