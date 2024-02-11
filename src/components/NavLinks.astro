@@ -13,18 +13,25 @@ export interface sections {
   {
     sections.map((section) => (
       <a
+        role='button'
         rel='prefetch'
         class={section.label}
         href={'/' + section.label + '/'}
         title={siteData.description}
       >
-        <button class='pop'>{section.label.toUpperCase()}</button>
+        {section.label.toUpperCase()}
       </a>
     ))
   }
 
-  <a rel='prefetch' class='about_button' href='/about/' title='About Rokma'>
-    <button class='pop'>ABOUT</button>
+  <a
+    role='button'
+    rel='prefetch'
+    class='about_button'
+    href='/about/'
+    title='About Rokma'
+  >
+    ABOUT
   </a>
 </nav>
 
@@ -39,17 +46,6 @@ export interface sections {
   a {
     display: block;
     text-decoration: none;
-    //width: -webkit-fill-available;
     width: 100%;
-    &:hover button {
-      background-color: var(--text-decoration-color--nav-links);
-    }
   }
-  // button {
-  //   border: 2px solid white;
-  //   //display: block;
-  //   width: 100%;
-  //   background-color: transparent;
-  //   font-size: 100%;
-  // }
 </style>

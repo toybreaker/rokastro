@@ -1,6 +1,7 @@
 ---
 import * as repoData from 'package.json'
 import * as siteData from '@data/site.json'
+import ThemeToggle from '@components/ThemeToggle.astro'
 
 const today = new Date()
 ---
@@ -9,9 +10,10 @@ const today = new Date()
   <hr />
   <slot name='footer' />
   <article class='copy_block'>
+    <ThemeToggle />
     <small>
       Copyright &copy; 2000-{today.getFullYear()} Rokma. All rights reserved. <br
-        class='break_on_phones'
+        class='show_on_phones'
       />
       v{repoData.version}. Powered by
       <a

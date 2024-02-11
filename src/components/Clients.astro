@@ -10,15 +10,11 @@ export interface names {
 
 <div class='container'>
   <h3>Clients</h3>
-  {names.map((n) => n.name)}
+  {names.map((n) => n.name + ', ')}
   <br />
 </div>
 
 <style>
-  .container {
-    max-width: 60ch;
-    margin: 0 auto;
-  }
   p {
     color: var(--currentTXT);
   }

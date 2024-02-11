@@ -1,5 +1,6 @@
 ---
-import Stylo from '@components/style/Stylo.astro'
+// import Stylo from '@components/style/Stylo.astro'
+import '@fiko/fiko.css'
 import ROKMA from '@components/ROKMA.astro'
 import Footer from '@components/Footer.astro'
 import Nav from '@components/Nav.astro'
@@ -27,9 +28,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 <html lang='en'>
   <head>
     <ROKMA />
+    <meta charset='UTF-8' />
     <title>{makeTitle} | {repoData.version}</title>
     <meta name='version' content={repoData.version} />
-    <meta charset='UTF-8' />
     <meta name='description' content={pageDesc} />
     <meta name='viewport' content='width=device-width' />
     <!-- <meta name='color-scheme' content='light dark' /> -->
@@ -73,6 +74,5 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <AppendToCopyAction />
     <GoogleAnalytics />
     <ExternalLink />
-    <Stylo />
   </body>
 </html>

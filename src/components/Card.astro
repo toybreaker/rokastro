@@ -16,24 +16,25 @@ const { title, image, category } = Astro.props
   </div>
 
   <h3 class='title h5'>
-    <span>{title.toLocaleUpperCase()}</span>
+    <button>{title.toLocaleUpperCase()}</button>
     <small class='category'>{category}</small>
   </h3>
 </div>
 
 <style lang='scss'>
+  :root {
+    --curTXT: black;
+  }
   .category {
     text-align: center;
     text-transform: uppercase;
     font-weight: 300;
     padding-inline-start: 0.5rem;
   }
-  small:not(empty) {
-    color: black;
-    border-radius: 5px;
-    font-weight: 200;
-    font-size: 55%;
+  small {
+    font-size: 50%;
   }
+
   .title {
     //h2
     margin: var(--spaceTB) 0;

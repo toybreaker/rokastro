@@ -1,0 +1,88 @@
+---
+// needs revision
+---
+
+<!-- JS Toggle for Dark/Light Mode -->
+<span
+  id='toggle-theme'
+  class='theme_switch'
+  onclick='toggleTheme()'
+  aria-label='Toggle light | dark mode'
+>
+  <span class='' aria-pressed='false' aria-label='Use Dark Mode'>
+    <svg
+      class='moon'
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+      aria-hidden='true'
+      focusable='false'
+    >
+      <path d='M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z'></path>
+    </svg>
+
+    <svg
+      class='sun'
+      xmlns='http://www.w3.org/2000/svg'
+      width='24'
+      height='24'
+      viewBox='0 0 24 24'
+      fill='none'
+      stroke='currentColor'
+      stroke-width='2'
+      stroke-linecap='round'
+      stroke-linejoin='round'
+      aria-hidden='true'
+      focusable='false'
+    >
+      <circle cx='12' cy='12' r='5'></circle>
+      <path
+        d='M12 1v2m0 18v2M4 4l2 2m12 12 2 2M1 12h2m18 0h2M4 20l2-2M18 6l2-2'
+      >
+      </path>
+    </svg>
+  </span>
+
+  <style>
+    .theme_switch {
+      z-index: 10;
+    }
+  </style>
+
+  <script is:inline>
+    // THEME SWITCH WITH TOGGLE & USER PREFERENCE DETECTION
+    function toggleTheme() {
+      const currentTheme = document.body.getAttribute('data-theme')
+      if (currentTheme === 'dark') {
+        document.body.setAttribute('data-theme', 'light')
+      } else {
+        document.body.setAttribute('data-theme', 'dark')
+      }
+    }
+
+    // DETECT USER'S PREFERENCE AND SET the data-theme attribute
+    function setUserPreference() {
+      const userPrefersDark =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      if (userPrefersDark) {
+        document.body.setAttribute('data-theme', 'dark')
+      } else {
+        document.body.setAttribute('data-theme', 'light')
+      }
+    }
+
+    setUserPreference() // Initially set the user preference
+
+    // UPDATE ON PREFERENCE CHANGE (ex: using DevTools to change it)
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addListener(setUserPreference)
+  </script>
+</span>

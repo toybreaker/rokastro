@@ -3,6 +3,7 @@ title: Where No doctor
 category: websites
 year: 2016
 where: global
+bodyClass: grid3
 images:
   - ./00.jpg
   - ./01.jpg #fullwidth 1680x800 w/desktop image

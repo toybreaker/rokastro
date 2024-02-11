@@ -55,8 +55,8 @@ import '@fiko/fiko.css'
 
 ## TO DO:
 
-- add scroll snap
-- get rid of KALA
+- fix post page grid2, grid3 now missing styles
+- fix svg noum icons dark/light mode
 - OG IMAGES
 - ADD SEE MORE LIST AT POST FOOT
 - SEARCH FOR HI-RES OG IMAGES, DONE:

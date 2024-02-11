@@ -53,8 +53,9 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
   )
 })
 
-// console.log(relatedPosts)
 console.log(relatedPosts.length)
+
+console.log(pageDesc)
 ---
 
 <Layout
@@ -84,7 +85,7 @@ console.log(relatedPosts.length)
 
   <details>
     <summary>
-      {sortedPosts.length} MORE
+      {sortedPosts.length} MORE PROJECTS
     </summary>
     <div class='container posts ptop'>
       {
@@ -102,7 +103,7 @@ console.log(relatedPosts.length)
   </details>
 
   <details>
-    <summary>{relatedPosts.length} RELATED</summary>
+    <summary>{relatedPosts.length} RELATED PROJECTS</summary>
     <div class='container posts ptop'>
       {
         relatedPosts.map((post) => (
@@ -117,4 +118,5 @@ console.log(relatedPosts.length)
       }
     </div>
   </details>
+  <blockquote>{pageDesc}</blockquote>
 </Layout>

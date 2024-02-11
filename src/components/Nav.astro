@@ -11,33 +11,21 @@ import NavLinks from '@components/NavLinks.astro'
 
 <input type='checkbox' id='nav' />
 
-<div class='sidebar'>
+<div class='sidebar centre'>
   <NavBackgroundImage />
   <label for='nav' class='toggle'>
     <Icon name='x' />
   </label>
 
-  <article class='top centre'>
-    <a
-      class='go_home'
-      href='/'
-      title='close navigation and go back to home page'
-    >
-      <h1 class='h3'>{siteData.title}</h1>
-    </a>
+  <a class='go_home' href='/' title='close navigation and go back to home page'>
+    <h1>{siteData.title}</h1>
+  </a>
 
-    <p>{siteData.tagline}</p>
-  </article>
+  <p class='tagline h4'>{siteData.tagline}</p>
 
-  <div class='middle'>
-    <div class='middle_scroller'>
-      <NavLinks />
-    </div>
-  </div>
+  <NavLinks />
 
-  <div class='bottom centre'>
-    <NavContacts />
-  </div>
+  <NavContacts />
 </div>
 
 <style lang='scss'>
@@ -45,15 +33,27 @@ import NavLinks from '@components/NavLinks.astro'
     --sidebar_width: 100svw;
   }
 
+  .go_home {
+    padding-top: 1rem;
+  }
+
+  h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    padding-top: 0;
+  }
+
   .sidebar {
+    --curTXT: white;
+    display: grid;
     position: fixed;
     min-width: 100svw;
     min-height: 100svh;
     margin: 0;
     padding: 0;
-    display: grid;
-
-    place-items: center;
 
     top: 0;
     bottom: 0;
@@ -65,14 +65,9 @@ import NavLinks from '@components/NavLinks.astro'
     color: white;
     background-color: #000;
 
-    // width: var(--sidebar_width);
-    // left: calc(100svw - var(--sidebar_width));
-
-    a,
     h1,
     h2 {
-      font-weight: 400;
-      margin-block-end: 0;
+      text-transform: uppercase;
     }
 
     .avatar img {
@@ -81,28 +76,6 @@ import NavLinks from '@components/NavLinks.astro'
       width: 50%;
     }
   }
-
-  // .top {
-  //   padding-block-start: 1.75rem;
-  //   align-self: top;
-  // }
-
-  // .middle {
-  //   width: 100svw;
-  //   overflow-x: hidden;
-  //   overflow-y: scroll;
-  //   min-height: max-content;
-  //   .middle_scroller {
-  //     width: 100svw;
-  //     margin: 0 auto;
-  //   }
-  // }
-
-  // .bottom {
-  //   align-self: flex-end;
-  //   bottom: 0;
-  //   padding: 1rem;
-  // }
 
   #nav {
     display: none;

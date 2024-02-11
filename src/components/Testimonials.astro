@@ -10,18 +10,28 @@ export interface quotes {
 ---
 
 <article class='phrases'>
-  <h3 class='h4 uppercase'>What Rokma's clients are saying</h3>
+  <h3 class='h4 uppercase'>What are Rokma's clients saying.</h3>
   {
     quotes.map((quote) => (
-      <blockquote>
-        "{quote.quote}"
-        <footer>
-          <cite>
-            — {quote.name} - Founder of
-            <a href={quote.url}>{quote.brand}</a>
-          </cite>
-        </footer>
-      </blockquote>
+      <>
+        <div class='space' />
+        <blockquote>
+          "{quote.quote}"
+          <>
+            <br />
+            <cite>
+              {quote.name} — Founder of
+              <a href={quote.url}>{quote.brand}</a>
+            </cite>
+          </>
+        </blockquote>
+      </>
     ))
   }
 </article>
+
+<style>
+  blockquote {
+    width: 90%;
+  }
+</style>
