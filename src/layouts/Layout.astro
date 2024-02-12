@@ -74,5 +74,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <AppendToCopyAction />
     <GoogleAnalytics />
     <ExternalLink />
+    <style>
+      :root {
+        --gray: rgb(229, 228, 226);
+        --lightgray: rgb(238, 238, 238);
+        --darkgray: rgb(212, 212, 212);
+        --offwhite: rgb(230, 230, 230);
+      }
+      body.gray {
+        background-color: var(--gray);
+        --curTXT: black;
+      }
+    </style>
   </body>
 </html>

@@ -60,8 +60,8 @@ dependencies:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
   fiko:
-    specifier: ^0.15.0
-    version: 0.15.0
+    specifier: ^0.15.1
+    version: 0.15.1
   mdast-util-to-string:
     specifier: ^4.0.0
     version: 4.0.0
@@ -2723,8 +2723,8 @@ packages:
       reusify: 1.0.4
     dev: false
 
-  /fiko@0.15.0:
-    resolution: {integrity: sha512-f9zGTCv/3ufng7YJ/fl7g74oWXg4s433aeKtbdABvTBFhvC8zh5LyendFXE2FB9G88l92Gil10n0DFXwJP+upQ==}
+  /fiko@0.15.1:
+    resolution: {integrity: sha512-inpEvwF0AkvdJlgh4hhXz/ufA3Xc8DCVTY6aQ+zL0zjvrTTtMYinkxGEcsNkL6ifLD6vjzW+FWZpdGycXxUkLg==}
     dev: false
 
   /file-entry-cache@6.0.1:
