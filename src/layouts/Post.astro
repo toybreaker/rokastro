@@ -58,7 +58,7 @@ const mainClass = 'container'
   </div>
 </Layout>
 
-<style lang='scss'>
+<style>
   .tag_section {
     display: flex;
     flex-direction: column;
@@ -85,33 +85,61 @@ const mainClass = 'container'
   }
 
   .breadcrumb {
-    //a
     display: inline-block;
     padding-block-start: 0.75ch;
   }
 
-  body.grid2 .images {
-    display: block;
-
-    @media (min-width: 320px) {
-      display: grid;
-      grid-gap: 15px;
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  body.grid_small {
+    main {
+      container-type: inline-size;
     }
 
-    @media (min-width: 576px) {
-      grid-template-columns: repeat(2, 1fr);
+    .images {
+      display: block;
+
+      @container (min-width: 320px) {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      }
+
+      @container (min-width: 640px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @container (min-width: 1130px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .slide {
+        margin: 0;
+      }
+    }
+  }
+
+  body.grid_big {
+    main {
+      container-type: inline-size;
     }
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    .images {
+      display: block;
 
-    @media (min-width: 1200px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .slide {
-      margin: 0;
+      @container (min-width: 320px) {
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      }
+
+      @container (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @container (min-width: 1420px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .slide {
+        margin: 0;
+      }
     }
   }
 </style>

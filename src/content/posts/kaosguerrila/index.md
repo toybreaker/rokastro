@@ -1,7 +1,7 @@
 ---
 title: Kaos Guerrilla
 category: advertising
-bodyClass: grid4
+bodyClass: grid_small
 year: 2018
 where: Bali, Indonesia
 images:
@@ -64,4 +64,4 @@ All encompassing: brand startegy advising, market placement, concept proposals a
 
 Broadcasted trough Instagram, Facebook, Twitter, and Shopify store own blog media channels.
 
-Instagram profile, for example, was brought from 169 followers to 1433 in just few months, organically, without buying any advertisings.
+KAOS GUERRILLA Instagram profile, for example, was brought from 169 followers to 1433 in just few months, organically, without buying any advertisings.

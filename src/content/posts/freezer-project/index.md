@@ -4,7 +4,7 @@ category: specials
 year: 1995
 year2: 2000
 where: milano, italy
-bodyClass: lightgray grid4
+bodyClass: lightgray grid_small
 images:
   - ./01.jpg
   - ./02.jpg

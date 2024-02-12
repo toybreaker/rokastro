@@ -4,7 +4,7 @@ category: websites
 year: 2021
 year2: 2023
 where: Bali, Indonesia
-bodyClass: darkgray grid2
+bodyClass: darkgray grid_big
 featured: true
 home: true
 images:

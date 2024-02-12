@@ -4,7 +4,7 @@ category: advertising
 year: 2001
 year2: 2004
 where: italy
-bodyClass: black grid2
+bodyClass: black grid_big
 images:
   - ./01.jpg
   - ./02.jpg

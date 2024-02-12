@@ -4,7 +4,7 @@ category: photography
 year: 1987
 year2: 1991
 where: italy
-bodyClass: black grid4
+bodyClass: black grid_small
 images:
   - ./01.jpg
   - ./02.jpg

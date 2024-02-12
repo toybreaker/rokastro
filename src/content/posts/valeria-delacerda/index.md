@@ -3,7 +3,7 @@ title: Valeria Delacerda
 category: photography
 year: 2020
 where: Ipanema, Brazil
-bodyClass: grid2
+bodyClass: grid_big
 images:
   - ./01.jpg
   - ./02.jpg

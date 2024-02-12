@@ -3,7 +3,7 @@ title: 55DSL
 category: photography
 year: 1998
 where: italy
-bodyClass: black
+bodyClass: black grid_big
 images:
   - ./0.jpg
   - ./1.jpg

@@ -3,7 +3,7 @@ title: Skateboard Pusher
 category: branding
 year: 2021
 where: Genova, Italy
-bodyClass: grid2 black
+bodyClass: grid_big black
 images:
   - ./01.jpg
   - ./02.jpg

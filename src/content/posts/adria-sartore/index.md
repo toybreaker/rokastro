@@ -4,7 +4,7 @@ category: websites
 year: 2019
 year2: 2023
 where: genova, italy
-bodyClass: darkgray
+bodyClass: darkgray grid_big
 images:
   - ./01.jpg
   - ./03.jpg
