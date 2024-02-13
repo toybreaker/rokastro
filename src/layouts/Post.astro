@@ -19,11 +19,13 @@ const mainClass = 'container'
   ogImage={images[0]}
 >
   <div class='uppercase' slot='header'>
-    <a class='breadcrumb' href='/'>
-      {siteData.title}
-    </a>
-    <span>&nbsp;>&nbsp;</span>
-    <a class='breadcrumb' href={`/${category}/`}>{category}</a>
+    <nav aria-label='breadcrumb'>
+      <a href='/'>
+        {siteData.title}
+      </a>
+      <span>&nbsp;>&nbsp;</span>
+      <a href={`/${category}/`}>{category}</a>
+    </nav>
 
     <h1>{title}</h1>
   </div>

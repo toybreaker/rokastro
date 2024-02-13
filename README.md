@@ -55,6 +55,7 @@ import '@fiko/fiko.css'
 
 ## TO DO:
 
+- rocco, davina, jstar, WND, fumes websites new IMAGES
 - fix post page grid_big, grid3 now missing styles
 - fix svg noum icons dark/light mode
 - OG IMAGES
