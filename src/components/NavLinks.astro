@@ -9,7 +9,7 @@ export interface sections {
 }
 ---
 
-<nav class=''>
+<nav>
   {
     sections.map((section) => (
       <a
@@ -47,5 +47,6 @@ export interface sections {
     display: block;
     text-decoration: none;
     width: 100%;
+    margin-top: var(--spaceTB);
   }
 </style>
