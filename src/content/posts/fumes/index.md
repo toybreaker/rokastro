@@ -11,13 +11,14 @@ images:
   # - ./03.png
   # - ./04.png
 tags:
-  - online-magazine
   - concept
-  - custom-websites
-  - product-branding
   - copywriting
-  - online-press
+  - custom-websites
   - non-profit
+  - online-magazine
+  - open-source
+  - online-press
+  - product-branding
 featured:
 ---
 

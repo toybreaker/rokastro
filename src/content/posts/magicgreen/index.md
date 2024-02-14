@@ -17,7 +17,7 @@ tags:
   - custom-websites
   - art-direction
   - online-press
-  - design
+  - open-source
   - logo
   - content-creation
   - copywriting
