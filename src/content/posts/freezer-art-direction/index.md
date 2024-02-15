@@ -4,7 +4,7 @@ category: branding
 year: 1995
 year2: 2000
 where: italy
-bodyClass: gray grid3
+bodyClass: gray grid_big
 images:
   - ./01.jpg
   - ./02.jpg

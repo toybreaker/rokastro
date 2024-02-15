@@ -4,7 +4,7 @@ category: websites
 year: 2020
 year2: 2022
 where: Genova, Italy
-bodyClass: offwhite grid3
+bodyClass: offwhite grid_big
 images:
   - ./01.jpg
   - ./02.jpg

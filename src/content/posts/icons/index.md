@@ -3,7 +3,7 @@ title: Icons
 category: specials
 year: 2019
 images:
-  - ./01.svg
+  - ./01.jpg
   - ./02.svg
   - ./03.svg
   - ./04.svg
@@ -15,7 +15,7 @@ images:
 tags:
   - design
 featured: true
-bodyClass: gray
+bodyClass: white
 ---
 
 Rokma has release some Open Source icons.

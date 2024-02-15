@@ -3,7 +3,7 @@ title: Junglo shoes
 category: branding
 year: 2020
 where: Genova, Italy
-bodyClass: offwhite grid3
+bodyClass: offwhite grid_small
 images:
   - ./14.jpg
   - ./07.jpg

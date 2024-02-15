@@ -4,7 +4,7 @@ category: branding
 year: 1995
 year2: 2000
 where: milano, italy
-bodyClass: black grid3
+bodyClass: black grid_small
 images:
   - ./01.jpg
   - ./02.jpg

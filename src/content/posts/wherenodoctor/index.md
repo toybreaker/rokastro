@@ -20,9 +20,9 @@ featured: true
 
 Digital book that works in the browser.
 
-A web application that works also offline.
+A web application that works also offline.So you can bring it with you in the jungle or up the mountains as part of your safety package. Load the website and save it on your phone desktop, that's all you need to do, no app-store involved!
 
-Project based on open source bestseller &lt;Where There Is No Doctor&gt; by David Werner.
+This project is based on open source bestseller _Where There Is No Doctor_ by David Werner.
 
 Check the [live webapp](https://nodoctor.junglestar.org).
 

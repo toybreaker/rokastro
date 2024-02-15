@@ -2,14 +2,14 @@
 title: Fumes Magazine
 category: websites
 year: 2017
-year2: 2023
+year2: 2024
 where: Bali, Indonesia
+bodyClass: darkgray grid_big
 images:
-  - ./00.jpg
-  # - ./01.jpg
-  # - ./02.png
-  # - ./03.png
-  # - ./04.png
+  - ./01.jpg
+  - ./02.jpg
+  - ./03.jpg
+  - ./04.jpg
 tags:
   - concept
   - copywriting

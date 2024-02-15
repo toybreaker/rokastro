@@ -4,7 +4,7 @@ category: websites
 year: 2023
 where: Bali, Indonesia
 catch:
-bodyClass: darkgray grid3
+bodyClass: darkgray grid_big
 images:
   - ./01.jpg
   - ./02.jpg

@@ -4,7 +4,7 @@ category: advertising
 year: 1996
 year2: 2023
 where:
-bodyClass: gray grid3
+bodyClass: gray grid_small
 images:
   - ./01.jpg
   - ./02.jpg
@@ -24,4 +24,4 @@ tags:
   - design
 ---
 
-Advertising images and campaigns for &lt;..Assorted.. &gt; clients.
+More advertising images and campaigns worth noticing.

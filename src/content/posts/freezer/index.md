@@ -3,9 +3,10 @@ title: Freezer Magazine
 category: websites
 year: 2015
 where: Italy
-bodyClass: lightgray grid_small
+bodyClass: lightgray grid_big
 images:
   - ./01.jpg
+  - ./02.jpg
 tags:
   - custom-websites
   - printed-press

@@ -1,7 +1,7 @@
 ---
 title: Cifra Branding
 category: branding
-bodyClass: lightgray grid3
+bodyClass: lightgray grid_small
 year: 2001
 year2: 2004
 where: italy
