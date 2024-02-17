@@ -2,7 +2,7 @@
 title: Metro Eye Candies
 category: photography
 year: 2005
-bodyClass: black
+bodyClass: black grid_big
 images:
   - ./01.jpg
   - ./02.jpg

@@ -8,12 +8,13 @@ const allPosts = await getCollection('posts')
 const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())]
 
 const title = 'ALL TAGS'
+const bodyClass = 'white grid_big'
 const mainClass = 'container'
 const pageDesc = siteData.description
 ---
 
 <Layout
-  bodyClass='black'
+  bodyClass={bodyClass}
   pageTitle={title}
   mainClass={mainClass}
   pageDesc={pageDesc}

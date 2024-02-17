@@ -5,7 +5,7 @@ year: 1989
 year2: 1991
 where: italy
 imagehowmany: 2
-bodyClass: lightgray grid3
+bodyClass: lightgray grid_big
 images:
   - ./01.jpg
   - ./02.jpg

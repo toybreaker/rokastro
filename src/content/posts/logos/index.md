@@ -3,7 +3,7 @@ title: Logos
 category: specials
 year: 1996
 year2: 2021
-bodyClass: grid3
+bodyClass: grid_big
 images:
   - ./01.jpg
   - ./02.jpg

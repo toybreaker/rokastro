@@ -1,7 +1,7 @@
 ---
 title: Florblanca
 category: photography
-bodyClass: black
+bodyClass: grid_big
 year: 2007
 where: Capo Blanco, Costa Rica
 images:

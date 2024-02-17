@@ -2,7 +2,7 @@
 title: Hippi Chic
 category: photography
 year: 2009
-bodyClass: black
+bodyClass: black grid_big
 where: London
 images:
   - ./01.jpg

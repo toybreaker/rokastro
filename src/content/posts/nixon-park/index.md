@@ -3,7 +3,7 @@ title: Nixon Park
 category: photography
 year: 2019
 where: Auckland, New Zealand
-bodyClass: black
+bodyClass: white grid_big
 published_on: 'https://fumes.junglestar.org/photo-journalism/nixon-park/'
 images:
   - ./01.jpg

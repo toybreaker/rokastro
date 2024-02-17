@@ -56,8 +56,6 @@ import '@fiko/fiko.css'
 ## TO DO:
 
 - fix annoying different angle on website images
-- rocco, davina, jstar, WND, fumes websites new IMAGES
-- fix post page grid_big, grid3 now missing styles
 - fix svg noum icons dark/light mode
 - OG IMAGES
 - ADD SEE MORE LIST AT POST FOOT

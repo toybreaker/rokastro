@@ -3,7 +3,7 @@ title: Women, flowers and dances
 category: photography
 year: 2017
 where: Bali, Indonesia
-bodyClass: offwhite grid3
+bodyClass: offwhite grid_big
 images:
   - ./01.jpg
   - ./02.jpg

@@ -3,6 +3,7 @@ import Layout from '@layouts/Index.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
 import * as siteData from '@data/site.json'
+import Icon from 'astro-icon'
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('posts')
@@ -27,7 +28,6 @@ export async function getStaticPaths() {
 
 const { tag } = Astro.params
 const { posts } = Astro.props
-const title = 'Hastagah!'
 const bodyClass = 'black'
 const pageDesc = siteData.description
 const mainClass = 'container'
@@ -36,12 +36,15 @@ const ogImage = '../og_home.jpg'
 
 <Layout
   pageDesc={pageDesc}
-  pageTitle={title}
+  pageTitle={tag}
   bodyClass={bodyClass}
   mainClass={mainClass}
   ogImage={ogImage}
 >
-  <h2 class='h3 uppercased centered green'>{tag}</h2>
+  <h2 class='h3 uppercase'>
+    <Icon name='tag' class='tag' />
+    {tag}
+  </h2>
   <div class='posts'>
     {
       posts.map((post: any) => (
@@ -52,3 +55,10 @@ const ogImage = '../og_home.jpg'
     }
   </div>
 </Layout>
+<style>
+  svg.tag {
+    width: 43px;
+    position: relative;
+    top: 0.75rem;
+  }
+</style>
