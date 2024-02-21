@@ -43,9 +43,9 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category + ' black'
 const pageDesc = siteData.description_photography
-const pickedTags = 'photography'
+//const pickedTags = 'photography'
 
-console.log(pickedTags)
+// console.log(pickedTags)
 
 const relatedPosts = await getCollection('posts', ({ data }) => {
   return (
@@ -53,9 +53,7 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
   )
 })
 
-console.log(relatedPosts.length)
-
-console.log(pageDesc)
+// console.log(relatedPosts.length)
 ---
 
 <Layout
@@ -64,7 +62,7 @@ console.log(pageDesc)
   mainClass={mainClass}
   category={category}
   pageDesc={pageDesc}
-  ogImage='../og_webdesign.jpg'
+  ogImage='../assets/og_webdesign.jpg'
 >
   <p slot='header' class='center'>Pretty Cool Photography projects.</p>
   <div class='posts featured'>

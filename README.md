@@ -1,6 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3df602d2-8b9d-475f-9fe7-1f07ad1081cb/deploy-status)](https://app.netlify.com/sites/rokastro/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b85141d9-22dc-4cb4-aed2-27a1871f504a/deploy-status)](https://app.netlify.com/sites/rokmaastro/deploys)
 
-# [n.rokma.com](https://n.rokma.com/) w/ Astro & Fiko
+# [rokma.com](https://rokma.com/) w/ Astro & Fiko
 
 ## DEV SHORTCUTS
 
@@ -55,13 +55,9 @@ import '@fiko/fiko.css'
 
 ## TO DO:
 
-- fix annoying different angle on website images
-- fix svg noum icons dark/light mode
-- OG IMAGES
+- OG IMAGES TEST & FIX
 - ADD SEE MORE LIST AT POST FOOT
-- SEARCH FOR HI-RES OG IMAGES, DONE:
-  - 55DSL
-  - NEW WEBSITES
+- MAYBE FIX ANNOYING DIFFERENT ANGLE ON WEBSITE IMAGES
 
 ## MAYBE:
 

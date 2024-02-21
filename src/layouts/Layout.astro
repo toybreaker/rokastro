@@ -1,5 +1,4 @@
 ---
-// import Stylo from '@components/style/Stylo.astro'
 import '@fiko/fiko.css'
 import ROKMA from '@components/ROKMA.astro'
 import Footer from '@components/Footer.astro'
@@ -12,15 +11,15 @@ import ExternalLink from '@scripts/ExternalLink.astro'
 
 export interface Props {
   pageTitle: string
+  pageDesc: string
   ogImage?: string
   bodyClass: string
   mainClass: string
-  pageDesc: string
 }
 
-const { bodyClass, mainClass, pageTitle, ogImage, pageDesc } = Astro.props
+const { pageTitle, pageDesc, ogImage, bodyClass, mainClass } = Astro.props
 
-const makeTitle = siteData.title + ' ' + pageTitle
+const makeTitle = siteData.title + ' | ' + pageTitle
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
@@ -34,10 +33,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name='description' content={pageDesc} />
     <meta name='viewport' content='width=device-width' />
     <!-- <meta name='color-scheme' content='light dark' /> -->
-    <!-- <link
-      rel='stylesheet'
-      href='https://fonts.googleapis.com/css2?family=Dosis:wght@300;500'
-    /> -->
 
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='apple-mobile-web-app-title' content={siteData.title} />
