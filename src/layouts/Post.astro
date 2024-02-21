@@ -9,6 +9,7 @@ const { title, category, images, tags, bodyClass } =
 
 const pageDesc = siteData.description_web
 const mainClass = 'container'
+const ogImages = images[0]
 ---
 
 <Layout
@@ -16,7 +17,7 @@ const mainClass = 'container'
   pageDesc={pageDesc}
   mainClass={mainClass}
   bodyClass={category + ' ' + bodyClass}
-  ogImage={images[0]}
+  ogImage={ogImages}
 >
   <div class='uppercase' slot='header'>
     <nav aria-label='breadcrumb'>

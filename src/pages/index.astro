@@ -26,6 +26,7 @@ export interface Props {
 const bodyClass = 'home'
 const mainClass = 'no_padding'
 const pageTitle = 'empowers'
+const ogImage = '/og/og_home.jpg'
 const pageDesc = siteData.description
 ---
 
@@ -34,7 +35,7 @@ const pageDesc = siteData.description
   bodyClass={bodyClass}
   mainClass={mainClass}
   pageDesc={pageDesc}
-  ogImage='../assets/og_home.jpg'
+  ogImage={ogImage}
 >
   <section class='intro why full_height hero'>
     <div class='container'>

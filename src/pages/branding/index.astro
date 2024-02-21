@@ -41,6 +41,7 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category + ' lightgray'
 const pageDesc = siteData.description_branding
+const ogImage = '/og/og_branding.jpg'
 ---
 
 <Layout
@@ -49,7 +50,7 @@ const pageDesc = siteData.description_branding
   mainClass={mainClass}
   category={category}
   pageDesc={pageDesc}
-  ogImage='../assets/og_webdesign.jpg'
+  ogImage={ogImage}
 >
   <p slot='header' class='center'>Noteworthy Branding projects</p>
   <div class='posts'>

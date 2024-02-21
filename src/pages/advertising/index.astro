@@ -41,6 +41,7 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category
 const pageDesc = siteData.description_advertising
+const ogImage = '/og/og_advertising.jpg'
 ---
 
 <Layout
@@ -49,7 +50,7 @@ const pageDesc = siteData.description_advertising
   mainClass={mainClass}
   category={category}
   pageDesc={pageDesc}
-  ogImage='../assets/og_webdesign.jpg'
+  ogImage={ogImage}
 >
   <p slot='header' class='center'>Significative Advertising works</p>
   <div class='posts'>

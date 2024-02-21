@@ -41,6 +41,7 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category + ' white'
 const pageDesc = siteData.description_specials
+const ogImage = '/og/og_specials.jpg'
 ---
 
 <Layout
@@ -49,7 +50,7 @@ const pageDesc = siteData.description_specials
   mainClass={mainClass}
   category={category}
   pageDesc={pageDesc}
-  ogImage='../assets/og_webdesign.jpg'
+  ogImage={ogImage}
 >
   <p slot='header' class='center'>Special one-shot projects</p>
   <div class='posts'>

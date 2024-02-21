@@ -43,9 +43,7 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category + ' black'
 const pageDesc = siteData.description_photography
-//const pickedTags = 'photography'
-
-// console.log(pickedTags)
+const ogImage = '/og/og_photography.jpg'
 
 const relatedPosts = await getCollection('posts', ({ data }) => {
   return (
@@ -62,7 +60,7 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
   mainClass={mainClass}
   category={category}
   pageDesc={pageDesc}
-  ogImage='../assets/og_webdesign.jpg'
+  ogImage={ogImage}
 >
   <p slot='header' class='center'>Pretty Cool Photography projects.</p>
   <div class='posts featured'>
