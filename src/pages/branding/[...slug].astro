@@ -21,6 +21,6 @@ const { post } = Astro.props
 const { Content } = await post.render()
 ---
 
-<Layout {...post.data}>
+<Layout {...post.data} ogImage={post.data.images[0].src}>
   <Content />
 </Layout>

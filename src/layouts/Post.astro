@@ -4,12 +4,11 @@ import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
 import Icon from 'astro-icon'
 
-const { title, category, images, tags, bodyClass } =
+const { title, category, images, tags, bodyClass, ogImage } =
   Astro.props.frontmatter || Astro.props
 
 const pageDesc = siteData.description_web
 const mainClass = 'container'
-const ogImages = images[0]
 ---
 
 <Layout
@@ -17,7 +16,7 @@ const ogImages = images[0]
   pageDesc={pageDesc}
   mainClass={mainClass}
   bodyClass={category + ' ' + bodyClass}
-  ogImage={ogImages}
+  ogImage={ogImage}
 >
   <div class='uppercase' slot='header'>
     <nav aria-label='breadcrumb'>
