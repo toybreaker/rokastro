@@ -108,7 +108,7 @@ const pageDesc = siteData.description
       <div class='space'></div>
 
       <div class='container center grid'>
-        <label role='button' for='nav'>See more works</label>
+        <span role='button'><label for='nav'>See more works</label></span>
         <a
           role='button'
           title='Ready to Make your light shine?'
@@ -120,22 +120,23 @@ const pageDesc = siteData.description
       </div>
     </div>
   </section>
+
+  <style>
+    h1 {
+      text-transform: uppercase;
+      word-break: keep-all;
+    }
+
+    h1,
+    h1 p {
+      font-weight: 200;
+    }
+
+    label {
+      cursor: pointer;
+    }
+    :global(header) {
+      display: none;
+    }
+  </style>
 </Layout>
-<style>
-  h1 {
-    text-transform: uppercase;
-    word-break: keep-all;
-  }
-
-  h1,
-  h1 p {
-    font-weight: 200;
-  }
-
-  label {
-    cursor: pointer;
-  }
-  :global(header) {
-    display: none;
-  }
-</style>

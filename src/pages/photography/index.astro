@@ -43,6 +43,7 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category + ' black'
 const pageDesc = siteData.description_photography
+const quote = siteData.quote_photography
 const ogImage = '/og/og_photography.jpg'
 
 const relatedPosts = await getCollection('posts', ({ data }) => {
@@ -114,5 +115,5 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
       }
     </div>
   </details>
-  <blockquote>{pageDesc}</blockquote>
+  <blockquote>{quote}</blockquote>
 </Layout>

@@ -19,7 +19,7 @@ export interface Props {
 
 const { pageTitle, pageDesc, ogImage, bodyClass, mainClass } = Astro.props
 
-const makeTitle = siteData.title + ' | ' + pageTitle
+const makeTitle = siteData.title + ' | ' + pageTitle.toLocaleUpperCase()
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
@@ -28,7 +28,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
   <head>
     <ROKMA />
     <meta charset='UTF-8' />
-    <title>{makeTitle} | {repoData.version}</title>
+    <title>{makeTitle}</title>
     <meta name='version' content={repoData.version} />
     <meta name='description' content={pageDesc} />
     <meta name='viewport' content='width=device-width' />

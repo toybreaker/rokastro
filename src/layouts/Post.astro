@@ -4,10 +4,9 @@ import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
 import Icon from 'astro-icon'
 
-const { title, category, images, tags, bodyClass, ogImage } =
+const { title, category, images, tags, bodyClass, ogImage, pageDesc } =
   Astro.props.frontmatter || Astro.props
 
-const pageDesc = siteData.description_web
 const mainClass = 'container'
 ---
 

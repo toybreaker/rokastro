@@ -41,6 +41,7 @@ export interface Props {
 const mainClass = 'container'
 const bodyClass = category
 const pageDesc = siteData.description_advertising
+const quote = siteData.quote_advertising
 const ogImage = '/og/og_advertising.jpg'
 ---
 
@@ -84,5 +85,5 @@ const ogImage = '/og/og_advertising.jpg'
     }
   </div>
 
-  <blockquote>{pageDesc}</blockquote>
+  <blockquote>{quote}</blockquote>
 </Layout>

@@ -3,12 +3,17 @@
   "tldr": "Rokma empowers small enterprises",
   "tagline": "Communication Design, Production and Consulting.",
   "tagline_plus": "Building Reputation",
-  "description": "Flexible Communication Design Service for small companies. Imagine > Plan > Produce > Launch. Also just consulting!",
-  "description_web": "Communication has never been cheaper and more accessible. A WELL THOUGHT INTERNET PRESENCE reduces the small entrepreneur's stress. An ADVISOR helps rationalize and actualize.",
-  "description_photography": "A selfie always tells the same thing: <I WAS HERE>. Photography is still a new language. Barely 100 y.o. Attention is very short. Where's the NARRATIVE? Need to hit strongly and deep into emotions. Only CAREFULLY CRAFTED IDEAS expressed visually leave a mark!",
-  "description_advertising": "Nothing that is new, can be accepted without BEING WELL PROPOSED first.",
+  "description": "Rokma offers Flexible Communication Design Service for small companies. Imagine > Plan > Produce > Launch. Also just consulting!",
+  "description_web": "To communicate ain't easy. A WELL THOUGHT INTERNET PRESENCE gives results and reduces the small entrepreneur stress. An ADVISOR helps rationalize and actualize.",
+  "quote_web": "Communication has never been cheaper and more accessible. To craft a well proposed brand message might not be your forte. A WELL THOUGHT INTERNET PRESENCE reduces the small entrepreneur's stress. An ADVISOR helps rationalize and actualize. ",
+  "description_photography": "Photography language can build a visual narrative. Only CAREFULLY CRAFTED IDEAS strongly expressed, delivering emotions leave a mark! Just a click won't cut it.",
+  "quote_photography": "All selfie tells the same thing: I WAS HERE. Photography is still a new language, barely 100 y.o. Attention is very short. Where's the NARRATIVE? To be effective you need to hit deep into emotions. Only CAREFULLY CRAFTED IDEAS, strongly expressed, leave a mark!",
+  "description_advertising": "Nothing that is new, can be accepted without BEING WELL PROPOSED first. Your product needs a carefully crafted advertising message to compete today.",
+  "quote_advertising": "Nothing that is new, can be accepted without BEING WELL PROPOSED first. Your product needs a carefully crafted advertising message to compete today. Does it have it yet?",
   "description_branding": "Your products must be RECOGNIZABLE, that's why you need BRANDING. Or forget to be noticed. Ready to seriously build your PRODUCT IDENTITY?",
-  "description_specials": "Consulting with an OUT-OF-THE-BOX thinker is paramount for your PROJECT success. I will make sure your investment is worth or will not accept the job.",
+  "quote_branding": "Your products must be RECOGNIZABLE, that's why you need BRANDING. Or you can just forget to be noticed. Ready to seriously build your PRODUCT IDENTITY?",
+  "description_specials": "Consulting with an OUT-OF-THE-BOX thinker is paramount for your PROJECT success. I will make sure your investment is worth or won't accept the job.",
+  "quote_specials": "Consulting with an OUT-OF-THE-BOX thinker is paramount for your PROJECT success. Is your offer lost in the multitude? I will make sure your investment is worth or won't accept the job.",
   "logo": "01.jpg",
   "keywords": "flexible, communication, Ddesign, small companies, plan, produce, launch, consulting, photography, creativity, content, experience, digital-marketing, copywriting, strategy, mentoring, advisor",
   "lang": "en",
@@ -30,30 +35,10 @@
     "name": "Junglestar"
   },
   "oldclassic": {
-    "0": "Believes your customers should understand you.",
-    "1": "Empowers Your Work.",
-    "2": "Helps You Deliver Your Message.",
-    "3": "Makes Your Offer Recognisable.",
+    "0": "Rokma believes your customers should understand you.",
+    "1": "Rokma empowers Your Work.",
+    "2": "Rokma helps You Deliver Your Message.",
+    "3": "Rokma makes Your Offer Recognisable.",
     "4": "Ready to Make your light shine?"
-  },
-
-  "welcome": {
-    "shout": {
-      "no": "1",
-      "name": "CUST0MERS EFF0RTS TO ZER0."
-    },
-    "shout": {
-      "no": "2",
-      "name": "ENVISI0N SM00TH W0RKING."
-    }
-  },
-
-  "home": {
-    "2": "",
-    "3": "Done Organizing Message Delivery! Easily.",
-    "4": "Making Your Offer Recognisable.",
-    "5": "Rokma make your customers understand you.",
-    "6": "Showing Small Enteprises the way...",
-    "CTA": "Lets start by observing the data, would you?"
   }
 }

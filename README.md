@@ -1,5 +1,3 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b85141d9-22dc-4cb4-aed2-27a1871f504a/deploy-status)](https://app.netlify.com/sites/rokmaastro/deploys)
-
 # [rokma.com](https://rokma.com/) w/ Astro & Fiko
 
 ## DEV SHORTCUTS
