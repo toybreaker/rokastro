@@ -11,10 +11,12 @@ export default defineConfig({
   experimental: {
     contentCollectionCache: true
   },
+  markdown: {
+    drafts: true
+  },
   integrations: [
     mdx({
-      extendMarkdownConfig: false,
-      gfm: true
+      drafts: true
     }),
     partytown({
       // Example: Add dataLayer.push as a forwarding-event.

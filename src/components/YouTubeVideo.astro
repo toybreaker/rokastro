@@ -1,0 +1,32 @@
+---
+// Define the props that the component accepts
+const { videoId } = Astro.props
+---
+
+<style>
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+
+  .video-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Ensure no border */
+  }
+</style>
+
+<div class='video-container'>
+  <iframe
+    class='video-iframe'
+    src={`https://www.youtube.com/embed/${videoId}`}
+    title='YouTube video player'
+    allow='clipboard-write; encrypted-media; picture-in-picture'
+    allowfullscreen
+  >
+  </iframe>
+</div>
