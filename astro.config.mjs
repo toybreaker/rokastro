@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config'
 import mdx from '@astrojs/mdx'
 import partytown from '@astrojs/partytown'
+import { defineConfig } from 'astro/config'
+import sitemap from '@astrojs/sitemap'
+import robotsTxt from 'astro-robots-txt'
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,6 +18,8 @@ export default defineConfig({
     drafts: true
   },
   integrations: [
+    sitemap(),
+    robotsTxt(),
     mdx({
       drafts: true
     }),
