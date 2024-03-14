@@ -78,6 +78,7 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
     }
   </div>
 
+  <div class='space'></div>
   <h2 class='centre uppercase'>Other {category} projects</h2>
 
   <details>
@@ -109,7 +110,10 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
             href={`../${post.data.category}/${post.slug}`}
             title={post.data.year + '-' + post.data.year2}
           >
-            <CardRelated title={post.data.title} />
+            <CardRelated
+              title={post.data.title}
+              category={post.data.category}
+            />
           </a>
         ))
       }

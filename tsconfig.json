@@ -2,6 +2,7 @@
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
     "baseUrl": ".",
+    "lib": ["es2022", "dom", "dom.iterable"],
     "paths": {
       "@components/*": ["src/components/*"],
       "@compo/*": ["src/components/*"],
@@ -14,7 +15,11 @@
       "@scripts/*": ["src/scripts/*"],
       "@svgs/*": ["src/assets/svgs/*"],
       "@assets/*": ["public/assets/*"],
-      "@fiko/*": ["node_modules/fiko/package/*"]
+      "@fiko/*": ["node_modules/fiko/package/*"],
+      "@/utils": ["src/utils/index.ts"],
+      "@/types": ["src/types.ts"],
+      "@/site-config": ["src/site.config.ts"]
     }
-  }
+  },
+  "exclude": ["node_modules", "**/node_modules/*", ".vscode", "dist"]
 }

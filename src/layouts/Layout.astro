@@ -5,6 +5,7 @@ import Footer from '@components/Footer.astro'
 import Nav from '@components/Nav.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
+import ThemeProvider from '@components/ThemeProvider.astro'
 import AppendToCopyAction from '@scripts/AppendToCopyAction.astro'
 import GoogleAnalytics from '@scripts/GoogleAnalytics.astro'
 import ExternalLink from '@scripts/ExternalLink.astro'
@@ -32,6 +33,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name='version' content={repoData.version} />
     <meta name='description' content={pageDesc} />
     <meta name='viewport' content='width=device-width' />
+    <!-- necessary for them toggle to work: -->
+    <meta content='' name='theme-color' />
     <!-- <meta name='color-scheme' content='light dark' /> -->
 
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
@@ -56,6 +59,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <slot name='head' />
   </head>
   <body class={bodyClass}>
+    <ThemeProvider />
     <Nav />
     <header class='container'>
       <slot name='header' />
@@ -75,29 +79,45 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
         --lightgray: rgb(238, 238, 238);
         --darkgray: rgb(212, 212, 212);
         --offwhite: rgb(230, 230, 230);
+        --offwhite_inverse: hsl(0, 0%, 55%);
       }
-      body.gray {
+      [data-theme='light'] body.gray {
         background-color: var(--gray);
         --currentTXTcolor: black;
+        color: var(--currentTXTcolor);
       }
-
-      body.lightgray {
+      /* lightgray */
+      [data-theme='light'] body.lightgray {
         background-color: var(--lightgray);
         --currentTXTcolor: black;
+        color: var(--currentTXTcolor);
       }
-
-      body.darkgray {
+      /* darkgray */
+      [data-theme='light'] body.darkgray {
         background-color: var(--darkgray);
         --currentTXTcolor: black;
+        color: var(--currentTXTcolor);
       }
-
-      body.offwhite {
+      /* offwhite */
+      [data-theme='light'] body.offwhite {
         background-color: var(--offwhite);
         --currentTXTcolor: black;
+        color: var(--currentTXTcolor);
       }
+      [data-theme='dark'] body.offwhite {
+        background-color: var(--offwhite_inverse);
+        --currentTXTcolor: var(--offwhite);
+        color: var(--currentTXTcolor);
+      }
+
       body.white {
         background-color: white;
         --currentTXTcolor: black;
+        color: var(--currentTXTcolor);
+      }
+      [data-theme='dark'] {
+        --currentTXTcolor: white;
+        color: var(--currentTXTcolor);
       }
     </style>
   </body>

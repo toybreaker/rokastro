@@ -1,84 +1,189 @@
 ---
-// needs revision
+
 ---
 
-<!-- JS Toggle for Dark/Light Mode -->
-<span
-  id='toggle-theme'
-  class='theme_switch'
-  onclick='toggleTheme()'
-  title='Toggle light | dark mode'
->
-  <span>
+<theme-toggle class='toggle_block'>
+  <button class='' type='button'>
     <svg
+      aria-hidden='true'
       class='moon'
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
       fill='none'
+      focusable='false'
       stroke='currentColor'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      stroke-width='1.5'
+      viewBox='0 0 24 24'
+      xmlns='http://www.w3.org/2000/svg'
     >
-      <path d='M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z'></path>
+      <g>
+        <path d='M0 0h24v24H0z' fill='none' stroke='none'></path>
+        <path
+          d='M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z'
+        >
+        </path>
+        <path
+          d='M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2'
+        >
+        </path>
+        <path d='M19 11h2m-1 -1v2'></path>
+      </g>
     </svg>
-
     <svg
+      aria-hidden='true'
       class='sun'
-      xmlns='http://www.w3.org/2000/svg'
-      width='24'
-      height='24'
-      viewBox='0 0 24 24'
       fill='none'
+      focusable='false'
       stroke='currentColor'
-      stroke-width='2'
-      stroke-linecap='round'
-      stroke-linejoin='round'
+      stroke-width='1.5'
+      viewBox='0 0 24 24'
+      xmlns='http://www.w3.org/2000/svg'
     >
-      <circle cx='12' cy='12' r='5'></circle>
-      <path
-        d='M12 1v2m0 18v2M4 4l2 2m12 12 2 2M1 12h2m18 0h2M4 20l2-2M18 6l2-2'
-      >
-      </path>
+      <g>
+        <path
+          d='M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M22 12L23 12'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M12 2V1'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M12 23V22'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M20 20L19 19'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M20 4L19 5'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M4 20L5 19'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M4 4L5 5'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+        <path
+          d='M1 12L2 12'
+          stroke='currentColor'
+          stroke-linecap='round'
+          stroke-linejoin='round'
+        >
+        </path>
+      </g>
     </svg>
-  </span>
+  </button>
+</theme-toggle>
 
-  <style>
-    .theme_switch {
-      z-index: 10;
+<script>
+  // Note that if you fire the theme-change event outside of this component, it will not be reflected in the button's aria-checked attribute
+  import { rootInDarkMode } from '@/utils'
+
+  class ThemeToggle extends HTMLElement {
+    #controller: AbortController | undefined
+
+    connectedCallback() {
+      const button = this.querySelector('button')!
+      // set aria role value
+      button.setAttribute('role', 'switch')
+      button.setAttribute('aria-checked', String(rootInDarkMode()))
+      // Abort signal
+      const { signal } = (this.#controller = new AbortController())
+
+      // button event
+      button.addEventListener(
+        'click',
+        () => {
+          // invert theme
+          let themeChangeEvent = new CustomEvent('theme-change', {
+            detail: {
+              theme: rootInDarkMode() ? 'light' : 'dark'
+            }
+          })
+          // dispatch event -> ThemeProvider.astro
+          document.dispatchEvent(themeChangeEvent)
+
+          // set the aria-checked attribute
+          button.setAttribute('aria-checked', String(rootInDarkMode()))
+        },
+        { signal }
+      )
     }
-  </style>
 
-  <script is:inline>
-    // THEME SWITCH WITH TOGGLE & USER PREFERENCE DETECTION
-    function toggleTheme() {
-      const currentTheme = document.body.getAttribute('data-theme')
-      if (currentTheme === 'dark') {
-        document.body.setAttribute('data-theme', 'light')
-      } else {
-        document.body.setAttribute('data-theme', 'dark')
-      }
+    disconnectedCallback() {
+      this.#controller?.abort()
     }
+  }
 
-    // DETECT USER'S PREFERENCE AND SET the data-theme attribute
-    function setUserPreference() {
-      const userPrefersDark =
-        window.matchMedia &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches
-      if (userPrefersDark) {
-        document.body.setAttribute('data-theme', 'dark')
-      } else {
-        document.body.setAttribute('data-theme', 'light')
-      }
+  customElements.define('theme-toggle', ThemeToggle)
+</script>
+<style is:global>
+  :root {
+    --button_size: 48px;
+  }
+
+  .button,
+  [type='button'] {
+    position: relative;
+    height: var(--button_size);
+    width: var(--button_size);
+    padding: 0.5rem;
+    /* border: 0 none; */
+  }
+
+  svg.moon,
+  svg.sun {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+  }
+
+  [data-theme='light'] {
+    .moon {
+      display: block;
     }
+    .sun {
+      display: none;
+    }
+  }
 
-    setUserPreference() // Initially set the user preference
-
-    // UPDATE ON PREFERENCE CHANGE (ex: using DevTools to change it)
-    window
-      .matchMedia('(prefers-color-scheme: dark)')
-      .addListener(setUserPreference)
-  </script>
-</span>
+  [data-theme='dark'] {
+    .moon {
+      display: none;
+    }
+    .sun {
+      display: block;
+    }
+  }
+</style>

@@ -9,7 +9,9 @@ const { title, category } = Astro.props
 
 <div>
   <h4>
-    <span>{title.toLocaleUpperCase()}</span><small>{category}</small>
+    <button>
+      <span>{title.toLocaleUpperCase()}</span><small>{category}</small>
+    </button>
   </h4>
 </div>
 
@@ -26,7 +28,7 @@ const { title, category } = Astro.props
     padding-inline: calc(var(--spaceLR) / 2);
 
     text-transform: uppercase;
-    border: 2px solid var(--currentTXT);
+    // border: 2px solid var(--currentTXTcolor);
   }
 
   small {

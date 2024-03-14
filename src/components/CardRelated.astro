@@ -8,19 +8,22 @@ export interface Props {
 const { title, category } = Astro.props
 ---
 
-<div title={category} class='card_related outline'>
-  {title.toLocaleUpperCase()}
-</div>
+<h4 class='card_related'>
+  <button>
+    {title.toLocaleUpperCase()}
+  </button>
+  <small>{category}</small>
+</h4>
 
 <style lang='scss'>
   .card_related {
     display: fit-content;
     width: fit-content;
-    color: var(--currentTXT);
-    &.outline {
-      padding: 0.25rem;
-      border: 2px solid transparent;
-      width: auto;
-    }
+    color: var(--currentTXTcolor);
+    // &.outline {
+    //   padding: 0.25rem;
+    //   // border: 2px solid transparent;
+    //   width: auto;
+    // }
   }
 </style>
