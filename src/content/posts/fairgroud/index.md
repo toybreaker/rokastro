@@ -3,6 +3,7 @@ title: Fair Ground
 category: photography
 year: 2008
 where: Indonesia
+bodyClass: darkgray grid_small
 images:
   - ./01.jpg
   - ./02.jpg

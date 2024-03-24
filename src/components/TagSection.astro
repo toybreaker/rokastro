@@ -1,63 +1,25 @@
 ---
-import Layout from '@layouts/Layout.astro'
-import * as siteData from '@data/site.json'
-import Slide from '@components/Slide.astro'
 import Icon from 'astro-icon'
 
-const { title, category, images, tags, bodyClass, ogImage, pageDesc } =
-  Astro.props.frontmatter || Astro.props
-
-const mainClass = 'container'
+const { tags } = Astro.props.frontmatter || Astro.props
 ---
 
-<Layout
-  pageTitle={title}
-  pageDesc={pageDesc}
-  mainClass={mainClass}
-  bodyClass={category + ' ' + bodyClass}
-  ogImage={ogImage}
->
-  <div class='uppercase' slot='header'>
-    <nav aria-label='breadcrumb'>
-      <a href='/'>
-        {siteData.title}
-      </a>
-      <span>&nbsp;&gt;&nbsp;</span>
-      <a href={`/${category}/`}>{category}</a>
-    </nav>
-
-    <h1>{title}</h1>
-  </div>
-
-  <div slot='images' class='images'>
+<div class='tag_section'>
+  <Icon name='tag' class='tag' />
+  <ul class='tags'>
     {
-      images.map((i: string) => {
-        return <Slide p={i} alt='g' quality='high' cssClass='slide' />
+      tags.map((tag: string) => {
+        return (
+          <li>
+            <a class='' href={`/${tag}/`}>
+              {tag}
+            </a>
+          </li>
+        )
       })
     }
-  </div>
-
-  <div class='container content'>
-    <slot />
-
-    <div class='tag_section'>
-      <Icon name='tag' class='tag' />
-      <ul class='tags'>
-        {
-          tags.map((tag: string) => {
-            return (
-              <li>
-                <a class='' href={`/${tag}/`}>
-                  {tag}
-                </a>
-              </li>
-            )
-          })
-        }
-      </ul>
-    </div>
-  </div>
-</Layout>
+  </ul>
+</div>
 
 <style>
   .content {
@@ -67,11 +29,10 @@ const mainClass = 'container'
   .tag_section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding-block-start: var(--spaceTB);
     margin-block-end: var(--spaceTB);
     gap: 2rem;
-    border-block: 1px solid var(--);
   }
 
   .tags {
@@ -94,7 +55,7 @@ const mainClass = 'container'
     display: inline-block;
     padding-block-start: 0.75ch;
   }
-
+  /*
   body.grid_small {
     main {
       container-type: inline-size;
@@ -148,4 +109,5 @@ const mainClass = 'container'
       }
     }
   }
+   */
 </style>

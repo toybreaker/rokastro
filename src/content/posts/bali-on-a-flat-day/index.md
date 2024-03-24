@@ -3,7 +3,7 @@ title: bali on a flat day
 category: photography
 year: 2008
 where: Bali, Indonesia
-bodyClass: black grid_big
+bodyClass: black grid_small
 images:
   - ./01.jpg
   - ./02.jpg

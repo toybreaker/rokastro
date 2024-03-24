@@ -4,6 +4,7 @@ category: websites
 year: 2015
 year2: 2024
 where: Singapore
+bodyClass: grid_big
 images:
   - ./01.jpg
   - ./02.jpg

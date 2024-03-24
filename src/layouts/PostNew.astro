@@ -2,9 +2,9 @@
 import Layout from '@layouts/Layout.astro'
 import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
-import Icon from 'astro-icon'
+import TagSection from '@components/TagSection.astro'
 
-const { title, category, images, tags, bodyClass, ogImage, pageDesc } =
+const { title, category, images, bodyClass, ogImage, pageDesc } =
   Astro.props.frontmatter || Astro.props
 
 const mainClass = 'container'
@@ -39,23 +39,7 @@ const mainClass = 'container'
 
   <div class='container content'>
     <slot />
-
-    <div class='tag_section'>
-      <Icon name='tag' class='tag' />
-      <ul class='tags'>
-        {
-          tags.map((tag: string) => {
-            return (
-              <li>
-                <a class='' href={`/${tag}/`}>
-                  {tag}
-                </a>
-              </li>
-            )
-          })
-        }
-      </ul>
-    </div>
+    <TagSection />
   </div>
 </Layout>
 
@@ -67,11 +51,10 @@ const mainClass = 'container'
   .tag_section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding-block-start: var(--spaceTB);
     margin-block-end: var(--spaceTB);
     gap: 2rem;
-    border-block: 1px solid var(--);
   }
 
   .tags {

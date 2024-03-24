@@ -3,7 +3,7 @@ title: Pinksummer
 category: photography
 year: 2004
 year2: 2010
-bodyClass: black
+bodyClass: black grid_small
 where: italy
 images:
   - ./01.jpg
