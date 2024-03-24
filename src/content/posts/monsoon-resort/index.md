@@ -2,6 +2,7 @@
 title: Monsoon Resort
 category: photography
 year: 2009
+bodyClass: grid_big
 where: Bali, Indonesia
 images:
   - ./01.jpg

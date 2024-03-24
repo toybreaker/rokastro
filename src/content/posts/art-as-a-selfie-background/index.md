@@ -2,7 +2,7 @@
 title: Art as a selfie background
 category: photography
 year: 2018
-bodyClass: grid_big
+bodyClass: grid_small
 where: Bali, Indonesia
 images:
   - ./01.jpg

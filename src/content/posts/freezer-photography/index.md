@@ -5,7 +5,7 @@ bg: black
 year: 1995
 year2: 2000
 where: italy
-bodyClass: black
+bodyClass: black grid_big
 images:
   - ./01.jpg
   - ./02.jpg
