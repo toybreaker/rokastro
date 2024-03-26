@@ -64,4 +64,6 @@ All encompassing: brand startegy advising, market placement, concept proposals a
 
 Broadcasted trough Instagram, Facebook, Twitter, and Shopify store own blog media channels.
 
-KAOS GUERRILLA Instagram profile, for example, was brought from 169 followers to 1433 in just few months, organically, without buying any advertisings.
+KAOS GUERRILLA Instagram profile, for example, was brought from 169 followers to 1433 in just few months, organically, without buying any advertisings in 2018.
+
+<2018-2019>

@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -12,19 +12,19 @@
     "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
+    "@astrojs/check": "^0.5.10",
     "@astrojs/mdx": "^2.2.1",
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/rss": "^4.0.5",
     "@astrojs/sitemap": "^3.1.1",
     "@sindresorhus/slugify": "^2.2.1",
     "@types/node": "^20.11.30",
-    "@typescript-eslint/parser": "^7.3.1",
+    "@typescript-eslint/parser": "^7.4.0",
     "astro": "4.5.9",
     "astro-icon": "^0.8.2",
     "astro-robots-txt": "^1.0.0",
     "autoprefixer": "^10.4.19",
-    "cssnano": "^6.1.1",
+    "cssnano": "^6.1.2",
     "eslint": "^8.57.0",
     "eslint-plugin-astro": "^0.31.4",
     "eslint-plugin-jsx-a11y": "^6.8.0",
@@ -34,7 +34,7 @@
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.13.0",
     "sass": "^1.72.0",
-    "sharp": "^0.33.2",
+    "sharp": "^0.33.3",
     "typescript": "^5.4.3"
   }
 }

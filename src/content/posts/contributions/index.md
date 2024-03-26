@@ -1,5 +1,5 @@
 ---
-title: Books Contributions
+title: Contributions
 category: photography
 year: 2010
 where: Bali, Indonesia
