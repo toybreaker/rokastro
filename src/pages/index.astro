@@ -2,6 +2,7 @@
 import Layout from '@layouts/Index.astro'
 import Card from '@components/Card.astro'
 import { getCollection } from 'astro:content'
+import Underline from '@components/Underline.astro'
 import * as siteData from '@data/site.json'
 
 const showcasePosts = await getCollection('posts', ({ data }) => {
@@ -157,3 +158,4 @@ const pageDesc = siteData.description
     })
   }
 </script>
+<Underline />

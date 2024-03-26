@@ -1,0 +1,24 @@
+---
+// underline link styles component
+---
+
+<style>
+  /* ALL */
+
+  a,
+  :where(a:not([role='button'])),
+  [role='link'] {
+    text-decoration-line: underline;
+    text-decoration-thickness: 8px;
+
+    /* You also use other units of space: */
+    text-decoration-thickness: 100%;
+    text-decoration-thickness: 2rem;
+
+    /* Auto is the default */
+    text-decoration-thickness: auto;
+
+    /* From-font is similar to auto but instead of the browser choosing the underline offset, the font does. If the font does not specify, it will behave like auto */
+    text-decoration-thickness: from-font;
+  }
+</style>
