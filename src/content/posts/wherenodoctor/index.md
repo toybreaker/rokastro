@@ -26,7 +26,9 @@ This project is based on open source bestseller _Where There Is No Doctor_ by Da
 
 Check the [live webapp](https://nodoctor.junglestar.org).
 
-The "No Doctor" website serves as a comprehensive guide for village health workers and individuals without immediate access to medical care. It provides a wealth of information on recognizing and addressing various health needs using local resources.
+The "No Doctor" website serves as a comprehensive guide for village health workers and individuals without immediate access to medical care.
+
+It provides a wealth of information on recognizing and addressing various health needs using local resources.
 
 The content spans from home remedies and the identification of common illnesses to the sensible use of medicines and the importance of nutrition.
 
