@@ -37,4 +37,6 @@ Have a look:<br>
 [Divino Photo Menu](https://divinobali.com/menu?source=rokma.com)<br>
 [Divino Delivery Menu](https://divinobali.com/delivery?source=rokma.com)<br>
 
+Casa Asia offers a blend of Italian hospitality and culinary excellence in Bali, providing guests with a refined dining experience that includes a wide array of Mediterranean dishes, wood oven pizzas, pasta, and healthy options with vegan and vegetarian choices. Set in a lush tropical garden, its accommodations promise comfort and warmth akin to a family-run business, ensuring a memorable Italian culinary journey amidst Bali's serene beauty.
+
 [2020>today].

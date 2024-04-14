@@ -1,14 +1,13 @@
 ---
 import Layout from '@layouts/Index.astro'
 import Card from '@components/Card.astro'
-import { getCollection } from 'astro:content'
 import Underline from '@components/Underline.astro'
 import * as siteData from '@data/site.json'
 
+import { getCollection } from 'astro:content'
 const showcasePosts = await getCollection('posts', ({ data }) => {
   return data.draft !== true && data.home
 })
-
 const sortedFP = showcasePosts.sort(
   (a, b) =>
     Date.parse(b.data.year.toString()) - Date.parse(a.data.year.toString())
