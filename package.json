@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -36,5 +36,8 @@
     "sass": "^1.75.0",
     "sharp": "^0.33.3",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@astrojs/ts-plugin": "^1.10.2"
   }
 }
