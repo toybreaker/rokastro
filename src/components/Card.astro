@@ -36,13 +36,11 @@ const { title, image, category } = Astro.props
   }
 
   .title {
-    //h2
     margin: var(--spaceTB) 0;
     padding: 0;
     span {
       padding-block: 0;
       padding-inline: 5px;
-      // border: 2px solid black;
       color: black;
       body.black & {
         background-color: var(--gray);
@@ -62,7 +60,8 @@ const { title, image, category } = Astro.props
     transition:
       filter 500ms ease-out,
       transform 250ms ease-out;
-    transition-delay: 200ms; // anti-flickering trick
+    /*  anti-flickering trick: */
+    transition-delay: 200ms;
     transform: scale(1);
     transform-origin: center center;
     overflow: hidden;
