@@ -9,6 +9,7 @@
     "baseUrl": ".",
     "lib": ["es2022", "dom", "dom.iterable"],
     "paths": {
+      // SPECIFIC DIRS
       "@components/*": ["src/components/*"],
       "@compo/*": ["src/components/*"],
       "@content/*": ["src/content/*"],
@@ -20,7 +21,8 @@
       "@scripts/*": ["src/scripts/*"],
       "@svgs/*": ["src/assets/svgs/*"],
       "@assets/*": ["public/assets/*"],
-      "@fiko/*": ["node_modules/fiko/package/*"],
+      "@fiko/*": ["src/assets/*"],
+      // SPECIFIC FILES
       "@/utils": ["src/utils/index.ts"],
       "@/types": ["src/types.ts"],
       "@/site-config": ["src/site.config.ts"]

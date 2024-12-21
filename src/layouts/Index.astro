@@ -64,17 +64,17 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     padding-block-start: 1rem;
     padding-block-end: 1rem;
+    grid-gap: 10px;
 
     @media (min-width: 701px) {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
       padding-block-start: 2rem;
       padding-block-end: 2rem;
     }
+  }
 
-    grid-gap: 10px;
-    .slide {
-      margin: 0;
-    }
+  .grid .slide {
+    margin: 0;
   }
 
   .all_posts .post {
