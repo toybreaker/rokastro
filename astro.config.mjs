@@ -11,9 +11,6 @@ export default defineConfig({
   build: {
     inlineStylesheets: 'always'
   },
-  experimental: {
-    contentCollectionCache: true
-  },
   markdown: {
     drafts: true
   },

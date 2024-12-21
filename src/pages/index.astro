@@ -107,39 +107,45 @@ const pageDesc = siteData.description
 
       <div class='space'></div>
 
-      <div class='container center grid'>
-        <span role='button'><label for='nav'>See more works</label></span>
-        <a
-          role='button'
-          title='Ready to Make your light shine?'
-          class=''
-          href='/about/'
-        >
-          Know more about Rokma
-        </a>
+      <div class='container center grid'></div>
+      <div role='button' title='Ready to Make your light shine?' class='center'>
+        <label for='nav'>SEE MORE WORKS</label>
       </div>
     </div>
   </section>
-
-  <style>
-    h1 {
-      text-transform: uppercase;
-      word-break: keep-all;
-    }
-
-    h1,
-    h1 p {
-      font-weight: 200;
-    }
-
-    label {
-      cursor: pointer;
-    }
-    :global(header) {
-      display: none;
-    }
-  </style>
+  <section class='all_works'>
+    <div class='container'>
+      <a
+        class='right'
+        role='button'
+        title='Ready to Make your light shine?'
+        href='/about/'
+      >
+        KNOW MORE ABOUT ROKMA
+      </a>
+    </div>
+  </section>
 </Layout>
+
+<style>
+  h1 {
+    text-transform: uppercase;
+    word-break: keep-all;
+  }
+
+  h1,
+  h1 p {
+    font-weight: 200;
+  }
+
+  label {
+    cursor: pointer;
+  }
+  :global(header) {
+    display: none;
+  }
+</style>
+
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {

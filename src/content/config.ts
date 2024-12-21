@@ -1,4 +1,5 @@
 import { z, defineCollection } from 'astro:content'
+import { glob } from 'astro/loaders'
 
 const works = defineCollection({
   schema: ({ image }) =>

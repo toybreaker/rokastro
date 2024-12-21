@@ -4,7 +4,8 @@ self.addEventListener('install', (event) => {
     caches.open('v1').then((cache) => {
       return cache.addAll([
         '/index.html',
-        '/src/styles/global.css'
+        // '/src/styles/global.css',
+        '/src/content/about/01.jpg'
         // Add other assets and pages you want to cache
       ])
     })
