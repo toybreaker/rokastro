@@ -33,4 +33,4 @@ tags:
 featured: true
 ---
 
-Editorial strategy and branding for &lt;Freezer Magazine&gt; free press.
+Editorial strategy and branding for [FREEZER MAGAZINE](https://freezer.junglestar.org) free press.

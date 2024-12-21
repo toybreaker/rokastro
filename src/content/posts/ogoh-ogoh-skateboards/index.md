@@ -17,5 +17,3 @@ tags:
 ---
 
 Skateboard graphics. Concept, photography and design for Ghettoblaster brand.
-
-Check the [Ghettoblaster store](https://ghettoblasterwear.com/?source=rokma.com)

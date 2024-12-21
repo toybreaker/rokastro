@@ -13,6 +13,6 @@ tags:
   - design
 ---
 
-Online archive for free-press &lt;Freezer Magazine&gt;.
+Online archive for free-press [FREEZER MAGAZINE](https://freezer.junglestar.org)
 
 Check out the [Freezer project website](https://freezer.junglestar.org) or see some [videoclips](https://www.youtube.com/playlist?list=PL_JCGUf7lroma7WLAJKy1uShs0NSNN6Mp).

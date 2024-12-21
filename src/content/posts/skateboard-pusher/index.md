@@ -16,5 +16,3 @@ featured:
 ---
 
 Skateboard graphics. Concept and design for Ghettoblaster brand.
-
-Check the [Ghettoblaster store](https://ghettoblasterwear/?source=rokma.com)

@@ -15,7 +15,7 @@ tags:
 
 Probably the first video on the Italian skate/snowboarding scene.
 
-A year long filming, with the Freezer Magazine crew.
+A year long filming, with the [FREEZER MAGAZINE](https://freezer.junglestar.org) crew.
 All over the southern side of the Alps.
 
 Do or die!

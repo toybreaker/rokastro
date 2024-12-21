@@ -17,12 +17,10 @@ export interface quotes {
         <div class='space' />
         <blockquote>
           "{quote.quote}"
-          <>
-            <br />
-            <cite>
-              {quote.name} — <a href={quote.url}>{quote.brand}</a>
-            </cite>
-          </>
+          <br />
+          <cite>
+            {quote.name} — <a href={quote.url}>{quote.brand}</a>
+          </cite>
         </blockquote>
       </>
     ))

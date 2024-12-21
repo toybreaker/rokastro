@@ -22,7 +22,7 @@ tags:
   - action-photography
 ---
 
-Creating FREEZER magazine I built a creative lab with young motivated enthusiasts and really destroyed boundaries and cliches of contemporary media.
+Creating [FREEZER MAGAZINE](https://freezer.junglestar.org) I built a creative lab with young motivated enthusiasts and really destroyed boundaries and cliches of contemporary media.
 
 FREEZER was photo centered and took printed press beyond average, both in &lt;what to show&gt; and &lt;how to show it&gt;.
 

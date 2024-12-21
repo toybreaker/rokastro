@@ -27,4 +27,4 @@ tags:
 featured: true
 ---
 
-Advertising campaign for &lt;Freezer Magazine&gt; firm.
+Advertising campaign for [FREEZER MAGAZINE](https://freezer.junglestar.org) firm.

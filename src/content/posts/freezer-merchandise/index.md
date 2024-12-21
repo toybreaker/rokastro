@@ -24,4 +24,4 @@ tags:
   - design
 ---
 
-Merchandise items for &lt;Freezer Magazine&gt;.
+Merchandise items for [FREEZER MAGAZINE](https://freezer.junglestar.org).
