@@ -1,7 +1,7 @@
 ---
 import Layout from '@layouts/Index.astro'
 import Card from '@components/Card.astro'
-import Underline from '@components/Underline.astro'
+//import Underline from '@components/Underline.astro'
 import * as siteData from '@data/site.json'
 
 import { getCollection } from 'astro:content'
@@ -29,6 +29,25 @@ const pageTitle = 'empowers'
 const ogImage = '/og/og_home.jpg'
 const pageDesc = siteData.description
 ---
+
+<style>
+  h1 {
+    text-transform: uppercase;
+    word-break: keep-all;
+  }
+
+  h1,
+  h1 p {
+    font-weight: 200;
+  }
+
+  label {
+    cursor: pointer;
+  }
+  :global(header) {
+    display: none;
+  }
+</style>
 
 <Layout
   pageTitle={pageTitle}
@@ -113,6 +132,7 @@ const pageDesc = siteData.description
       </div>
     </div>
   </section>
+
   <section class='all_works'>
     <div class='container'>
       <a
@@ -126,25 +146,6 @@ const pageDesc = siteData.description
     </div>
   </section>
 </Layout>
-
-<style>
-  h1 {
-    text-transform: uppercase;
-    word-break: keep-all;
-  }
-
-  h1,
-  h1 p {
-    font-weight: 200;
-  }
-
-  label {
-    cursor: pointer;
-  }
-  :global(header) {
-    display: none;
-  }
-</style>
 
 <script>
   if ('serviceWorker' in navigator) {
@@ -163,4 +164,4 @@ const pageDesc = siteData.description
     })
   }
 </script>
-<Underline />
+<!-- <Underline /> -->

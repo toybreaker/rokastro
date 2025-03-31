@@ -2,9 +2,11 @@
 title: Davina Stephens
 category: websites
 year: 2019
-year2: 2023
+year2: 2024
 where: Bali, Indonesia
 bodyClass: darkgray grid_big
+featured: false
+home: false
 images:
   - ./01.jpg
   - ./02.jpg
@@ -17,14 +19,44 @@ tags:
 ---
 
 Artist portfolio.
-Check out [Davina Stephens](https://davinastephens.com?source=rokma.com) live website.
 
-Davina Stephens' website showcases her recent artworks, featuring a vibrant collection that spans various series titles like "Austronesian Languages," "Days Future Passed," and "Oceania Feeling."
+Davina Stephens' website project started from First Principles as a brand new blank sheet.
 
-Her works, including "Voyagers" and "The Lotus Eaters," explore themes of exploration, nature, and cultural heritage through a mix of mediums such as acrylic, charcoal, collage, and woodblock.
+### 🎓 First Meeting
 
-Stephens' art, characterized by abstract and landscape elements, draws heavily on her anthropological background, offering a deep, reflective look at Oceania and the archipelagoes.
 
-Her portfolio reflects a commitment to capturing the essence of her subjects, blending traditional techniques with modern sensibilities.
+Pencil and paper, we annotated the desired, the imagined goals, the needs, the expectations.
 
-[2019>today].
+We listed what she expected the website to accomplish.
+
+The works, the collections, the styles, the significance.
+And here we are off topic into philosophy, meta-communication, and the meeting is over.
+
+Glasses, once full with freshly blended tropical fruit of the season, lay empty on the poolside table.
+
+
+### 📋 Follow up
+
+Digested that laudry lists. Rokma built a proposal plan. Think pimp-you-car improvements on the client original idea and expectations.
+
+Aim high, straight to the top, then adjust as needed.
+Motivational narraties do wonders.
+
+### 🤩 Result
+
+We built a small system for Davina to track, showcases and display  her artworks on the web.
+
+A bit of logic, a Shared Google Sheet and a fast, clean, slick website.
+Boom!  Each artwork has its own page/URL so it's easy to share a particular piece.
+
+Just copy the URL and paste it into any social media. A bit of ordinary magic and the link turns into a card with thumbnail image, title and subtitle and excerpt.
+
+The artist now dispose of an archiving tool to keep track of her whole production, history, presentation, copy, grouping. Any changes can be easily rolled back. There is repo for that. It's even open source.
+
+She can now edit titles, text, collections, tags... A streamlined tag logic distributes the artist works into the various pages and sections of the website
+
+The minimalist website look, color and visual impact, withdraws to a dim level to stage the content protagonist.
+
+The website also disposes of all the necessary presentational tools for the  artist PR needs. Biography, Artist Statement, QRcodes, BIZcards.
+
+[2019>2024]

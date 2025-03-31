@@ -1,5 +1,10 @@
-import { z, defineCollection } from 'astro:content'
+// 1. Import utilities from `astro:content`
+import { defineCollection, z } from 'astro:content'
 
+// 2. Import loader(s)
+import { glob, file } from 'astro/loaders'
+
+// 3. Define your collection(s)
 const works = defineCollection({
   schema: ({ image }) =>
     z.object({
@@ -29,7 +34,7 @@ const about = defineCollection({
       quality: z.string().optional().nullable().default('low')
     })
 })
-
+// 4. Export a single `collections` object to register your collection(s)
 export const collections = {
   posts: works,
   about: about
