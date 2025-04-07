@@ -1,0 +1,127 @@
+---
+import { Icon } from 'astro-icon'
+---
+
+<button id='themeToggle' aria-label='theme toggle'>
+  <!-- <Moon />
+    <Sun /> -->
+  <Icon name='moon' />
+  <Icon name='sun' />
+</button>
+
+<style>
+  :global(body) {
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+  /* Theme Toggle Button */
+  button {
+    border: 0 none;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: transparent;
+    svg {
+      height: var(--tap_size);
+      width: var(--tap_size);
+      padding: 0;
+      color: var(--logo);
+    }
+  }
+
+  svg {
+    fill: none;
+    stroke: var(--logo);
+    stroke-width: 1.5;
+  }
+
+  :global([data-theme='light']) {
+    .moon {
+      display: block;
+      color: var(--brand);
+    }
+    .sun {
+      display: none;
+    }
+  }
+
+  :global([data-theme='dark']) {
+    .moon {
+      display: none;
+    }
+    .sun {
+      display: block;
+      color: var(--brand);
+    }
+  }
+</style>
+
+<script is:inline>
+  const themeStore = {
+    async init() {
+      // Request persistent storage
+      if (navigator.storage && navigator.storage.persist) {
+        await navigator.storage.persist()
+      }
+
+      // Initialize theme from storage or system preference
+      const theme = await this.get()
+      this.apply(theme)
+
+      // Set up event listeners for cross-tab sync
+      window.addEventListener('storage', (e) => {
+        if (e.key === 'theme') this.apply(e.newValue)
+      })
+    },
+
+    async get() {
+      try {
+        const stored = await navigator.storage.estimate()
+        if (stored.quota > 0) {
+          return (
+            localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light')
+          )
+        }
+      } catch {
+        // Fallback to system preference if storage is unavailable
+        return window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+      }
+    },
+
+    async set(theme) {
+      try {
+        localStorage.setItem('theme', theme)
+        this.apply(theme)
+      } catch {
+        console.warn('Theme storage unavailable')
+      }
+    },
+
+    apply(theme) {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+  }
+
+  // Initialize theme system
+  themeStore.init()
+
+  // Set up toggle button
+  document.getElementById('themeToggle').addEventListener('click', async () => {
+    const current = document.documentElement.getAttribute('data-theme')
+    await themeStore.set(current === 'light' ? 'dark' : 'light')
+  })
+
+  // Watch for system theme changes (only if no user preference)
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', async (e) => {
+      if (!localStorage.getItem('theme')) {
+        await themeStore.set(e.matches ? 'dark' : 'light')
+      }
+    })
+</script>

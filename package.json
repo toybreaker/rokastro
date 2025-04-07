@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "1.9.14",
+  "version": "1.9.16",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -18,7 +18,7 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.3.0",
     "@sindresorhus/slugify": "^2.2.1",
-    "@types/node": "^20.17.29",
+    "@types/node": "^20.17.30",
     "astro": "5.2.5",
     "astro-icon": "^0.8.2",
     "astro-robots-txt": "^1.0.0",
@@ -28,7 +28,7 @@
     "prettier-config-standard": "^7.0.0",
     "prettier-plugin-astro": "^0.13.0",
     "sharp": "^0.33.5",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",

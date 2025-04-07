@@ -1,8 +1,8 @@
 ---
 import '@fiko/fiko.css'
-import ROKMA from '@components/ROKMA.astro'
+import ROKMA from '@components/ascii/ROKMA.astro'
 import Footer from '@components/Footer.astro'
-import Nav from '@components/Nav.astro'
+import Nav from '@components/nav/Nav.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
 import ThemeProvider from '@components/ThemeProvider.astro'
@@ -24,7 +24,74 @@ const makeTitle = siteData.title + ' | ' + pageTitle.toLocaleUpperCase()
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
-<!doctype html>
+<style>
+  /* <FIKO />  */
+  /*
+  #161616
+  Fumes darkgrey
+  hsl(0deg 0% 8.63%)
+  oklch(20.02% 0 0)
+  --gray: rgb(229, 228, 226);
+  --lightgray: hsl(0, 0%, 93%);
+  --darkgray: hsl(0, 0%, 83%);
+  --offwhite: hsl(0.54 38% 94%);
+  --offwhite_OKLCH: oklch(95% 0.0115 18);
+  --offwhite_inverse: hsl(0deg 0% 8.63%);
+  */
+  :root {
+    --gray: rgb(229, 228, 226);
+    --lightgray: hsl(0, 0%, 93%);
+    --darkgray: hsl(0, 0%, 83%);
+    --offwhite: hsl(0.54 38% 94%);
+    --offwhite_OKLCH: oklch(95% 0.0115 18);
+
+    /* FUMES Hues */
+    /* hsl(0deg 0% 8.63%) */
+    --offwhite_inverse_hash: #161616;
+    --offwhite_inverse: hsl(0deg 0% 8.63%);
+    /* hsl(223.81 0% 9%):  */
+    --offwhite_inverse_OKLCH: oklch(20% 0 0);
+  }
+  [data-theme='light'] body.gray {
+    background-color: var(--gray);
+    --currentTXTcolor: black;
+    color: var(--currentTXTcolor);
+  }
+  /* lightgray */
+  [data-theme='light'] body.lightgray {
+    background-color: var(--lightgray);
+    --currentTXTcolor: black;
+    color: var(--currentTXTcolor);
+  }
+  /* darkgray */
+  [data-theme='light'] body.darkgray {
+    background-color: var(--darkgray);
+    --currentTXTcolor: black;
+    color: var(--currentTXTcolor);
+  }
+  /* offwhite */
+  [data-theme='light'] body.offwhite {
+    background-color: var(--offwhite);
+    --currentTXTcolor: black;
+    color: var(--currentTXTcolor);
+  }
+  [data-theme='dark'] body.offwhite {
+    background-color: var(--offwhite_inverse);
+    --currentTXTcolor: var(--offwhite);
+    color: var(--currentTXTcolor);
+  }
+
+  body.white {
+    background-color: white;
+    --currentTXTcolor: black;
+    color: var(--currentTXTcolor);
+  }
+  [data-theme='dark'] {
+    --currentTXTcolor: white;
+    color: var(--currentTXTcolor);
+  }
+</style>
+
 <html lang='en'>
   <head>
     <ROKMA />
@@ -73,72 +140,5 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <AppendToCopyAction />
     <GoogleAnalytics />
     <ExternalLink />
-    <!-- <FIKO /> -->
-    <style>
-      /*
-      #161616
-      Fumes darkgrey
-      hsl(0deg 0% 8.63%)
-      oklch(20.02% 0 0)
-      --gray: rgb(229, 228, 226);
-      --lightgray: hsl(0, 0%, 93%);
-      --darkgray: hsl(0, 0%, 83%);
-      --offwhite: hsl(0.54 38% 94%);
-      --offwhite_OKLCH: oklch(95% 0.0115 18);
-      --offwhite_inverse: hsl(0deg 0% 8.63%);
-      */
-      :root {
-        --gray: rgb(229, 228, 226);
-        --lightgray: hsl(0, 0%, 93%);
-        --darkgray: hsl(0, 0%, 83%);
-        --offwhite: hsl(0.54 38% 94%);
-        --offwhite_OKLCH: oklch(95% 0.0115 18);
-
-        /* FUMES Hues */
-        /* hsl(0deg 0% 8.63%) */
-        --offwhite_inverse_hash: #161616;
-        --offwhite_inverse: hsl(0deg 0% 8.63%);
-        /* hsl(223.81 0% 9%):  */
-        --offwhite_inverse_OKLCH: oklch(20% 0 0);
-      }
-      [data-theme='light'] body.gray {
-        background-color: var(--gray);
-        --currentTXTcolor: black;
-        color: var(--currentTXTcolor);
-      }
-      /* lightgray */
-      [data-theme='light'] body.lightgray {
-        background-color: var(--lightgray);
-        --currentTXTcolor: black;
-        color: var(--currentTXTcolor);
-      }
-      /* darkgray */
-      [data-theme='light'] body.darkgray {
-        background-color: var(--darkgray);
-        --currentTXTcolor: black;
-        color: var(--currentTXTcolor);
-      }
-      /* offwhite */
-      [data-theme='light'] body.offwhite {
-        background-color: var(--offwhite);
-        --currentTXTcolor: black;
-        color: var(--currentTXTcolor);
-      }
-      [data-theme='dark'] body.offwhite {
-        background-color: var(--offwhite_inverse);
-        --currentTXTcolor: var(--offwhite);
-        color: var(--currentTXTcolor);
-      }
-
-      body.white {
-        background-color: white;
-        --currentTXTcolor: black;
-        color: var(--currentTXTcolor);
-      }
-      [data-theme='dark'] {
-        --currentTXTcolor: white;
-        color: var(--currentTXTcolor);
-      }
-    </style>
   </body>
 </html>
