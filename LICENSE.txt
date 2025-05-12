@@ -1,6 +1,6 @@
 # ROKMA 🔑 Portfolio Repository License
 
-## Code License - Open Source with 🔒 Reciprocity Requirement
+## CODE LICENSE - Open Source with 🔒 Reciprocity Requirement
 
 The code in this repository is licensed under an open source license with a 🔒 RECIPROCITY REQUIREMENT. 
 
@@ -16,7 +16,7 @@ Key provisions:
 
 - Changes made to the code must be documented.
 
-## 🔒 Media Assets License Exclusion
+## 🔒 MEDIA ASSETS LICENSE Exclusion
 
 All photographs, images, graphics, videos, and other media assets contained in this repository are **NOT** covered by the above license and remain the exclusive property of the copyright holder. 
 
@@ -31,7 +31,7 @@ These media assets are provided for reference only. USE YOUR OWN ONES.
 - Any use of these media assets REQUIRES EXPLICIT PERMISSION from the copyright holder.
 
 
-## Separation of Code and Media
+## SEPARATION of CODE and MEDIA
 
 For clarity, this dual licensing approach means:
 
@@ -44,15 +44,20 @@ For clarity, this dual licensing approach means:
 - 🔒 his separation remains in effect even if code and media are intermingled in the same files.
 
 
-## 🔒 Attribution
+## 🔒 ATTRIBUTION
 
 When using the code from this repository, please provide attribution by maintaining this license and including a link to the original repository.
 
----
+__________________________________________________________
 
 All photography in this repo Copyright © 2000-2025 Rokma. 
 All rights reserved.
+__________________________________________________________
 
-★ Check ROKMA PORTFOLIO 🥝 https://rokma.com/ ★ 
-★ TLDR here 🍋‍🟩 https://rokma.rocks/ ★ 
-★ here TOYBREAKER 🪃 https://github.com/toybreaker/
+
+★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★
+★ Check ROKMA PORTFOLIO 🥝 https://rokma.com/               ★ 
+★ TLDR here 🍋‍🟩 https://rokma.rocks/                         ★ 
+★ here TOYBREAKER 🪃 https://github.com/toybreaker/         ★ 
+★ this repo 🥝 https://github.dev/toybreaker/rokastro/      ★ 
+★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★ ★

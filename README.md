@@ -119,24 +119,30 @@ import YouTubeVideo from '@components/YouTubeVideo.astro'
 
 # TO DO:
 
-- make post about ROKMA.ART shots selection (with youtube videos too)
 - ENABLE PAGE SPECIFIC DESC IN POSTS
-- ADD SEE MORE LIST AT POST FOOT
-- MAYBE FIX ANNOYING DIFFERENT ANGLE ON WEBSITE IMAGES
+- ADD |satori| FOR OG META GENERATION as SHAMAN.MONSTER
+- ADD |SEE MORE| LIST AT POST FOOT
+- ADD |PRINTS AVAILABLE| (port: 11ty FUMES component)
+
+## POSTS ABOUT:
+
+- ROKMA.ART shots selection (with youtube videos)
 
 ## MAYBE:
 
+- SCROLL ANIMATIONS
+- CASE STUDIES SECTION
 - UNDERSTAND CHECK GRID AUTO-FIT/AUTO-FILL
-- MAYBE MORE NEW IMG FOR WEBSITES
-- SCROLL ANIMATIONS MAYBE
-- PRINTS AVAILABLE
-- CASE STUDIES SECTION MAYBE
+- MORE NEW IMG FOR WEBSITES
+- FIX ANNOYING DIFFERENT ANGLE ON WEBSITE IMAGES
 
 ## LEARN MORE?
 
 [Docs](https://docs.astro.build)
 [Discord](https://astro.build/chat).
 
-```
+## COPYRIGHT
+
+Copyright (c) 2025 Rokma. See LICENSE.txt for details.
 
 ```
