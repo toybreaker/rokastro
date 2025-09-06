@@ -1,11 +1,11 @@
 ---
-import '@fiko/fiko.css'
+import '@css/fiko.css'
 import ROKMA from '@components/ascii/ROKMA.astro'
 import Footer from '@components/Footer.astro'
 import Nav from '@components/nav/Nav.astro'
 import * as siteData from '@data/site.json'
 import * as repoData from 'package.json'
-import ThemeProvider from '@components/ThemeProvider.astro'
+//import ThemeProvider from '@components/ThemeProvider.astro'
 import AppendToCopyAction from '@scripts/AppendToCopyAction.astro'
 import GoogleAnalytics from '@scripts/GoogleAnalytics.astro'
 import ExternalLink from '@scripts/ExternalLink.astro'
@@ -24,7 +24,7 @@ const makeTitle = siteData.title + ' | ' + pageTitle.toLocaleUpperCase()
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
-<style>
+<!-- <style>
   /* <FIKO />  */
   /*
   #161616
@@ -52,6 +52,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     /* hsl(223.81 0% 9%):  */
     --offwhite_inverse_OKLCH: oklch(20% 0 0);
   }
+
   [data-theme='light'] body.gray {
     background-color: var(--gray);
     --currentTXTcolor: black;
@@ -90,8 +91,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     --currentTXTcolor: white;
     color: var(--currentTXTcolor);
   }
-</style>
-
+</style> -->
 <html lang='en'>
   <head>
     <ROKMA />
@@ -126,7 +126,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <slot name='head' />
   </head>
   <body class={bodyClass}>
-    <ThemeProvider />
+    <!-- <ThemeProvider /> -->
     <Nav />
     <header class='container'>
       <slot name='header' />

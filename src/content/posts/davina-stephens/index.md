@@ -37,14 +37,14 @@ Glasses, once full with freshly blended tropical fruit of the season, lay empty 
 
 ### 📋 Follow up
 
-Digested that laudry lists. Rokma built a proposal plan. Think pimp-you-car improvements on the client original idea and expectations.
+Digested that laundry lists. Rokma built a proposal plan. Think pimp-you-car improvements on the client original idea and expectations.
 
 Aim high, straight to the top, then adjust as needed.
-Motivational narraties do wonders.
+Motivational narratives do wonders.
 
 ### 🤩 Result
 
-We built a small system for Davina to track, showcases and display  her artworks on the web.
+We built a small system for Davina to first track her artworks, then showcase the selected pieces, on the web.
 
 A bit of logic, a Shared Google Sheet and a fast, clean, slick website.
 Boom!  Each artwork has its own page/URL so it's easy to share a particular piece.
@@ -55,8 +55,8 @@ The artist now dispose of an archiving tool to keep track of her whole productio
 
 She can now edit titles, text, collections, tags... A streamlined tag logic distributes the artist works into the various pages and sections of the website
 
-The minimalist website look, color and visual impact, withdraws to a dim level to stage the content protagonist.
+The minimalist website look, colour and visual impact, withdraws to a dim level, almost absent, to stage the content protagonist.
 
-The website also disposes of all the necessary presentational tools for the  artist PR needs. Biography, Artist Statement, QRcodes, BIZcards.
+The website also disposes of all the necessary presentational tools for the  artist PR needs. Biography, Artist Statement, QR codes, BIZ cards.
 
 [2019>2024]

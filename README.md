@@ -48,7 +48,7 @@ To your `tsconfig.json`
 Import fiko in any `.astro` files (`src/components/style.astro`) like this :
 
 ```style.astro
-import '@fiko/fiko.css'
+import '@css/fiko.css'
 ```
 
 # ADD YOUTUBE VIDEO

@@ -2,7 +2,7 @@
 title: Adria Sartore
 category: websites
 year: 2019
-year2: 2023
+year2: 2025
 where: genova, italy
 bodyClass: darkgray grid_big
 images:
@@ -13,7 +13,7 @@ images:
 tags:
   - artist
   - portfolio
-featured:
+featured: false
 ---
 
 Artist portfolio. Minimal layout, focus on artist works.

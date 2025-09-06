@@ -2,7 +2,7 @@
 title: Junglestar
 category: websites
 year: 2016
-year2: 2023
+year2: 2025
 where: eurasia
 images:
   - ./01.jpg

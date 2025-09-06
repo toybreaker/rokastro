@@ -1,7 +1,7 @@
 ---
 import * as repoData from 'package.json'
 import * as siteData from '@data/site.json'
-import ThemeToggle from '@components/ThemeToggle.astro'
+//import ThemeToggle from '@components/ThemeToggle.astro'
 
 const today = new Date()
 ---
@@ -10,7 +10,7 @@ const today = new Date()
   <div class='space'></div>
   <slot name='footer' />
   <article class='copy_block'>
-    <ThemeToggle />
+    <!-- <ThemeToggle /> -->
     <small>
       Copyright &copy; 2000-{today.getFullYear()} Rokma. All rights reserved. <br
         class='show_on_phones'

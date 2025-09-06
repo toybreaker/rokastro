@@ -67,7 +67,7 @@
   /* Safari: Fix user-select:none on the <body> text input bug */
   input,
   textarea {
-    -webkit-user-select: auto;
+    user-select: auto;
   }
 
   /*  Safari: Revert 'white-space' property for textarea elements */
@@ -109,8 +109,8 @@
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
-    -webkit-line-break: after-white-space;
-    -webkit-user-select: auto;
+    line-break: after-white-space;
+    user-select: auto;
   }
 
   /* Apply back the draggable feature - exist only in Chromium and Safari */
@@ -171,10 +171,10 @@
 /* 🐲 ROOT */
 @layer root {
   /* ROOT IS DEVIDED IN 3 SECTIONS:
-  MODE-INDIPENDENT
+  MODE-INDEPENDENT
    * 1. all variables 'var(--cur...)' needing light/dark versions.
    * 2. light/dark declarations.
-   * 3. variables which stay same in both light/dark modes.
+   * 3. css var()s that dont change in light/dark modes.
    */
 
   /* ROOT SECTION 1 */
@@ -201,39 +201,53 @@
      * like inside the specific element in need of changes */
     --color-white: rgba(255, 255, 255, var(--alpha));
     --color-black: rgba(0, 0, 0, var(--alpha));
-  }
 
-  /* ROOT SECTION 2 */
+    /* ROOT SECTION 2 */
 
-  /* INITIALS ASSUMING LIGHT THEME */
-  [data-theme='light'] {
-    /* Set the CURRENT colours: */
-    --currentBGcolor: var(--color-white);
-    --currentTXTcolor: var(--color-black);
-    --curV: var(--icon-chevron-black);
-    --curPlus: var(--icon-plus-black);
-    --curMinus: var(--icon-minus-black);
-    /* Seems that the following is needed to make it work?!? */
-    background-color: var(--currentBGcolor);
-    color: var(--currentTXTcolor);
-  }
+    /* INITIALS ASSUMING LIGHT THEME */
+    [data-theme='light'] {
+      /* Set the CURRENT colours: */
+      --currentBGcolor: var(--color-white);
+      --currentTXTcolor: var(--color-black);
+      --curV: var(--icon-chevron-black);
+      --curPlus: var(--icon-plus-black);
+      --curMinus: var(--icon-minus-black);
+      /* Seems that the following is needed to make it work?!? */
+      background-color: var(--currentBGcolor);
+      color: var(--currentTXTcolor);
+    }
 
-  /* DATA-THEME IS SET TO DARK */
-  [data-theme='dark'] {
-    /* Set the CURRENT colours: */
-    --currentBGcolor: var(--color-black);
-    --currentTXTcolor: var(--color-white);
-    --curV: var(--icon-chevron-white);
-    --curPlus: var(--icon-plus-white);
-    --curMinus: var(--icon-minus-white);
-    /* Seems that the following is needed to make it work?!? */
-    background-color: var(--currentBGcolor);
-    color: var(--currentTXTcolor);
-  }
+    /* COLOURS, DARK THEME - OS PREFERENCE */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme='light']) {
+        /* Set the CURRENT colours: */
+        --currentBGcolor: var(--color-black);
+        --currentTXTcolor: var(--color-white);
+        --curV: var(--icon-chevron-white);
+        --curPlus: var(--icon-plus-white);
+        --curMinus: var(--icon-minus-white);
+        /* Seems that the following is needed to make it work?!? */
+        background-color: var(--currentBGcolor);
+        color: var(--currentTXTcolor);
+      }
+    }
 
-  /* SECTION 3 */
-  :root {
-    /* MODE-INDIPENDENT CONSTANT COLOURS */
+    /* DATA-THEME IS SET TO DARK */
+    [data-theme='dark'] {
+      /* Set the CURRENT colours: */
+      --currentBGcolor: var(--color-black);
+      --currentTXTcolor: var(--color-white);
+      --curV: var(--icon-chevron-white);
+      --curPlus: var(--icon-plus-white);
+      --curMinus: var(--icon-minus-white);
+      /* Seems that the following is needed to make it work?!? */
+      background-color: var(--currentBGcolor);
+      color: var(--currentTXTcolor);
+    }
+
+    /* SECTION 3 */
+
+    /* CONSTANT COLOURS */
     /* When elements need consistency, not switching colors. */
     --color-light: var(--color-white);
     --color-dark: var(--color-black);
@@ -257,16 +271,19 @@
     /* TYPOGRAPHY */
 
     /* SET */
-    --font-family-emoji: 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-family-emoji:
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
     /* ^NOTE: THIS NEEDS BE SET FIRST */
 
     /* THEN APPLY IT */
-    --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    --font-family:
+      system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
       var(--font-family-emoji);
 
-    --font-family-monospace: ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
-      Consolas, 'Liberation Mono', monospace, var(--font-family-emoji);
+    --font-family-monospace:
+      ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas,
+      'Liberation Mono', monospace, var(--font-family-emoji);
 
     /* VARIABLE BASE FONT SIZE */
     --font-size: clamp(1.15rem, 0.825rem + 1.3684vw, 1.8rem);
@@ -291,22 +308,21 @@
     --x3l: 1920px;
     --x4l: 2560px;
     /* end root */
-
-    /* MORE ICONS */
-    /* They all use 'currentColor' so they'll take the stroke from parent */
-
-    --icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
-
-    --icon-date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
-
-    --icon-time: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");
-
-    --icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
-
-    --icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
-
-    --icon-loading: url("data:image/svg+xml,%3Csvg fill='none' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' %3E%3Cstyle%3E g %7B animation: rotate 2s linear infinite; transform-origin: center center; %7D circle %7B stroke-dasharray: 75,100; stroke-dashoffset: -5; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; %7D @keyframes rotate %7B 0%25 %7B transform: rotate(0deg); %7D 100%25 %7B transform: rotate(360deg); %7D %7D @keyframes dash %7B 0%25 %7B stroke-dasharray: 1,100; stroke-dashoffset: 0; %7D 50%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -17.5; %7D 100%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -62; %7D %7D %3C/style%3E%3Cg%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2' /%3E%3C/g%3E%3C/svg%3E");
   }
+  /* MORE ICONS */
+  /* They all use 'currentColor' so they'll take the stroke from parent */
+
+  --icon-checkbox: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+
+  --icon-date: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
+
+  --icon-time: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cpolyline points='12 6 12 12 16 14'%3E%3C/polyline%3E%3C/svg%3E");
+
+  --icon-search: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E");
+
+  --icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
+
+  --icon-loading: url("data:image/svg+xml,%3Csvg fill='none' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' %3E%3Cstyle%3E g %7B animation: rotate 2s linear infinite; transform-origin: center center; %7D circle %7B stroke-dasharray: 75,100; stroke-dashoffset: -5; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; %7D @keyframes rotate %7B 0%25 %7B transform: rotate(0deg); %7D 100%25 %7B transform: rotate(360deg); %7D %7D @keyframes dash %7B 0%25 %7B stroke-dasharray: 1,100; stroke-dashoffset: 0; %7D 50%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -17.5; %7D 100%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -62; %7D %7D %3C/style%3E%3Cg%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2' /%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* 🐲 BASE */
@@ -702,7 +718,7 @@
   summary,
   textarea,
   [tabindex] {
-    -ms-touch-action: manipulation;
+    touch-action: manipulation;
   }
 
   [dir='rtl'] {
@@ -1303,7 +1319,7 @@
   [type='submit'],
   [type='reset'],
   [type='button'] {
-    -webkit-appearance: button;
+    appearance: button;
   }
 
   button,
@@ -1575,7 +1591,6 @@
     > :not(img) {
       text-align: center;
       margin-block: 0;
-      alignment-baseline: text-before-edge;
       padding-inline: calc(var(--spaceLR) / 2);
     }
 
@@ -1694,12 +1709,14 @@
       border-radius: var(--radius);
 
       header {
-        border-top-radius: var(--radius);
+        border-top-left-radius: var(--radius);
+        border-top-right-radius: var(--radius);
       }
 
       /* THIS FOR ARTICLE CARDS */
       footer {
-        border-bottom-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
       }
     }
 

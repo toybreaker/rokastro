@@ -2,12 +2,12 @@
 import { Icon } from 'astro-icon'
 ---
 
-<!--
 <button id='themeToggle' aria-label='theme toggle'>
   <!-- <Moon />
     <Sun /> -->
-<Icon name='moon' />
-<Icon name='sun' />
+  <Icon name='moon' />
+  <Icon name='sun' />
+</button>
 
 <style>
   :global(body) {
@@ -124,4 +124,4 @@ import { Icon } from 'astro-icon'
         await themeStore.set(e.matches ? 'dark' : 'light')
       }
     })
-</script> -->
+</script>

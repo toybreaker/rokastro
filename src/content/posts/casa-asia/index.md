@@ -2,7 +2,7 @@
 title: Casa Asia
 category: websites
 year: 2021
-year2: 2023
+year2: 2025
 where: Bali, Indonesia
 bodyClass: darkgray grid_big
 images:

@@ -34,8 +34,18 @@ const about = defineCollection({
       quality: z.string().optional().nullable().default('low')
     })
 })
+const redflags = defineCollection({
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      images: z.array(image()).optional().nullable(),
+      image: z.string(image()).optional().nullable(),
+      quality: z.string().optional().nullable().default('low')
+    })
+})
 // 4. Export a single `collections` object to register your collection(s)
 export const collections = {
   posts: works,
-  about: about
+  about: about,
+  redflags: redflags
 }

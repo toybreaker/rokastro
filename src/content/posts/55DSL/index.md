@@ -26,4 +26,4 @@ tags:
 featured: true
 ---
 
-First catalog for the new Diesel's action subbrand &lt;55DSL&gt;. Breganze, Italy.
+First catalog for the new Diesel's action sub-brand &lt;55DSL&gt;. Breganze, Italy.

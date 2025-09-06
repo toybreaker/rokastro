@@ -21,7 +21,7 @@
       "@scripts/*": ["src/scripts/*"],
       "@svgs/*": ["src/assets/svgs/*"],
       "@assets/*": ["public/assets/*"],
-      "@fiko/*": ["src/assets/*"],
+      "@css/*": ["src/assets/css/*"],
       // SPECIFIC FILES
       "@/utils": ["src/utils/index.ts"],
       "@/types": ["src/types.ts"],
