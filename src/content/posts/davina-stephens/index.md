@@ -22,7 +22,7 @@ Artist portfolio.
 
 Davina Stephens' website project started from First Principles as a brand new blank sheet.
 
-### 🎓 First Meeting
+### First Meeting
 
 
 Pencil and paper, we annotated the desired, the imagined goals, the needs, the expectations.
@@ -35,14 +35,14 @@ And here we are off topic into philosophy, meta-communication, and the meeting i
 Glasses, once full with freshly blended tropical fruit of the season, lay empty on the poolside table.
 
 
-### 📋 Follow up
+### Follow up
 
 Digested that laundry lists. Rokma built a proposal plan. Think pimp-you-car improvements on the client original idea and expectations.
 
 Aim high, straight to the top, then adjust as needed.
 Motivational narratives do wonders.
 
-### 🤩 Result
+###  Result
 
 We built a small system for Davina to first track her artworks, then showcase the selected pieces, on the web.
 
