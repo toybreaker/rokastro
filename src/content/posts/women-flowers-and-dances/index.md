@@ -28,7 +28,7 @@ tags:
 
 An head full of flowers carefully prepared in the shape of an headdress. Once a year the young girls of the village carry it for a whole afternoon performing a slow dance.
 
-It is called Rejang and it’s part of the Hindu traditional rites that Majapahit civilization brought to Indonesia long time ago.
+It is called Rejang and it’s part of the Hindu traditional rites that Majapahit civilisation brought to Indonesia long time ago.
 
 All these photos where captured in the villages of Karangsari and Santi in the Karangasem district of Bali, Indonesia.
 

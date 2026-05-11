@@ -69,7 +69,7 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
       featuredPosts.map((post) => (
         <a
           class='post'
-          href={`/${category}/${post.slug}`}
+          href={`/${category}/${post.id}`}
           title={post.data.year + '-' + post.data.year2}
         >
           <Card title={post.data.title} image={post.data.images[0]} />
@@ -90,7 +90,7 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
         sortedPosts.map((post) => (
           <a
             class='post allpost'
-            href={`/${category}/${post.slug}`}
+            href={`/${category}/${post.id}`}
             title={post.data.year + '-' + post.data.year2}
           >
             <CardSlim title={post.data.title} />
@@ -107,7 +107,7 @@ const relatedPosts = await getCollection('posts', ({ data }) => {
         relatedPosts.map((post) => (
           <a
             class='post '
-            href={`../${post.data.category}/${post.slug}`}
+            href={`../${post.data.category}/${post.id}`}
             title={post.data.year + '-' + post.data.year2}
           >
             <CardRelated

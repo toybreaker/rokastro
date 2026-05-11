@@ -1,0 +1,32 @@
+---
+const icons = import.meta.glob('/src/icons/*.svg', {
+  query: '?raw',
+  import: 'default',
+  eager: true
+}) as Record<string, string>
+
+interface Props {
+  name: string
+  class?: string
+}
+
+const SIZE = 42
+
+const { name, class: className } = Astro.props
+
+const key = `/src/icons/${name}.svg`
+const raw = icons[key]
+
+if (!raw) {
+  throw new Error(
+    `[Icon] unknown icon "${name}". Expected file: src/icons/${name}.svg`
+  )
+}
+
+const stripped = raw.replace(/\s(width|height)="[^"]*"/g, '')
+
+const attrs = `width="${SIZE}" height="${SIZE}"${className ? ` class="${className}"` : ''}`
+const svg = stripped.replace('<svg', `<svg ${attrs}`)
+---
+
+<Fragment set:html={svg} />

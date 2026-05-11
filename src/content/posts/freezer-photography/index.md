@@ -24,7 +24,7 @@ tags:
 
 Creating [FREEZER MAGAZINE](https://freezer.junglestar.org) I built a creative lab with young motivated enthusiasts and really destroyed boundaries and cliches of contemporary media.
 
-FREEZER was photo centered and took printed press beyond average, both in &lt;what to show&gt; and &lt;how to show it&gt;.
+FREEZER was photo centred and took printed press beyond average, both in &lt;what to show&gt; and &lt;how to show it&gt;.
 
 Introducing concepts like Shared Intellectual Property, Copyright Free, Citizen Journalism, D.I.Y., Independent Free Press Distribution.
 

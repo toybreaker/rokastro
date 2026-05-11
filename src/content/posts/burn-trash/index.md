@@ -27,7 +27,7 @@ The island still lack a serious sewage system, I am not talking about rocket sci
 
 Hygiene is still optional, so food is of very often cooked without being properly cleaned or it's washed using tab water which is very dirty, as in... forget about brushing your teeth with it... oh hum... Bali belly, you’re not used local food and you spent the night on the toilet... right!?
 
-Ok, let's do away with that and get the the most subtle, unavoidable, of all the shocks, one has to put up with when staying here, breathing the fumes of the burning of trash.
+Ok, let's do away with that and get the most subtle, unavoidable, of all the shocks, one has to put up with when staying here, breathing the fumes of the burning of trash.
 
 If you think you can avoid it, think again. Burning rubbish, despite being illegal, is so wide spread that no areas are safe, not even the most high-end places like Kesiman, Canggu or the Bukit. It will hit you in the night time, at dusk or before dawn. You will have hard time to determine were it comes from, due to the darkness. Grab a water bucket and go extinguish the fire? Forget it! You will suffocate silently wondering were can you go to avoid this cancer.
 

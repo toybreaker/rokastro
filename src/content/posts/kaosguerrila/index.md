@@ -62,7 +62,7 @@ Social marketing campaign for &lt;KAOS GUERRILLA&gt; brand.
 
 All encompassing: brand startegy advising, market placement, concept proposals and development, content production, art-direction, post-production and posting scheduling.
 
-Broadcasted trough Instagram, Facebook, Twitter, and Shopify store own blog media channels.
+Broadcasted through Instagram, Facebook, [Twitter](https://x.com/kaosguerrilla), and Shopify store own blog media channels.
 
 KAOS GUERRILLA Instagram profile, for example, was brought from 169 followers to 1433 in just few months, organically, without buying any advertisings in 2018.
 

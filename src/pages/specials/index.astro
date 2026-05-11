@@ -59,7 +59,7 @@ const ogImage = '/og/og_specials.jpg'
       featuredPosts.map((post) => (
         <a
           class='post'
-          href={`/${category}/${post.slug}`}
+          href={`/${category}/${post.id}`}
           title={post.data.year + '-' + post.data.year2}
         >
           <Card title={post.data.title} image={post.data.images[0]} />
@@ -76,7 +76,7 @@ const ogImage = '/og/og_specials.jpg'
       allPosts.map((post) => (
         <a
           class='post'
-          href={`/${category}/${post.slug}`}
+          href={`/${category}/${post.id}`}
           title={post.data.year + '-' + post.data.year2}
         >
           <CardSlim title={post.data.title} />

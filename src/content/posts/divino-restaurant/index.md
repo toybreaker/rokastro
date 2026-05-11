@@ -41,7 +41,7 @@ Have a look:<br>
 [Casa Asia Visual Menu](https://casaasiabali.com/menu?source=rokma.com)<br>
 [Casa Asia Delivery Menu](https://casaasiabali.com/delivery?source=rokma.com)<br>
 
-Divino by Casa Asia in Bali offers an authentic Italian dining experience, emphasizing genuine Italian hospitality.
+Divino by Casa Asia in Bali offers an authentic Italian dining experience, emphasising genuine Italian hospitality.
 
 The restaurant prides itself on serving a wide array of Mediterranean dishes, including wood oven pizzas, pasta, rich main courses, healthy salads, and juices.
 

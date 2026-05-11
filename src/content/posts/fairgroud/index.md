@@ -17,4 +17,4 @@ tags:
   - commercial-photography
 ---
 
-Studio shooting for &lt;Fair Ground®&gt; clothing catalog. Brisbane, Australia.
+Studio shooting for &lt;Fair Ground®&gt; clothing catalogue. Brisbane, Australia.

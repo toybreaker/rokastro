@@ -113,7 +113,7 @@ const pageDesc = siteData.description
       <div class='posts container'>
         {
           sortedFP.map((post) => (
-            <a class='post' href={`/${post.data.category}/${post.slug}`}>
+            <a class='post' href={`/${post.data.category}/${post.id}`}>
               <Card
                 title={post.data.title}
                 category={post.data.category}

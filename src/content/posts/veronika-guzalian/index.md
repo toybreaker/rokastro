@@ -20,4 +20,4 @@ tags:
 featured: true
 ---
 
-Fashion catalog shoot.
+Fashion catalogue shoot.

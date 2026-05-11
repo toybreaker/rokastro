@@ -18,7 +18,7 @@ featured: false
 
 Artist portfolio. Minimal layout, focus on artist works.
 
-Adria Sartore's website features a selection of her paintings that demonstrate a vivid exploration of form, color, and thematic diversity.
+Adria Sartore's website features a selection of her paintings that demonstrate a vivid exploration of form, colour, and thematic diversity.
 
 With works like "Strawberries and Selfies" and "After Fragonard," her portfolio spans a range of subjects from intimate still lifes to evocative figure studies.
 
