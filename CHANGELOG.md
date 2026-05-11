@@ -3,6 +3,13 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.12.1 - 2026-05-11
+
+**Tooling**
+
+- Added `deploy:preview` and `deploy:prod` scripts (Netlify CLI, local-build → upload, MW-style). Both pass `--no-build` so Netlify doesn't re-run the site's UI-configured build command.
+- Added `.netlify/` to `.gitignore` (CLI cache directory).
+
 ## 1.12.0 - 2026-05-11
 
 **Major dep bumps**

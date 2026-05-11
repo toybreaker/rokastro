@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -9,7 +9,9 @@
     "astro": "astro",
     "docs": "astro docs",
     "check": "astro check --watch & astro dev --host",
-    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
+    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "deploy:preview": "npx netlify deploy --no-build --dir $PWD/dist --site f6f6655a-c399-4564-bff5-158e0d698aae --message \"v$npm_package_version\"",
+    "deploy:prod": "npx netlify deploy --no-build --prod --dir $PWD/dist --site f6f6655a-c399-4564-bff5-158e0d698aae --message \"v$npm_package_version\""
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
