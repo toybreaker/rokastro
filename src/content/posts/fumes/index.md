@@ -30,4 +30,4 @@ Fumes is an eclectic mix of art, photography, and ideas, offering readers a dive
 
 From appreciating life's beauty in "La Vie en Rose" to exploring deep themes with "The Prophet" animation, the site celebrates creativity in many forms.
 
-It showcases exhibitions, discusses love and erotic art, and delves into traditional and contemporary artistic endeavors, all while inviting readers to find deeper meaning and connection in art and life.
+It showcases exhibitions, discusses love and erotic art, and delves into traditional and contemporary artistic endeavours, all while inviting readers to find deeper meaning and connection in art and life.

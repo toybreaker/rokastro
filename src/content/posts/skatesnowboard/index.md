@@ -25,6 +25,6 @@ It's 1987. Rokma invents and directs &lt;SKATESNOWBOARD&gt; for a media publishe
 
 A pioneer example of end-of-century popular board sports magazines.
 
-Printed in 20.000 copies distributed in news-stands nationwide.
+Printed in 20,000 copies distributed in news-stands nationwide.
 
 All photos in this selection by Rokma.

@@ -18,9 +18,9 @@ tags:
 featured: true
 ---
 
-Rokma has release some Open Source icons.
+Rokma has released some Open Source icons.
 
-Free for non-commercial use they can be downloaded at [thenounproject](https://thenounproject.com/rokma/uploads/).
+Free for non-commercial use, and conveniently priced for commercial projects, they can be downloaded at [thenounproject](https://thenounproject.com/rokma/uploads/).
 
 They are grouped by style:
 

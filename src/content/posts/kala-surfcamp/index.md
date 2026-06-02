@@ -29,4 +29,4 @@ Complete website plan, design, coding, copyrighting, stock photography. Plus SSL
 
 Lighthouse Score: 100, 100, 100, 100.
 
-See yourself: [KALA SURFCAMP](https://kala.rokma.com/?source=rokma.com).
+See yourself the archived project: [KALA SURFCAMP](https://kala.rokma.com/?source=rokma.com).

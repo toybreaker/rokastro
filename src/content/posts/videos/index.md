@@ -22,7 +22,7 @@ Do or die!
 All about high energy fun, action and frugality.
 
 Yeah, filming and producing VHS-tapes.
-Analog inline editing, crazy working.
+Analogue inline editing, crazy working.
 
 As precious experience as darkroom photography is,
 probably useless today, right?!
@@ -31,8 +31,8 @@ probably useless today, right?!
 
 ## Munster Juice
 
-Skateboarding World Master Contest. One of the first International skateboarding contest. An annual skaters gathering organised by Titus Dittman in Germany.
+Skateboarding World Master Contest. One of the first International skateboarding contests. An annual skaters gathering organised by Titus Dittmann in Germany.
 
-Filmed on analog Hi8 tapes and self postproduced via inline editing. Sold worldwide via VHS tapes.
+Filmed on analogue Hi8 tapes and self postproduced via inline editing. Sold worldwide via VHS tapes.
 
 [1993]

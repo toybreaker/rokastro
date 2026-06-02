@@ -24,6 +24,6 @@ Check the [live webapp](https://binocle.it).
 
 Binocle is an architecture firm founded in 2011 and led by Italian architect Lorenzo Bini. The firm focuses on transforming existing spaces, including temporary structures, buildings, and gardens.
 
-Bini himself has a well-rounded background in architecture education in addition to his work at Binocle. He currently teaches at universities in Milan and has experience as a visiting professor at the Design Academy Eindhoven.
+Bini himself has a well-rounded background in architecture education in addition to his work at Binocle. He currently teaches at universities in Milano and has experience as a visiting professor at the Design Academy Eindhoven.
 
 [2016>today].

@@ -35,7 +35,7 @@ Glasses, once full with freshly blended tropical fruit of the season, lay empty 
 
 ### Follow up
 
-Digested that laundry lists. Rokma built a proposal plan. Think pimp-you-car improvements on the client original idea and expectations.
+Digested those laundry lists. Rokma built a proposal plan. Think pimp-your-car improvements on the client's original idea and expectations.
 
 Aim high, straight to the top, then adjust as needed.
 Motivational narratives do wonders.
@@ -49,9 +49,9 @@ Boom! Each artwork has its own page/URL so it's easy to share a particular piece
 
 Just copy the URL and paste it into any social media. A bit of ordinary magic and the link turns into a card with thumbnail image, title and subtitle and excerpt.
 
-The artist now dispose of an archiving tool to keep track of her whole production, history, presentation, copy, grouping. Any changes can be easily rolled back. There is repo for that. It's even open source.
+The artist now disposes of an archiving tool to keep track of her whole production, history, presentation, copy, grouping. Any changes can be easily rolled back. There is repo for that. It's even open source.
 
-She can now edit titles, text, collections, tags... A streamlined tag logic distributes the artist works into the various pages and sections of the website
+She can now edit titles, text, collections, tags... A streamlined tag logic distributes the artist's works into the various pages and sections of the website
 
 The minimalist website look, colour and visual impact, withdraws to a dim level, almost absent, to stage the content protagonist.
 

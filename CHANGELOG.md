@@ -3,6 +3,13 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.14.1 - 2026-06-02
+
+**Content / Copy**
+
+- Site-wide English proofread — fixed spelling, grammar (subject-verb agreement, articles, missing words) and en-GB consistency across the portfolio. Main edits in `burn-trash`, `women-flowers-and-dances`, `davina-stephens`, plus typo fixes in `concrete-skatepark` (payed→paid), `kaosguerrila` (startegy→strategy), `wherenodoctor`, `videos`, `skatesnowboard`, `fumes`, `binocle`, and the homepage hero (Efficent→Efficient, recognizable→recognisable).
+- Copy tweaks to `icons` and `kala-surfcamp` posts.
+
 ## 1.14.0 - 2026-06-02
 
 **Content / UX**

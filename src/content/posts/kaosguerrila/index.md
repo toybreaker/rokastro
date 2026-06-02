@@ -60,7 +60,7 @@ featured: true
 
 Social marketing campaign for &lt;KAOS GUERRILLA&gt; brand.
 
-All encompassing: brand startegy advising, market placement, concept proposals and development, content production, art-direction, post-production and posting scheduling.
+All encompassing: brand strategy advising, market placement, concept proposals and development, content production, art-direction, post-production and posting scheduling.
 
 Broadcasted through Instagram, Facebook, [Twitter](https://x.com/kaosguerrilla), and Shopify store own blog media channels.
 
