@@ -1,7 +1,6 @@
 ---
 import Layout from '@layouts/Index.astro'
 import Card from '@components/Card.astro'
-//import Underline from '@components/Underline.astro'
 import * as siteData from '@data/site.json'
 
 import { getCollection } from 'astro:content'
@@ -85,7 +84,13 @@ const pageDesc = siteData.description
             your offer recognisable.
           </strong>
         </p>
-        <p><strong>Budget</strong> that and <strong>delegate.</strong></p>
+        <p>
+          <strong>AI</strong> can do that for you? <strong>Seriously?</strong> Good
+          luck!
+        </p>
+        <p>
+          When you decide you <strong>need a human...</strong>
+        </p>
       </h1>
     </div>
   </section>
@@ -101,7 +106,7 @@ const pageDesc = siteData.description
         </p>
         <p>Rokma started publishing in the 80s.</p>
 
-        <p><strong>Empower your work.</strong> Get the help you deserve!</p>
+        <p><strong>Empower your work.</strong> Get the guidance you deserve!</p>
       </h1>
     </div>
   </section>
@@ -146,22 +151,3 @@ const pageDesc = siteData.description
     </div>
   </section>
 </Layout>
-<!--
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('/sw.js').then(
-        function (registration) {
-          console.log(
-            'ServiceWorker registration successful with scope: ',
-            registration.scope
-          )
-        },
-        function (err) {
-          console.log('ServiceWorker registration failed: ', err)
-        }
-      )
-    })
-  }
-</script> -->
-<!-- <Underline /> -->

@@ -1,0 +1,273 @@
+---
+// Custom Pagefind search UI — no @pagefind/default-ui.
+// Pagefind runtime ships at /pagefind/pagefind.js after `pnpm build`
+// (astro build && pagefind --site dist). In `astro dev` the index does not
+// exist yet, so the UI degrades to a "run a build" hint.
+---
+
+<div class='search' id='search'>
+  <label class='search__label' for='search-input'>
+    <span class='search__caret'>&gt;</span>
+    <input
+      id='search-input'
+      class='search__input'
+      type='search'
+      placeholder='search works…'
+      autocomplete='off'
+      autocapitalize='off'
+      spellcheck='false'
+      enterkeyhint='search'
+    />
+  </label>
+
+  <div class='search__results' id='search-results' role='listbox' hidden></div>
+</div>
+
+<script>
+  const input = document.getElementById(
+    'search-input'
+  ) as HTMLInputElement | null
+  const resultsEl = document.getElementById(
+    'search-results'
+  ) as HTMLElement | null
+
+  let pagefind: any = null
+  let initPromise: Promise<any> | null = null
+
+  async function ensurePagefind() {
+    if (pagefind) return pagefind
+    if (!initPromise) {
+      // Variable + @vite-ignore so Vite doesn't try to resolve it at build time.
+      const path = '/pagefind/pagefind.js'
+      initPromise = import(/* @vite-ignore */ path)
+        .then(async (mod) => {
+          await mod.init()
+          pagefind = mod
+          return mod
+        })
+        .catch(() => null)
+    }
+    return initPromise
+  }
+
+  function escapeHtml(s: string) {
+    return s.replace(
+      /[&<>"']/g,
+      (c) =>
+        (
+          ({
+            '&': '&amp;',
+            '<': '&lt;',
+            '>': '&gt;',
+            '"': '&quot;',
+            "'": '&#39;'
+          }) as Record<string, string>
+        )[c]
+    )
+  }
+
+  function render(query: string, items: any[]) {
+    if (!resultsEl) return
+    resultsEl.hidden = false
+    if (!items.length) {
+      resultsEl.innerHTML = `<p class="search__empty">No results for “${escapeHtml(query)}”.</p>`
+      return
+    }
+    resultsEl.innerHTML = items
+      .map((it) => {
+        const title = it.meta?.title || it.url
+        const cat = it.meta?.category
+          ? `<span class="search__cat">${escapeHtml(it.meta.category)}</span>`
+          : ''
+        const thumb = it.meta?.image
+          ? `<img class="search__thumb" src="${it.meta.image}" alt="" loading="lazy" decoding="async" />`
+          : `<span class="search__thumb search__thumb--empty" aria-hidden="true"></span>`
+        // it.excerpt is Pagefind-escaped HTML with <mark> highlights.
+        return `<a class="search__result" role="option" href="${it.url}">
+            ${thumb}
+            <span class="search__text">
+              ${cat}
+              <span class="search__title">${escapeHtml(title)}</span>
+              <span class="search__excerpt">${it.excerpt}</span>
+            </span>
+          </a>`
+      })
+      .join('')
+  }
+
+  async function run(query: string) {
+    if (!resultsEl) return
+    if (!query) {
+      resultsEl.hidden = true
+      resultsEl.innerHTML = ''
+      return
+    }
+    const pf = await ensurePagefind()
+    if (!pf) {
+      resultsEl.hidden = false
+      resultsEl.innerHTML =
+        '<p class="search__empty">Search index isn’t built yet — run <code>pnpm build</code> &amp; <code>pnpm preview</code>.</p>'
+      return
+    }
+    const search = await pf.search(query)
+    const items = await Promise.all(
+      search.results.slice(0, 8).map((r: any) => r.data())
+    )
+    render(query, items)
+  }
+
+  let debounce: ReturnType<typeof setTimeout>
+  input?.addEventListener('input', () => {
+    const q = input.value.trim()
+    clearTimeout(debounce)
+    debounce = setTimeout(() => run(q), 180)
+  })
+  // Warm up the index as soon as the user intends to search.
+  input?.addEventListener('focus', ensurePagefind, { once: true })
+
+  // Esc clears; arrow-down jumps into results.
+  input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      input.value = ''
+      run('')
+      input.blur()
+    }
+    if (e.key === 'ArrowDown') {
+      const first =
+        resultsEl?.querySelector<HTMLAnchorElement>('.search__result')
+      if (first) {
+        e.preventDefault()
+        first.focus()
+      }
+    }
+  })
+</script>
+
+<style>
+  .search {
+    width: 100%;
+    margin: 0;
+    text-align: start;
+  }
+
+  .search__label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    border-bottom: 1px solid currentColor;
+    padding-block-end: 0.4rem;
+  }
+
+  .search__caret {
+    font-family: monospace;
+    opacity: 0.6;
+    user-select: none;
+  }
+
+  .search__input {
+    flex: 1;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    font-size: 1.1rem;
+    padding: 0.2rem 0;
+    outline: none;
+  }
+  .search__input::placeholder {
+    color: inherit;
+    opacity: 0.45;
+  }
+  /* kill the native search clear/decoration so it matches the theme */
+  .search__input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+
+  /* Results are injected via innerHTML, so they live outside Astro's scoped
+     hashing — target them globally, namespaced under #search-results. */
+  :global(#search-results) {
+    margin-block-start: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  /* kill inherited margins/line-height from the global type scale */
+  :global(#search-results *) {
+    margin: 0;
+  }
+
+  :global(#search-results .search__result) {
+    display: flex;
+    gap: 0.85rem;
+    align-items: flex-start;
+    padding: 0.6rem 0.4rem;
+    border-radius: var(--radius, 6px);
+    text-decoration: none;
+    color: inherit;
+    line-height: 1.4;
+    transition: background-color 0.12s ease;
+  }
+  :global(#search-results .search__result:hover),
+  :global(#search-results .search__result:focus-visible) {
+    background: rgba(255, 255, 255, 0.08);
+    outline: none;
+  }
+
+  :global(#search-results .search__thumb) {
+    flex: 0 0 3rem;
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: var(--radius, 6px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+  :global(#search-results .search__thumb--empty) {
+    display: block;
+  }
+
+  :global(#search-results .search__text) {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  :global(#search-results .search__cat) {
+    font-size: 0.7rem;
+    font-weight: 400;
+    opacity: 0.55;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  :global(#search-results .search__title) {
+    font-size: 0.95rem;
+    line-height: 1.2;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  :global(#search-results .search__excerpt) {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    opacity: 0.7;
+  }
+  :global(#search-results .search__excerpt mark) {
+    background: transparent;
+    color: inherit;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  :global(#search-results .search__empty) {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+  :global(#search-results .search__empty code) {
+    font-size: 0.85em;
+    opacity: 0.85;
+  }
+</style>

@@ -21,13 +21,6 @@ export default defineConfig({
     mdx({
       drafts: true
     })
-    // partytown({
-    //   // Example: Add dataLayer.push as a forwarding-event.
-    //   config: {
-    //     config: { debug: true },
-    //     forward: ['dataLayer.push']
-    //   }
-    // })
   ],
   outDir: './dist',
   site: 'https://rokma.com/',

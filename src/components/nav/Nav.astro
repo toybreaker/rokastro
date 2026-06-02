@@ -5,9 +5,10 @@ import NavButton from '@components/nav/NavButton.astro'
 import NavBackgroundImage from '@components/nav/NavBackgroundImage.astro'
 import NavContacts from '@components/nav/NavContacts.astro'
 import NavLinks from '@components/nav/NavLinks.astro'
-
-//import ThemeToggle from '@components/nav/NavThemeToggle.astro'
+import SearchModal from '@components/nav/SearchModal.astro'
 ---
+
+<SearchModal />
 
 <NavButton />
 
@@ -27,8 +28,6 @@ import NavLinks from '@components/nav/NavLinks.astro'
   <p class='tagline h4'>{siteData.tagline}</p>
 
   <NavLinks />
-
-  <!-- <ThemeToggle /> -->
 
   <NavContacts />
 </div>

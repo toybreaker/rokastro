@@ -16,6 +16,7 @@ const mainClass = 'container'
   mainClass={mainClass}
   bodyClass={category + ' ' + bodyClass}
   ogImage={ogImage}
+  indexable={true}
 >
   <div class='uppercase' slot='header'>
     <nav aria-label='breadcrumb'>
@@ -31,13 +32,22 @@ const mainClass = 'container'
 
   <div slot='images' class='images'>
     {
-      images.map((i: string) => {
-        return <Slide p={i} alt='g' quality='high' cssClass='slide' />
+      images.map((i: string, idx: number) => {
+        return (
+          <Slide
+            p={i}
+            alt='g'
+            quality='high'
+            cssClass='slide'
+            isThumb={idx === 0}
+          />
+        )
       })
     }
   </div>
 
-  <div class='container content'>
+  <div class='container content' data-pagefind-meta={`title:${title}`}>
+    <span hidden data-pagefind-meta={`category:${category}`}></span>
     <slot />
 
     <div class='tag_section'>
@@ -71,7 +81,7 @@ const mainClass = 'container'
     padding-block-start: var(--spaceTB);
     margin-block-end: var(--spaceTB);
     gap: 2rem;
-    border-block: 1px solid var(--);
+    border-block: 1px solid var(--currentTXTcolor);
   }
 
   .tags {

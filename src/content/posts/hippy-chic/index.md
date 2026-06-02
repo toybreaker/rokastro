@@ -1,5 +1,5 @@
 ---
-title: Hippi Chic
+title: Hippy Chic
 category: photography
 year: 2009
 bodyClass: black grid_small
@@ -10,6 +10,9 @@ images:
   - ./03.jpg
   - ./04.jpg
   - ./05.jpg
+  - ./09.jpg
+  - ./12.jpg
+  - ./11.jpg
   - ./06.jpg
 tags:
   - location-shooting

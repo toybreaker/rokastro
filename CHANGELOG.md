@@ -3,6 +3,25 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.15.0 - 2026-06-02
+
+**Added**
+
+- Site search powered by [Pagefind](https://pagefind.app) — custom UI (no `@pagefind/default-ui`), opened from a new search icon left of the menu button into a full-screen modal. Indexes all posts (title, category, thumbnail, excerpt); results show category-over-title with highlighted excerpts. Build now runs `astro build && pagefind --site dist`; `Post.astro` tags content with `data-pagefind-body` + meta, so only posts are indexed.
+
+**Removed / Cleanup**
+
+- Deleted dead theme components (`ThemeProvider`, `ThemeToggle`, `NavThemeToggle`, `NavThemeToggleOk`) and stripped commented-out leftovers: the top-of-source FIKO `<style>` block (rendered before `<!DOCTYPE>`), the ServiceWorker registration, the `partytown` config block, and `Underline`/`ThemeToggle` references. Theme stays `prefers-color-scheme`-driven.
+
+**Content**
+
+- Hippy Chic post: corrected title spelling, added images.
+- Homepage hero: new AI/human copy lines (with spelling/grammar fixes).
+
+**Fixed**
+
+- Post tag-section divider border was invisible (`var(--)` → `var(--currentTXTcolor)`).
+
 ## 1.14.1 - 2026-06-02
 
 **Content / Copy**

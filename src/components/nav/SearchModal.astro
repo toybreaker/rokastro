@@ -1,0 +1,128 @@
+---
+import Icon from '@components/Icon.astro'
+import Search from '@components/nav/Search.astro'
+---
+
+<!-- CSS-only open/close, mirroring the nav checkbox pattern -->
+<input type='checkbox' id='search-toggle' />
+
+<label
+  for='search-toggle'
+  class='search-launch'
+  title='Search'
+  aria-label='Open search'
+>
+  <Icon name='search' class='search_launch_icon' />
+</label>
+
+<div class='search-modal'>
+  <label for='search-toggle' class='search-close' aria-label='Close search'>
+    <Icon name='x' />
+  </label>
+
+  <div class='search-modal__inner'>
+    <Search />
+  </div>
+</div>
+
+<style>
+  #search-toggle {
+    display: none;
+  }
+
+  /* Sits immediately left of the 48px hamburger (which is at right: 1rem). */
+  label.search-launch {
+    position: fixed;
+    top: 1rem;
+    /* sit right up against the 48px hamburger (top: 1rem; right: 1rem) */
+    right: calc(1rem + 48px);
+    z-index: 100;
+    width: 34px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--currentTXTcolor);
+  }
+  /* Match the hamburger's drawn glyph height (~21px) — the search glyph fills
+     more of its box, so render it smaller. */
+  label.search-launch :global(svg) {
+    width: 28px;
+    height: 28px;
+    stroke: var(--currentTXTcolor);
+    fill: none;
+  }
+  .black label.search-launch :global(svg) {
+    stroke: var(--currentBG);
+  }
+
+  .search-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* clear the close (x) button: top 1rem + 48px icon */
+    padding-block-start: 4.5rem;
+    background-color: #000;
+    color: white;
+    --currentTXTcolor: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    /* the modal itself scrolls when results are tall */
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  #search-toggle:checked ~ .search-modal {
+    visibility: visible;
+    opacity: 1;
+  }
+  /* lock scroll behind the modal */
+  :global(body:has(#search-toggle:checked)) {
+    overflow: hidden;
+  }
+
+  /* fixed so it stays put while the modal scrolls */
+  label.search-close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 102;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+  }
+
+  .search-modal__inner {
+    width: min(100%, 40rem);
+    padding-inline: 1rem;
+    padding-block-end: 0;
+  }
+</style>
+
+<script>
+  const toggle = document.getElementById(
+    'search-toggle'
+  ) as HTMLInputElement | null
+
+  // Focus the input when the modal opens.
+  toggle?.addEventListener('change', () => {
+    if (toggle.checked) {
+      requestAnimationFrame(() =>
+        document.getElementById('search-input')?.focus()
+      )
+    }
+  })
+
+  // Esc closes the modal from anywhere.
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && toggle?.checked) toggle.checked = false
+  })
+</script>
