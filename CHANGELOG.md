@@ -3,6 +3,12 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.16.0 - 2026-06-03
+
+**Content**
+
+- New Book Bat post (`websites`, featured + on home): free offline-first book-cataloguing app — barcode scan to build your shelf, no account/cloud/tracking, exports to spreadsheet/Goodreads/LibraryThing. Built with Svelte 5 (editor) + Astro 6 (Baobab browser), PWA on Cloudflare Workers; links to the [live app](https://bat.junglestar.org) and [GitHub source](https://github.com/junglesta/bookbat).
+
 ## 1.15.0 - 2026-06-02
 
 **Added**
