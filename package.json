@@ -1,9 +1,10 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "pnpm clean && astro dev",
+    "clean": "rm -rf .astro node_modules/.astro node_modules/.vite",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",

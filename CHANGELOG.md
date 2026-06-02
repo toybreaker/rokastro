@@ -3,6 +3,22 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.14.0 - 2026-06-02
+
+**Content / UX**
+
+- Redesigned the Instagram icon (`src/icons/instagram.svg`) — cleaner rounded-square glyph.
+- Junglo Shoes post: removed the dead `jungloshoes.com` link (site retired), now noted as "Now retired."
+
+**Tooling**
+
+- Added `clean` script — clears Astro/Vite caches (`.astro`, `node_modules/.astro`, `node_modules/.vite`).
+- `dev` now runs `clean` before `astro dev`, so each dev start begins from a fresh cache.
+
+**Docs**
+
+- README: added Built-with-Astro, Astro-version, and License badges alongside the Netlify deploy-status badge.
+
 ## 1.13.0 - 2026-06-02
 
 **Security**

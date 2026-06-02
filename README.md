@@ -1,4 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f6f6655a-c399-4564-bff5-158e0d698aae/deploy-status)](https://app.netlify.com/sites/rokmaastro/deploys)
+[![Built with Astro](https://img.shields.io/badge/Built%20with-Astro-BC52EE?logo=astro&logoColor=white)](https://astro.build)
+[![Astro version](https://img.shields.io/github/package-json/dependency-version/toybreaker/rokastro/astro?logo=astro&logoColor=white&label=astro)](https://github.com/toybreaker/rokastro/blob/master/package.json)
+[![License](https://img.shields.io/badge/license-Custom%20Reciprocity-blue)](./LICENSE.txt)
 
 # [rokma.com](https://rokma.com/) w/ Astro & Fiko
 
