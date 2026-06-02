@@ -3,6 +3,24 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.13.0 - 2026-06-02
+
+**Security**
+
+- devalue 5.8.0 → 5.8.1 — patches DoS via sparse array deserialization (GHSA, affected `>=5.6.3 <=5.8.0`). Pulled in transitively via the astro bump below. Resolves Dependabot alert #111.
+
+**Dep bumps**
+
+- astro 6.3.1 → 6.4.2
+- @astrojs/mdx 5.0.4 → 6.0.1
+- @astrojs/sitemap 3.7.2 → 3.7.3
+- @astrojs/ts-plugin 1.10.7 → 1.10.9
+- @types/node 22.19.18 → 22.19.19
+
+**Tooling**
+
+- pnpm-workspace.yaml: resolved `allowBuilds` placeholders — `esbuild` and `sharp` set to `true`.
+
 ## 1.12.1 - 2026-05-11
 
 **Tooling**
