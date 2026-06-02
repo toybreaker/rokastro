@@ -3,6 +3,12 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.16.1 - 2026-06-03
+
+**Fixed**
+
+- Google Analytics was silently dead since `1.11.1`: the `GoogleAnalytics` component still emitted `type="text/partytown"` scripts, but the Partytown integration had been removed from `astro.config.mjs`, so gtag never executed. Re-enabled `partytown()` (with `forward: ['dataLayer.push']`); `dist/~partytown/` worker scripts now ship and GA4 (`G-BMWDP7VL43`) runs off the main thread again.
+
 ## 1.16.0 - 2026-06-03
 
 **Content**
