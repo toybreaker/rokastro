@@ -3,6 +3,16 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.18.2 - 2026-06-03
+
+**Security**
+
+- Forced the transitive `yaml` dependency to `>= 2.8.3` (was 2.7.1) via a pnpm `overrides` entry, resolving the Dependabot advisory. `yaml` is pulled in only through the dev dependency `@astrojs/check` (→ `@astrojs/language-server` → `yaml-language-server`), so this is dev-tooling only with no runtime or shipped-site impact.
+
+**Chore**
+
+- Migrated pnpm settings (`onlyBuiltDependencies` for `@parcel/watcher` / `esbuild` / `sharp`) from the deprecated `package.json` `pnpm` field into `pnpm-workspace.yaml` — pnpm 11 no longer reads the former (it was warning on every install). The override above lives there too.
+
 ## 1.18.1 - 2026-06-03
 
 **Fixed**

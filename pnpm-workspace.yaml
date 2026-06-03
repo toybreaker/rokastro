@@ -1,4 +1,12 @@
-allowBuilds:
-  '@parcel/watcher': set this to true or false
-  esbuild: true
-  sharp: true
+# pnpm settings live here (pnpm 11 no longer reads the `pnpm` field in package.json).
+
+# Dependencies whose install/build (postinstall) scripts are allowed to run.
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - esbuild
+  - sharp
+
+# Force a patched `yaml` (>= 2.8.3). The vulnerable 2.7.1 came in transitively
+# via @astrojs/check → @astrojs/language-server → yaml-language-server.
+overrides:
+  yaml: '>=2.8.3'
