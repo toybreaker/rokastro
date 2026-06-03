@@ -3,6 +3,17 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.18.1 - 2026-06-03
+
+**Fixed**
+
+- Search went dead after any in-site navigation: `ClientRouter` (added in 1.17.0) swaps the `<body>`, replacing the search input, but the listeners were bound only once at module load — so they were lost after the first click-through and only a full reload revived search. Now the binding runs on `astro:page-load` (initial load + every view-transition swap), re-querying the fresh DOM, with a double-bind guard and the Pagefind module cached at module scope.
+- About page: removed the empty banded gap at the top — the page provides no header slot, so Layout's `<header>` rendered as a padded, faintly-tinted strip; it's now hidden so the body starts at the top.
+
+**Changed**
+
+- Specials index background locked white (was adaptive / OS-driven).
+
 ## 1.18.0 - 2026-06-03
 
 **Added**

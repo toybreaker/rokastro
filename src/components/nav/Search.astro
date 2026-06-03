@@ -24,13 +24,7 @@
 </div>
 
 <script>
-  const input = document.getElementById(
-    'search-input'
-  ) as HTMLInputElement | null
-  const resultsEl = document.getElementById(
-    'search-results'
-  ) as HTMLElement | null
-
+  // Pagefind module is cached at module scope across navigations.
   let pagefind: any = null
   let initPromise: Promise<any> | null = null
 
@@ -66,24 +60,40 @@
     )
   }
 
-  function render(query: string, items: any[]) {
-    if (!resultsEl) return
-    resultsEl.hidden = false
-    if (!items.length) {
-      resultsEl.innerHTML = `<p class="search__empty">No results for “${escapeHtml(query)}”.</p>`
-      return
-    }
-    resultsEl.innerHTML = items
-      .map((it) => {
-        const title = it.meta?.title || it.url
-        const cat = it.meta?.category
-          ? `<span class="search__cat">${escapeHtml(it.meta.category)}</span>`
-          : ''
-        const thumb = it.meta?.image
-          ? `<img class="search__thumb" src="${it.meta.image}" alt="" loading="lazy" decoding="async" />`
-          : `<span class="search__thumb search__thumb--empty" aria-hidden="true"></span>`
-        // it.excerpt is Pagefind-escaped HTML with <mark> highlights.
-        return `<a class="search__result" role="option" href="${it.url}">
+  // Bind the search UI. Registered on astro:page-load so it runs on the
+  // initial load AND after every ClientRouter view-transition swap — the
+  // swap replaces the search input with a fresh node, so listeners bound on
+  // a previous page would otherwise be lost and search would go dead after
+  // the first in-site navigation.
+  function setupSearch() {
+    const input = document.getElementById(
+      'search-input'
+    ) as HTMLInputElement | null
+    const resultsEl = document.getElementById(
+      'search-results'
+    ) as HTMLElement | null
+    if (!input || !resultsEl) return
+    // Don't double-bind if this ever runs twice against the same node.
+    if (input.dataset.searchBound) return
+    input.dataset.searchBound = 'true'
+
+    function render(query: string, items: any[]) {
+      resultsEl!.hidden = false
+      if (!items.length) {
+        resultsEl!.innerHTML = `<p class="search__empty">No results for “${escapeHtml(query)}”.</p>`
+        return
+      }
+      resultsEl!.innerHTML = items
+        .map((it) => {
+          const title = it.meta?.title || it.url
+          const cat = it.meta?.category
+            ? `<span class="search__cat">${escapeHtml(it.meta.category)}</span>`
+            : ''
+          const thumb = it.meta?.image
+            ? `<img class="search__thumb" src="${it.meta.image}" alt="" loading="lazy" decoding="async" />`
+            : `<span class="search__thumb search__thumb--empty" aria-hidden="true"></span>`
+          // it.excerpt is Pagefind-escaped HTML with <mark> highlights.
+          return `<a class="search__result" role="option" href="${it.url}">
             ${thumb}
             <span class="search__text">
               ${cat}
@@ -91,56 +101,58 @@
               <span class="search__excerpt">${it.excerpt}</span>
             </span>
           </a>`
-      })
-      .join('')
-  }
-
-  async function run(query: string) {
-    if (!resultsEl) return
-    if (!query) {
-      resultsEl.hidden = true
-      resultsEl.innerHTML = ''
-      return
+        })
+        .join('')
     }
-    const pf = await ensurePagefind()
-    if (!pf) {
-      resultsEl.hidden = false
-      resultsEl.innerHTML =
-        '<p class="search__empty">Search index isn’t built yet — run <code>pnpm build</code> &amp; <code>pnpm preview</code>.</p>'
-      return
-    }
-    const search = await pf.search(query)
-    const items = await Promise.all(
-      search.results.slice(0, 8).map((r: any) => r.data())
-    )
-    render(query, items)
-  }
 
-  let debounce: ReturnType<typeof setTimeout>
-  input?.addEventListener('input', () => {
-    const q = input.value.trim()
-    clearTimeout(debounce)
-    debounce = setTimeout(() => run(q), 180)
-  })
-  // Warm up the index as soon as the user intends to search.
-  input?.addEventListener('focus', ensurePagefind, { once: true })
-
-  // Esc clears; arrow-down jumps into results.
-  input?.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      input.value = ''
-      run('')
-      input.blur()
-    }
-    if (e.key === 'ArrowDown') {
-      const first =
-        resultsEl?.querySelector<HTMLAnchorElement>('.search__result')
-      if (first) {
-        e.preventDefault()
-        first.focus()
+    async function run(query: string) {
+      if (!query) {
+        resultsEl!.hidden = true
+        resultsEl!.innerHTML = ''
+        return
       }
+      const pf = await ensurePagefind()
+      if (!pf) {
+        resultsEl!.hidden = false
+        resultsEl!.innerHTML =
+          '<p class="search__empty">Search index isn’t built yet — run <code>pnpm build</code> &amp; <code>pnpm preview</code>.</p>'
+        return
+      }
+      const search = await pf.search(query)
+      const items = await Promise.all(
+        search.results.slice(0, 8).map((r: any) => r.data())
+      )
+      render(query, items)
     }
-  })
+
+    let debounce: ReturnType<typeof setTimeout>
+    input.addEventListener('input', () => {
+      const q = input.value.trim()
+      clearTimeout(debounce)
+      debounce = setTimeout(() => run(q), 180)
+    })
+    // Warm up the index as soon as the user intends to search.
+    input.addEventListener('focus', ensurePagefind, { once: true })
+
+    // Esc clears; arrow-down jumps into results.
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        input.value = ''
+        run('')
+        input.blur()
+      }
+      if (e.key === 'ArrowDown') {
+        const first =
+          resultsEl.querySelector<HTMLAnchorElement>('.search__result')
+        if (first) {
+          e.preventDefault()
+          first.focus()
+        }
+      }
+    })
+  }
+
+  document.addEventListener('astro:page-load', setupSearch)
 </script>
 
 <style>

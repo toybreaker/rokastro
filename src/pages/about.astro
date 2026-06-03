@@ -79,6 +79,12 @@ const pageDesc = siteData.description
 </Layout>
 
 <style>
+  /* The about page provides no header slot, so Layout's <header> renders
+     empty — hide it so the body starts at the top (no banded gap). */
+  :global(header) {
+    display: none;
+  }
+
   article {
     padding-top: 1rem;
   }
