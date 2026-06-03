@@ -3,7 +3,7 @@
 [![Astro version](https://img.shields.io/github/package-json/dependency-version/toybreaker/rokastro/astro?logo=astro&logoColor=white&label=astro)](https://github.com/toybreaker/rokastro/blob/master/package.json)
 [![License](https://img.shields.io/badge/license-Custom%20Reciprocity-blue)](./LICENSE.txt)
 
-# [rokma.com](https://rokma.com/) w/ Astro & Fiko
+# [rokma.com](https://rokma.com/) w/ Astro & FLACO
 
 ## DEV SHORTCUTS
 
@@ -25,34 +25,39 @@ echo 'prd | pnpm run dev';
 pnpm run dev
 ```
 
-# FIKO 👀 Setup
+# CSS SYSTEM — FLACO 🐸
 
-### 1. ADD type shorcut
-
-To your `tsconfig.json`
-
-```tsconfig.json
-
-{
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      ...
-      "@fiko/*": ["node_modules/fiko/package/*"]
-    }
-  }
-}
+This site's CSS is **FLACO**, a local proto-fork of [FIKO](https://github.com/toybreaker/fiko) that lives and diverges inside this repo at `src/assets/css/flaco.css`. It is **not an npm package** — nothing to install, no `@fiko` path mapping. It's imported once, in the base layout, and applies site-wide:
 
 ```
-
-### 2. ADD FIKO TO ASTRO FRONTMATTER
-
-Import fiko in any `.astro` files (`src/components/style.astro`) like this :
-
-```style.astro
-import '@css/fiko.css'
+// src/layouts/Layout.astro
+import '@css/flaco.css'
 ```
+
+### TLDR cheatsheet
+
+![semantic HTML](https://img.shields.io/badge/follows-semantic_HTML-1a1a1a)
+![almost classless](https://img.shields.io/badge/style-almost_classless-1a1a1a)
+![non-verbose](https://img.shields.io/badge/non--verbose-&_clean-1a1a1a)
+![dynamic sizing](https://img.shields.io/badge/dynamic_sizing-svh_·_svw_·_rem_·_ch-2ea44f)
+![fixed sizing](https://img.shields.io/badge/fixed_sizing-px-blue)
+![theme](https://img.shields.io/badge/theme-light_/_dark-8957e5)
+![pure css theme](https://img.shields.io/badge/theme_engine-pure_CSS_·_no_JS-fb8500)
+
+- **Sizing** — dynamic via `svh / svw / rem / ch`; fixed only in `px`. Spacing/radius/borders come from `--spaceLR`, `--spaceTB`, `--radius`, `--borderSize`.
+- **Almost classless** — style semantic elements directly; reach for classes only when needed (`.container`, `.centre`, `.space`).
+- **Light / dark** — automatic, OS-driven via `prefers-color-scheme`. Pure CSS: no toggle, no JS, no flash, and it persists across view transitions. Dark just re-points the colour vars (`--currentBGcolor`, `--currentTXTcolor`).
+
+### Per-page theme lock (`bodyClass`)
+
+A page can pin its background **regardless** of light/dark by setting a colour token in `bodyClass` (post frontmatter, or the page's `bodyClass` const). Text colour auto-contrasts.
+
+| `bodyClass` token                        | result                                                                   |
+| ---------------------------------------- | ------------------------------------------------------------------------ |
+| _(none)_                                 | **adaptive** — follows the OS light/dark                                 |
+| `black`, `darkgray`                      | locked **dark** bg, light text                                           |
+| `white`, `offwhite`, `lightgray`, `gray` | locked **light** bg, dark text                                           |
+| `grid_small`, `grid_big`                 | post gallery grid density (combine with a colour, e.g. `black grid_big`) |
 
 # ADD YOUTUBE VIDEO
 
