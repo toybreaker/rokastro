@@ -3,6 +3,24 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.17.0 - 2026-06-03
+
+**Added**
+
+- Astro page transitions (`ClientRouter`) site-wide: clicking a post thumbnail now morphs the image up into the maximised hero at the top of the post page. Matching `transition:name` (`hero-${category}-${id}`) is set on the `Card` thumbnail and the post hero, so the morph fires from the home page, all five category indexes (featured cards), and tag pages into the destination post.
+
+**Changed**
+
+- Post layout restructured for predictable transitions: `images[0]` is lifted into a dedicated full-width hero at the top of the template (natural aspect ratio, so the morph is a pure scale with no distortion); the gallery below renders `images[1..n]`. The hero is eager / high-priority / sync-decoded; gallery images stay lazy.
+
+**Performance**
+
+- New `PreloadHeroes` component warms the next page's hero: listing pages (home, category indexes, tag pages) emit `<link rel="prefetch" as="image">` for each post's hero, computed via `getImage()` with the exact width/format/quality of the rendered hero so the prefetched asset is byte-for-byte the one the post page requests. Eliminates the blank-then-repaint flash during the morph.
+
+**Removed**
+
+- Deleted unused `PostNew.astro` layout (referenced nowhere in the project).
+
 ## 1.16.1 - 2026-06-03
 
 **Fixed**

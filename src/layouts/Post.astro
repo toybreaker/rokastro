@@ -4,7 +4,7 @@ import * as siteData from '@data/site.json'
 import Slide from '@components/Slide.astro'
 import Icon from '@components/Icon.astro'
 
-const { title, category, images, tags, bodyClass, ogImage, pageDesc } =
+const { title, category, images, tags, bodyClass, ogImage, pageDesc, slug } =
   Astro.props.frontmatter || Astro.props
 
 const mainClass = 'container'
@@ -30,19 +30,23 @@ const mainClass = 'container'
     <h1>{title}</h1>
   </div>
 
-  <div slot='images' class='images'>
+  <div slot='images'>
+    <Slide
+      p={images[0]}
+      alt='g'
+      quality='high'
+      cssClass='slide hero'
+      isThumb={true}
+      transitionName={`hero-${category}-${slug}`}
+    />
     {
-      images.map((i: string, idx: number) => {
-        return (
-          <Slide
-            p={i}
-            alt='g'
-            quality='high'
-            cssClass='slide'
-            isThumb={idx === 0}
-          />
-        )
-      })
+      images.length > 1 && (
+        <div class='images'>
+          {images.slice(1).map((i: string) => (
+            <Slide p={i} alt='g' quality='high' cssClass='slide' />
+          ))}
+        </div>
+      )
     }
   </div>
 

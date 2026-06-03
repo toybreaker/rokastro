@@ -7,9 +7,10 @@ export interface Props {
   quality: string | 'low' //low, mid, high, max
   cssClass: string
   isThumb?: boolean
+  transitionName?: string | undefined
 }
 
-const { p, alt, quality, cssClass, isThumb } = Astro.props
+const { p, alt, quality, cssClass, isThumb, transitionName } = Astro.props
 ---
 
 <Image
@@ -19,7 +20,11 @@ const { p, alt, quality, cssClass, isThumb } = Astro.props
   alt={alt}
   quality={quality}
   format='avif'
+  loading={isThumb ? 'eager' : 'lazy'}
+  fetchpriority={isThumb ? 'high' : 'auto'}
+  decoding={isThumb ? 'sync' : 'async'}
   data-pagefind-meta={isThumb ? 'image[src]' : undefined}
+  transition:name={transitionName}
 />
 
 <style>

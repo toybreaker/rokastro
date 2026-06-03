@@ -22,6 +22,7 @@ const { pageTitle, category, mainClass, bodyClass, ogImage, pageDesc } =
   mainClass={mainClass}
   ogImage={ogImage}
 >
+  <slot name='head' slot='head' />
   <div class='uppercase' slot='header'>
     <a class='title' href='/'>
       <h1>{siteData.title}</h1>

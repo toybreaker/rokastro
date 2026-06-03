@@ -3,7 +3,7 @@ title: Book Bat
 category: websites
 year: 2026
 where: global
-bodyClass: darkgray 
+bodyClass: darkgray
 images:
   - ./01.jpg
 tags:

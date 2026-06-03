@@ -5,14 +5,22 @@ export interface Props {
   title: string
   category?: string | undefined
   image: any
+  transitionName?: string | undefined
 }
 
-const { title, image, category } = Astro.props
+const { title, image, category, transitionName } = Astro.props
 ---
 
 <div class='card'>
   <div class='image_box'>
-    <Image width={640} src={image} alt={title} format='avif' quality='low' />
+    <Image
+      width={640}
+      src={image}
+      alt={title}
+      format='avif'
+      quality='low'
+      transition:name={transitionName}
+    />
   </div>
 
   <h2 class='title h5'>

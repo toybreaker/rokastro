@@ -2,6 +2,7 @@
 import Layout from '@layouts/Index.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
+import PreloadHeroes from '@components/PreloadHeroes.astro'
 import * as siteData from '@data/site.json'
 import Icon from '@components/Icon.astro'
 
@@ -41,6 +42,8 @@ const ogImage = '../og_home.jpg'
   mainClass={mainClass}
   ogImage={ogImage}
 >
+  <PreloadHeroes slot='head' images={posts.map((p: any) => p.data.images[0])} />
+
   <h2 class='h3 uppercase tag-heading'>
     <Icon name='tag' class='tag' />
     {tag}
@@ -49,7 +52,11 @@ const ogImage = '../og_home.jpg'
     {
       posts.map((post: any) => (
         <a class='post' href={`/${post.data.category}/${post.id}`}>
-          <Card title={post.data.title} image={post.data.images[0]} />
+          <Card
+            title={post.data.title}
+            image={post.data.images[0]}
+            transitionName={`hero-${post.data.category}-${post.id}`}
+          />
         </a>
       ))
     }

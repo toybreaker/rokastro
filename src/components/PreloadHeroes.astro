@@ -1,0 +1,27 @@
+---
+import { getImage } from 'astro:assets'
+
+export interface Props {
+  // The first image of each post shown on this page (post.data.images[0]).
+  // These match the hero rendered by Slide.astro on the destination post page,
+  // so warming their cache makes the page-transition morph paint instantly
+  // instead of flashing blank while the big image downloads.
+  images: any[]
+}
+
+const { images } = Astro.props
+
+// Mirror Slide.astro's hero exactly (width 1920, avif, high quality) so the
+// prefetched URL is byte-for-byte the same asset the post page requests.
+const heroes = await Promise.all(
+  images.map((src) =>
+    getImage({ src, width: 1920, format: 'avif', quality: 'high' })
+  )
+)
+---
+
+{
+  heroes.map((hero) => (
+    <link rel='prefetch' as='image' href={hero.src} type='image/avif' />
+  ))
+}

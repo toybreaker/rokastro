@@ -1,6 +1,7 @@
 ---
 import Layout from '@layouts/Index.astro'
 import Card from '@components/Card.astro'
+import PreloadHeroes from '@components/PreloadHeroes.astro'
 import * as siteData from '@data/site.json'
 
 import { getCollection } from 'astro:content'
@@ -55,6 +56,8 @@ const pageDesc = siteData.description
   pageDesc={pageDesc}
   ogImage={ogImage}
 >
+  <PreloadHeroes slot='head' images={sortedFP.map((p) => p.data.images[0])} />
+
   <section class='intro why full_height hero'>
     <div class='container'>
       <h1 title='Rokma Believes your customers should understand you.'>
@@ -123,6 +126,7 @@ const pageDesc = siteData.description
                 title={post.data.title}
                 category={post.data.category}
                 image={post.data.images[0]}
+                transitionName={`hero-${post.data.category}-${post.id}`}
               />
             </a>
           ))

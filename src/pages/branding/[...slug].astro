@@ -23,6 +23,11 @@ const { Content } = await render(post)
 const pageDesc = siteData.description_branding
 ---
 
-<Layout {...post.data} ogImage={post.data.images[0].src} pageDesc={pageDesc}>
+<Layout
+  {...post.data}
+  slug={post.id}
+  ogImage={post.data.images[0].src}
+  pageDesc={pageDesc}
+>
   <Content />
 </Layout>

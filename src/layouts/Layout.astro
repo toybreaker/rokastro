@@ -1,5 +1,6 @@
 ---
 import '@css/fiko.css'
+import { ClientRouter } from 'astro:transitions'
 import ROKMA from '@components/ascii/ROKMA.astro'
 import Footer from '@components/Footer.astro'
 import Nav from '@components/nav/Nav.astro'
@@ -56,6 +57,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
     <meta name='twitter:image' content={ogImage} />
 
     <slot name='head' />
+    <ClientRouter />
   </head>
   <body class={bodyClass}>
     <Nav />

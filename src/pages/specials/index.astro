@@ -3,6 +3,7 @@ import Layout from '@layouts/Index.astro'
 import { getCollection } from 'astro:content'
 import Card from '@components/Card.astro'
 import CardSlim from '@components/CardSlim.astro'
+import PreloadHeroes from '@components/PreloadHeroes.astro'
 import * as siteData from '@data/site.json'
 
 const category = 'specials'
@@ -53,6 +54,11 @@ const ogImage = '/og/og_specials.jpg'
   pageDesc={pageDesc}
   ogImage={ogImage}
 >
+  <PreloadHeroes
+    slot='head'
+    images={featuredPosts.map((p) => p.data.images[0])}
+  />
+
   <p slot='header' class='center'>Special one-shot projects</p>
   <div class='posts'>
     {
@@ -62,7 +68,11 @@ const ogImage = '/og/og_specials.jpg'
           href={`/${category}/${post.id}`}
           title={post.data.year + '-' + post.data.year2}
         >
-          <Card title={post.data.title} image={post.data.images[0]} />
+          <Card
+            title={post.data.title}
+            image={post.data.images[0]}
+            transitionName={`hero-${category}-${post.id}`}
+          />
         </a>
       ))
     }
