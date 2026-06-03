@@ -1,9 +1,13 @@
 @charset "UTF-8";
 /*!
-* FIKO prelunch version: 🐸🐸🐸
+* FLACO 🐸🐸🐸
+* Local proto-fork of FIKO, kept and diverged inside rokastro.
+* The canonical framework now lives at its own repo (below); this file is an
+* early prelaunch version intentionally retained here — edit freely, it is
+* NOT synced from the FIKO repo.
 * 2024 CSS DOCTOR CLINIC
 * Copyright 2023-2025 Toybreaker
-* MIT License | https: //github.com/toybreaker/fiko
+* MIT License | https://github.com/toybreaker/fiko
 *
 * WHY? TLDR:
 * DYNAMIC SIZING: via  svh, svw, rem, ch...
@@ -179,7 +183,7 @@
 
   /* ROOT SECTION 1 */
   :root {
-    /* ICONS FIRST, cos there're referred in ROOT SECTION 2 [data-theme...]  */
+    /* ICONS FIRST, cos they're referenced in ROOT SECTION 2 (the THEME block) */
     --icon-chevron-black: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 
     --icon-chevron-white: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
@@ -204,45 +208,30 @@
 
     /* ROOT SECTION 2 */
 
-    /* INITIALS ASSUMING LIGHT THEME */
-    [data-theme='light'] {
-      /* Set the CURRENT colours: */
-      --currentBGcolor: var(--color-white);
-      --currentTXTcolor: var(--color-black);
-      --curV: var(--icon-chevron-black);
-      --curPlus: var(--icon-plus-black);
-      --curMinus: var(--icon-minus-black);
-      /* Seems that the following is needed to make it work?!? */
-      background-color: var(--currentBGcolor);
-      color: var(--currentTXTcolor);
-    }
+    /* THEME
+     * Light by default; dark follows the OS via prefers-color-scheme.
+     * Pure CSS — no toggle, no JS, no flash-of-wrong-theme, and it persists
+     * across view transitions for free. Dark only re-points the colour vars;
+     * `background-color`/`color` reference them so they update live.
+     * Pages locked by a `bodyClass` token (see `body.<token>` below)
+     * override this and ignore the OS preference. */
 
-    /* COLOURS, DARK THEME - OS PREFERENCE */
+    /* LIGHT (default) */
+    --currentBGcolor: var(--color-white);
+    --currentTXTcolor: var(--color-black);
+    --curV: var(--icon-chevron-black);
+    --curPlus: var(--icon-plus-black);
+    --curMinus: var(--icon-minus-black);
+    background-color: var(--currentBGcolor);
+    color: var(--currentTXTcolor);
+
+    /* DARK (OS preference) */
     @media (prefers-color-scheme: dark) {
-      :root:not([data-theme='light']) {
-        /* Set the CURRENT colours: */
-        --currentBGcolor: var(--color-black);
-        --currentTXTcolor: var(--color-white);
-        --curV: var(--icon-chevron-white);
-        --curPlus: var(--icon-plus-white);
-        --curMinus: var(--icon-minus-white);
-        /* Seems that the following is needed to make it work?!? */
-        background-color: var(--currentBGcolor);
-        color: var(--currentTXTcolor);
-      }
-    }
-
-    /* DATA-THEME IS SET TO DARK */
-    [data-theme='dark'] {
-      /* Set the CURRENT colours: */
       --currentBGcolor: var(--color-black);
       --currentTXTcolor: var(--color-white);
       --curV: var(--icon-chevron-white);
       --curPlus: var(--icon-plus-white);
       --curMinus: var(--icon-minus-white);
-      /* Seems that the following is needed to make it work?!? */
-      background-color: var(--currentBGcolor);
-      color: var(--currentTXTcolor);
     }
 
     /* SECTION 3 */
@@ -251,6 +240,15 @@
     /* When elements need consistency, not switching colors. */
     --color-light: var(--color-white);
     --color-dark: var(--color-black);
+
+    /* GREY SCALE — used by the page-theme lock (see `body.<token>` below).
+     * These are fixed bg tints for posts that must keep a set background
+     * regardless of light/dark mode (e.g. shots on a grey seamless). */
+    --color-offwhite: #f5f5f4;
+    --color-lightgray: #d4d4d4;
+    --color-gray: #8a8a8a;
+    --color-darkgray: #333333;
+
     --transparent: 50%;
     --currentCOLtransparent: color-mix(
       in srgb,
@@ -323,6 +321,62 @@
   --icon-close: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E");
 
   --icon-loading: url("data:image/svg+xml,%3Csvg fill='none' height='24' width='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' %3E%3Cstyle%3E g %7B animation: rotate 2s linear infinite; transform-origin: center center; %7D circle %7B stroke-dasharray: 75,100; stroke-dashoffset: -5; animation: dash 1.5s ease-in-out infinite; stroke-linecap: round; %7D @keyframes rotate %7B 0%25 %7B transform: rotate(0deg); %7D 100%25 %7B transform: rotate(360deg); %7D %7D @keyframes dash %7B 0%25 %7B stroke-dasharray: 1,100; stroke-dashoffset: 0; %7D 50%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -17.5; %7D 100%25 %7B stroke-dasharray: 44.5,100; stroke-dashoffset: -62; %7D %7D %3C/style%3E%3Cg%3E%3Ccircle cx='12' cy='12' r='10' fill='none' stroke='currentColor' stroke-width='2' /%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* 🐲 PAGE THEME LOCK
+ * Pins a page's background + text colour regardless of light/dark mode.
+ * Driven by the `bodyClass` frontmatter token (e.g. `bodyClass: black`):
+ * posts shot on a set background keep that background in any theme.
+ * Pages WITHOUT a colour token stay adaptive and follow the theme.
+ * Kept unlayered (like the theme rules above) so it overrides them. */
+
+/* Dark backgrounds → light text + light icons */
+body.black,
+body.darkgray {
+  --currentTXTcolor: var(--color-white);
+  --curV: var(--icon-chevron-white);
+  --curPlus: var(--icon-plus-white);
+  --curMinus: var(--icon-minus-white);
+}
+
+/* Light backgrounds → dark text + dark icons */
+body.white,
+body.offwhite,
+body.lightgray,
+body.gray {
+  --currentTXTcolor: var(--color-black);
+  --curV: var(--icon-chevron-black);
+  --curPlus: var(--icon-plus-black);
+  --curMinus: var(--icon-minus-black);
+}
+
+body.black {
+  --currentBGcolor: var(--color-black);
+}
+body.darkgray {
+  --currentBGcolor: var(--color-darkgray);
+}
+body.gray {
+  --currentBGcolor: var(--color-gray);
+}
+body.lightgray {
+  --currentBGcolor: var(--color-lightgray);
+}
+body.offwhite {
+  --currentBGcolor: var(--color-offwhite);
+}
+body.white {
+  --currentBGcolor: var(--color-white);
+}
+
+body.black,
+body.darkgray,
+body.gray,
+body.lightgray,
+body.offwhite,
+body.white {
+  background-color: var(--currentBGcolor);
+  color: var(--currentTXTcolor);
 }
 
 /* 🐲 BASE */
@@ -1633,32 +1687,6 @@
     padding-block-start: 0;
   }
 
-  /* TOGGLE THEME */
-  /* This now uses JS. Maybe will become a css only toggle */
-
-  .theme_switch {
-    position: relative;
-    top: 4px;
-    z-index: 100;
-    line-height: 1;
-
-    :hover svg {
-      color: var(--currentCOLtransparent);
-      cursor: pointer;
-    }
-
-    [data-theme='dark'] & {
-      .moon {
-        display: none;
-      }
-    }
-
-    [data-theme='light'] & {
-      .sun {
-        display: none;
-      }
-    }
-  }
 }
 
 /* 🐲 CLASSES */
@@ -1834,14 +1862,3 @@
   }
 }
 
-/* 🐲 TESTS */
-@layer animations {
-  [data-theme='dark'] {
-    -webkit-animation-name: shake-vertical;
-    animation-name: shake-vertical;
-
-    animation-duration: 1s;
-    /* animation-fill-mode: both; */
-    animation-fill-mode: unset;
-  }
-}

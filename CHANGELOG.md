@@ -3,6 +3,28 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 1.18.0 - 2026-06-03
+
+**Added**
+
+- Light/dark mode, OS-driven: adaptive pages (home, category/tag indexes, about, untokenised posts) now follow `prefers-color-scheme` — explicit light default with a dark override via media query. Pure CSS: no toggle, no JS, no flash-of-wrong-theme, and it persists across view transitions. Dark just re-points the colour vars, so `background-color`/`color` update live.
+- Per-post theme lock via the existing `bodyClass` token: `black`, `darkgray`, `gray`, `lightgray`, `offwhite`, `white` now pin a page's background and auto-contrast text colour **regardless** of light/dark mode — so posts shot on a set background (e.g. black seamless) keep that background in any theme. Added a grey-scale of `--color-*` tokens to back it.
+
+**Fixed**
+
+- `bodyClass` colour tokens previously had no CSS rules or variables behind them, so a `bodyClass: black` post only rendered dark when the visitor's OS happened to be in dark mode (and showed on white otherwise). They now lock correctly and independently of the OS theme.
+- About page: centred the "What are Rokma's clients saying." testimonials heading.
+
+**Changed**
+
+- Branding and advertising index backgrounds are now locked white (branding was `lightgray`; advertising was adaptive/OS-driven).
+- Renamed `fiko.css` → `flaco.css` to mark it as the local proto-fork of the now-separate FIKO framework — kept and edited freely here, not synced from the FIKO repo.
+
+**Removed**
+
+- Dead theme-toggle CSS left over from the removed JS toggle (`.theme_switch` + its sun/moon `data-theme` rules) and the dead `[data-theme]` light/dark blocks in the theme engine; plus an experimental `[data-theme='dark']` shake animation in the tests layer.
+- A global `:root { --currentTXTcolor: black }` override leaking out of the `Card` component, which forced card titles black regardless of theme. Card titles now follow the page theme (white on dark, black on light); this was masked before by the old higher-specificity dark rule and surfaced on the adaptive listing pages (home, advertising, specials). Also dropped the dead `.title span` rule (no matching markup) that referenced an undefined `--gray`.
+
 ## 1.17.0 - 2026-06-03
 
 **Added**

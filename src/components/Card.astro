@@ -30,9 +30,6 @@ const { title, image, category, transitionName } = Astro.props
 </div>
 
 <style>
-  :root {
-    --currentTXTcolor: black;
-  }
   .category {
     text-align: center;
     text-transform: uppercase;
@@ -46,14 +43,6 @@ const { title, image, category, transitionName } = Astro.props
   .title {
     margin: var(--spaceTB) 0;
     padding: 0;
-    span {
-      padding-block: 0;
-      padding-inline: 5px;
-      color: black;
-      body.black & {
-        background-color: var(--gray);
-      }
-    }
   }
 
   .image_box {
