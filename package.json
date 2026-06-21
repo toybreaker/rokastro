@@ -1,7 +1,7 @@
 {
   "name": "rokastro",
   "type": "module",
-  "version": "1.18.2",
+  "version": "1.18.3",
   "scripts": {
     "dev": "pnpm clean && astro dev",
     "clean": "rm -rf .astro node_modules/.astro node_modules/.vite",
@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
-    "@astrojs/mdx": "^6.0.1",
+    "@astrojs/mdx": "^6.0.3",
     "@astrojs/partytown": "^2.1.7",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.3",
     "@sindresorhus/slugify": "^2.2.1",
     "@types/node": "^22.19.19",
-    "astro": "6.4.2",
+    "astro": "6.4.8",
     "astro-robots-txt": "^1.0.0",
     "autoprefixer": "^10.5.0",
     "mdast-util-to-string": "^4.0.0",

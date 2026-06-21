@@ -11,8 +11,10 @@ images:
   - ./03.jpg
   - ./04.jpg
 tags:
+  - blog
   - concept
   - copywriting
+  - content-creation
   - custom-websites
   - non-profit
   - online-magazine

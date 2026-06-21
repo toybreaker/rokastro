@@ -9,6 +9,7 @@ images:
 tags:
   - video
   - concept
+  - content-creation
 ---
 
 ## Freezer Snowmag

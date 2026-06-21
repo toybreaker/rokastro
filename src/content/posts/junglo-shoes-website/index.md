@@ -17,6 +17,7 @@ images:
 tags:
   - online-store
   - custom-websites
+  - content-creation
   - marketing-strategy
   - design
   - shopify-theme-creation

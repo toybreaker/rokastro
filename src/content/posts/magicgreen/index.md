@@ -13,14 +13,15 @@ images:
   - ./15.jpg
   - ./16.jpg
 tags:
+  - blog
   - concept
+  - copywriting
+  - content-creation
   - custom-websites
   - art-direction
   - online-press
   - open-source
   - logo
-  - content-creation
-  - copywriting
   - non-profit
   - service-branding
 featured: true

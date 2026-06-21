@@ -13,7 +13,9 @@ images:
   - ./05.jpg
   - ./06.jpg
 tags:
+  - blog
   - concept
+  - content-creation
   - printed-press
   - product-branding
   - product-design

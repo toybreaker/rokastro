@@ -14,6 +14,7 @@ images:
   - ./06.jpg
 tags:
   - concept
+  - content-creation
   - printed-press
   - art-direction
   - copywriting
