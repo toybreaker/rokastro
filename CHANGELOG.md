@@ -3,6 +3,21 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 2.0.0 - 2026-06-24
+
+**Migration**
+
+- Upgraded to **Astro 7** (from 6.4.8) — also `@astrojs/mdx` 7. Astro 7 ships Vite 8 with a new Rust template compiler and lightningcss as the default CSS minifier.
+
+**Fixes**
+
+- **flaco.css**: moved the `:root` closing brace so the `--icon-*` custom properties sit *inside* the rule block instead of dangling after it. The old placement was invalid CSS that the stricter Astro 7 / lightningcss pipeline surfaced.
+
+**Build config**
+
+- Removed a leftover `allowBuilds` placeholder from `pnpm-workspace.yaml`; esbuild / sharp / @parcel/watcher post-install builds are already governed by `onlyBuiltDependencies`.
+- Carries forward the dependency bumps from the un-changelogged 1.18.3.
+
 ## 1.18.2 - 2026-06-03
 
 **Security**
