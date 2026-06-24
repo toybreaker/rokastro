@@ -3,6 +3,12 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 2.1.1 - 2026-06-24
+
+**Fixed**
+
+- Testimonials: corrected two names — "Greg Rankinev" → "Greg Rankin", "Joan Epher" → "Joan Epher Phillips".
+
 ## 2.1.0 - 2026-06-24
 
 **Dep bumps**
