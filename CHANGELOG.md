@@ -3,6 +3,16 @@
 All notable changes to this project are recorded here.
 Versions before 1.12.0 live only in git history — see `git log` and `git tag`.
 
+## 2.1.0 - 2026-06-24
+
+**Dep bumps**
+
+- `@types/node` 22 → 26 and `sharp` 0.34.5 → 0.35.2. No new type errors (`astro check` clean); build green (137 pages).
+
+**Removed**
+
+- Pruned 4 unused dependencies with zero import sites: `@sindresorhus/slugify`, `cross-spawn`, `autoprefixer`, `mdast-util-to-string` (~17 transitive packages gone). No standalone rollup to remove — Astro/Vite bundle their own.
+
 ## 2.0.0 - 2026-06-24
 
 **Migration**
